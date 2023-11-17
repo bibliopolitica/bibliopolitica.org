@@ -1,0 +1,16 @@
+<nav class="topnav">
+  <strong><a href="/">wax designs</a></strong>
+  {% set menuItems = [
+  { label: 'dashboard', url: '/dashboard/' },
+  { label: 'facet-subset', url: '/facet-subset/' },
+  { label: 'facet-subset-block', url: '/facet-subset-block/' },
+  { label: 'featured items', url: '/featured-items/' }
+  ] %}
+  <ul>
+    {% for item in menuItems %}
+      <li>
+        <a class="{{ ' active' if item.url == page.url }}" href="{{ item.url }}">{{ item.label }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

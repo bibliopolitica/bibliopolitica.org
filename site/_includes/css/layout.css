@@ -1,0 +1,30 @@
+/* top header and nav */
+
+header {
+  background: #f3f5f3;
+  margin: 0 0 2em 0;
+  padding: 50px 20px;
+}
+
+/* general page layout */
+
+.page {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+/* dashboard page layout */
+
+.dashboard {
+  display: flex;
+}
+
+.dashboard nav {
+  flex: 1 0 0;
+  padding: 20px;
+}
+
+.dashboard main {
+  flex: 4 0 0;
+  background-color: #eee;
+}

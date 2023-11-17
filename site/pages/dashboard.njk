@@ -1,0 +1,68 @@
+---
+title: "Dashboard"
+description: "TBD"
+layout: "base"
+---
+
+<div class="dashboard">
+
+<nav>
+
+  <h2>Browse the Collection</h2>
+
+  <h3>By Location</h3>
+  <ul>
+    <li><a href="">Turkey</a></li>
+    <li><a href="">Iran</a></li>
+    <li><a href="">middle-east-and-north-africa</a></li>
+    <li><a href="">Egypt</a></li>
+    <li><a href="">Show more</a></li>
+  </ul>
+
+  <h3>By Object Type</h3>
+  <ul>
+    <li><a href="">Manuscripts</a></li>
+    <li><a href="">Portraits</a></li>
+    <li><a href="">Maps</a></li>
+    <li><a href="">Panels</a></li>
+    <li><a href="">Show more</a></li>
+  </ul>
+
+</nav>
+
+<main>
+
+<div class="gallery">
+
+{% for item in posts %}
+
+{% include "partials/wax-gallery-item.njk" %}
+
+{% endfor %}
+
+</div>
+
+</main>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>

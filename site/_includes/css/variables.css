@@ -1,0 +1,12 @@
+:root {
+  --color-primary: #fff;
+  --color-secondary: #000;
+  --color-link: #00f;
+  --color-active: #da00ff;
+  --color-inactive: #ddd;
+  --font-size: 16px;
+  --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  --font-weight: 400;
+  --font-weight-bold: 700;
+  --border: 1px solid #ddd;
+}

@@ -1,0 +1,26 @@
+---
+title: "Facet Subset Block"
+description: "TBD"
+layout: "base"
+---
+
+<div class="page">
+
+<p>Wax is a minimal computing project for producing digital exhibitions focused on longevity, low costs, and flexibility. Our underlying technology is made to learn and to teach, and can produce beautifully rendered, high-quality image collections and scholarly exhibits. To start using Wax, please see our documentation for installation instructions and more.</p>
+<p>The collection items in this demo are from The Museum of Islamic Art, Qatar, (courtesy of WikiMedia and Google Art Project) and The Qatar National Library (via World Digital Library).</p>
+<p>Wax is a minimal computing project for producing digital exhibitions focused on longevity, low costs, and flexibility. Our underlying technology is made to learn and to teach, and can produce beautifully rendered, high-quality image collections and scholarly exhibits. To start using Wax, please see our documentation for installation instructions and more.</p>
+<p>The collection items in this demo are from The Museum of Islamic Art, Qatar, (courtesy of WikiMedia and Google Art Project) and The Qatar National Library (via World Digital Library).</p>
+
+<!-- facet-subset-block component -->
+
+<div class="facet-subset-block">
+  <div class="gallery">
+    {% for item in posts.slice(0, 5) %}
+    {% include "partials/wax-gallery-item.njk" %}
+    {% endfor %}
+  </div>
+</div>
+
+<!-- end facet-subset-block component -->
+
+</div>

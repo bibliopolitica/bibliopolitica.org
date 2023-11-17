@@ -1,0 +1,20 @@
+---
+permalink: "{{ page.fileSlug | slugify }}/index.html"
+---
+
+{% include "partials/head.njk" %}
+
+{% include "partials/nav.njk" %}
+
+<div class="wrapper">
+
+{% if page.url == '/' %}
+{% else %}
+  {% include "partials/wax-header.njk" %}
+{% endif %}
+
+{{ content | safe }}
+
+</div>
+
+{% include "partials/footer.njk" %}

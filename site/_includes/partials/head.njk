@@ -1,0 +1,29 @@
+<!doctype html>
+
+<html lang="en" id="top">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="robots" content="noindex">
+  <title>
+    {% if page.url == '/' %}
+      {{ site.title }}
+    {% else %}
+      {{ title }} - {{ site.title }}
+    {% endif %}
+  </title>
+  {%- set css -%}
+    {% include "css/variables.css" %}
+    {% include "css/base.css" %}
+    {% include "css/components.css" %}
+    {% include "css/layout.css" %}
+    {% include "css/typography.css" %}
+  {%- endset -%}
+  <style>
+    {{ css | cssmin | safe }}
+  </style>
+  <link rel="icon" href="/favicon.png" type="image/png">
+</head>
+
+<body>

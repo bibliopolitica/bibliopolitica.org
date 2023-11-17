@@ -1,0 +1,79 @@
+/* styles for wireframe site */
+
+html {
+  background-color: var(--color-secondary);
+  box-sizing: border-box;
+  color: var(--color-secondary);
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+/* top nav */
+
+nav.topnav {
+  align-items: center;
+  background-color: var(--color-secondary);
+  border-bottom: var(--border);
+  color: var(--color-primary);
+  display: flex;
+  font-family: monospace;
+  font-size: 14px;
+  height: 8vh;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+nav.topnav a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+nav.topnav ul,
+nav.topnav li {
+  display: inline;
+}
+
+nav.topnav ul a.active {
+  color: var(--color-active);
+  text-decoration: underline;
+}
+
+nav.topnav li:after {
+  content: " . ";
+}
+
+nav.topnav li:last-child:after {
+  content: none;
+}
+
+/* wrapper */
+
+.wrapper {
+  background-color: var(--color-primary);
+  margin-top: 8vh;
+  z-index: 1000;
+}
+
+/* footer */
+
+footer {
+  padding: 5em;
+}
