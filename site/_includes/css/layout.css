@@ -17,15 +17,17 @@ header {
 /* dashboard page layout */
 
 .dashboard {
+  border-bottom: var(--border);
   display: flex;
 }
 
 .dashboard nav {
+  border-right: var(--border);
   flex: 1 0 0;
+  min-width: 300px;
   padding: 20px;
 }
 
 .dashboard main {
   flex: 4 0 0;
-  background-color: #eee;
 }

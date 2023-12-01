@@ -30,11 +30,12 @@ svg {
 }
 
 .gallery .gallery-item-image {
-  padding-bottom: 2em;
+  padding-bottom: 1.5em;
 }
 
 .gallery .gallery-item-title {
   bottom: 0;
+  font-size: .9rem;
   position: absolute;
 }
 
