@@ -1,16 +1,17 @@
 /* top header and nav */
 
 header {
-  background: #f3f5f3;
-  margin: 0 0 2em 0;
-  padding: 50px 20px;
+  border-bottom: var(--border);
+  margin: 0 0 0 0;
+  padding: 30px 20px;
 }
 
 /* general page layout */
 
 .page {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 40rem;
+  padding-top: 2em;
 }
 
 /* dashboard page layout */

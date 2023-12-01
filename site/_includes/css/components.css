@@ -20,7 +20,7 @@ svg {
   column-gap: 1em;
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   row-gap: 2em;
   padding: 2em;
 }
@@ -30,7 +30,6 @@ svg {
 }
 
 .gallery .gallery-item-image {
-  min-height: 200px;
   padding-bottom: 2em;
 }
 
@@ -45,7 +44,9 @@ svg {
 
 /* facet-subset component */
 
-
+.facet-subset .gallery {
+  grid-template-columns: repeat(4, 1fr);
+}
 
 /* facet-subset-block component */
 
@@ -62,13 +63,13 @@ svg {
 /* featured-items component */
 
 .featured-items {
+  border-bottom: var(--border);
   display: flex;
-  padding: 20px;
+  padding: 50px 20px;
 }
 
 .featured-items .featured-items-header {
   flex: 1 0 0;
-  padding: 2em;
 }
 
 .featured-items .featured-items-header h1 {
@@ -83,13 +84,17 @@ svg {
   line-height: 1;
 }
 
-.featured-items .featured-items-header .description {
-  margin: 3em 0;
+.featured-items .featured-items-header p.description {
 }
 
 .featured-items .gallery {
   flex: 1 0 0;
   grid-template-columns: repeat(2, 1fr);
+  padding: 0 2em;
+}
+
+.featured-items .gallery .gallery-item-image {
+  padding: 0;
 }
 
 .featured-items .gallery .gallery-item-title {
