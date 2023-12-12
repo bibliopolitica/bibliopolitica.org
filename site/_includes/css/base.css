@@ -72,6 +72,28 @@ nav.topnav li:last-child:after {
   z-index: 1000;
 }
 
+/* headers */
+
+.section-header {
+  background: #FFECB3;
+  border-radius: 6px;
+  display: inline-block;
+  font-family: monospace;
+  margin: 2em 1em 1em 1em;
+  padding: 1em;
+}
+
+.section-header h2,
+.section-header p {
+  display: inline;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.section-header h2:after {
+  content: " — "
+}
+
 /* footer */
 
 footer {
