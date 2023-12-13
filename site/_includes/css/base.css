@@ -79,14 +79,14 @@ nav.topnav li:last-child:after {
   border-radius: 6px;
   display: inline-block;
   font-family: monospace;
-  margin: 2em 1em 1em 1em;
+  margin: 4em 1em 0 1em;
   padding: 1em;
 }
 
 .section-header h2,
 .section-header p {
   display: inline;
-  font-size: 1rem;
+  font-size: .8rem;
   margin: 0;
 }
 

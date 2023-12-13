@@ -8,6 +8,15 @@ header {
 
 /* general page layout */
 
+.page-header {
+  padding: 2em 0 1em;
+  text-align: center;
+}
+
+.page-header h1 {
+  margin: 0 0 .1em 0;
+}
+
 .page {
   margin: 0 auto;
   max-width: 40rem;
