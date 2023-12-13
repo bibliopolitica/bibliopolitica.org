@@ -1,15 +1,33 @@
 /* top header and nav */
 
 header {
+  align-items: center;
   border-bottom: var(--border);
-  margin: 0 0 0 0;
+  display: flex;
   padding: 30px 20px;
+}
+
+header .site-title,
+header nav {
+  flex: 1 0 0;
+}
+
+header .site-title {
+  font-size: 2rem;
+  font-weight: 800;
+}
+header nav {
+  text-align: right;
+}
+
+header nav a {
+  margin: 0 0 0 .3em;
 }
 
 /* general page layout */
 
 .page-header {
-  padding: 2em 0 1em;
+  padding: 5em 0 1em;
   text-align: center;
 }
 
