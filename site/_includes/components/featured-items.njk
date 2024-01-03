@@ -1,9 +1,3 @@
----
-title: "Featured Items"
-description: "TBD"
-layout: "base"
----
-
 <div class="featured-items">
 
   <div class="featured-items-header">
@@ -18,7 +12,7 @@ layout: "base"
 
   <div class="gallery">
     {% for item in posts.slice(1, 3) %}
-    {% include "partials/wax-gallery-item.njk" %}
+    {% include "partials/item.njk" %}
     {% endfor %}
   </div>
 

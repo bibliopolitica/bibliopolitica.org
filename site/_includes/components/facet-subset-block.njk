@@ -1,0 +1,7 @@
+<div class="facet-subset-block">
+  <div class="gallery">
+    {% for item in posts.slice(0, 5) %}
+    {% include "partials/item.njk" %}
+    {% endfor %}
+  </div>
+</div>

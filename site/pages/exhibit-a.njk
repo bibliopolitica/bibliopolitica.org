@@ -4,43 +4,20 @@ description: "TBD"
 layout: "base"
 ---
 
-<div class="page-header">
-  <h1>Exhibit A: Page with embedded facet subsets</h1>
-  <div class="subhed">Published on Thursday, December 13, 2023</div>
-</div>
+<div class="container mx-auto p-10">
 
-<div class="page">
+{% include "components/page-header.njk" %}
 
 <p>Ut eleifend lacus at erat efficitur bibendum. Ut laoreet elit nec dolor molestie finibus. Vivamus justo risus, scelerisque nec dolor ut, pretium fringilla purus. Nam nisl erat, tristique ac libero vitae, bibendum pellentesque nulla. Praesent accumsan ut mauris ut euismod. Etiam mattis a justo eget blandit. Aliquam vitae magna eget nisi suscipit finibus id sit amet nulla.</p>
 <p>Nam velit leo, mattis ac dui non, vulputate porttitor sapien. Praesent in aliquet dui. Nulla facilisi. Maecenas nulla ex, facilisis non aliquet ac, ultrices eu sem. Sed vel aliquet urna. Mauris quis ex at lectus iaculis elementum id id massa. Integer luctus nulla vel tellus rutrum, ac pulvinar erat finibus. Aliquam erat volutpat. Pellentesque vel velit sit amet mauris dignissim feugiat.</p>
 <p>Nam velit leo, mattis ac dui non, vulputate porttitor sapien. Praesent in aliquet dui. Nulla facilisi. Maecenas nulla ex, facilisis non aliquet ac, ultrices eu sem. Sed vel aliquet urna. Mauris quis ex at lectus iaculis elementum id id massa. Integer luctus nulla vel tellus rutrum, ac pulvinar erat finibus. Aliquam erat volutpat. Pellentesque vel velit sit amet mauris dignissim feugiat.</p>
 
-<!-- facet-subset component -->
-
-<div class="facet-subset">
-  <div class="gallery">
-    {% for item in posts.slice(0, 4) %}
-    {% include "partials/wax-gallery-item.njk" %}
-    {% endfor %}
-  </div>
-</div>
-
-<!-- end facet-subset component -->
+{% include "components/facet-subset.njk" %}
 
 <p>Ut eleifend lacus at erat efficitur bibendum. Ut laoreet elit nec dolor molestie finibus. Vivamus justo risus, scelerisque nec dolor ut, pretium fringilla purus. Nam nisl erat, tristique ac libero vitae, bibendum pellentesque nulla. Praesent accumsan ut mauris ut euismod. Etiam mattis a justo eget blandit. Aliquam vitae magna eget nisi suscipit finibus id sit amet nulla.</p>
 <p>Ut eleifend lacus at erat efficitur bibendum. Ut laoreet elit nec dolor molestie finibus. Vivamus justo risus, scelerisque nec dolor ut, pretium fringilla purus. Nam nisl erat, tristique ac libero vitae, bibendum pellentesque nulla. Praesent accumsan ut mauris ut euismod. Etiam mattis a justo eget blandit. Aliquam vitae magna eget nisi suscipit finibus id sit amet nulla.</p>
 <p>Nam velit leo, mattis ac dui non, vulputate porttitor sapien. Praesent in aliquet dui. Nulla facilisi. Maecenas nulla ex, facilisis non aliquet ac, ultrices eu sem. Sed vel aliquet urna. Mauris quis ex at lectus iaculis elementum id id massa. Integer luctus nulla vel tellus rutrum, ac pulvinar erat finibus. Aliquam erat volutpat. Pellentesque vel velit sit amet mauris dignissim feugiat.</p>
 
-<!-- facet-subset-block component -->
-
-<div class="facet-subset-block">
-  <div class="gallery">
-    {% for item in posts.slice(0, 5) %}
-    {% include "partials/wax-gallery-item.njk" %}
-    {% endfor %}
-  </div>
-</div>
-
-<!-- end facet-subset-block component -->
+{% include "components/facet-subset-block.njk" %}
 
 </div>

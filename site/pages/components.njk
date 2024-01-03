@@ -4,62 +4,24 @@ description: "TBD"
 layout: "base"
 ---
 
-<div class="section-header">
-  <h2>Featured Items</h2>
-  <p>Can be used for site hero, stackable, 1-3 images</p>
-</div>
+<div class="container mx-auto p-6">
 
-<!-- featured-items component -->
+<!-- featured items component -->
 
-<div class="featured-items">
+<h2 class="text-4xl my-6 border-b">Featured Items</h2>
 
-  <div class="featured-items-header">
-    <h1>Featured Items Big Headline</h1>
-    <div class="subtitle">
-      Maybe an example of an optional subtitle
-    </div>
-    <p class="description">
-      Ut eleifend lacus at erat efficitur bibendum. Ut laoreet elit nec dolor molestie finibus. Vivamus justo risus, scelerisque nec dolor ut, pretium fringilla purus. Nam nisl erat, tristique ac libero vitae, bibendum pellentesque nulla. Praesent accumsan ut mauris ut euismod. Etiam mattis a justo eget blandit. Aliquam vitae magna eget nisi suscipit finibus id sit amet nulla.
-    </p>
-  </div>
-
-  <div class="gallery">
-    {% for item in posts.slice(1, 3) %}
-    {% include "partials/wax-gallery-item.njk" %}
-    {% endfor %}
-  </div>
-
-</div>
-
-<div class="section-header">
-  <h2>Facet Subset</h2>
-  <p>Inline image display, constrained by width of containing div, over 4 images creates carousel</p>
-</div>
+{% include "components/featured-items.njk" %}
 
 <!-- facet-subset component -->
 
-<div class="page"><!-- this div is just to constrain width for demo -->
+<h2 class="text-4xl my-6 border-b">Facet Subset</h2>
 
-<div class="facet-subset">
-  <div class="gallery">
-    {% for item in posts.slice(0, 4) %}
-    {% include "partials/wax-gallery-item.njk" %}
-    {% endfor %}
-  </div>
-</div>
+{% include "components/facet-subset.njk" %}
 
-</div>
-
-<div class="section-header">
-  <h2>Facet Subset Block</h2>
-  <p>Full width image display, over 5 images creates carousel</p>
-</div>
 <!-- facet-subset-block component -->
 
-<div class="facet-subset-block">
-  <div class="gallery">
-    {% for item in posts.slice(0, 5) %}
-    {% include "partials/wax-gallery-item.njk" %}
-    {% endfor %}
-  </div>
+<h2 class="text-4xl my-6 border-b">Facet Subset Block</h2>
+
+{% include "components/facet-subset-block.njk" %}
+
 </div>
