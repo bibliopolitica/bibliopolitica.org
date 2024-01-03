@@ -13,16 +13,6 @@
       {{ title }} - {{ site.title }}
     {% endif %}
   </title>
-  {%- set css -%}
-    {% include "css/variables.css" %}
-    {% include "css/base.css" %}
-    {% include "css/components.css" %}
-    {% include "css/layout.css" %}
-    {% include "css/typography.css" %}
-  {%- endset -%}
-  {# <style>
-    {{ css | cssmin | safe }}
-  </style> #}
   <link href="/css/output.css" rel="stylesheet">
   <link rel="icon" href="/favicon.png" type="image/png">
 </head>
