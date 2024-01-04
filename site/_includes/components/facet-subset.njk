@@ -1,19 +1,6 @@
-<div class="facet-subset">
-  <div class="carousel gap-x-10 my-14 items-baseline">
-    {% for item in posts.slice(0, 10) %}
-      <div class="carousel-item basis-1/5">
-          <a href="">
-            <img 
-              src="/images/item-{{ item.slug }}.jpg"
-              class="m"
-              alt=""
-            >
-            <div class="m-2 text-sm">
-              {{ item.title }}{{ item.title }}{{ item.title }}{{ item.title }}{{ item.title }}
-            </div>
-          </a>
-      </div>
-    {% endfor %}
-  </div>
+<div class="carousel my-10 items-baseline">
+  {% for item in posts.slice(0, 10) %}
+    {% include "partials/item.njk" %}
+  {% endfor %}
 </div>
 
