@@ -32,7 +32,19 @@ layout: "base"
   <main class="flex-auto p-4 px-10">
     <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-10 items-baseline">
       {% for item in posts %}
-      {% include "partials/item.njk" %}
+        <div class="">
+          <div class="">
+            <a href="">
+              <img 
+                src="/images/item-{{ item.slug }}.jpg"
+                alt=""
+              >
+            </a>
+          </div>
+          <div class="m-1 text-sm">
+            {{ item.title }}
+          </div>
+        </div>
       {% endfor %}
     </div>
   </main>
