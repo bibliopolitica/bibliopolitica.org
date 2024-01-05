@@ -7,9 +7,9 @@
     "start": "npm-run-all -p dev:*",
     "build": "run-s build:*",
     "dev:11ty": "eleventy --serve",
-    "dev:css": "tailwindcss -i site/css/tailwind.css -o dist/css/tailwind.css --watch --postcss",
+    "dev:css": "tailwindcss -i site/css/styles.css -o dist/css/styles.css --watch --postcss",
     "build:11ty": "eleventy",
-    "build:css": "tailwindcss -i site/css/tailwind.css -o dist/css/tailwind.css --postcss"
+    "build:css": "tailwindcss -i site/css/styles.css -o dist/css/styles.css --postcss"
   },
   "keywords": [],
   "author": "",
