@@ -4,14 +4,9 @@ permalink: "{{ page.fileSlug | slugify }}/index.html"
 
 {% include "partials/head.njk" %}
 
-{% include "partials/nav.njk" %}
+{% include "partials/header.njk" %}
 
-<div class="wrapper">
-
-{% if page.url == '/' or page.url == '/components/' %}
-{% else %}
-  {% include "partials/wax-header.njk" %}
-{% endif %}
+<div class="">
 
 {{ content | safe }}
 
