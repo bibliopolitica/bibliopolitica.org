@@ -1,5 +1,4 @@
 const cleancss = require('clean-css');
-const htmlmin = require('html-minifier');
 const moment = require('moment');
 const markdownIt = require("markdown-it");
 
@@ -10,20 +9,6 @@ module.exports = function(eleventyConfig) {
   // minify css filter
   eleventyConfig.addFilter('cssmin', function(code) {
     return new cleancss({}).minify(code).styles;
-  });
-
-  // minify html transform 
-  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
-    if( this.outputPath && this.outputPath.endsWith(".html") ) {
-      let minified = htmlmin.minify(content, {
-        useShortDoctype: true,
-        removeComments: true,
-        collapseWhitespace: true,
-        preserveLineBreaks: true
-      });
-      return minified;
-    }
-    return content;
   });
 
   // date format filters
