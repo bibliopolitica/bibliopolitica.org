@@ -1,19 +1,17 @@
-<div class="featured-items">
-
-  <div class="featured-items-header">
-    <h1>Featured Items Big Headline</h1>
-    <div class="subtitle">
-      Maybe an example of an optional subtitle
-    </div>
-    <p class="description">
-      Ut eleifend lacus at erat efficitur bibendum. Ut laoreet elit nec dolor molestie finibus. Vivamus justo risus, scelerisque nec dolor ut, pretium fringilla purus. Nam nisl erat, tristique ac libero vitae, bibendum pellentesque nulla. Praesent accumsan ut mauris ut euismod. Etiam mattis a justo eget blandit. Aliquam vitae magna eget nisi suscipit finibus id sit amet nulla.
-    </p>
-  </div>
-
-  <div class="gallery">
-    {% for item in posts.slice(1, 3) %}
-    {% include "partials/item.njk" %}
+<div class="hero p-10 bg-base-200">
+  <div class="hero-content flex-col gap-10 lg:flex-row-reverse">
+    {% for item in posts.slice(1, 2) %}
+      <a href="">
+        <img 
+          src="/images/item-{{ item.slug }}.jpg"
+          class="m"
+          alt=""
+        >
+      </a>
     {% endfor %}
+    <div>
+      <h1 class="text-5xl font-bold">Featured Items Big Headline</h1>
+      <p class="py-6">Ut eleifend lacus at erat efficitur bibendum. Ut laoreet elit nec dolor molestie finibus. Vivamus justo risus, scelerisque nec dolor ut, pretium fringilla purus. Nam nisl erat, tristique ac libero vitae, bibendum pellentesque nulla. Praesent accumsan ut mauris ut euismod. Etiam mattis a justo eget blandit. Aliquam vitae magna eget nisi suscipit finibus id sit amet nulla.</p>
+    </div>
   </div>
-
 </div>
