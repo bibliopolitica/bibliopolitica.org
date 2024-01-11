@@ -1,6 +1,6 @@
 <div class="carousel my-10 items-baseline not-prose">
-  {% for item in posts.slice(0, 10) %}
-    {% include "partials/item.njk" %}
+  {% for item in posts %}
+    {% include "partials/item.liquid" %}
   {% endfor %}
 </div>
 

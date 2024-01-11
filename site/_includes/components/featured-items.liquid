@@ -1,6 +1,7 @@
 <div class="hero p-10 bg-base-200">
   <div class="hero-content flex-col gap-10 lg:flex-row-reverse">
-    {% for item in posts.slice(1, 2) %}
+    {% assign featured = posts | limit: 2 %}
+    {% for item in featured %}
       <a href="">
         <img 
           src="/images/item-{{ item.slug }}.jpg"

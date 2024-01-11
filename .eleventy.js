@@ -39,7 +39,7 @@ module.exports = function(eleventyConfig) {
   });
 
   // layout aliases 
-  eleventyConfig.addLayoutAlias('base', 'layouts/base.njk');
+  eleventyConfig.addLayoutAlias('base', 'layouts/base.liquid');
 
   // passthrough copy
   eleventyConfig.addPassthroughCopy('site/assets/')
@@ -47,7 +47,7 @@ module.exports = function(eleventyConfig) {
   .addPassthroughCopy('favicon.png');
 
   return {
-    markdownTemplateEngine: "njk",
+    markdownTemplateEngine: "liquid",
     dir: {
       input: 'site',
       output: 'dist',
