@@ -30,41 +30,20 @@ layout: "base"
     </ul>
   </aside>
   <main class="flex-auto p-4 px-10">
-    <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-10 items-end">
-      {% for item in posts %}
+    <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-10 items-center">
+      {% for item in items %}
         <div>
           <a href="">
             <img 
-              src="/images/item-{{ item.slug }}.jpg"
+              src="{{ item.full_url }}"
               alt=""
             >
-            <div class="m-1 text-sm">
-              {{ item.title }}
+            <div class="m-1 lg:text-lg text-md font-semibold link">
+              {{ item.label }}
             </div>
           </a>
         </div>
       {% endfor %}
     </div>
   </main>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div>
