@@ -2,7 +2,11 @@
 module.exports = {
   content: ['./site/**/*.{html,liquid,md,js}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        serif: ["Alegreya", "serif"],
+      }
+    },
   },
   daisyui: {
     themes: ["light", "dark", "lemonade", "coffee", "retro"],
