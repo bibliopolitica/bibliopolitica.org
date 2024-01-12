@@ -1,12 +1,12 @@
 <div class="carousel-item py-10 px-5 basis-1/6">
   <a href="">
     <img 
-      src="/images/item-{{ item.slug }}.jpg"
+      src="{{ item.full_url }}"
       class=""
       alt=""
     >
-    <div class="my-2 text-sm">
-      {{ item.title }}
+    <div class="my-1 lg:text-lg text-md font-semibold link">
+      {{ item.label }}
     </div>
   </a>
 </div>

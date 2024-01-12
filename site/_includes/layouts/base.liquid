@@ -1,0 +1,15 @@
+---
+permalink: "{{ page.fileSlug | slugify }}/index.html"
+---
+
+{% include "partials/head.liquid" %}
+
+{% include "partials/header.liquid" %}
+
+<div class="">
+
+{{ content }}
+
+</div>
+
+{% include "partials/footer.liquid" %}
