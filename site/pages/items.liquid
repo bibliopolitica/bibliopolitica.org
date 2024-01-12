@@ -1,0 +1,85 @@
+---
+layout: base
+pagination:
+    data: items
+    size: 1
+    alias: item
+permalink: "/item/{{ item.id | slugify }}/"
+---
+<link rel="stylesheet" href="/assets/vendor/leaflet.css" />
+<link rel="stylesheet" href="/assets/vendor/leaflet-fullscreen.css" />
+<script src="/assets/vendor/leaflet.js"></script>
+<script src="/assets/vendor/leaflet-iiif.js"></script>
+<script src="/assets/vendor/leaflet-sleep.js"></script>
+<script src="/assets/vendor/leaflet-fullscreen.js"></script>
+
+<article id="item-content-area" class="container mx-auto px-6 py-20 max-w-3xl prose lg:prose-lg">
+  <h1>{{ item.label }}</h1>
+  <div id="map" class="mx-[calc(50%-50vw)] w-screen mb-20 z-0 h-96"></div>
+
+  <div class="grid grid-cols-3 gap-4">
+    <div><b>Label</b></div>
+    <div class="col-span-2">{{ item.label }}</div>
+
+    <div><b>Person or Creator</b></div>
+    <div class="col-span-2">Arce, José Antonio, 1948-2018</div>
+
+    <div><b>Dimensions</b></div>
+    <div class="col-span-2">8.5 x 11 inches</div>
+
+    <div><b>Language</b></div>
+    <div class="col-span-2">English</div>
+
+    <div><b>Date of production/publication</b></div>
+    <div class="col-span-2">approximately 1972-2001</div>
+
+    <div><b>Format</b></div>
+    <div class="col-span-2">
+      <a class="link link-primary">volume</a>;
+      <a class="link link-primary">integrating resource</a>;
+      <a class="link link-primary">typescript</a>
+    </div>
+    <div><b>IIIF</b></div>
+    <div class="col-span-2">
+      <a class="link" href="{{ item.manifest_url }}" target="_none">JSON Manifest</a>
+    </div>
+  </div>
+</article>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var manifestUrl = "{{ item.manifest_url }}";
+    var map;
+    var iiifLayers = {};
+
+    map = L.map('map', {
+      center: [0, 0],
+      sleep: true,
+      sleepNote: true,
+      fullscreenControl: true,
+      fullscreenControlOptions: {
+        position: 'topleft'
+      },
+      hoverToWake: false,
+      crs: L.CRS.Simple,
+      zoom: 0
+    });
+
+  fetch(manifestUrl)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      var tileSources = [];
+      for (var i = 0; i < data.sequences[0].canvases.length; i++) {
+        var val = data.sequences[0].canvases[i];
+        iiifLayers[val.label] = L.tileLayer.iiif(val.images[0].resource.service['@id'] + '/info.json');
+      }
+      L.control.layers(iiifLayers).addTo(map);
+      iiifLayers[Object.keys(iiifLayers)[0]].addTo(map);
+    })
+    .catch(function (error) {
+      console.error('Error fetching manifest:', error);
+    });
+  });
+</script>
