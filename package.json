@@ -28,6 +28,10 @@
   "dependencies": {
     "clean-css": "^5.2.4",
     "html-minifier": "^4.0.0",
+    "leaflet": "^1.9.4",
+    "leaflet-iiif": "^3.0.0",
+    "leaflet-sleep": "^0.5.2",
+    "leaflet.fullscreen": "^3.0.0",
     "moment": "^2.29.1"
   }
 }

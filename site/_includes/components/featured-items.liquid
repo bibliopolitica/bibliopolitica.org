@@ -2,7 +2,7 @@
   <div class="hero-content flex-col gap-10 lg:flex-row-reverse">
     {% assign featured = items | limit: 2 %}
     {% for item in featured %}
-      <a href="">
+      <a href="/item/{{ item.id }}/">
         <img 
           src="{{ item.full_url }}"
           class="m"
