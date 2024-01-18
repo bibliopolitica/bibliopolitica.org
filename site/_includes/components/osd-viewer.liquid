@@ -1,0 +1,33 @@
+<div id="map" class="w-100 mb-20 z-0 h-96 bg-base-200"></div>
+<script src="https://cdn.jsdelivr.net/npm/openseadragon@3.1/build/openseadragon/openseadragon.min.js"></script>
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    var manifestUrl = "{{ item.manifest_url }}";
+    fetch(manifestUrl)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
+      var tileSources = [];
+      data.sequences[0].canvases.forEach(function (val) {
+        tileSources.push(val.images[0].resource.service['@id'] + '/info.json');
+      });
+      console.log(tileSources);
+      var viewer = OpenSeadragon({
+        id: "map",
+        sequenceMode: true,
+        prefixUrl: "/assets/vendor/osd/icons/",
+        tileSources: tileSources,
+        placeholderFillStyle: "#FFFFFF",
+        showHomeControl: false
+      });
+      // viewer.innerTracker.scrollHandler = false;
+    })
+    .catch(error => {
+      console.error('Error fetching manifest:', error);
+    });
+  });
+</script>

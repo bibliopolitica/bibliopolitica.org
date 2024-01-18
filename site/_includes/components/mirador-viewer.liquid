@@ -1,0 +1,39 @@
+<script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+<div class="relative w-100">
+  <div id="map" class="w-100 mb-20 z-0 bg-base-200 max-h-[50vh] h-[30rem]"></div>
+</div>
+
+<script type="text/javascript">
+  var mirador = Mirador.viewer({
+    id: "map",
+    window: { 
+      allowClose: false,
+      allowFullscreen: true,
+      allowMaximize: false,
+      allowTopMenuButton: true, 
+      allowWindowSideBar: false,
+      defaultView: 'single',  // (e.g. single, book, gallery) 
+      hideWindowTitle: true,
+      panels: { 
+        info: false,
+        attribution: false,
+        canvas: false,
+        annotations: false,
+        search: false,
+        layers: false,
+      }
+    },
+    thumbnailNavigation: {
+      defaultPosition: 'off',
+      displaySettings: false
+    },
+    windows: [ 
+      {
+        manifestId: '{{ item.manifest_url }}'
+      }
+    ],
+    workspaceControlPanel: {
+      enabled: false
+    }
+  });
+</script>
