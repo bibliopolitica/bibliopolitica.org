@@ -39,10 +39,12 @@ module.exports = function(eleventyConfig) {
   });
 
   // layout aliases 
-  eleventyConfig.addLayoutAlias('base', 'layouts/base.liquid');
+  eleventyConfig.addLayoutAlias('base', 'layouts/base.html');
+  eleventyConfig.addLayoutAlias('page', 'layouts/page.html');
 
   // passthrough copy
   eleventyConfig.addPassthroughCopy('site/assets/')
+                .addPassthroughCopy('site/media/')
                 .addPassthroughCopy({
                   './node_modules/leaflet/dist/leaflet.js': '/assets/vendor/leaflet.js'
                 })

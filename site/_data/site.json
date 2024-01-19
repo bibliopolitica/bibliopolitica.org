@@ -1,5 +1,31 @@
 {
-  "title": "wax design ideas",
+  "title": "Bibliopolítica",
   "description": "TBD",
-  "url": ""
+  "url": "",
+  "menu": [
+    {
+      "label": "About the Project",
+      "link": "/about"
+    },
+    {
+      "label": "Exhibits",
+      "sub": [{
+        "label": "Exhibit A",
+        "link": "/exhibit-a"
+      }]
+    },
+    {
+      "label": "Browse the Collection",
+      "sub": [
+        {
+          "label": "Archival Items",
+          "link": "/browse/items"
+        },
+        {
+          "label": "Oral Histories",
+          "link": "/browse/oral-histories"
+        }
+      ]
+    }
+  ]
 }
