@@ -19,6 +19,7 @@
     "@tailwindcss/typography": "^0.5.10",
     "autoprefixer": "^10.4.16",
     "daisyui": "^4.5.0",
+    "markdown-it-anchor": "^8.6.7",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.33",
     "prettier": "^3.1.1",

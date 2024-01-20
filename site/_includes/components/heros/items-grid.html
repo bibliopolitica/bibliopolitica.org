@@ -1,5 +1,7 @@
-<div class="mx-[calc(50%-50vw)] p-12 my-14 flex flex-wrap items-center bg-accent not-prose">
-  {%- for item in items -%}
-    {% include "partials/item.html" %}
-  {%- endfor -%}
+
+
+<div class="hero bg-accent mx-[calc(50%-50vw)] w-screen space-x-4 my-14">
+  <div class="hero-content">
+    {% include "components/items/grid.html" %}
+  </div>
 </div>

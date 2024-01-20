@@ -3,3 +3,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.header-anchor {
+  opacity: 20%;
+  padding-left: 10px;
+  &:hover {
+    opacity: 80%;
+  }
+}

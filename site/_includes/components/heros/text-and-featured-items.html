@@ -1,21 +1,16 @@
 <div class="hero p-10 bg-base-200">
-  <div class="hero-content flex-col gap-10 lg:flex-row-reverse">
-    {% assign featured = items | limit: 2 %}
-    {%- for item in featured -%}
-      <a href="/item/{{ item.id }}/">
-        <img 
-          src="{{ item.full_url }}"
-          class="m"
-          alt=""
-        >
-        <div class="my-2 lg:text-lg text-md font-semibold link">
-          {{ item.label }}
-        </div>
-      </a>
-    {%- endfor -%}
-    <div>
+  <div class="hero-content flex flex-row">
+    <div class="container">
       <h2 class="text-5xl font-bold">A Digital History of the Chicano Studies Library</h2>
       <p class="py-6">Ut eleifend lacus at erat efficitur bibendum. Ut laoreet elit nec dolor molestie finibus. Vivamus justo risus, scelerisque nec dolor ut, pretium fringilla purus. Nam nisl erat, tristique ac libero vitae, bibendum pellentesque nulla. Praesent accumsan ut mauris ut euismod. Etiam mattis a justo eget blandit. Aliquam vitae magna eget nisi suscipit finibus id sit amet nulla.</p>
+    </div>
+    <div class="container flex flex-row justify-between">
+      {% assign featured = items | limit: 2 %}
+      {%- for item in featured -%}
+        <div class="max-w-72">
+          {% include "partials/item-card.html" %}
+        </div>
+      {%- endfor -%}
     </div>
   </div>
 </div>
