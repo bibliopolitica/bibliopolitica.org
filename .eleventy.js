@@ -1,48 +1,62 @@
-const cleancss = require('clean-css');
-const moment = require('moment');
-const markdownIt = require('markdown-it');
+const cleancss          = require('clean-css')
+const moment            = require('moment')
+const markdownIt        = require("markdown-it")
+const markdownItAnchor  = require("markdown-it-anchor")
 
-moment.locale('en');
+moment.locale('en')
 
 module.exports = function(eleventyConfig) {
   
   // minify css filter
   eleventyConfig.addFilter('cssmin', function(code) {
     return new cleancss({}).minify(code).styles;
-  });
+  })
 
   // date format filters
   eleventyConfig.addFilter('dateFormatMonth', date => {
     return moment(date).utc().format('MMMM YYYY');
-  });
+  })
 
   eleventyConfig.addFilter('dateFormatYear', date => {
     return moment(date).utc().format('YYYY');
-  });
+  })
 
   eleventyConfig.addFilter('dateFormat', date => {
     return moment(date).utc().format('LL');
-  });
+  })
 
-  // markdown
-  const md = new markdownIt({
-    html: true
-  });
+  const markdownItOptions = {
+    html: true,
+  }
 
-  eleventyConfig.addPairedShortcode('markdown', (content) => {
-    return md.render(content);
-  });
+  // Options for the `markdown-it-anchor` library
+  const markdownItAnchorOptions = {
+    permalink: markdownItAnchor.permalink.linkInsideHeader({
+      symbol: `#`,
+      class: 'not-prose header-anchor',
+      placement: 'after'
+    })
+  }
+
+  const markdownLib = markdownIt(markdownItOptions).use(
+    markdownItAnchor,
+    markdownItAnchorOptions
+  )
+
+  eleventyConfig.setLibrary("md", markdownLib)
 
   // limit filter
   eleventyConfig.addFilter('limit', function (arr, limit) {
     return arr.slice(0, limit);
-  });
+  })
 
   // layout aliases 
-  eleventyConfig.addLayoutAlias('base', 'layouts/base.liquid');
+  eleventyConfig.addLayoutAlias('base', 'layouts/base.html')
+  eleventyConfig.addLayoutAlias('page', 'layouts/page.html')
 
   // passthrough copy
   eleventyConfig.addPassthroughCopy('site/assets/')
+                .addPassthroughCopy('site/media/')
                 .addPassthroughCopy({
                   './node_modules/leaflet/dist/leaflet.js': '/assets/vendor/leaflet.js'
                 })
@@ -63,7 +77,7 @@ module.exports = function(eleventyConfig) {
                 })
                 .addPassthroughCopy({
                   './node_modules/leaflet.fullscreen/icon-fullscreen.svg': '/assets/vendor/icon-fullscreen.svg'
-                });  
+                })  
 
   return {
     markdownTemplateEngine: 'liquid',
@@ -71,5 +85,5 @@ module.exports = function(eleventyConfig) {
       input: 'site',
       output: 'dist',
     },
-  };
-};
+  }
+}

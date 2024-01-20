@@ -1,7 +1,8 @@
 ---
-title: "Dashboard"
+title: "Archival Items"
 description: "TBD"
 layout: "base"
+permalink: "/browse/items"
 ---
 
 <div class="flex mx-4 p-4 border border-solid border-gray-300">
@@ -31,7 +32,7 @@ layout: "base"
   </aside>
   <main class="flex-auto p-4 px-10">
     <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-10 items-center">
-      {% for item in items %}
+      {%- for item in items -%}
         <div>
           <a href="/item/{{ item.id }}/">
             <img 
@@ -43,7 +44,7 @@ layout: "base"
             </div>
           </a>
         </div>
-      {% endfor %}
+      {%- endfor -%}
     </div>
   </main>
 </div>

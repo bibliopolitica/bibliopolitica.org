@@ -1,0 +1,14 @@
+---
+layout: base
+---
+
+<article class="container mx-auto px-6 py-20 max-w-3xl prose lg:prose-lg">
+  <h1 class="">{{ title }}</h1>
+  {% if subtitle %}
+  <div class="-mt-8 text-xl font-semibold text-gray-500">{{ subtitle }}</div>
+  {% endif %}
+  {% if author %}
+  <div class="mt-4 text-gray-500">By {{ author }}</div>
+  {% endif %}
+  {{ content }}
+</article>
