@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en" id="top" class="scroll-pt-20 scroll-smooth" data-theme="lemonade">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width, viewport-fit=cover">
+  <meta name="description" content="TBD">
+  <meta name="robots" content="noindex">
+  <title>
+    
+      Chicano Database Press release with Logo - Bibliopolítica
+    
+  </title>
+  <link href="/css/styles.css" rel="stylesheet">
+  <link rel="icon" href="/assets/favicon.png" type="image/png">
+  <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js" defer></script>
+</head>
+  <body class="flex flex-col min-h-screen">
+    <div class="sticky top-0 z-50 navbar bg-base-100">
+  <div class="navbar-start w-2/5">
+    <a class="btn btn-ghost text-2xl font-serif" href="/"><h1>Bibliopolítica</h1></a>
+  </div>
+  <div class="navbar-end w-3/5 hidden md:flex mr-10">
+    <ul class="menu menu-horizontal px-1">
+    
+      <li>
+        
+          <a href="/about">About the Project</a>
+        
+      </li>
+    
+      <li>
+        
+          <details>
+            <summary>
+              Exhibits
+            </summary>
+            <ul class="p-2 bg-base-100 rounded-t-none">
+              
+              <li><a class="whitespace-nowrap"	href="/exhibit-a">Exhibit A</a></li>
+              
+            </ul>
+          </details>
+        
+      </li>
+    
+      <li>
+        
+          <details>
+            <summary>
+              Browse the Collection
+            </summary>
+            <ul class="p-2 bg-base-100 rounded-t-none">
+              
+              <li><a class="whitespace-nowrap"	href="/browse/items">Archival Items</a></li>
+              
+              <li><a class="whitespace-nowrap"	href="/browse/oral-histories">Oral Histories</a></li>
+              
+            </ul>
+          </details>
+        
+      </li>
+    
+      <li>
+        <details>
+          <summary>
+            Color Palette
+          </summary>
+          <ul class="p-2 bg-base-100 rounded-t-none">
+            <li><button data-set-theme="light">Light</button></li>
+            <li><button data-set-theme="dark">Dark</button></li>
+            <li><button data-set-theme="lemonade">Lemonade</button></li>
+            <li><button data-set-theme="coffee">Coffee</button></li>
+            <li><button data-set-theme="retro">Retro</button></li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+    <main class="flex-1">
+      <article id="item-content-area" class="container mx-auto px-6 py-20 max-w-3xl prose lg:prose-lg">
+  <h1>Chicano Database Press release with Logo</h1>
+  <div class="flex mb-10 w-full justify-between">
+    <a href="/item/csl00054/" class="link basis-1/3 text-xs">Previous:<br>Chicano Thesaurus for indexing materials</a>
+    <a href="/item/csl00056/" class="link basis-1/3 text-xs text-right">Next:<br>Proposal for the Establishment of a National Clearinghouse for Chicano Serials </a>
+  </div>
+  <div id="map" class="w-100 mb-4 z-0 h-96 bg-base-200"></div>
+<script src="https://cdn.jsdelivr.net/npm/openseadragon@3.1/build/openseadragon/openseadragon.min.js"></script>
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    var manifestUrl = "https://aperitiiif-presentation-api-store.s3.us-east-1.amazonaws.com/bibliopolitica/CSL00055/manifest.json";
+    fetch(manifestUrl)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
+      var tileSources = [];
+      data.sequences[0].canvases.forEach(function (val) {
+        tileSources.push(val.images[0].resource.service['@id'] + '/info.json');
+      });
+      console.log(tileSources);
+      var viewer = OpenSeadragon({
+        id: "map",
+        sequenceMode: true,
+        preload: true,
+        prefixUrl: "/assets/vendor/osd/icons/",
+        tileSources: tileSources,
+        placeholderFillStyle: "#FFFFFF",
+        showHomeControl: false
+      });
+      // viewer.innerTracker.scrollHandler = false;
+    })
+    .catch(error => {
+      console.error('Error fetching manifest:', error);
+    });
+  });
+</script>
+  <div class="flex flex-wrap mt-10">
+    <div class="basis-1/3 py-2"><b>Label</b></div>
+    <div class="basis-2/3 py-2">Chicano Database Press release with Logo</div>
+    <div class="basis-1/3 py-2"><b>Person or Creator</b></div>
+    <div class="basis-2/3 py-2">Arce, José Antonio, 1948-2018</div>
+    <div class="basis-1/3 py-2"><b>Dimensions</b></div>
+    <div class="basis-2/3 py-2">8.5 x 11 inches</div>
+    <div class="basis-1/3 py-2"><b>Language</b></div>
+    <div class="basis-2/3 py-2">English</div>
+    <div class="basis-1/3 py-2"><b>Date of Production</b></div>
+    <div class="basis-2/3 py-2">Approximately 1972-2001</div>
+    <div class="basis-1/3 py-2"><b>Format</b></div>
+    <div class="basis-2/3 py-2">
+      <a class="link link-primary">volume</a>;
+      <a class="link link-primary">integrating resource</a>;
+      <a class="link link-primary">typescript</a>
+    </div>
+    <div class="basis-1/3 py-2"><b>IIIF Resource</b></div>
+    <div class="basis-2/3 py-2">
+      <a class="link" href="https://aperitiiif-presentation-api-store.s3.us-east-1.amazonaws.com/bibliopolitica/CSL00055/manifest.json" target="_none">JSON Manifest</a>
+    </div>
+  </div>
+</article>
+
+    </main>
+    <footer class="footer footer-center  p-4 bg-base-300 text-base-content">
+  <aside>
+    <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+  </aside>
+</footer>
+  </body>
+</html>
