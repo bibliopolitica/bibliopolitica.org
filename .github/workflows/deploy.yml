@@ -8,13 +8,17 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - name: checkout
         uses: actions/checkout@v4
       - name: setup node
         uses: actions/setup-node@v4
-        # with:
-          # node-version: 'v18.14.0'
+        with:
+          node-version: 'v18.14.0'
       - name: install
         run: npm install
       - name: build
