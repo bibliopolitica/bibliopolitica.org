@@ -4,7 +4,7 @@ pagination:
     data: items
     size: 1
     alias: item
-permalink: "{{ '/item/' | url }}{{ item.id | slugify }}.html"
+permalink: "/item/{{ item.id }}.html"
 ---
 
 <article id="item-content-area" class="container mx-auto px-6 py-20 max-w-3xl prose lg:prose-lg">
