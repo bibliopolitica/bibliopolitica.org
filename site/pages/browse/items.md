@@ -34,9 +34,9 @@ permalink: "/browse/items/index.html"
     <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-10 items-center">
       {%- for item in items -%}
         <div>
-          <a href="/item/{{ item.id }}/">
+          <a href="{{ '/item/' | append: item.id | url }}/">
             <img 
-              src="{{ item.full_url }}"
+              src="{{ item.full_url | url }}"
               alt=""
             >
             <div class="m-1 lg:text-lg text-md font-semibold link">
