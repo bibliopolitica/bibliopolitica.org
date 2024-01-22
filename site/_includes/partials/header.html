@@ -1,6 +1,6 @@
 <div class="sticky top-0 z-50 navbar bg-base-100">
   <div class="navbar-start w-2/5">
-    <a class="btn btn-ghost text-2xl font-serif" href="/"><h1>{{ site.title }}</h1></a>
+    <a class="btn btn-ghost text-2xl font-serif" href="{{ '/' | url }}"><h1>{{ site.title }}</h1></a>
   </div>
   <div class="navbar-end w-3/5 hidden md:flex mr-10">
     <ul class="menu menu-horizontal px-1">
@@ -13,12 +13,12 @@
             </summary>
             <ul class="p-2 bg-base-100 rounded-t-none">
               {% for child in item.sub %}
-              <li><a class="whitespace-nowrap"	href="{{ child.link }}">{{ child.label }}</a></li>
+              <li><a class="whitespace-nowrap"	href="{{ child.link | url }}">{{ child.label }}</a></li>
               {% endfor %}
             </ul>
           </details>
         {% else %}
-          <a href="{{ item.link }}">{{ item.label }}</a>
+          <a href="{{ item.link | url }}">{{ item.label }}</a>
         {% endif %}
       </li>
     {% endfor %}

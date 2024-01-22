@@ -1,4 +1,4 @@
-<a href="/item/{{ item.id }}/">
+<a href="{{ '/item/'| append: item.id | url }}">
   <div class="not-prose">
     <img src="{{ item.full_url }}" class="" alt="">
     <div class="my-4 lg:text-lg text-md font-semibold link">

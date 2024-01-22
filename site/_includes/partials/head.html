@@ -11,7 +11,7 @@
       {{ title | default: item.label }} - {{ site.title }}
     {% endif %}
   </title>
-  <link href="/css/styles.css" rel="stylesheet">
-  <link rel="icon" href="/assets/favicon.png" type="image/png">
+  <link href="{{ '/css/styles.css' | url }}" rel="stylesheet">
+  <link rel="icon" href="{{ '/assets/favicon.png' | url }}" type="image/png">
   <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js" defer></script>
 </head>

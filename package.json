@@ -8,7 +8,7 @@
     "build": "run-s build:*",
     "dev:11ty": "eleventy --serve",
     "dev:css": "tailwindcss -i site/css/styles.css -o dist/css/styles.css --watch --postcss",
-    "build:11ty": "eleventy",
+    "build:11ty": "env NODE_ENV=production eleventy --pathprefix 'bibliopolitica'",
     "build:css": "tailwindcss -i site/css/styles.css -o dist/css/styles.css --postcss"
   },
   "keywords": [],
