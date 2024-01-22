@@ -2,7 +2,7 @@
 title: "Archival Items"
 description: "TBD"
 layout: "base"
-permalink: "/browse/items"
+permalink: "/browse/items/index.html"
 ---
 
 <div class="flex mx-4 p-4 border border-solid border-gray-300">
