@@ -90,6 +90,14 @@
   <div id="map" class="w-100 mb-4 z-0 h-96 bg-base-200"></div>
 <script src="https://cdn.jsdelivr.net/npm/openseadragon@3.1/build/openseadragon/openseadragon.min.js"></script>
 <script type="text/javascript">
+  function fullscreenchanged(event) {
+    if (window.viewer.isFullScreen()) {
+      window.viewer.element.classList.remove("h-96");
+    } else {
+      window.viewer.element.classList.add("h-96");
+    }
+  }
+  document.addEventListener("fullscreenchange", fullscreenchanged);
   document.addEventListener("DOMContentLoaded", function () {
     var manifestUrl = "https://aperitiiif-presentation-api-store.s3.us-east-1.amazonaws.com/bibliopolitica/CSL00067/manifest.json";
     fetch(manifestUrl)
@@ -104,8 +112,7 @@
       data.sequences[0].canvases.forEach(function (val) {
         tileSources.push(val.images[0].resource.service['@id'] + '/info.json');
       });
-      console.log(tileSources);
-      var viewer = OpenSeadragon({
+      window.viewer = OpenSeadragon({
         id: "map",
         sequenceMode: true,
         preload: true,
