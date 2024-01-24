@@ -1,8 +1,6 @@
-<a href="{{ '/item/'| append: item.id | url }}">
-  <div class="not-prose">
-    <img src="{{ item.full_url }}" class="" alt="">
-    <div class="my-4 lg:text-lg text-md text-primary-content font-semibold link">
-      {{ item.label }}
-    </div>
+<a class="not-prose" href="{{ '/item/'| append: item.id | url }}">
+  <img src="{{ item.full_url }}" class="" alt="">
+  <div class="my-4">
+    {{ item.label }}
   </div>
 </a>
