@@ -9,10 +9,16 @@
     },
     {
       "label": "Exhibits",
-      "sub": [{
-        "label": "Exhibit A",
-        "link": "/exhibit-a"
-      }]
+      "sub": [
+        {
+          "label": "Exhibit with Image",
+          "link": "/exhibits/exhibit-a"
+        },
+        {
+          "label": "Exhibit with Timeline",
+          "link": "/exhibits/exhibit-b"
+        }
+      ]
     },
     {
       "label": "Browse the Collection",
