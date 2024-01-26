@@ -10,7 +10,26 @@ module.exports = {
     },
   },
   daisyui: {
-    themes: ["light", "dark", "lemonade", "coffee", "retro"],
+    themes: [
+      {
+        light: {
+          ...require("daisyui/src/theming/themes")["light"],
+          primary: "#1a237e",
+          secondary: "#007706",
+          accent: "#1e88e5"
+        },
+      }, 
+      {
+        dark: {
+          ...require("daisyui/src/theming/themes")["dark"],
+          primary: "#1a237e",
+          secondary: "#007706",
+          accent: "#1e88e5"
+        },
+      },
+      "lemonade", 
+      "coffee", 
+      "retro"],
   },
   plugins: [
     require('daisyui'),
