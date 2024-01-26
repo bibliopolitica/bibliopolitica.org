@@ -37,7 +37,9 @@
             </summary>
             <ul class="p-2 bg-base-100 rounded-t-none">
               
-              <li><a class="whitespace-nowrap"	href="/bibliopolitica/exhibit-a">Exhibit A</a></li>
+              <li><a class="whitespace-nowrap"	href="/bibliopolitica/exhibits/exhibit-a">Exhibit with Image</a></li>
+              
+              <li><a class="whitespace-nowrap"	href="/bibliopolitica/exhibits/exhibit-b">Exhibit with Timeline</a></li>
               
             </ul>
           </details>
@@ -85,7 +87,7 @@
 <article class="container mx-auto px-6 py-20 max-w-3xl prose lg:prose-lg">
   <h1 class="">Exhibit A</h1>
   
-  <div class="-mt-8 text-xl font-semibold text-gray-500">A Sample Exhibit with a Reasonaby Long Subtitle and a Subset of Items</div>
+  <div class="-mt-8 text-xl font-semibold text-gray-500">Sample Exhibit with a Standalone Image and a Carousel of Items</div>
   
   
   <div class="mt-4 text-gray-500">By Deebo Samuel</div>
@@ -98,9 +100,21 @@
 <p>Nam velit leo, mattis ac dui non, vulputate porttitor sapien. Praesent in aliquet dui. Nulla facilisi. Maecenas nulla ex, facilisis non aliquet ac, ultrices eu sem. Sed vel aliquet urna. Mauris quis ex at lectus iaculis elementum id id massa. Integer luctus nulla vel tellus rutrum, ac pulvinar erat finibus. Aliquam erat volutpat. Pellentesque vel velit sit amet mauris dignissim feugiat.</p>
 <h2 id="section-header" tabindex="-1">Section header <a class="not-prose header-anchor" href="#section-header">#</a></h2>
 <p>Nam velit leo, mattis ac dui non, vulputate porttitor sapien. Praesent in aliquet dui. Nulla facilisi. Maecenas nulla ex, facilisis non aliquet ac, ultrices eu sem. Sed vel aliquet urna. Mauris quis ex at lectus iaculis elementum id id massa. Integer luctus nulla vel tellus rutrum, ac pulvinar erat finibus. Aliquam erat volutpat. Pellentesque vel velit sit amet mauris dignissim feugiat.</p>
-<div class="hero bg-primary mx-[calc(50%-50vw)] w-screen space-x-4 my-14">
-  <div class="hero-content text-center w-full not-prose">
-    <div class="carousel items-center"><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+<div class="bg-primary mx-[calc(50%-50vw)] w-screen space-x-4 my-14">
+  <div class="text-center w-full not-prose">
+    <script src="/bibliopolitica/assets/vendor/siema.min.js"></script>
+<div class="container mx-auto pt-10">
+  <div class="flex align-center justify-between my-8">
+    <div class="text-left prose">
+      <div class="text-3xl font-bold">Test Carousel w/ Archival Items</div>
+      <p>I'm some additional info if needed.</p>
+    </div>
+    <div class="text-right">
+      <button class="btn btn-sm hover:btn-outline btn-outline prev">Previous</button>
+      <button class="btn btn-sm hover:btn-outline btn-outline next">Next</button>
+    </div>
+  </div>
+  <div class="siema"><div class="px-5">
       <a href="/bibliopolitica/item/CSL00001">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00001_CSL00001_001/full/800,/0/default.jpg" class="" alt="">
@@ -109,7 +123,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00002">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00002_CSL00002_001/full/800,/0/default.jpg" class="" alt="">
@@ -118,7 +132,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00003">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00003_CSL00003_001/full/800,/0/default.jpg" class="" alt="">
@@ -127,7 +141,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00004">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00004_CSL00004_001/full/800,/0/default.jpg" class="" alt="">
@@ -136,7 +150,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00005">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00005_CSL00005_001/full/800,/0/default.jpg" class="" alt="">
@@ -145,7 +159,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00006">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00006_CSL00006_001/full/800,/0/default.jpg" class="" alt="">
@@ -154,7 +168,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00007">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00007_CSL00007_001/full/800,/0/default.jpg" class="" alt="">
@@ -163,7 +177,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00008">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00008_CSL00008_001/full/800,/0/default.jpg" class="" alt="">
@@ -172,7 +186,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00009">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00009_CSL00009_001/full/800,/0/default.jpg" class="" alt="">
@@ -181,7 +195,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00010">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00010_CSL00010_001/full/800,/0/default.jpg" class="" alt="">
@@ -190,7 +204,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00011">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00011_CSL00011_001/full/800,/0/default.jpg" class="" alt="">
@@ -199,7 +213,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00012">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00012_CSL00012_001/full/800,/0/default.jpg" class="" alt="">
@@ -208,7 +222,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00013">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00013_CSL00013_001/full/800,/0/default.jpg" class="" alt="">
@@ -217,7 +231,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00014">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00014_CSL00014_001/full/800,/0/default.jpg" class="" alt="">
@@ -226,7 +240,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00015">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00015_CSL00015_001/full/800,/0/default.jpg" class="" alt="">
@@ -235,7 +249,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00016">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00016_CSL00016_001/full/800,/0/default.jpg" class="" alt="">
@@ -244,7 +258,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00017">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00017_CSL00017_001/full/800,/0/default.jpg" class="" alt="">
@@ -253,7 +267,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00018">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00018_CSL00018_001/full/800,/0/default.jpg" class="" alt="">
@@ -262,7 +276,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00019">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00019_CSL00019_001/full/800,/0/default.jpg" class="" alt="">
@@ -271,7 +285,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00020">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00020_CSL00020_001/full/800,/0/default.jpg" class="" alt="">
@@ -280,7 +294,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00021">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00021_CSL00021_001/full/800,/0/default.jpg" class="" alt="">
@@ -289,7 +303,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00022">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00022_CSL00022_001/full/800,/0/default.jpg" class="" alt="">
@@ -298,7 +312,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00023">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00023_CSL00023_001/full/800,/0/default.jpg" class="" alt="">
@@ -307,7 +321,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00024">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00024_CSL00024_001/full/800,/0/default.jpg" class="" alt="">
@@ -316,7 +330,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00025">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00025_CSL00025_001/full/800,/0/default.jpg" class="" alt="">
@@ -325,7 +339,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00026">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00026_CSL00026_001/full/800,/0/default.jpg" class="" alt="">
@@ -334,7 +348,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00027">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00027_CSL00027_001/full/800,/0/default.jpg" class="" alt="">
@@ -343,7 +357,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00028">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00028_CSL00028_001/full/800,/0/default.jpg" class="" alt="">
@@ -352,7 +366,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00029">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00029_CSL00029_001/full/800,/0/default.jpg" class="" alt="">
@@ -361,7 +375,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00030">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00030_CSL00030_001/full/800,/0/default.jpg" class="" alt="">
@@ -370,7 +384,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00031">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00031_CSL00031_001/full/800,/0/default.jpg" class="" alt="">
@@ -379,7 +393,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00032">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00032_CSL00032_001/full/800,/0/default.jpg" class="" alt="">
@@ -388,7 +402,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00033">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00033_CSL00033_001/full/800,/0/default.jpg" class="" alt="">
@@ -397,7 +411,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00034">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00034_CSL00034_001/full/800,/0/default.jpg" class="" alt="">
@@ -406,7 +420,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00035">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00035_CSL00035_001/full/800,/0/default.jpg" class="" alt="">
@@ -415,7 +429,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00036">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00036_CSL00036_001/full/800,/0/default.jpg" class="" alt="">
@@ -424,7 +438,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00037">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00037_CSL00037_001/full/800,/0/default.jpg" class="" alt="">
@@ -433,7 +447,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00038">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00038_CSL00038_001/full/800,/0/default.jpg" class="" alt="">
@@ -442,7 +456,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00039">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00039_CSL00039_001/full/800,/0/default.jpg" class="" alt="">
@@ -451,7 +465,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00040">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00040_CSL00040_001/full/800,/0/default.jpg" class="" alt="">
@@ -460,7 +474,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00041">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00041_CSL00041_001/full/800,/0/default.jpg" class="" alt="">
@@ -469,7 +483,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00042">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00042_CSL00042_001/full/800,/0/default.jpg" class="" alt="">
@@ -478,7 +492,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00043">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00043_CSL00043_001/full/800,/0/default.jpg" class="" alt="">
@@ -487,7 +501,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00044">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00044_CSL00044_001/full/800,/0/default.jpg" class="" alt="">
@@ -496,7 +510,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00045">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00045_CSL00045_001/full/800,/0/default.jpg" class="" alt="">
@@ -505,7 +519,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00046">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00046_CSL00046_001/full/800,/0/default.jpg" class="" alt="">
@@ -514,7 +528,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00047">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00047_CSL00047_001/full/800,/0/default.jpg" class="" alt="">
@@ -523,7 +537,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00048">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00048_CSL00048_001/full/800,/0/default.jpg" class="" alt="">
@@ -532,7 +546,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00049">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00049_CSL00049_001/full/800,/0/default.jpg" class="" alt="">
@@ -541,7 +555,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00050">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00050_CSL00050_001/full/800,/0/default.jpg" class="" alt="">
@@ -550,7 +564,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00051">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00051_CSL00051_001/full/800,/0/default.jpg" class="" alt="">
@@ -559,7 +573,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00052">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00052_CSL00052_001/full/800,/0/default.jpg" class="" alt="">
@@ -568,7 +582,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00053">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00053_CSL00053_001/full/800,/0/default.jpg" class="" alt="">
@@ -577,7 +591,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00054">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00054_CSL00054_001/full/800,/0/default.jpg" class="" alt="">
@@ -586,7 +600,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00055">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00055_CSL00055_001/full/800,/0/default.jpg" class="" alt="">
@@ -595,7 +609,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00056">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00056_CSL00056_001/full/800,/0/default.jpg" class="" alt="">
@@ -604,7 +618,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00057">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00057_CSL00057_001/full/800,/0/default.jpg" class="" alt="">
@@ -613,7 +627,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00058">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00058_CSL00058_001/full/800,/0/default.jpg" class="" alt="">
@@ -622,7 +636,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00059">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00059_CSL00059_001/full/800,/0/default.jpg" class="" alt="">
@@ -631,7 +645,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00060">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00060_CSL00060_001/full/800,/0/default.jpg" class="" alt="">
@@ -640,7 +654,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00061">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00061_CSL00061_001/full/800,/0/default.jpg" class="" alt="">
@@ -649,7 +663,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00062">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00062_CSL00062_001/full/800,/0/default.jpg" class="" alt="">
@@ -658,7 +672,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00063">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00063_CSL00063_001/full/800,/0/default.jpg" class="" alt="">
@@ -667,7 +681,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00064">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00064_CSL00064_001/full/800,/0/default.jpg" class="" alt="">
@@ -676,7 +690,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00065">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00065_CSL00065_001/full/800,/0/default.jpg" class="" alt="">
@@ -685,7 +699,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00066">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00066_CSL00066_001/full/800,/0/default.jpg" class="" alt="">
@@ -694,7 +708,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00067">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00067_CSL00067_001/full/800,/0/default.jpg" class="" alt="">
@@ -703,7 +717,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00068">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00068_CSL00068_001/full/800,/0/default.jpg" class="" alt="">
@@ -712,7 +726,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00069">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00069_CSL00069_001/full/800,/0/default.jpg" class="" alt="">
@@ -721,7 +735,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00070">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00070_CSL00070_001/full/800,/0/default.jpg" class="" alt="">
@@ -730,7 +744,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00071">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00071_CSL00071_001/full/800,/0/default.jpg" class="" alt="">
@@ -739,7 +753,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00072">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00072_CSL00072_001/full/800,/0/default.jpg" class="" alt="">
@@ -748,7 +762,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00073">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00073_CSL00073_001/full/800,/0/default.jpg" class="" alt="">
@@ -757,7 +771,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00074">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00074_CSL00074_001/full/800,/0/default.jpg" class="" alt="">
@@ -766,7 +780,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00075">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00075_CSL00075_001/full/800,/0/default.jpg" class="" alt="">
@@ -775,7 +789,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00076">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00076_CSL00076_001/full/800,/0/default.jpg" class="" alt="">
@@ -784,7 +798,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00077">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00077_CSL00077_001/full/800,/0/default.jpg" class="" alt="">
@@ -793,7 +807,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00078">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00078_CSL00078_001/full/800,/0/default.jpg" class="" alt="">
@@ -802,7 +816,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00079">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00079_CSL00079_001/full/800,/0/default.jpg" class="" alt="">
@@ -811,7 +825,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00080">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00080_CSL00080_001/full/800,/0/default.jpg" class="" alt="">
@@ -820,7 +834,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00081">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00081_CSL00081_001/full/800,/0/default.jpg" class="" alt="">
@@ -829,7 +843,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00082">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00082_CSL00082_001/full/800,/0/default.jpg" class="" alt="">
@@ -838,7 +852,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00083">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00083_CSL00083_001/full/800,/0/default.jpg" class="" alt="">
@@ -847,7 +861,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00084">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00084_CSL00084_001/full/800,/0/default.jpg" class="" alt="">
@@ -856,7 +870,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00085">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00085_CSL00085_001/full/800,/0/default.jpg" class="" alt="">
@@ -865,7 +879,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00086">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00086_CSL00086_001/full/800,/0/default.jpg" class="" alt="">
@@ -874,7 +888,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00087">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00087_CSL00087_001/full/800,/0/default.jpg" class="" alt="">
@@ -883,7 +897,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00088">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00088_CSL00088_001/full/800,/0/default.jpg" class="" alt="">
@@ -892,7 +906,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00089">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00089_CSL00089_001/full/800,/0/default.jpg" class="" alt="">
@@ -901,7 +915,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00090">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00090_CSL00090_001/full/800,/0/default.jpg" class="" alt="">
@@ -910,7 +924,7 @@
     </div>
   </div>
 </a>
-    </div><div class="carousel-item py-10 px-5 lg:basis-1/6 basis-1/5">
+    </div><div class="px-5">
       <a href="/bibliopolitica/item/CSL00091">
   <div class="not-prose">
     <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00091_CSL00091_001/full/800,/0/default.jpg" class="" alt="">
@@ -920,6 +934,26 @@
   </div>
 </a>
     </div></div>
+</div>
+<script>
+  var siema = new Siema({
+    selector: '.siema',
+    perPage: {
+      200: 2,
+      500: 4,
+      800: 5, // 2 items for viewport wider than 800px
+      1240: 6 // 3 items for viewport wider than 1240px
+    },
+    duration: 200,
+    easing: 'ease-in',
+    draggable: true,
+    multipleDrag: true,
+    threshold: 20,
+    loop: true,
+  });
+  document.querySelector('.prev').addEventListener('click', () => siema.prev());
+  document.querySelector('.next').addEventListener('click', () => siema.next());
+</script>
   </div>
 </div>
 <p>Ut eleifend lacus at erat efficitur bibendum. Ut laoreet elit nec dolor molestie finibus. Vivamus justo risus, scelerisque nec dolor ut, pretium fringilla purus. Nam nisl erat, tristique ac libero vitae, bibendum pellentesque nulla. Praesent accumsan ut mauris ut euismod. Etiam mattis a justo eget blandit. Aliquam vitae magna eget nisi suscipit finibus id sit amet nulla.</p>
