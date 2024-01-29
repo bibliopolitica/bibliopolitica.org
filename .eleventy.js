@@ -50,6 +50,11 @@ module.exports = function(eleventyConfig) {
     return arr.slice(0, limit);
   })
 
+  // inspect objects as JSON
+  eleventyConfig.addFilter('jsonify', (data) => {
+    return JSON.stringify(data, null, "\t")
+  })    
+
   // layout aliases 
   eleventyConfig.addLayoutAlias('base', 'layouts/base.html')
   eleventyConfig.addLayoutAlias('page', 'layouts/page.html')
