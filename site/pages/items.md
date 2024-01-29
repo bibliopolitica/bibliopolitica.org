@@ -10,8 +10,8 @@ permalink: "/item/{{ item.id }}.html"
 <article id="item-content-area" class="container mx-auto px-6 py-20 max-w-3xl prose lg:prose-lg">
   <h1>{{ item.label }}</h1>
   <div class="flex mb-10 w-full justify-between">
-    <a href="{{ pagination.href.previous }}" class="link basis-1/3 text-xs">Previous:<br>{{ pagination.page.previous.label }}</a>
-    <a href="{{ pagination.href.next }}" class="link basis-1/3 text-xs text-right">Next:<br>{{ pagination.page.next.label}}</a>
+    <a href="{{ pagination.href.previous | url }}" class="link basis-1/3 text-xs">Previous:<br>{{ pagination.page.previous.label }}</a>
+    <a href="{{ pagination.href.next | url }}" class="link basis-1/3 text-xs text-right">Next:<br>{{ pagination.page.next.label}}</a>
   </div>
 
   {% include "components/viewers/osd-iiif.html" %}
