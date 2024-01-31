@@ -1,0 +1,8 @@
+<a class="card w-96 bg-base-100 shadow-xl max-h-96" href="{{ '/item/'| append: item.id | url }}">
+  <figure class="">
+    <img src="{{ item.full_url }}" alt="" class="" />
+  </figure>
+  <div class="card-body items-center text-center">
+    <h2 class="card-title text-gray-400">{{ item.label }}</h2>
+  </div>
+</a>
