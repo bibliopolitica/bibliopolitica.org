@@ -4221,6 +4221,16 @@ html{
   width: 100% !important;
 }
 
+.hover\:bg-secondary-content:hover{
+  --tw-bg-opacity: 1 !important;
+  background-color: var(--fallback-sc,oklch(var(--sc)/var(--tw-bg-opacity))) !important;
+}
+
+.hover\:text-accent:hover{
+  --tw-text-opacity: 1 !important;
+  color: var(--fallback-a,oklch(var(--a)/var(--tw-text-opacity))) !important;
+}
+
 .hover\:backdrop-brightness-90:hover{
   --tw-backdrop-brightness: brightness(.9) !important;
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia) !important;
