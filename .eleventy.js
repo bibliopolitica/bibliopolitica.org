@@ -50,6 +50,11 @@ module.exports = function(eleventyConfig) {
     return arr.slice(0, limit);
   })
 
+  // inspect objects as JSON
+  eleventyConfig.addFilter('jsonify', (data) => {
+    return JSON.stringify(data, null, "\t")
+  })    
+
   // layout aliases 
   eleventyConfig.addLayoutAlias('base', 'layouts/base.html')
   eleventyConfig.addLayoutAlias('page', 'layouts/page.html')
@@ -58,7 +63,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('site/assets/')
                 .addPassthroughCopy('site/media/')
                 .addPassthroughCopy({
-                  './node_modules/leaflet/dist/leaflet.js': '/assets/vendor/leaflet.js'
+                  './node_modules/siema/dist/siema.min.js': '/assets/vendor/siema.min.js'
                 })
                 .addPassthroughCopy({
                   './node_modules/leaflet-iiif/leaflet-iiif.js': '/assets/vendor/leaflet-iiif.js'

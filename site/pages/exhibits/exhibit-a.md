@@ -1,8 +1,9 @@
 ---
 title: "Exhibit A"
-subtitle: "A Sample Exhibit with a Reasonaby Long Subtitle and a Subset of Items"
+subtitle: "Sample Exhibit with a Standalone Image and a Carousel of Items"
 author: Deebo Samuel
 layout: "page"
+permalink: "/exhibits/exhibit-a.html"
 ---
 
 Ut eleifend lacus at erat efficitur bibendum. Ut laoreet elit nec dolor molestie finibus. Vivamus justo risus, scelerisque nec dolor ut, pretium fringilla purus. Nam nisl erat, tristique ac libero vitae, bibendum pellentesque nulla. Praesent accumsan ut mauris ut euismod. Etiam mattis a justo eget blandit. Aliquam vitae magna eget nisi suscipit finibus id sit amet nulla.
