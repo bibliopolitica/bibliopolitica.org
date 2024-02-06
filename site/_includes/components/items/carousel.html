@@ -1,14 +1,14 @@
 <script src="{{ '/assets/vendor/siema.min.js' | url }}"></script>
 
-<div class="container ml-auto">
-  <div class="flex items-center justify-between py-10">
+<div class="container ml-auto px-5">
+  <div class="md:flex items-center justify-between py-10">
     <div class="flex-1 prose">
       <div class="text-4xl font-bold">Test Carousel w/ Archival Items</div>
       <p>I'm some additional info if needed.</p>
     </div>
-    <div class="flex-1 text-right pr-10">
-      <button class="prev h-12 w-12 -m-2">{% include "svg/arrow-left.svg" %}</button>
-      <button class="next h-12 w-12">{% include "svg/arrow-right.svg" %}</button>
+    <div class="hidden md:block flex-1 text-right pr-10">
+      <button class="prev h-8 w-8 md:h-12 md:w-12 md:-m-2">{% include "svg/arrow-left.svg" %}</button>
+      <button class="next h-8 w-8 md:h-12 md:w-12">{% include "svg/arrow-right.svg" %}</button>
     </div>
   </div>
 
