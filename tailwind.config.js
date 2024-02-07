@@ -16,7 +16,8 @@ module.exports = {
           ...require("daisyui/src/theming/themes")["light"],
           primary: "#1a237e",
           secondary: "#007706",
-          accent: "#1e88e5"
+          accent: "#1e88e5",
+          neutral: "#f0f0f0"
         },
       }, 
       {
