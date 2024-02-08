@@ -59,14 +59,14 @@ permalink: "/browse/items/index.html"
     </ul>
   </aside>
   <main class="flex-auto md:px-10">
-    <!-- <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10 gap-y-5 items-end"> -->
-    <div class="columns columns-3 lg:columns-4 gap-8">
+    <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10 gap-y-5 items-center">
       {%- for item in items -%}
-        <div class="break-inside-avoid mb-8">
+        <div class="mb-8">
           <a href="{{ '/item/' | append: item.id | url }}">
             <img 
               src="{{ item.full_url | url }}"
               alt=""
+              class="max-w-full h-auto"
             >
             <div class="mt-1 text-base leading-[1.4]">
               {{ item.label }}
