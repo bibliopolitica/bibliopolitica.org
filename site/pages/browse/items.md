@@ -5,9 +5,9 @@ layout: "base"
 permalink: "/browse/items/index.html"
 ---
 
-<h1 class="px-5 pb-3 md:p-5 text-3xl md:text-5xl font-bold">Browse Archival Items</h1>
+<h1 class="px-5 pb-2 md:pb-8 text-3xl md:text-5xl font-bold">Browse Archival Items</h1>
 
-<div class="md:flex px-5 md:p-5">
+<div class="md:flex px-5 pb-10">
   <aside class="flex-none top-0">
     <ul class="md:hidden menu menu-horizontal bg-neutral rounded-box w-full mb-5">
       <li>
@@ -59,15 +59,16 @@ permalink: "/browse/items/index.html"
     </ul>
   </aside>
   <main class="flex-auto md:px-10">
-    <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10 gap-y-5 items-end">
+    <!-- <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10 gap-y-5 items-end"> -->
+    <div class="columns columns-3 lg:columns-4 gap-8">
       {%- for item in items -%}
-        <div class="">
+        <div class="break-inside-avoid mb-8">
           <a href="{{ '/item/' | append: item.id | url }}">
             <img 
               src="{{ item.full_url | url }}"
               alt=""
             >
-            <div class="mt-2 text-base leading-[1.4]">
+            <div class="mt-1 text-base leading-[1.4]">
               {{ item.label }}
             </div>
           </a>
