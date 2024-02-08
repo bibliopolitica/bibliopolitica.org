@@ -28,9 +28,7 @@ module.exports = {
           accent: "#1e88e5"
         },
       },
-      "lemonade", 
-      "coffee", 
-      "retro"],
+    ],
   },
   plugins: [
     require('daisyui'),
