@@ -5,11 +5,11 @@ layout: "base"
 permalink: "/browse/items/index.html"
 ---
 
-<h1 class="px-5 pb-2 md:pb-8 text-3xl md:text-5xl font-bold">Browse Archival Items</h1>
+<h1 class="px-5 pb-2 md:pt-3 md:pb-9 text-3xl md:text-5xl font-bold">Browse Archival Items</h1>
 
 <div class="md:flex px-5 pb-10">
   <aside class="flex-none top-0">
-    <ul class="md:hidden menu menu-horizontal bg-neutral rounded-box w-full mb-5">
+    <ul class="md:hidden menu menu-horizontal rounded-box border border-neutral-300 w-full mb-5">
       <li>
       <details closed>
         <summary class="font-bold">Location</summary>
@@ -38,7 +38,7 @@ permalink: "/browse/items/index.html"
     <ul class="hidden md:block">
       <li class="pb-5">
         <div class="font-bold text-2xl mb-1">Location</div>
-        <ul class="pl-3 ml-3 border-l border-neutral-300">
+        <ul>
           <li><a href="">Turkey</a></li>
           <li><a href="">Iran</a></li>
           <li><a href="">Middle East and North Africa</a></li>
@@ -48,9 +48,9 @@ permalink: "/browse/items/index.html"
       </li>
       <li class="pb-5">
         <div class="font-bold text-2xl mb-1">Object Type</div>
-        <ul class="pl-3 ml-3 border-l border-neutral-300">
+        <ul>
           <li><a href="">Manuscripts</a></li>
-          <li><a class="inline-block bg-neutral-200 px-2 -ml-2 rounded-md"href="">Portraits</a></li>
+          <li><a class="font-bold text-accent" href="">Portraits</a></li>
           <li><a href="">Maps</a></li>
           <li><a href="">Panels</a></li>
           <li><a class="italic" href="">Show more</a></li>
