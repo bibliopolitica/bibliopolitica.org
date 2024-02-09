@@ -3613,6 +3613,11 @@ html{
   color: rgb(107 114 128 / var(--tw-text-opacity)) !important;
 }
 
+.text-neutral-950{
+  --tw-text-opacity: 1 !important;
+  color: rgb(10 10 10 / var(--tw-text-opacity)) !important;
+}
+
 .text-primary{
   --tw-text-opacity: 1 !important;
   color: var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity))) !important;
