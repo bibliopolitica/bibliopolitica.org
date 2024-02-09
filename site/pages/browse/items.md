@@ -61,10 +61,11 @@ permalink: "/browse/items/index.html"
   <main class="flex-auto md:px-10">
     <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10 gap-y-5 items-center">
       {%- for item in items -%}
+        {% capture img_url %}https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_{{ item.id }}_{{ item.id }}_001/full/800,/0/default.jpg{% endcapture %}
         <div class="mb-8">
           <a href="{{ '/item/' | append: item.id | url }}">
             <img 
-              src="{{ item.full_url | url }}"
+              src="{{ img_url }}"
               alt=""
               class="max-w-full h-auto"
             >

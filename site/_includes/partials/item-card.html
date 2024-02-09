@@ -1,5 +1,6 @@
 <a class="inline-block" href="{{ '/item/'| append: item.id | url }}">
-  <img src="{{ item.full_url }}" class="" alt="">
+  {% capture img_url %}https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_{{ item.id }}_{{ item.id }}_001/full/800,/0/default.jpg{% endcapture %}
+  <img src="{{ img_url }}" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     {{ item.label }}
   </div>

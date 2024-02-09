@@ -25,6 +25,16 @@ module.exports = function(eleventyConfig) {
     return moment(date).utc().format('LL');
   })
 
+    // limit filter
+    eleventyConfig.addFilter('limit', function (arr, limit) {
+      return arr.slice(0, limit);
+    })
+  
+    // inspect objects as JSON
+    eleventyConfig.addFilter('jsonify', (data) => {
+      return JSON.stringify(data, null, "\t")
+    })  
+
   const markdownItOptions = {
     html: true,
   }
@@ -43,20 +53,11 @@ module.exports = function(eleventyConfig) {
     markdownItAnchorOptions
   )
 
-  eleventyConfig.setLibrary("md", markdownLib)
-
-  // limit filter
-  eleventyConfig.addFilter('limit', function (arr, limit) {
-    return arr.slice(0, limit);
-  })
-
-  // inspect objects as JSON
-  eleventyConfig.addFilter('jsonify', (data) => {
-    return JSON.stringify(data, null, "\t")
-  })    
+  eleventyConfig.setLibrary("md", markdownLib)  
 
   // layout aliases 
   eleventyConfig.addLayoutAlias('base', 'layouts/base.html')
+  eleventyConfig.addLayoutAlias('item', 'layouts/item.html')
   eleventyConfig.addLayoutAlias('page', 'layouts/page.html')
 
   // passthrough copy
