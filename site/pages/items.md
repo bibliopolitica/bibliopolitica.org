@@ -12,8 +12,8 @@ permalink: "/item/{{ item.id }}.html"
     <h1 class="text-3xl md:text-4xl font-bold">{{ item.label }}</h1>
   </div>
   <div class="basis-1/4 h-12 text-primary text-right flex justify-end">
-    <a href="{{ pagination.href.previous | default: pagination.href.last | url }}" class="-mr-1 hover:text-accent" data-tip="Previous item">{% include "svg/arrow-left.svg" %}</a>
-    <a href="{{ pagination.href.next | default: pagination.href.first | url }}" class="hover:text-accent" data-tip="Next item">{% include "svg/arrow-right.svg" %}</a>
+    <a href="{{ pagination.href.previous | default: pagination.href.last | url }}" class="-mr-1 text-neutral-950 hover:text-accent" data-tip="Previous item">{% include "svg/arrow-left.svg" %}</a>
+    <a href="{{ pagination.href.next | default: pagination.href.first | url }}" class="text-neutral-950 hover:text-accent" data-tip="Next item">{% include "svg/arrow-right.svg" %}</a>
   </div>
 </div>
 <article id="item-content-area" class="px-5 pb-5 md:flex">
