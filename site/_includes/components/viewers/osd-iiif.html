@@ -1,4 +1,5 @@
-<div id="map" class="w-100 p-3 z-0 h-96 md:min-h-[36rem] bg-neutral"></div>
+{% capture manifest_url %}https://aperitiiif-presentation-api-store.s3.us-east-1.amazonaws.com/bibliopolitica/{{ item.id }}/manifest.json{% endcapture %}
+<div id="map" class="w-100 p-3 z-0 h-full bg-neutral"></div>
 <script src="https://cdn.jsdelivr.net/npm/openseadragon@3.1/build/openseadragon/openseadragon.min.js"></script>
 <script type="text/javascript">
   function fullscreenchanged(event) {
@@ -10,7 +11,7 @@
   }
   document.addEventListener("fullscreenchange", fullscreenchanged);
   document.addEventListener("DOMContentLoaded", function () {
-    var manifestUrl = "{{ item.manifest_url }}";
+    var manifestUrl = "{{ manifest_url }}";
     fetch(manifestUrl)
     .then(response => {
       if (!response.ok) {
@@ -29,6 +30,7 @@
         prefixUrl: "{{ '/assets/vendor/osd/icons/' | url }}",
         tileSources: tileSources,
         placeholderFillStyle: "#FFFFFF",
+        showReferenceStrip: true,
         showHomeControl: false
       });
       // viewer.innerTracker.scrollHandler = false;
