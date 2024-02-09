@@ -7,35 +7,37 @@ pagination:
 permalink: "/item/{{ item.id }}.html"
 ---
 
-<article id="item-content-area" class="container mx-auto px-6 py-20 max-w-3xl prose lg:prose-lg">
-  <h1>{{ item.label }}</h1>
-  <div class="flex mb-10 w-full justify-between">
-    <a href="{{ pagination.href.previous | default: pagination.href.last | url }}" class="link basis-1/3 text-xs">Previous:<br>{{ pagination.page.previous.label | default: pagination.page.last.label }}</a>
-    <a href="{{ pagination.href.next | default: pagination.href.first | url }}" class="link basis-1/3 text-xs text-right">Next:<br>{{ pagination.page.next.label | default: pagination.page.first.label }}</a>
+<div class="flex p-5 pb-3 items-center">
+  <div class="basis-3/4">
+    <h1 class="text-3xl md:text-4xl font-bold">{{ item.label }}</h1>
   </div>
-
+  <div class="basis-1/4 flex justify-end text-right">
+    <a href="{{ pagination.href.previous | default: pagination.href.last | url }}" class="h-12 -mr-1 hover:text-accent tooltip tooltip-bottom tooltip-accent" data-tip="Previous item">{% include "svg/arrow-left.svg" %}</a>
+    <a href="{{ pagination.href.next | default: pagination.href.first | url }}" class="h-12 hover:text-accent tooltip tooltip-bottom tooltip-accent" data-tip="Next item">{% include "svg/arrow-right.svg" %}</a>
+  </div>
+</div>
+<article id="item-content-area" class="px-5 pb-5 md:flex">
+  <div class="md:basis-3/5 bg-neutral">
   {% include "components/viewers/osd-iiif.html" %}
-
-  <div class="flex flex-wrap mt-10">
-    <div class="basis-1/3 py-2"><b>Label</b></div>
-    <div class="basis-2/3 py-2">{{ item.label }}</div>
-    <div class="basis-1/3 py-2"><b>Person or Creator</b></div>
-    <div class="basis-2/3 py-2">Arce, José Antonio, 1948-2018</div>
-    <div class="basis-1/3 py-2"><b>Dimensions</b></div>
-    <div class="basis-2/3 py-2">8.5 x 11 inches</div>
-    <div class="basis-1/3 py-2"><b>Language</b></div>
-    <div class="basis-2/3 py-2">English</div>
-    <div class="basis-1/3 py-2"><b>Date of Production</b></div>
-    <div class="basis-2/3 py-2">Approximately 1972-2001</div>
-    <div class="basis-1/3 py-2"><b>Format</b></div>
-    <div class="basis-2/3 py-2">
-      <a class="link link-primary">volume</a>;
-      <a class="link link-primary">integrating resource</a>;
-      <a class="link link-primary">typescript</a>
-    </div>
-    <div class="basis-1/3 py-2"><b>IIIF Resource</b></div>
-    <div class="basis-2/3 py-2">
-      <a class="link" href="{{ item.manifest_url }}" target="_none">JSON Manifest</a>
-    </div>
   </div>
+  <ul class="p-6 space-y-2 border md:basis-2/5 md:text-lg md:flex md:flex-col md:justify-end">
+    <li><b>Label:</b> {{ item.label }}</li>
+    <li><b>Person or Creator:</b> Arce, José Antonio, 1948-2018</li>
+    <li><b>Dimensions:</b> 8.5 x 11 inches</li>
+    <li><b>Language:</b> English</li>
+    <li><b>Date of Production:</b> Approximately 1972-2001</li>
+    <li><b>Format:</b>
+      <a class="link">volume</a>;
+      <a class="link">integrating resource</a>;
+      <a class="link">typescript</a>
+    </li>
+    <li><b>IIIF Resource:</b>
+      <a class="link" href="{{ item.manifest_url }}" target="_none">JSON Manifest</a>
+    </li>
+  </ul>
 </article>
+
+<!-- <div class=" grid grid-cols-2 mt-5 px-5 font-normal">
+  <a href="{{ pagination.href.previous | default: pagination.href.last | url }}" class="join-item btn btn-outline">PREVIOUS: {{ pagination.page.previous.label | default: pagination.page.last.label }}</a>
+  <a href="{{ pagination.href.next | default: pagination.href.first | url }}" class="join-item btn btn-outline">NEXT: {{ pagination.page.next.label | default: pagination.page.first.label }} &rarr;</a>
+</div> -->
