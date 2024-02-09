@@ -1221,6 +1221,12 @@ html{
   background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
 }
 
+.join{
+  display: inline-flex;
+  align-items: stretch;
+  border-radius: var(--rounded-btn, 0.5rem);
+}
+
 .join :where(.join-item){
   border-start-end-radius: 0;
   border-end-end-radius: 0;
@@ -1264,6 +1270,12 @@ html{
   .join :where(*:last-child:not(:first-child) .join-item){
   border-start-end-radius: inherit;
   border-end-end-radius: inherit;
+}
+
+@supports not selector(:has(*)){
+  :where(.join *){
+    border-radius: inherit;
+  }
 }
 
 @supports selector(:has(*)){
@@ -1799,6 +1811,12 @@ html{
   text-align: inherit;
 }
 
+.join > :where(*:not(:first-child)){
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-inline-start: -1px;
+}
+
 .join-item:focus{
   isolation: isolate;
 }
@@ -2253,6 +2271,10 @@ html{
   border-bottom-color: var(--fallback-bc,oklch(var(--bc)/0.2));
 }
 
+.join.join-vertical{
+  flex-direction: column;
+}
+
 .join.join-vertical .join-item:first-child:not(:last-child),
   .join.join-vertical *:first-child:not(:last-child) .join-item{
   border-end-start-radius: 0;
@@ -2267,6 +2289,10 @@ html{
   border-start-end-radius: 0;
   border-end-start-radius: inherit;
   border-end-end-radius: inherit;
+}
+
+.join.join-horizontal{
+  flex-direction: row;
 }
 
 .join.join-horizontal .join-item:first-child:not(:last-child),
@@ -2462,6 +2488,18 @@ html{
 
 .card-normal .card-title{
   margin-bottom: 0.75rem;
+}
+
+.join.join-vertical > :where(*:not(:first-child)){
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: -1px;
+}
+
+.join.join-horizontal > :where(*:not(:first-child)){
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-inline-start: -1px;
 }
 
 .menu-horizontal > li:not(.menu-title) > details > ul{
@@ -3209,6 +3247,10 @@ html{
   height: auto !important;
 }
 
+.h-full{
+  height: 100% !important;
+}
+
 .max-h-96{
   max-height: 24rem !important;
 }
@@ -3919,10 +3961,6 @@ html{
 
   .md\:h-12{
     height: 3rem !important;
-  }
-
-  .md\:min-h-\[36rem\]{
-    min-height: 36rem !important;
   }
 
   .md\:w-12{
