@@ -20,7 +20,7 @@
   <div class="navbar-start w-2/5">
     <a class="btn btn-ghost text-2xl font-serif" href="/bibliopolitica/"><h1>Bibliopolítica</h1></a>
   </div>
-  <div class="navbar-end w-3/5 hidden md:flex mr-10">
+  <div class="navbar-end w-3/5 hidden md:flex">
     <ul class="menu menu-horizontal px-1">
     
       <li>
@@ -71,9 +71,6 @@
           <ul class="p-2 bg-base-100 rounded-t-none">
             <li><button data-set-theme="light">Light</button></li>
             <li><button data-set-theme="dark">Dark</button></li>
-            <li><button data-set-theme="lemonade">Lemonade</button></li>
-            <li><button data-set-theme="coffee">Coffee</button></li>
-            <li><button data-set-theme="retro">Retro</button></li>
           </ul>
         </details>
       </li>
@@ -83,13 +80,24 @@
 
 
     <main class="flex-1">
-      <article id="item-content-area" class="container mx-auto px-6 py-20 max-w-3xl prose lg:prose-lg">
-  <h1>Chicano Periodical Index Processing Manual</h1>
-  <div class="flex mb-10 w-full justify-between">
-    <a href="/bibliopolitica/item/CSL00064.html" class="link basis-1/3 text-xs">Previous:<br>CPI Project Proposal to National Endowment for the Humanities Research Materials Programs -Tools </a>
-    <a href="/bibliopolitica/item/CSL00066.html" class="link basis-1/3 text-xs text-right">Next:<br>CPI Launch Press Release (1978)</a>
+      <div class="flex p-5 pb-3 items-center">
+  <div class="basis-3/4">
+    <h1 class="text-3xl md:text-4xl font-bold">Chicano Periodical Index Processing Manual</h1>
   </div>
-  <div id="map" class="w-100 mb-4 z-0 h-96 bg-base-200"></div>
+  <div class="basis-1/4 flex justify-end text-right">
+    <a href="/bibliopolitica/item/CSL00064.html" class="h-12 -mr-1 hover:text-accent tooltip tooltip-bottom tooltip-accent" data-tip="Previous item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1" stroke="currentColor" class="h-full max-w-full align-top">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+</svg>
+</a>
+    <a href="/bibliopolitica/item/CSL00066.html" class="h-12 hover:text-accent tooltip tooltip-bottom tooltip-accent" data-tip="Next item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1" stroke="currentColor" class="h-full max-w-full align-top">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+</svg>
+  </a>
+  </div>
+</div>
+<article id="item-content-area" class="px-5 pb-5 md:flex">
+  <div class="md:basis-3/5 bg-neutral">
+  <div id="map" class="w-100 p-3 z-0 h-96 md:min-h-[36rem] bg-neutral"></div>
 <script src="https://cdn.jsdelivr.net/npm/openseadragon@3.1/build/openseadragon/openseadragon.min.js"></script>
 <script type="text/javascript">
   function fullscreenchanged(event) {
@@ -129,30 +137,27 @@
     });
   });
 </script>
-  <div class="flex flex-wrap mt-10">
-    <div class="basis-1/3 py-2"><b>Label</b></div>
-    <div class="basis-2/3 py-2">Chicano Periodical Index Processing Manual</div>
-    <div class="basis-1/3 py-2"><b>Person or Creator</b></div>
-    <div class="basis-2/3 py-2">Arce, José Antonio, 1948-2018</div>
-    <div class="basis-1/3 py-2"><b>Dimensions</b></div>
-    <div class="basis-2/3 py-2">8.5 x 11 inches</div>
-    <div class="basis-1/3 py-2"><b>Language</b></div>
-    <div class="basis-2/3 py-2">English</div>
-    <div class="basis-1/3 py-2"><b>Date of Production</b></div>
-    <div class="basis-2/3 py-2">Approximately 1972-2001</div>
-    <div class="basis-1/3 py-2"><b>Format</b></div>
-    <div class="basis-2/3 py-2">
-      <a class="link link-primary">volume</a>;
-      <a class="link link-primary">integrating resource</a>;
-      <a class="link link-primary">typescript</a>
-    </div>
-    <div class="basis-1/3 py-2"><b>IIIF Resource</b></div>
-    <div class="basis-2/3 py-2">
-      <a class="link" href="https://aperitiiif-presentation-api-store.s3.us-east-1.amazonaws.com/bibliopolitica/CSL00065/manifest.json" target="_none">JSON Manifest</a>
-    </div>
   </div>
+  <ul class="p-6 space-y-2 border md:basis-2/5 md:text-lg md:flex md:flex-col md:justify-end">
+    <li><b>Label:</b> Chicano Periodical Index Processing Manual</li>
+    <li><b>Person or Creator:</b> Arce, José Antonio, 1948-2018</li>
+    <li><b>Dimensions:</b> 8.5 x 11 inches</li>
+    <li><b>Language:</b> English</li>
+    <li><b>Date of Production:</b> Approximately 1972-2001</li>
+    <li><b>Format:</b>
+      <a class="link">volume</a>;
+      <a class="link">integrating resource</a>;
+      <a class="link">typescript</a>
+    </li>
+    <li><b>IIIF Resource:</b>
+      <a class="link" href="https://aperitiiif-presentation-api-store.s3.us-east-1.amazonaws.com/bibliopolitica/CSL00065/manifest.json" target="_none">JSON Manifest</a>
+    </li>
+  </ul>
 </article>
-
+<!-- <div class=" grid grid-cols-2 mt-5 px-5 font-normal">
+  <a href="/bibliopolitica/item/CSL00064.html" class="join-item btn btn-outline">PREVIOUS: CPI Project Proposal to National Endowment for the Humanities Research Materials Programs -Tools </a>
+  <a href="/bibliopolitica/item/CSL00066.html" class="join-item btn btn-outline">NEXT: CPI Launch Press Release (1978) &rarr;</a>
+</div> -->
     </main>
     <footer class="footer footer-center  p-4 bg-base-300 text-base-content">
   <aside>
