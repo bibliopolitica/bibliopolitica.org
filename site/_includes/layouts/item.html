@@ -3,20 +3,20 @@ layout: base
 ---
 
 <div class="flex p-5 pb-3 items-center">
-  <div class="basis-3/4">
-    <h1 class="text-3xl md:text-4xl font-bold">{{ item.label }}</h1>
+  <div class="basis-5/6">
+    <h1 class="text-2xl md:text-4xl font-bold">{{ item.label }}</h1>
   </div>
-  <div class="basis-1/4 h-12 text-primary text-right flex justify-end">
+  <div class="basis-1/6 h-12 text-primary text-right flex justify-end">
     <a href="{{ pagination.href.previous | default: pagination.href.last | url }}" class="-mr-1 text-neutral-950 hover:text-accent" data-tip="Previous item">{% include "svg/arrow-left.svg" %}</a>
     <a href="{{ pagination.href.next | default: pagination.href.first | url }}" class="text-neutral-950 hover:text-accent" data-tip="Next item">{% include "svg/arrow-right.svg" %}</a>
   </div>
 </div>
 
-<article id="item-content-area" class="px-5 pb-5 md:flex">
+<article id="item-content-area" class="mx-5 mb-5 md:flex border">
   <div class="md:basis-3/5 bg-neutral">
   {% include "components/viewers/osd-iiif.html" %}
   </div>
-  <ul class="p-6 space-y-2 border md:basis-2/5 md:text-lg md:flex md:flex-col md:justify-end">
+  <ul class="p-6 space-y-2 md:border-l md:basis-2/5 md:flex md:flex-col">
     <li><b>Alternate Title(s):</b> {{ item["Alternate title"] | join: '; ' | default: 'N/A' }}</li>
     <li><b>Corporate Creator(s):</b> {{ item["Corporate Creator"] | join: '; ' | default: 'N/A' }}</li>
     <li><b>Person Creator(s):</b> {{ item["Person Creator"] | join: '; ' | default: 'N/A' }}</li>
