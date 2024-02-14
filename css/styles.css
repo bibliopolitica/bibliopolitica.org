@@ -3386,6 +3386,10 @@ html{
   max-height: 50vh !important;
 }
 
+.max-h-\[70vh\]{
+  max-height: 70vh !important;
+}
+
 .min-h-screen{
   min-height: 100vh !important;
 }
@@ -4089,8 +4093,8 @@ html{
     height: 3rem !important;
   }
 
-  .md\:h-5\/6{
-    height: 83.333333% !important;
+  .md\:h-\[36rem\]{
+    height: 36rem !important;
   }
 
   .md\:w-12{
