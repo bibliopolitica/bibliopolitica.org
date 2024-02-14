@@ -1,9 +1,14 @@
-<a class="card w-96 bg-base-100 shadow-xl max-h-96" href="{{ '/item/'| append: item.id | url }}">
-  <figure class="">
+<a class="w-44 md:w-96 flex flex-col" href="{{ '/item/'| append: item.id | url }}">
+  <div class="p-5 backdrop-brightness-90 align-center justify-center">
     {% capture img_url %}https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_{{ item.id }}_{{ item.id }}_001/full/800,/0/default.jpg{% endcapture %}
-    <img src="{{ img_url }}" alt="" class="" />
-  </figure>
-  <div class="card-body items-center text-center">
-    <h2 class="card-title text-gray-400">{{ item.label }}</h2>
+    <img src="{{ img_url }}" alt="" class="h-56 mx-auto" />
+  </div>
+  <div class="text-base pt-2">
+    <div class="font-bold">
+      {{ item.label }}
+    </div>
+    <div>
+      Some more explanatory text for the exhibit
+    </div>
   </div>
 </a>
