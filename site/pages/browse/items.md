@@ -69,7 +69,7 @@ permalink: "/browse/items/index.html"
               alt=""
               class="max-w-full h-auto"
             >
-            <div class="mt-1 text-base leading-[1.4]">
+            <div class="mt-1 leading-[1.4]">
               {{ item.label }}
             </div>
           </a>

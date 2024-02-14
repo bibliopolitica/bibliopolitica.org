@@ -14,18 +14,19 @@ module.exports = {
       {
         light: {
           ...require("daisyui/src/theming/themes")["light"],
-          primary: "#1a237e",
-          secondary: "#007706",
-          accent: "#1e88e5",
-          neutral: "#f0f0f0"
+          "primary": "#1a237e",
+          "secondary": "#007706",
+          "accent": "#1e88e5",
+          "neutral": "#f0f0f0",
+          "neutral-content": "#333"
         },
       }, 
       {
         dark: {
           ...require("daisyui/src/theming/themes")["dark"],
-          primary: "#1a237e",
-          secondary: "#007706",
-          accent: "#1e88e5"
+          "primary": "#1a237e",
+          "secondary": "#007706",
+          "accent": "#1e88e5"
         },
       },
     ],
