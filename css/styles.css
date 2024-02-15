@@ -3248,6 +3248,11 @@ html{
   margin-bottom: 0.5rem !important;
 }
 
+.my-3{
+  margin-top: 0.75rem !important;
+  margin-bottom: 0.75rem !important;
+}
+
 .my-6{
   margin-top: 1.5rem !important;
   margin-bottom: 1.5rem !important;
@@ -3345,10 +3350,6 @@ html{
   max-height: 50vh !important;
 }
 
-.max-h-\[70vh\]{
-  max-height: 70vh !important;
-}
-
 .min-h-screen{
   min-height: 100vh !important;
 }
@@ -3389,6 +3390,10 @@ html{
   width: 100vw !important;
 }
 
+.min-w-80{
+  min-width: 20rem !important;
+}
+
 .max-w-3xl{
   max-width: 48rem !important;
 }
@@ -3415,6 +3420,10 @@ html{
 
 .flex-none{
   flex: none !important;
+}
+
+.shrink{
+  flex-shrink: 1 !important;
 }
 
 .basis-1\/2{
@@ -3520,6 +3529,10 @@ html{
   white-space: nowrap !important;
 }
 
+.break-words{
+  overflow-wrap: break-word !important;
+}
+
 .rounded-box{
   border-radius: var(--rounded-box, 1rem) !important;
 }
@@ -3568,10 +3581,6 @@ html{
 
 .p-2{
   padding: 0.5rem !important;
-}
-
-.p-3{
-  padding: 0.75rem !important;
 }
 
 .p-4{
@@ -3755,6 +3764,11 @@ html{
 .text-neutral-content{
   --tw-text-opacity: 1 !important;
   color: var(--fallback-nc,oklch(var(--nc)/var(--tw-text-opacity))) !important;
+}
+
+.drop-shadow-sm{
+  --tw-drop-shadow: drop-shadow(0 1px 1px rgb(0 0 0 / 0.05)) !important;
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
 }
 
 .backdrop-brightness-90{
@@ -4055,8 +4069,12 @@ html{
     height: 3rem !important;
   }
 
-  .md\:h-\[36rem\]{
-    height: 36rem !important;
+  .md\:h-\[70vh\]{
+    height: 70vh !important;
+  }
+
+  .md\:h-full{
+    height: 100% !important;
   }
 
   .md\:w-12{
@@ -4067,12 +4085,12 @@ html{
     width: 24rem !important;
   }
 
-  .md\:basis-2\/5{
-    flex-basis: 40% !important;
+  .md\:shrink-0{
+    flex-shrink: 0 !important;
   }
 
-  .md\:basis-3\/5{
-    flex-basis: 60% !important;
+  .md\:basis-1\/2{
+    flex-basis: 50% !important;
   }
 
   .md\:grid-cols-2{

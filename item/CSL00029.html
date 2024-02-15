@@ -16,7 +16,7 @@
   <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js" defer></script>
 </head>
   <body class="flex flex-col min-h-screen">
-    <div class="sticky top-0 z-50 navbar bg-base-100">
+    <div class="sticky top-0 z-50 navbar bg-base-100 drop-shadow-sm">
   <div class="navbar-start w-2/5">
     <a class="btn btn-ghost text-2xl font-serif" href="/bibliopolitica/"><h1>Bibliopolítica</h1></a>
   </div>
@@ -98,10 +98,10 @@
   </div>
 </div>
 
-<article id="item-content-area" class="mx-5 mb-5 md:flex border">
-  <div class="md:basis-3/5 bg-neutral">
+<article id="item-content-area" class="mx-5 mb-5 md:flex border bg-neutral">
+  <div class="md:basis-1/2 md:shrink-0 md:h-[70vh] my-3">
   
-<div id="map" class="w-100 p-3 z-0 h-96 md:h-[36rem] max-h-[70vh] bg-neutral"></div>
+<div id="map" class="w-100 z-0 h-96 md:h-full bg-neutral"></div>
 <script src="https://cdn.jsdelivr.net/npm/openseadragon@3.1/build/openseadragon/openseadragon.min.js"></script>
 <script type="text/javascript">
   function fullscreenchanged(event) {
@@ -143,7 +143,7 @@
   });
 </script>
   </div>
-  <ul class="p-6 space-y-2 md:border-l md:basis-2/5 md:flex md:flex-col">
+  <ul class="p-6 space-y-2 md:border-l md:basis-1/2 md:flex md:flex-col shrink min-w-80 bg-base-100 break-words">
     <li><b>Alternate Title(s):</b> N/A</li>
     <li><b>Corporate Creator(s):</b> Library of Congress. Network Development and MARC Standards Office</li>
     <li><b>Person Creator(s):</b> McCallum, Sally H.; Castillo-Speed, Lillian</li>
