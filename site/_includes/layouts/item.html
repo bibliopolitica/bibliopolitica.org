@@ -12,11 +12,11 @@ layout: base
   </div>
 </div>
 
-<article id="item-content-area" class="mx-5 mb-5 md:flex border">
-  <div class="md:basis-1/2 shrink-0 bg-neutral">
+<article id="item-content-area" class="mx-5 mb-5 md:flex border bg-neutral">
+  <div class="md:basis-1/2 md:shrink-0 md:h-[70vh] my-3">
   {% include "components/viewers/osd-iiif.html" %}
   </div>
-  <ul class="p-6 space-y-2 md:border-l md:basis-1/2 md:flex md:flex-col shrink min-w-80 break-words">
+  <ul class="p-6 space-y-2 md:border-l md:basis-1/2 md:flex md:flex-col shrink min-w-80 bg-base-100 break-words">
     <li><b>Alternate Title(s):</b> {{ item["Alternate title"] | join: '; ' | default: 'N/A' }}</li>
     <li><b>Corporate Creator(s):</b> {{ item["Corporate Creator"] | join: '; ' | default: 'N/A' }}</li>
     <li><b>Person Creator(s):</b> {{ item["Person Creator"] | join: '; ' | default: 'N/A' }}</li>
