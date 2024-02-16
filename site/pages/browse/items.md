@@ -5,7 +5,7 @@ layout: "base"
 permalink: "/browse/items/index.html"
 ---
 
-<h1 class="px-5 pb-2 md:pt-3 md:pb-9 text-3xl md:text-5xl font-bold">Browse Archival Items</h1>
+<h1 class="p-5 pb-3 md:pt-5 md:pb-9 text-3xl md:text-5xl font-bold">Browse Archival Items</h1>
 
 <div class="md:flex px-5 pb-10">
   <aside class="flex-none top-0">
@@ -35,25 +35,25 @@ permalink: "/browse/items/index.html"
       </details>
       </li>
     </ul>
-    <ul class="hidden md:block">
+    <ul class="hidden md:block md:text-sm sticky top-20">
       <li class="pb-5">
         <div class="font-bold text-2xl mb-1">Location</div>
         <ul>
-          <li><a href="">Turkey</a></li>
-          <li><a href="">Iran</a></li>
-          <li><a href="">Middle East and North Africa</a></li>
-          <li><a href="">Egypt</a></li>
-          <li><a class="italic" href="">Show more</a></li>
-        </ul>
+          <li class="border-t py-1"><a href="">Turkey</a></li>
+          <li class="border-t py-1"><a href="">Iran</a></li>
+          <li class="border-t py-1"><a href="">Middle East and North Africa</a></li>
+          <li class="border-t py-1"><a href="">Egypt</a></li>
+          <li class="border-t py-1"><a class="italic" href="">Show more</a></li>
+        </ul> 
       </li>
       <li class="pb-5">
         <div class="font-bold text-2xl mb-1">Object Type</div>
         <ul>
-          <li><a href="">Manuscripts</a></li>
-          <li><a class="font-bold text-accent" href="">Portraits</a></li>
-          <li><a href="">Maps</a></li>
-          <li><a href="">Panels</a></li>
-          <li><a class="italic" href="">Show more</a></li>
+          <li class="border-t py-1"><a href="">Manuscripts</a></li>
+          <li class="border-t py-1"><a class="font-bold text-accent" href="">Portraits</a></li>
+          <li class="border-t py-1"><a href="">Maps</a></li>
+          <li class="border-t py-1"><a href="">Panels</a></li>
+          <li class="border-t py-1"><a class="italic" href="">Show more</a></li>
         </ul>
       </li>
     </ul>
