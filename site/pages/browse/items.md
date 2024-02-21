@@ -8,7 +8,8 @@ permalink: "/browse/items/index.html"
 <h1 class="p-5 pb-3 md:pt-5 md:pb-9 text-3xl md:text-5xl font-bold">Browse Archival Items</h1>
 
 <div class="md:flex px-5 pb-10">
-  <aside class="flex-none top-0">
+  <aside class="flex-none top-0 min-w-56">
+    <!-- mobile dropdown menu -->
     <ul class="md:hidden menu menu-horizontal rounded-box border border-neutral-300 w-full mb-5">
       <li>
       <details closed>
@@ -35,7 +36,8 @@ permalink: "/browse/items/index.html"
       </details>
       </li>
     </ul>
-    <ul class="hidden md:block md:text-sm sticky top-20">
+    <!-- desktop menu -->
+    <ul class="hidden md:block md:text-sm sticky top-20 max-h-screen overflow-y-scroll">
       <li class="pb-5">
         <div class="font-bold text-2xl mb-1">Location</div>
         <ul>
