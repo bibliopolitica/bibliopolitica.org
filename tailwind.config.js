@@ -14,11 +14,11 @@ module.exports = {
       {
         light: {
           ...require("daisyui/src/theming/themes")["light"],
-          "primary": "#1a237e",
-          "secondary": "#007706",
-          "accent": "#1e88e5",
-          "neutral": "#f0f0f0",
-          "neutral-content": "#333"
+          "base-content": "#230616",
+          "accent": "#007A50",
+          "secondary": "#a6673e",
+          "neutral": "#E7DBC5",
+          "neutral-content": "#230616"
         },
       }, 
       {
@@ -26,7 +26,9 @@ module.exports = {
           ...require("daisyui/src/theming/themes")["dark"],
           "primary": "#1a237e",
           "secondary": "#007706",
-          "accent": "#1e88e5"
+          "accent": "#007A50",
+          "neutral": "#F9F6F1",
+          "primary-content": "#340921"
         },
       },
     ],
