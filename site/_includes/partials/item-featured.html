@@ -1,0 +1,4 @@
+<a class="inline-block" href="{{ '/item/'| append: item.id | url }}">
+  {% capture img_url %}https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_{{ item.id }}_{{ item.id }}_001/full/800,/0/default.jpg{% endcapture %}
+  <img src="{{ img_url }}" class="" alt="" title="{{ item.label }}">
+</a>
