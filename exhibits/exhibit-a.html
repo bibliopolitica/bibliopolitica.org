@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" id="top" class="scroll-pt-20 scroll-smooth" data-theme="lemonade">
+<html lang="en" id="top" data-theme="light" class="bg-base-100 text-base-content scroll-pt-20 scroll-smooth">
   
 <head>
   <meta charset="utf-8">
@@ -8,7 +8,7 @@
   <meta name="robots" content="noindex">
   <title>
     
-      Exhibit A - Bibliopolítica
+      Exhibit A - BiblioPolítica
     
   </title>
   <link href="/bibliopolitica/css/styles.css" rel="stylesheet">
@@ -18,73 +18,93 @@
   <body class="flex flex-col min-h-screen">
     <div class="sticky top-0 z-50 navbar bg-base-100 drop-shadow-sm">
   <div class="navbar-start w-2/3 md:w-1/5">
-    <a class="btn btn-ghost text-2xl font-serif" href="/bibliopolitica/"><h1>Bibliopolítica</h1></a>
+    <a class="btn btn-ghost text-3xl text-accent font-serif" href="/bibliopolitica/"><h1>BiblioPolítica</h1></a>
   </div>
-  <div class="dropdown md:hidden w-1/3 navbar-end text-right">
-    <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-    </div>
-    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 right-0">
+  <div class="dropdown md:hidden w-1/3 navbar-end text-right grid grid-cols-2 gap-0">
+    <label class="cursor-pointer grid place-items-center">
+      <input type="checkbox" value="dark" class="toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2"/>
+      <svg class="col-start-1 row-start-1 stroke-base-100 fill-base-100" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg>
+      <svg class="col-start-2 row-start-1 stroke-base-100 fill-base-100" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </label>
+    <details>
+      <summary style="list-style: none;">
+        <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+        </div>
+      </summary>
+      <ul class="menu menu-sm bg-base-100 dropdown-content mt-3 z-[1] p-2 w-100 right-0">
+        
+        <li>
+          
+            <details>
+              <summary>
+                Introduction
+              </summary>
+              <ul class="p-2 bg-base-100 rounded-t-none">
+                
+                <li><a class="whitespace-nowrap"	href="/bibliopolitica/about/library">The Chicano Studies Library</a></li>
+                
+                <li><a class="whitespace-nowrap"	href="/bibliopolitica/about/project">The BiblioPolítica Project</a></li>
+                
+              </ul>
+            </details>
+          
+        </li>
       
-      <li>
-        
-          <a href="/bibliopolitica/about">About the Project</a>
-        
-      </li>
-    
-      <li>
-        
-          <details>
-            <summary>
-              Exhibits
-            </summary>
-            <ul class="p-2 bg-base-100 rounded-t-none">
-              
-              <li><a class="whitespace-nowrap"	href="/bibliopolitica/exhibits/exhibit-a">Exhibit with Image</a></li>
-              
-              <li><a class="whitespace-nowrap"	href="/bibliopolitica/exhibits/exhibit-b">Exhibit with Timeline</a></li>
-              
-            </ul>
-          </details>
-        
-      </li>
-    
-      <li>
-        
-          <details>
-            <summary>
-              Browse the Collection
-            </summary>
-            <ul class="p-2 bg-base-100 rounded-t-none">
-              
-              <li><a class="whitespace-nowrap"	href="/bibliopolitica/browse/items">Archival Items</a></li>
-              
-              <li><a class="whitespace-nowrap"	href="/bibliopolitica/browse/oral-histories">Oral Histories</a></li>
-              
-            </ul>
-          </details>
-        
-      </li>
-    
-      <li>
-        <details>
-          <summary>
-            Color Palette
-          </summary>
-          <ul class="p-2 bg-base-100 rounded-t-none">
-            <li><button data-set-theme="light">Light</button></li>
-            <li><button data-set-theme="dark">Dark</button></li>
-          </ul>
-        </details>
-      </li>
-    </ul>
+        <li>
+          
+            <details>
+              <summary>
+                Exhibit Themes
+              </summary>
+              <ul class="p-2 bg-base-100 rounded-t-none">
+                
+                <li><a class="whitespace-nowrap"	href="/bibliopolitica/exhibits/exhibit-a">Exhibit with Image</a></li>
+                
+                <li><a class="whitespace-nowrap"	href="/bibliopolitica/exhibits/exhibit-b">Exhibit with Timeline</a></li>
+                
+              </ul>
+            </details>
+          
+        </li>
+      
+        <li>
+          
+            <details>
+              <summary>
+                Collection Items
+              </summary>
+              <ul class="p-2 bg-base-100 rounded-t-none">
+                
+                <li><a class="whitespace-nowrap"	href="/bibliopolitica/browse/items">Archival Materials</a></li>
+                
+                <li><a class="whitespace-nowrap"	href="/bibliopolitica/browse/oral-histories">Oral Histories</a></li>
+                
+              </ul>
+            </details>
+          
+        </li>
+      
+      </ul>
+    </details>
   </div>
   <div class="navbar-end w-4/5 hidden md:flex">
     <ul class="menu menu-horizontal px-1">
     
       <li>
         
-          <a href="/bibliopolitica/about">About the Project</a>
+          <details>
+            <summary>
+              Introduction
+            </summary>
+            <ul class="p-2 rounded-t-none">
+              
+              <li><a class="whitespace-nowrap"	href="/bibliopolitica/about/library">The Chicano Studies Library</a></li>
+              
+              <li><a class="whitespace-nowrap"	href="/bibliopolitica/about/project">The BiblioPolítica Project</a></li>
+              
+            </ul>
+          </details>
         
       </li>
     
@@ -92,9 +112,9 @@
         
           <details>
             <summary>
-              Exhibits
+              Exhibit Themes
             </summary>
-            <ul class="p-2 bg-base-100 rounded-t-none">
+            <ul class="p-2 rounded-t-none">
               
               <li><a class="whitespace-nowrap"	href="/bibliopolitica/exhibits/exhibit-a">Exhibit with Image</a></li>
               
@@ -109,11 +129,11 @@
         
           <details>
             <summary>
-              Browse the Collection
+              Collection Items
             </summary>
-            <ul class="p-2 bg-base-100 rounded-t-none">
+            <ul class="p-2 rounded-t-none">
               
-              <li><a class="whitespace-nowrap"	href="/bibliopolitica/browse/items">Archival Items</a></li>
+              <li><a class="whitespace-nowrap"	href="/bibliopolitica/browse/items">Archival Materials</a></li>
               
               <li><a class="whitespace-nowrap"	href="/bibliopolitica/browse/oral-histories">Oral Histories</a></li>
               
@@ -123,15 +143,11 @@
       </li>
     
       <li>
-        <details>
-          <summary>
-            Color Palette
-          </summary>
-          <ul class="p-2 bg-base-100 rounded-t-none">
-            <li><button data-set-theme="light">Light</button></li>
-            <li><button data-set-theme="dark">Dark</button></li>
-          </ul>
-        </details>
+        <label class="cursor-pointer grid place-items-center">
+          <input type="checkbox" value="dark" class="toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2"/>
+          <svg class="col-start-1 row-start-1 stroke-base-100 fill-base-100" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg>
+          <svg class="col-start-2 row-start-1 stroke-base-100 fill-base-100" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </label>
       </li>
     </ul>
   </div>
@@ -157,656 +173,652 @@
 <h2 id="section-header" tabindex="-1">Section header <a class="not-prose header-anchor" href="#section-header">#</a></h2>
 <p>Nam velit leo, mattis ac dui non, vulputate porttitor sapien. Praesent in aliquet dui. Nulla facilisi. Maecenas nulla ex, facilisis non aliquet ac, ultrices eu sem. Sed vel aliquet urna. Mauris quis ex at lectus iaculis elementum id id massa. Integer luctus nulla vel tellus rutrum, ac pulvinar erat finibus. Aliquam erat volutpat. Pellentesque vel velit sit amet mauris dignissim feugiat.</p>
 <div class="hero block not-prose bg-neutral text-neutral-content mx-[calc(50%-50vw)] my-12 w-auto">
-<div class="hero-content mx-auto">
-  <script src="/bibliopolitica/assets/vendor/siema.min.js"></script>
-<div class="container mx-auto px-5">
-  <div class="md:flex items-center justify-between py-10">
-    <div class="flex-1">
-      <div class="text-4xl font-bold not-prose">Test Carousel w/ Archival Items</div>
-      <p>I'm some additional info if needed.</p>
-    </div>
-    <div class="hidden md:block flex-1 text-right pr-10">
-      <button class="prev h-8 w-8 md:h-12 md:w-12 md:-mr-2 hover:text-accent"><svg viewBox="0 0 24 24" fill="none" stroke-width="1" stroke="currentColor" class="h-10 w-10 md:h-12 md:w-12">
+  <div class="hero-content mx-auto">
+    <script src="/bibliopolitica/assets/vendor/siema.min.js"></script>
+<div class="container mx-auto pt-6">
+  <h2 class="text-center text-4xl font-bold">Browse Archival Items</h2>
+  <div class="mx-auto text-center py-6">
+    <button class="prev-items h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-left" data-tip="Previous"><svg viewBox="0 0 24 24" fill="none" stroke-width="1" stroke="currentColor" class="h-10 w-10 md:h-12 md:w-12">
   <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
 </svg>
 </button>
-      <button class="next h-8 w-8 md:h-12 md:w-12 hover:text-accent"><svg viewBox="0 0 24 24" fill="none" stroke-width="1" stroke="currentColor" class="h-10 w-10 md:h-12 md:w-12">
+    &nbsp;
+    <button class="next-items h-8 w-8 md:h-12 md:w-12 text-accent hover:text-neutral-content tooltip tooltip-right" data-tip="Next"><svg viewBox="0 0 24 24" fill="none" stroke-width="1" stroke="currentColor" class="h-10 w-10 md:h-12 md:w-12">
   <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
 </svg>
   </button>
-    </div>
   </div>
-  <div class="siema"><div class="pr-12">
+  <div class="siema" id="siema-items"><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00001">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00001_CSL00001_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Classification System
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00002">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00002_CSL00002_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Prospectus for a Chicano Periodical Index Project
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00003">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00003_CSL00003_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Studies Library Serials Collection Advertisement
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00004">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00004_CSL00004_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicanas in the 80's: Unsettled Issues (title page)
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00005">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00005_CSL00005_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Plan for the Development of the Chicano Database
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00006">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00006_CSL00006_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Nightly Backup Procedure
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00007">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00007_CSL00007_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Job Vacancy Listing: Chicano Studies Library Coordinator
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00008">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00008_CSL00008_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Goals of the Ethnic Studies Libraries
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00009">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00009_CSL00009_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Studies Library Donor Reception Invitation
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00010">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00010_CSL00010_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Undocumented Scars Exhibit Publicity Mailer
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00011">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00011_CSL00011_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Staff Meeting Minutes, March 3, 1989
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00012">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00012_CSL00012_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Letter from Wilma Salvatori Torri, September 10, 1974
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00013">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00013_CSL00013_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     CU News. (Volume 48, Number 22, June 10, 1993)
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00014">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00014_CSL00014_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Letter from Lea Burroughs, October 30, 1995
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00015">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00015_CSL00015_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Mexican Amerian Biographies (Acknowledgements)
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00016">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00016_CSL00016_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Letter from Sherry Levy-Reiner, July 1, 1991
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00017">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00017_CSL00017_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Letters to and from Alexandr Vaschenko, 1997 and 1998
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00018">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00018_CSL00018_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Feminist Thought (Acknowledgements)
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00019">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00019_CSL00019_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Studies Library Operation/Projects & Staff Assignments
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00020">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00020_CSL00020_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Ernesto Galarza at U.C. Berkeley Flier
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00021">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00021_CSL00021_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Imaging Aztlan, Galeria de la Raza Postcard
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00022">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00022_CSL00022_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Aspectos de la Literatura Chicana
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00023">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00023_CSL00023_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Periodical Index Worksheet
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00024">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00024_CSL00024_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Stephens Hall Space Meeting, November 21, 1994
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00025">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00025_CSL00025_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Ground Floor, Stephens Hall: Floor Plan, Revised Jan. 1
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00026">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00026_CSL00026_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Letter to Nevil Leimanis, February 7, 1996
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00027">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00027_CSL00027_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Database Review, in ANSS Currents, Volume 19, Number 1, May 2004
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00028">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00028_CSL00028_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     OCLC Publicity Flier for the Chicano Database
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00029">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00029_CSL00029_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Letter from Sally H. McCallum, Library of Congress, May 24, 1990
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00030">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00030_CSL00030_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Studies Library Newsletter (Volume 1, Number 2, June 1985)
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00031">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00031_CSL00031_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Studies Library Newsletter (Volume 3, Number 1, March 1987)
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00032">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00032_CSL00032_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Studies Library Newsletter (Volume 2, Number 1, February 1986)
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00033">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00033_CSL00033_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Studies Library Newsletter (Volume 4, Number 2, May 1989)
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00034">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00034_CSL00034_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Studies Library Newsletter (Volume 5, Number 1, February 1991)
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00035">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00035_CSL00035_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Database Indexing Manual
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00036">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00036_CSL00036_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Database Worksheet - Books
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00037">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00037_CSL00037_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     EBSCO Publicity Flier for Chicano Database
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00038">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00038_CSL00038_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Thesaurus Revision Project Sponsored by LAUC
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00039">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00039_CSL00039_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     LAUC Research Project to Revise the Chicano Thesaurus
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00040">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00040_CSL00040_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Database: Manufacturing Disc
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00041">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00041_CSL00041_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Studies Library Publications 
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00042">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00042_CSL00042_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Anthology Index Flier
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00043">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00043_CSL00043_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Studies, UC Berkeley, 1982-83
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00044">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00044_CSL00044_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Studies Bulletin - Spring '71
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00045">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00045_CSL00045_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Faculty Assessment of Chicano Library Collection
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00046">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00046_CSL00046_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     The Strike Explained
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00047">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00047_CSL00047_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     No Progress Report - Updates on University's progress with TWLF
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00048">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00048_CSL00048_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     TWLF protest photographs
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00049">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00049_CSL00049_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     TWLF protest photographs
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00050">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00050_CSL00050_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Database on CD-ROM
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00051">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00051_CSL00051_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Letter from Virginia Pratt to Francisco Garcia-Ayvens, June 5, 1984
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00052">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00052_CSL00052_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Strike Demands
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00053">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00053_CSL00053_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Letter from Chicano Center to Compass Newspaper, February 24, 1969
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00054">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00054_CSL00054_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Thesaurus for indexing Chicano materials
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00055">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00055_CSL00055_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Database Press Release, with Logo
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00056">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00056_CSL00056_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Proposal for the Establishment of a National Clearinghouse for Chicano Serials 
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00057">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00057_CSL00057_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Information Management Consortium of CA: Draft
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00058">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00058_CSL00058_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Letter from Thomas D. Holt, Vort Corporation, to Richard Chabrán, December 12, 1979
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00059">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00059_CSL00059_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Librarians Workshop
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00060">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00060_CSL00060_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Letter from Norma Radin, University of Michigan, to Richard Chabrán, January 10, 1978
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00061">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00061_CSL00061_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Letter from Fausto Fernández Ponte, Excélsior Newspaper, to Richard Chabrán, October 16, 1978
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00062">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00062_CSL00062_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Periodical Project Index Grant Proposal Cover Page
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00063">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00063_CSL00063_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Periodical Index Letter of Intent
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00064">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00064_CSL00064_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Periodical Indexing Project Grant Proposal to National Endowment for the Humanities Research Materials Programs -Tools 
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00065">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00065_CSL00065_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Periodical Index Processing Manual
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00066">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00066_CSL00066_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Periodical Index Launch Press Release
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00067">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00067_CSL00067_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     G.K. Hall Publicity Mailer for Chicano Periodical Index, 1979-1981
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00068">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00068_CSL00068_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Periodical Indexing Project, General Meeting Minutes
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00069">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00069_CSL00069_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Information management Consortium of CA
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00070">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00070_CSL00070_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Entry Card from old Serials Catalog Drawer
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00071">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00071_CSL00071_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Sample Serials Check In Card
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00072">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00072_CSL00072_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Voz de La A.B.C., Volume 1, Number 4, May 1976
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00073">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00073_CSL00073_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Posters from the Chicano Studies Library Collection
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00074">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00074_CSL00074_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Biblio-Política: Chicano Perspectives on Library Service in the United States (cover and title page)
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00075">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00075_CSL00075_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Apuntes de Padilla: A Chicano Prototype for Bibliographic Research
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00076">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00076_CSL00076_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Notes on the History and Future of Major Academic Chicano Libraries
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00077">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00077_CSL00077_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Usefulness of the Chicano Thesaurus for Indexing Chicano Materials
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00078">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00078_CSL00078_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Bibliography of Criticism of Contemporary Chicano Literature (front and back covers)
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00079">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00079_CSL00079_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Bibliography of Criticism of Contemporary Chicano Literature (title page)
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00080">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00080_CSL00080_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     "Chicano library thriving" article in Oakland Tribune, April 16, 1978
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00081">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00081_CSL00081_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Occupied America: A History of Chicanos (title page and preface)
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00082">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00082_CSL00082_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Letter from Hariette Surovell, MALDEF, to Richard Chabrán, April 13, 1978
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00083">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00083_CSL00083_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Letter from Barbara Boyd, Alameda County librarian, to Francisco García-Ayvens, May 12, 1980
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00084">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00084_CSL00084_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Chicano Database and the CD-ROM Experience
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00085">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00085_CSL00085_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Letter from James P. Danky to Francisco García-Ayvens, March 5, 1984
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00086">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00086_CSL00086_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Guide to the Chicano Database on CD-ROM
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00087">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00087_CSL00087_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Letter from Cesar Caballero to Richard Chabrán, October 14, 1981
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00088">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00088_CSL00088_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Memo from Library and Research Committee to Mesa Directiva, February 7, 1977
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00089">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00089_CSL00089_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Obreros: The Mexican Workers of el Paso, 1900-1920
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00090">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00090_CSL00090_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
     Anglo and Mexicans in the making of Texas, 1836-1986 Acknowledgements
   </div>
 </a>
-    </div><div class="pr-12">
+    </div><div class="px-6">
       <a class="inline-block" href="/bibliopolitica/item/CSL00091">
   <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00091_CSL00091_001/full/800,/0/default.jpg" class="" alt="">
   <div class="my-2 text-base leading-[1.4]">
@@ -816,8 +828,8 @@
     </div></div>
 </div>
 <script>
-  var siema = new Siema({
-    selector: '.siema',
+  var itemSiema = new Siema({
+    selector: '#siema-items',
     perPage: {
       200: 2,
       500: 4,
@@ -831,10 +843,10 @@
     threshold: 20,
     loop: true,
   });
-  document.querySelector('.prev').addEventListener('click', () => siema.prev());
-  document.querySelector('.next').addEventListener('click', () => siema.next());
+  document.querySelector('.prev-items').addEventListener('click', () => itemSiema.prev());
+  document.querySelector('.next-items').addEventListener('click', () => itemSiema.next());
 </script>
-</div>
+  </div>
 </div>
 <p>Ut eleifend lacus at erat efficitur bibendum. Ut laoreet elit nec dolor molestie finibus. Vivamus justo risus, scelerisque nec dolor ut, pretium fringilla purus. Nam nisl erat, tristique ac libero vitae, bibendum pellentesque nulla. Praesent accumsan ut mauris ut euismod. Etiam mattis a justo eget blandit. Aliquam vitae magna eget nisi suscipit finibus id sit amet nulla.</p>
 <p>Ut eleifend lacus at erat efficitur bibendum. Ut laoreet elit nec dolor molestie finibus. Vivamus justo risus, scelerisque nec dolor ut, pretium fringilla purus. Nam nisl erat, tristique ac libero vitae, bibendum pellentesque nulla. Praesent accumsan ut mauris ut euismod. Etiam mattis a justo eget blandit. Aliquam vitae magna eget nisi suscipit finibus id sit amet nulla.</p>

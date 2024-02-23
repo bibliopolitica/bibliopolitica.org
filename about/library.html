@@ -8,7 +8,7 @@
   <meta name="robots" content="noindex">
   <title>
     
-      Aspectos de la Literatura Chicana - BiblioPolítica
+      The Chicano Studies Library - BiblioPolítica
     
   </title>
   <link href="/bibliopolitica/css/styles.css" rel="stylesheet">
@@ -156,115 +156,13 @@
 
     <main class="flex-1">
       
-<div class="flex p-5 pb-6 items-center">
-  <div class="basis-5/6">
-    <h1 class="text-2xl md:text-4xl font-bold">Aspectos de la Literatura Chicana</h1>
-  </div>
-  <div class="basis-1/6 h-10 md:h-12 text-right flex justify-end">
-    <a href="/bibliopolitica/item/CSL00021.html" class="-mr-1 hover:text-neutral-content text-accent tooltip tooltip-bottom" data-tip="Previous item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1" stroke="currentColor" class="h-10 w-10 md:h-12 md:w-12">
-  <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-</svg>
-</a>
-    <a href="/bibliopolitica/item/CSL00023.html" class="hover:text-neutral-content text-accent tooltip tooltip-bottom" data-tip="Next item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1" stroke="currentColor" class="h-10 w-10 md:h-12 md:w-12">
-  <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-</svg>
+<article class="container mx-auto px-6 py-20 max-w-3xl prose lg:prose-lg text-base-content">
+  <h1 class="">The Chicano Studies Library</h1>
+  
+  
+  <p>Ut eleifend lacus at erat efficitur bibendum. Ut laoreet elit nec dolor molestie finibus. Vivamus justo risus, scelerisque nec dolor ut, pretium fringilla purus. Nam nisl erat, tristique ac libero vitae, bibendum pellentesque nulla. Praesent accumsan ut mauris ut euismod. Etiam mattis a justo eget blandit. Aliquam vitae magna eget nisi suscipit finibus id sit amet nulla.</p>
 
-  </a>
-  </div>
-</div>
-
-<article id="item-content-area" class="mx-5 mb-5 md:flex">
-  <div class="md:basis-1/2 md:shrink-0 h-[75vh]">
-    
-<div id="map" class="w-full z-0 h-full" style="background-color: #aeacb1;"></div>
-
-<script src="https://cdn.jsdelivr.net/npm/openseadragon@3.1/build/openseadragon/openseadragon.min.js"></script>
-<script type="text/javascript">
-  document.addEventListener("DOMContentLoaded", function () {
-    var manifestUrl = "https://aperitiiif-presentation-api-store.s3.us-east-1.amazonaws.com/bibliopolitica/CSL00022/manifest.json";
-    fetch(manifestUrl)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      return response.json();
-    })
-    .then(data => {
-      var tileSources = [];
-      data.sequences[0].canvases.forEach(function (val) {
-        tileSources.push(val.images[0].resource.service['@id'] + '/info.json');
-      });
-      window.viewer = OpenSeadragon({
-        id: "map",
-        sequenceMode: true,
-        prefixUrl: "/bibliopolitica/assets/vendor/osd/icons/",
-        tileSources: tileSources,
-        placeholderFillStyle: "#FFFFFF",
-        showReferenceStrip: true,
-        showHomeControl: false
-      });
-      // viewer.innerTracker.scrollHandler = false;
-    })
-    .catch(error => {
-      console.error('Error fetching manifest:', error);
-    });
-  });
-</script>
-  </div>
-  <div class="h-full">
-    <ul class="p-6 md:pl-10 space-y-2 md:basis-1/2 md:flex md:flex-col shrink min-w-80 bg-base-100 break-words">
-      <li><b>Alternate Title(s):</b> Aspects of Chicano Literature</li>
-      <li><b>Corporate Creator(s):</b> University of California, Berkeley. Chicano Studies Library</li>
-      <li><b>Person Creator(s):</b> N/A</li>
-      <li><b>Place(s) of Publication or Production:</b> Berkeley, California</li>
-      <li><b>Publisher Name(s):</b> Chicano Studies Library, University of California</li>
-      <li><b>Date of Publication or Production:</b> 1979</li>
-      <li><b>Extent:</b> 14 pages</li>
-      <li><b>Dimensions:</b> 8.5 x 11 inches</li>
-      <li><b>Language(s):</b> English; Spanish</li>
-      <li><b>Notes:</b> 
-        <ul>
-          
-          <li>Brochure for exhibit of Chicano literature</li>
-          
-        </ul>
-      </li>
-      <li><b>Narrative Summary:</b> N/A</li>
-      <li><b>Keyword(s):</b>
-        
-        <a class="link hover:text-accent">Literature</a>; 
-        
-        <a class="link hover:text-accent">Exhibits</a>
-        
-      </li>
-      <li><b>Subject(s):</b>
-        
-      </li>
-      <li><b>Genre(s):</b>
-        
-        <a class="link hover:text-accent">Exhibition catalogs</a>
-        
-      </li>
-      <li><b>Format(s):</b>
-        
-        <a class="link hover:text-accent">volume</a>
-        
-      </li>
-      <li><b>Rights Statement:</b> N/A</li>
-      <li><b>Library Call Number:</b> N/A</li>
-      <li><b>Link(s):</b>
-        
-      </li>
-      <li><b>Identifier(s):</b> N/A</li>
-      <li><b>IIIF Resource:</b>
-        <a class="link hover:text-accent" href="" target="_none">JSON Manifest</a>
-      </li>
-    </ul>
-  </div>
 </article>
-     
-
-
     </main>
     <footer class="footer footer-center  p-4 bg-base-300 text-base-content">
   <aside>
