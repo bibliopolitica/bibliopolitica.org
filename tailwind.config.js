@@ -14,21 +14,23 @@ module.exports = {
       {
         light: {
           ...require("daisyui/src/theming/themes")["light"],
-          "base-content": "#230616",
-          "accent": "#007A50",
-          "secondary": "#a6673e",
-          "neutral": "#E7DBC5",
-          "neutral-content": "#230616"
+          "base-100": "#F3EDE2", // alabaster
+          "base-content": "#230616", // dark purple
+          "accent": "#007A50", // dark spring green
+          "secondary": "#a6673e", // brown sugar
+          "neutral": "#E7DBC5", // pearl
+          "neutral-content": "#230616" // dark purple
         },
       }, 
       {
         dark: {
           ...require("daisyui/src/theming/themes")["dark"],
-          "primary": "#1a237e",
-          "secondary": "#007706",
-          "accent": "#007A50",
-          "neutral": "#F9F6F1",
-          "primary-content": "#340921"
+          "base-100": "#11030B", // licorice
+          "base-content": "#E7DBC5", // pearl
+          "accent": "#71b09a", // cambridge blue
+          "secondary": "#a6673e", // brown sugar
+          "neutral": "#33272e", // raisin black
+          "neutral-content": "#F3EDE2", // alabaster
         },
       },
     ],
