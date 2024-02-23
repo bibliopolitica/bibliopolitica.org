@@ -2,73 +2,72 @@
 layout: base
 ---
 
-<div class="flex p-5 pb-3 items-center">
+<div class="flex p-5 pb-6 items-center">
   <div class="basis-5/6">
     <h1 class="text-2xl md:text-4xl font-bold">{{ item.label }}</h1>
   </div>
   <div class="basis-1/6 h-10 md:h-12 text-right flex justify-end">
-    <a href="{{ pagination.href.previous | default: pagination.href.last | url }}" class="-mr-1 hover:text-accent tooltip tooltip-bottom" data-tip="Previous item">{% include "svg/arrow-left.svg" %}</a>
-    <a href="{{ pagination.href.next | default: pagination.href.first | url }}" class="hover:text-accent tooltip tooltip-bottom" data-tip="Next item">{% include "svg/arrow-right.svg" %}</a>
+    <a href="{{ pagination.href.previous | default: pagination.href.last | url }}" class="-mr-1 hover:text-neutral-content text-accent tooltip tooltip-bottom" data-tip="Previous item">{% include "svg/arrow-left.svg" %}</a>
+    <a href="{{ pagination.href.next | default: pagination.href.first | url }}" class="hover:text-neutral-content text-accent tooltip tooltip-bottom" data-tip="Next item">{% include "svg/arrow-right.svg" %}</a>
   </div>
 </div>
 
-<article id="item-content-area" class="mx-5 mb-5 md:flex border bg-neutral">
-  <div class="md:basis-1/2 md:shrink-0 md:h-[70vh] my-3">
-  {% include "components/viewers/osd-iiif.html" %}
+<article id="item-content-area" class="mx-5 mb-5 md:flex">
+  <div class="md:basis-1/2 md:shrink-0 h-[75vh]">
+    {% include "components/viewers/osd-iiif.html" %}
   </div>
-  <ul class="p-6 space-y-2 md:border-l md:basis-1/2 md:flex md:flex-col shrink min-w-80 bg-base-100 break-words">
-    <li><b>Alternate Title(s):</b> {{ item["Alternate title"] | join: '; ' | default: 'N/A' }}</li>
-    <li><b>Corporate Creator(s):</b> {{ item["Corporate Creator"] | join: '; ' | default: 'N/A' }}</li>
-    <li><b>Person Creator(s):</b> {{ item["Person Creator"] | join: '; ' | default: 'N/A' }}</li>
-    <li><b>Place(s) of Publication or Production:</b> {{ item["Place of Publication or Production"] | join: '; ' | default: 'N/A' }}</li>
-    <li><b>Publisher Name(s):</b> {{ item["Publisher Name"] | join: '; ' | default: 'N/A' }}</li>
-    <li><b>Date of Publication or Production:</b> {{ item["Date of Publication or Production"] | default: 'N/A' }}</li>
-    <li><b>Extent:</b> {{ item["Extent"] | default: 'N/A' }}</li>
-    <li><b>Dimensions:</b> {{ item["Dimensions"] | default: 'N/A' }}</li>
-    <li><b>Language(s):</b> {{ item["Language"] | join: '; ' | default: 'N/A' }}</li>
-    <li><b>Notes:</b> 
-      <ul>
-        {% for note in item["Notes"] %}
-        <li>{{ note }}</li>
+  <div class="h-full">
+    <ul class="p-6 md:pl-10 space-y-2 md:basis-1/2 md:flex md:flex-col shrink min-w-80 bg-base-100 break-words">
+      <li><b>Alternate Title(s):</b> {{ item["Alternate title"] | join: '; ' | default: 'N/A' }}</li>
+      <li><b>Corporate Creator(s):</b> {{ item["Corporate Creator"] | join: '; ' | default: 'N/A' }}</li>
+      <li><b>Person Creator(s):</b> {{ item["Person Creator"] | join: '; ' | default: 'N/A' }}</li>
+      <li><b>Place(s) of Publication or Production:</b> {{ item["Place of Publication or Production"] | join: '; ' | default: 'N/A' }}</li>
+      <li><b>Publisher Name(s):</b> {{ item["Publisher Name"] | join: '; ' | default: 'N/A' }}</li>
+      <li><b>Date of Publication or Production:</b> {{ item["Date of Publication or Production"] | default: 'N/A' }}</li>
+      <li><b>Extent:</b> {{ item["Extent"] | default: 'N/A' }}</li>
+      <li><b>Dimensions:</b> {{ item["Dimensions"] | default: 'N/A' }}</li>
+      <li><b>Language(s):</b> {{ item["Language"] | join: '; ' | default: 'N/A' }}</li>
+      <li><b>Notes:</b> 
+        <ul>
+          {% for note in item["Notes"] %}
+          <li>{{ note }}</li>
+          {% endfor %}
+        </ul>
+      </li>
+      <li><b>Narrative Summary:</b> {{ item["Narrative Summary"] | default: 'N/A' }}</li>
+      <li><b>Keyword(s):</b>
+        {% for keyword in item["Keyword"] %}
+        <a class="link hover:text-accent">{{ keyword }}</a>{% unless forloop.last %}; {% endunless %}
         {% endfor %}
-      </ul>
-    </li>
-    <li><b>Narrative Summary:</b> {{ item["Narrative Summary"] | default: 'N/A' }}</li>
-    <li><b>Keyword(s):</b>
-      {% for keyword in item["Keyword"] %}
-      <a class="link hover:text-accent">{{ keyword }}</a>{% unless forloop.last %}; {% endunless %}
-      {% endfor %}
-    </li>
-    <li><b>Subject(s):</b>
-      {% for subject in item["Subject"] %}
-      <a class="link hover:text-accent">{{ subject }}</a>{% unless forloop.last %}; {% endunless %}
-      {% endfor %}
-    </li>
-    <li><b>Genre(s):</b>
-      {% for genre in item["Genre"] %}
-      <a class="link hover:text-accent">{{ genre }}</a>{% unless forloop.last %}; {% endunless %}
-      {% endfor %}
-    </li>
-    <li><b>Format(s):</b>
-      {% for format in item["Format"] %}
-      <a class="link hover:text-accent">{{ format }}</a>{% unless forloop.last %}; {% endunless %}
-      {% endfor %}
-    </li>
-    <li><b>Rights Statement:</b> {{ item["Rights Statement"] | default: 'N/A' }}</li>
-    <li><b>Library Call Number:</b> {{ item["Library Call Number"] | default: 'N/A' }}</li>
-    <li><b>Link(s):</b>
-      {% for link in item["Link"] %}
-      <a class="link hover:text-accent" href="{{ link }}">{{ link }}</a>{% unless forloop.last %}; {% endunless %}
-      {% endfor %}
-    </li>
-    <li><b>Identifier(s):</b> {{ item["Identifier"] | join: '; ' | default: 'N/A' }}</li>
-    <li><b>IIIF Resource:</b>
-      <a class="link hover:text-accent" href="{{ item.manifest_url }}" target="_none">JSON Manifest</a>
-    </li>
-  </ul>
+      </li>
+      <li><b>Subject(s):</b>
+        {% for subject in item["Subject"] %}
+        <a class="link hover:text-accent">{{ subject }}</a>{% unless forloop.last %}; {% endunless %}
+        {% endfor %}
+      </li>
+      <li><b>Genre(s):</b>
+        {% for genre in item["Genre"] %}
+        <a class="link hover:text-accent">{{ genre }}</a>{% unless forloop.last %}; {% endunless %}
+        {% endfor %}
+      </li>
+      <li><b>Format(s):</b>
+        {% for format in item["Format"] %}
+        <a class="link hover:text-accent">{{ format }}</a>{% unless forloop.last %}; {% endunless %}
+        {% endfor %}
+      </li>
+      <li><b>Rights Statement:</b> {{ item["Rights Statement"] | default: 'N/A' }}</li>
+      <li><b>Library Call Number:</b> {{ item["Library Call Number"] | default: 'N/A' }}</li>
+      <li><b>Link(s):</b>
+        {% for link in item["Link"] %}
+        <a class="link hover:text-accent" href="{{ link }}">{{ link }}</a>{% unless forloop.last %}; {% endunless %}
+        {% endfor %}
+      </li>
+      <li><b>Identifier(s):</b> {{ item["Identifier"] | join: '; ' | default: 'N/A' }}</li>
+      <li><b>IIIF Resource:</b>
+        <a class="link hover:text-accent" href="{{ item.manifest_url }}" target="_none">JSON Manifest</a>
+      </li>
+    </ul>
+  </div>
 </article>
+     
 
-<!-- <div class=" grid grid-cols-2 mt-5 px-5 font-normal">
-  <a href="{{ pagination.href.previous | default: pagination.href.last | url }}" class="join-item btn btn-outline">PREVIOUS: {{ pagination.page.previous.label | default: pagination.page.last.label }}</a>
-  <a href="{{ pagination.href.next | default: pagination.href.first | url }}" class="join-item btn btn-outline">NEXT: {{ pagination.page.next.label | default: pagination.page.first.label }} &rarr;</a>
-</div> -->

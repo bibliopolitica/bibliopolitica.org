@@ -1,15 +1,8 @@
 {% capture manifest_url %}https://aperitiiif-presentation-api-store.s3.us-east-1.amazonaws.com/bibliopolitica/{{ item.id }}/manifest.json{% endcapture %}
-<div id="map" class="w-100 z-0 h-96 md:h-full bg-neutral"></div>
+<div id="map" class="w-full z-0 h-full" style="background-color: #aeacb1;"></div>
+
 <script src="https://cdn.jsdelivr.net/npm/openseadragon@3.1/build/openseadragon/openseadragon.min.js"></script>
 <script type="text/javascript">
-  function fullscreenchanged(event) {
-    if (window.viewer.isFullScreen()) {
-      window.viewer.element.classList.remove("h-96");
-    } else {
-      window.viewer.element.classList.add("h-96");
-    }
-  }
-  document.addEventListener("fullscreenchange", fullscreenchanged);
   document.addEventListener("DOMContentLoaded", function () {
     var manifestUrl = "{{ manifest_url }}";
     fetch(manifestUrl)

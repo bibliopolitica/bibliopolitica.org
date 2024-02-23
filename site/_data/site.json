@@ -1,14 +1,23 @@
 {
-  "title": "Bibliopolítica",
+  "title": "BiblioPolítica",
   "description": "TBD",
   "url": "",
   "menu": [
     {
-      "label": "About the Project",
-      "link": "/about"
+      "label": "Introduction",
+      "sub": [
+        {
+          "label": "The Chicano Studies Library",
+          "link": "/about/library"
+        },
+        {
+          "label": "The BiblioPolítica Project",
+          "link": "/about/project"
+        }
+      ]
     },
     {
-      "label": "Exhibits",
+      "label": "Exhibit Themes",
       "sub": [
         {
           "label": "Exhibit with Image",
@@ -21,10 +30,10 @@
       ]
     },
     {
-      "label": "Browse the Collection",
+      "label": "Collection Items",
       "sub": [
         {
-          "label": "Archival Items",
+          "label": "Archival Materials",
           "link": "/browse/items"
         },
         {
