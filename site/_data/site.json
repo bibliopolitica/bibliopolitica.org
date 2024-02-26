@@ -1,36 +1,43 @@
 {
-  "title": "BiblioPolítica",
+  "title": "Bibliopolítica",
   "description": "TBD",
   "url": "",
   "menu": [
     {
-      "label": "Introduction",
+      "label": "About the Project",
+      "link": "/about/project"
+    },
+    {
+      "label": "Exhibit Essays",
       "sub": [
         {
-          "label": "The Chicano Studies Library",
-          "link": "/about/library"
+          "label": "1 - Origins",
+          "link": "/exhibits/1"
         },
         {
-          "label": "The BiblioPolítica Project",
-          "link": "/about/project"
+          "label": "2 - A Chicano Studies Library",
+          "link": "/exhibits/2"
+        },
+        {
+          "label": "3 - Labels & Systems: We Built Our Own",
+          "link": "/exhibits/3"
+        },
+        {
+          "label": "4 - Library as Place",
+          "link": "/exhibits/4"
+        },
+        {
+          "label": "5 - Ethnic Studies Library Transition",
+          "link": "/exhibits/5"
+        },
+        {
+          "label": "6 - Impact & Future….",
+          "link": "/exhibits/6"
         }
       ]
     },
     {
-      "label": "Exhibit Themes",
-      "sub": [
-        {
-          "label": "Exhibit with Image",
-          "link": "/exhibits/exhibit-a"
-        },
-        {
-          "label": "Exhibit with Timeline",
-          "link": "/exhibits/exhibit-b"
-        }
-      ]
-    },
-    {
-      "label": "Collection Items",
+      "label": "Browse the Collection",
       "sub": [
         {
           "label": "Archival Materials",

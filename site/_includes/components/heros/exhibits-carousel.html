@@ -1,7 +1,7 @@
 <script src="{{ '/assets/vendor/siema.min.js' | url }}"></script>
 
 <div class="not-prose text-neutral-content mx-[calc(50%-50vw)] my-8 w-auto">
-  <h2 class="text-center text-4xl font-bold pb-6">Curated Exhibit Themes</h2>
+  <h2 class="text-center text-4xl font-bold pb-6">Exhibit Essays</h2>
   <div class="mx-auto text-center">
     <button class="prev-exhibit h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-left" data-tip="Previous">{% include "svg/arrow-left.svg" %}</button>
     &nbsp;
@@ -10,9 +10,8 @@
   <div class="hero block">
     <div class="hero-content mx-auto">
       <div id="siema-exhibits" class="siema">
-        {% assign featured = items | limit: 4 %}
-        {%- for item in featured -%}
-          <div class="p-6">
+        {%- for exhibit in exhibits -%}
+          <div class="p-4">
             {% include "partials/exhibit-card.html" %}
           </div>
         {%- endfor -%}

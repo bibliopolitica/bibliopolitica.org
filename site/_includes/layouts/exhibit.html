@@ -1,0 +1,18 @@
+---
+layout: base
+---
+
+<article class="container mx-auto px-6 py-10 max-w-3xl prose lg:prose-lg text-base-content">
+  <div class="my-8 text-right flex justify-end">
+    <a href="{{ pagination.href.previous | default: pagination.href.last | url }}" class="-mr-1 hover:text-neutral-content text-accent tooltip tooltip-bottom" data-tip="Previous Exhibit">{% include "svg/arrow-left.svg" %}</a>
+    <a href="{{ pagination.href.next | default: pagination.href.first | url }}" class="hover:text-neutral-content text-accent tooltip tooltip-bottom" data-tip="Next Exhibit">{% include "svg/arrow-right.svg" %}</a>
+  </div>
+
+  <div class="text-5xl font-bold text-neutral-500">#{{ exhibit.number }}</div>
+  <h1 class="my-4">{{ exhibit.title }}</h1>
+  {% if author %}div class="mt-4 italic">By {{ exhibit.author }}</div>{% endif %}
+
+  <div class="italic">By {{ exhibit.author | default: "Author/Curator Name(s) Here" }}</div>
+
+  <div class="font-serif my-8">{{ exhibit.content }}</div>
+</article>
