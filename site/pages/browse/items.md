@@ -5,7 +5,7 @@ layout: "base"
 permalink: "/browse/items/index.html"
 ---
 
-<h1 class="p-5 pb-3 md:pt-5 md:pb-9 text-3xl md:text-5xl font-bold">Browse Archival Items</h1>
+<h1 class="p-5 pb-3 md:pt-5 md:pb-9 text-3xl md:text-5xl md:tracking-tight font-bold">Browse Archival Items</h1>
 
 <div class="md:flex px-5 pb-10">
   <aside class="flex-none top-0 min-w-56">

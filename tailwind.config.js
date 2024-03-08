@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         serif: ["Alegreya", "serif"],
+        sans: ["DM Sans", "sans"]
       }
     },
   },

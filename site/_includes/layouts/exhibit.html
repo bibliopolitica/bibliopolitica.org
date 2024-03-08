@@ -9,7 +9,7 @@ layout: base
   </div>
 
   <div class="text-5xl font-bold text-neutral-500">#{{ exhibit.number }}</div>
-  <h1 class="my-4">{{ exhibit.title }}</h1>
+  <h1 class="my-4 tracking-tight">{{ exhibit.title }}</h1>
   {% if author %}div class="mt-4 italic">By {{ exhibit.author }}</div>{% endif %}
 
   <div class="italic">By {{ exhibit.author | default: "Author/Curator Name(s) Here" }}</div>
