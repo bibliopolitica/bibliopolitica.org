@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        serif: ["Alegreya", "serif"],
+        serif: ["Lora", "serif"],
         sans: ["DM Sans", "sans"]
       }
     },
