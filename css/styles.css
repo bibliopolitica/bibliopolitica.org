@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 
 /*
 ! tailwindcss v3.4.0 | MIT License | https://tailwindcss.com
@@ -48,7 +50,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: DM Sans, sans;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -535,7 +537,7 @@ html{
   --a: 0.450447 0.101004 160.553418;
   --n: 0.895204 0.032223 82.763237;
   --nc: 0.183317 0.055267 349.257661;
-  --b1: 0.947775 0.016002 82.792036;
+  --b1: 0.956283 0.014327 84.583437;
   --b2: 0.961151 0 0;
   --b3: 0.924169 0.00108 197.137559;
   --bc: 0.183317 0.055267 349.257661;
@@ -603,7 +605,7 @@ html{
   --a: 0.450447 0.101004 160.553418;
   --n: 0.895204 0.032223 82.763237;
   --nc: 0.183317 0.055267 349.257661;
-  --b1: 0.947775 0.016002 82.792036;
+  --b1: 0.956283 0.014327 84.583437;
   --b2: 0.961151 0 0;
   --b3: 0.924169 0.00108 197.137559;
   --bc: 0.183317 0.055267 349.257661;
@@ -636,7 +638,7 @@ html{
   --a: 0.450447 0.101004 160.553418;
   --n: 0.895204 0.032223 82.763237;
   --nc: 0.183317 0.055267 349.257661;
-  --b1: 0.947775 0.016002 82.792036;
+  --b1: 0.956283 0.014327 84.583437;
   --b2: 0.961151 0 0;
   --b3: 0.924169 0.00108 197.137559;
   --bc: 0.183317 0.055267 349.257661;
@@ -3776,9 +3778,9 @@ html{
   border-top-width: 1px !important;
 }
 
-.border-neutral-300{
+.border-neutral{
   --tw-border-opacity: 1 !important;
-  border-color: rgb(212 212 212 / var(--tw-border-opacity)) !important;
+  border-color: var(--fallback-n,oklch(var(--n)/var(--tw-border-opacity))) !important;
 }
 
 .bg-base-100{
@@ -3919,7 +3921,7 @@ html{
 }
 
 .font-serif{
-  font-family: Alegreya, serif !important;
+  font-family: Lora, serif !important;
 }
 
 .text-2xl{
@@ -3973,6 +3975,10 @@ html{
   line-height: 1.4 !important;
 }
 
+.tracking-tight{
+  letter-spacing: -0.025em !important;
+}
+
 .text-accent{
   --tw-text-opacity: 1 !important;
   color: var(--fallback-a,oklch(var(--a)/var(--tw-text-opacity))) !important;
@@ -3996,11 +4002,6 @@ html{
 .text-secondary{
   --tw-text-opacity: 1 !important;
   color: var(--fallback-s,oklch(var(--s)/var(--tw-text-opacity))) !important;
-}
-
-.drop-shadow-sm{
-  --tw-drop-shadow: drop-shadow(0 1px 1px rgb(0 0 0 / 0.05)) !important;
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
 }
 
 .ease-in{
@@ -4345,12 +4346,18 @@ html{
     padding-right: 2.5rem !important;
   }
 
-  .md\:pb-9{
-    padding-bottom: 2.25rem !important;
+  .md\:px-8{
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
   }
 
-  .md\:pl-10{
-    padding-left: 2.5rem !important;
+  .md\:py-2{
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  }
+
+  .md\:pb-9{
+    padding-bottom: 2.25rem !important;
   }
 
   .md\:pl-8{
@@ -4384,6 +4391,10 @@ html{
   .md\:text-sm{
     font-size: 0.875rem !important;
     line-height: 1.25rem !important;
+  }
+
+  .md\:tracking-tight{
+    letter-spacing: -0.025em !important;
   }
 }
 
