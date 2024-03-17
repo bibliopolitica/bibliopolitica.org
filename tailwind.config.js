@@ -15,7 +15,7 @@ module.exports = {
       {
         light: {
           ...require("daisyui/src/theming/themes")["light"],
-          "base-100": "#F3EDE2", // alabaster
+          "base-100": "#f5f0e6", // alabaster
           "base-content": "#230616", // dark purple
           "accent": "#006642", // dartmouth green "#007A50", // dark spring green
           "secondary": "#a6673e", // brown sugar

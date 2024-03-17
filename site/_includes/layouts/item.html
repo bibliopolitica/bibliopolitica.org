@@ -17,7 +17,7 @@ layout: base
     {% include "components/viewers/osd-iiif.html" %}
   </div>
   <div class="h-full">
-    <ul class="p-6 md:pl-10 space-y-2 md:basis-1/2 md:flex md:flex-col shrink min-w-80 bg-base-100 break-words">
+    <ul class="py-6 md:px-8 md:py-2 space-y-2 md:basis-1/2 md:flex md:flex-col shrink min-w-80 bg-base-100 break-words">
       <li><b>Alternate Title(s):</b> {{ item["Alternate title"] | join: '; ' | default: 'N/A' }}</li>
       <li><b>Corporate Creator(s):</b> {{ item["Corporate Creator"] | join: '; ' | default: 'N/A' }}</li>
       <li><b>Person Creator(s):</b> {{ item["Person Creator"] | join: '; ' | default: 'N/A' }}</li>

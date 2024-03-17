@@ -10,7 +10,7 @@ permalink: "/browse/items/index.html"
 <div class="md:flex px-5 pb-10">
   <aside class="flex-none top-0 min-w-56">
     <!-- mobile dropdown menu -->
-    <ul class="md:hidden menu menu-horizontal rounded-box border border-neutral-300 w-full mb-5">
+    <ul class="md:hidden menu menu-horizontal rounded-box border border-neutral w-full mb-5">
       <li>
       <details closed>
         <summary class="font-bold">Location</summary>
@@ -39,23 +39,23 @@ permalink: "/browse/items/index.html"
     <!-- desktop menu -->
     <ul class="hidden md:block md:text-sm sticky top-20 max-h-screen overflow-y-scroll">
       <li class="pb-5">
-        <div class="font-bold text-2xl mb-1">Location</div>
+        <div class="font-bold text-2xl tracking-tight mb-1">Location</div>
         <ul>
-          <li class="border-t py-1"><a href="">Turkey</a></li>
-          <li class="border-t py-1"><a href="">Iran</a></li>
-          <li class="border-t py-1"><a href="">Middle East and North Africa</a></li>
-          <li class="border-t py-1"><a href="">Egypt</a></li>
-          <li class="border-t py-1"><a class="italic" href="">Show more</a></li>
-        </ul> 
+          <li class="border-t border-neutral py-1"><a href="">Turkey</a></li>
+          <li class="border-t border-neutral py-1"><a href="">Iran</a></li>
+          <li class="border-t border-neutral py-1"><a href="">Middle East and North Africa</a></li>
+          <li class="border-t border-neutral py-1"><a href="">Egypt</a></li>
+          <li class="border-t border-neutral py-1"><a class="italic" href="">Show more</a></li>
+        </ul>
       </li>
-      <li class="pb-5">
-        <div class="font-bold text-2xl mb-1">Object Type</div>
+      <li class="pb-5"> 
+        <div class="font-bold border-neutral text-2xl tracking-tight mb-1">Object Type</div>
         <ul>
-          <li class="border-t py-1"><a href="">Manuscripts</a></li>
-          <li class="border-t py-1"><a class="font-bold text-accent" href="">Portraits</a></li>
-          <li class="border-t py-1"><a href="">Maps</a></li>
-          <li class="border-t py-1"><a href="">Panels</a></li>
-          <li class="border-t py-1"><a class="italic" href="">Show more</a></li>
+          <li class="border-t border-neutral py-1"><a href="">Manuscripts</a></li>
+          <li class="border-t border-neutral py-1"><a class="font-bold text-accent" href="">Portraits</a></li>
+          <li class="border-t border-neutral py-1"><a href="">Maps</a></li>
+          <li class="border-t border-neutral py-1"><a href="">Panels</a></li>
+          <li class="border-t border-neutral py-1"><a class="italic" href="">Show more</a></li>
         </ul>
       </li>
     </ul>
