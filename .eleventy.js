@@ -2,6 +2,7 @@ const cleancss          = require('clean-css')
 const moment            = require('moment')
 const markdownIt        = require("markdown-it")
 const markdownItAnchor  = require("markdown-it-anchor")
+const slugify           = require("slugify")
 
 moment.locale('en')
 
@@ -41,6 +42,11 @@ module.exports = function(eleventyConfig) {
 
   // Options for the `markdown-it-anchor` library
   const markdownItAnchorOptions = {
+    slugify: (str) => slugify(str, {
+      lower: true,
+      strict: true,
+      remove: /["]/g,
+    }),
     permalink: markdownItAnchor.permalink.linkInsideHeader({
       symbol: `#`,
       class: 'not-prose header-anchor',
