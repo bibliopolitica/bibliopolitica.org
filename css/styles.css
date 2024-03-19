@@ -3545,6 +3545,10 @@ html{
   max-height: 50vh !important;
 }
 
+.max-h-full{
+  max-height: 100% !important;
+}
+
 .max-h-screen{
   max-height: 100vh !important;
 }
@@ -3599,6 +3603,10 @@ html{
 
 .max-w-3xl{
   max-width: 48rem !important;
+}
+
+.max-w-56{
+  max-width: 14rem !important;
 }
 
 .max-w-full{
