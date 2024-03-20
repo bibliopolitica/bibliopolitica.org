@@ -1,4 +1,4 @@
-<div class="sticky top-0 z-50 navbar px-5 py-1 bg-base-100 border-b border-neutral">
+<div class="sticky top-0 z-50 navbar px-4 py-1 bg-base-100 border-b border-neutral">
   <div class="navbar-start w-2/3 md:w-1/5">
     <a class="max-h-full max-w-56 text-accent hover:text-neutral-content block" href="{{ '/' | url }}">
       {% include "svg/logo.svg" %}
@@ -47,7 +47,7 @@
             <summary>
               {{ item.label }}
             </summary>
-            <ul class="p-2 rounded-t-none">
+            <ul class="p-2 mt-0 rounded-t-none">
               {% for child in item.sub %}
               <li><a class="whitespace-nowrap"	href="{{ child.link | url }}">{{ child.label }}</a></li>
               {% endfor %}
