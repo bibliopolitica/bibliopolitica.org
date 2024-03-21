@@ -3473,6 +3473,10 @@ html{
   margin-right: 0.5rem !important;
 }
 
+.mt-0{
+  margin-top: 0px !important;
+}
+
 .mt-1{
   margin-top: 0.25rem !important;
 }
@@ -3599,6 +3603,10 @@ html{
 
 .min-w-80{
   min-width: 20rem !important;
+}
+
+.max-w-28{
+  max-width: 7rem !important;
 }
 
 .max-w-3xl{
@@ -3836,6 +3844,11 @@ html{
   padding-right: 0.25rem !important;
 }
 
+.px-3{
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
+}
+
 .px-5{
   padding-left: 1.25rem !important;
   padding-right: 1.25rem !important;
@@ -3861,22 +3874,30 @@ html{
   padding-bottom: 5rem !important;
 }
 
+.py-5{
+  padding-top: 1.25rem !important;
+  padding-bottom: 1.25rem !important;
+}
+
 .py-6{
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important;
-}
-
-.py-8{
-  padding-top: 2rem !important;
-  padding-bottom: 2rem !important;
 }
 
 .pb-10{
   padding-bottom: 2.5rem !important;
 }
 
+.pb-2{
+  padding-bottom: 0.5rem !important;
+}
+
 .pb-3{
   padding-bottom: 0.75rem !important;
+}
+
+.pb-4{
+  padding-bottom: 1rem !important;
 }
 
 .pb-5{
@@ -3947,14 +3968,14 @@ html{
   line-height: 1 !important;
 }
 
-.text-6xl{
-  font-size: 3.75rem !important;
-  line-height: 1 !important;
-}
-
 .text-base{
   font-size: 1rem !important;
   line-height: 1.5rem !important;
+}
+
+.text-lg{
+  font-size: 1.125rem !important;
+  line-height: 1.75rem !important;
 }
 
 .text-sm{
@@ -4534,6 +4555,11 @@ html{
     padding-right: 2rem !important;
   }
 
+  .md\:py-16{
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+
   .md\:py-2{
     padding-top: 0.5rem !important;
     padding-bottom: 0.5rem !important;
@@ -4578,6 +4604,11 @@ html{
   .md\:text-sm{
     font-size: 0.875rem !important;
     line-height: 1.25rem !important;
+  }
+
+  .md\:text-xl{
+    font-size: 1.25rem !important;
+    line-height: 1.75rem !important;
   }
 
   .md\:tracking-tight{
