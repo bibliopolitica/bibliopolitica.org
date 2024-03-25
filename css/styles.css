@@ -2113,6 +2113,12 @@ html{
   margin-top: 0;
 }
 
+.mockup-phone .display{
+  overflow: hidden;
+  border-radius: 40px;
+  margin-top: -25px;
+}
+
 .mockup-browser .mockup-browser-toolbar .input{
   position: relative;
   margin-left: auto;
@@ -3389,6 +3395,10 @@ html{
   grid-row-start: 1 !important;
 }
 
+.float-right{
+  float: right !important;
+}
+
 .mx-5{
   margin-left: 1.25rem !important;
   margin-right: 1.25rem !important;
@@ -3457,6 +3467,10 @@ html{
   margin-bottom: 2.5rem !important;
 }
 
+.mb-2{
+  margin-bottom: 0.5rem !important;
+}
+
 .mb-20{
   margin-bottom: 5rem !important;
 }
@@ -3467,6 +3481,10 @@ html{
 
 .mb-8{
   margin-bottom: 2rem !important;
+}
+
+.ml-1{
+  margin-left: 0.25rem !important;
 }
 
 .mr-2{
@@ -3503,6 +3521,10 @@ html{
 
 .grid{
   display: grid !important;
+}
+
+.contents{
+  display: contents !important;
 }
 
 .hidden{
@@ -3639,6 +3661,10 @@ html{
 
 .shrink{
   flex-shrink: 1 !important;
+}
+
+.grow{
+  flex-grow: 1 !important;
 }
 
 .basis-1\/2{
@@ -4015,6 +4041,11 @@ html{
 .text-accent{
   --tw-text-opacity: 1 !important;
   color: var(--fallback-a,oklch(var(--a)/var(--tw-text-opacity))) !important;
+}
+
+.text-base-100{
+  --tw-text-opacity: 1 !important;
+  color: var(--fallback-b1,oklch(var(--b1)/var(--tw-text-opacity))) !important;
 }
 
 .text-base-content{
