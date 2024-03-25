@@ -1,12 +1,12 @@
-<a class="inline-block" href="{{ '' | url }}/exhibits/{{ exhibit.number }}">
+<a class="inline-block" href="{{ '' | url }}/exhibits/{{ exhibit.data.number }}">
   <div class="card w-96 bg-neutral">
-      <img src="{{ exhibit.thumbnail }}" alt="" class="object-cover h-48 w-full mx-auto" />
+      <img src="{{ exhibit.data.thumbnail }}" alt="" class="object-cover h-48 w-full mx-auto" />
     <div class="card-body">
       <div class="card-title pt-2 text-2xl font-bold">
-        {{ exhibit.title }}
+        {{ exhibit.data.title }}
       </div>
       <div class="text-secondary">
-        {{ exhibit.tagline | default: "Lorem ipsum dolor si amet" }}
+        {{ exhibit.data.tagline | default: "Lorem ipsum dolor si amet" }}
       </div>
     </div>
   </div>
