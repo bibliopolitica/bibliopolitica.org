@@ -1,6 +1,32 @@
 ---
 layout: base
+metadata:
+  - key: Alternate title
+    list: true
+  - key: Corporate Name
+    list: true
+  - key: Personal Name
+    list: true
+  - key: Place of Publication or Production
+    list: true
+  - key: Publisher Name
+    list: true
+  - key: Date of Publication or Production
+    list: true
+  - key: Extent
+  - key: Dimensions
+  - key: Language
+    list: true
+  - key: Notes
+    list: true
+  - key: Narrative Summary
+  - key: Rights Statement
+  - key: Library Call Number
+  - key: Identifier
+    list: true
 ---
+
+{% capture manifest_url %}https://aperitiiif-presentation-api-store.s3.us-east-1.amazonaws.com/bibliopolitica/{{ item.id }}/manifest.json{% endcapture %}
 
 <div class="flex p-5 mb-5 border-b border-neutral items-center">
   <div class="basis-5/6">
@@ -18,53 +44,53 @@ layout: base
   </div>
   <div class="h-full">
     <ul class="py-6 md:px-8 md:py-2 space-y-2 md:basis-1/2 md:flex md:flex-col shrink min-w-80 bg-base-100 break-words">
-      <li><b>Alternate Title(s):</b> {{ item["Alternate title"] | join: '; ' | default: 'N/A' }}</li>
-      <li><b>Corporate Creator(s):</b> {{ item["Corporate Creator"] | join: '; ' | default: 'N/A' }}</li>
-      <li><b>Person Creator(s):</b> {{ item["Person Creator"] | join: '; ' | default: 'N/A' }}</li>
-      <li><b>Place(s) of Publication or Production:</b> {{ item["Place of Publication or Production"] | join: '; ' | default: 'N/A' }}</li>
-      <li><b>Publisher Name(s):</b> {{ item["Publisher Name"] | join: '; ' | default: 'N/A' }}</li>
-      <li><b>Date of Publication or Production:</b> {{ item["Date of Publication or Production"] | default: 'N/A' }}</li>
-      <li><b>Extent:</b> {{ item["Extent"] | default: 'N/A' }}</li>
-      <li><b>Dimensions:</b> {{ item["Dimensions"] | default: 'N/A' }}</li>
-      <li><b>Language(s):</b> {{ item["Language"] | join: '; ' | default: 'N/A' }}</li>
-      <li><b>Notes:</b> 
-        <ul>
-          {% for note in item["Notes"] %}
-          <li>{{ note }}</li>
-          {% endfor %}
-        </ul>
-      </li>
-      <li><b>Narrative Summary:</b> {{ item["Narrative Summary"] | default: 'N/A' }}</li>
-      <li><b>Keyword(s):</b>
+      {% for meta in metadata %}
+        {% if item[meta.key] %}
+          {% if meta.list %}
+          <li><b>{{ meta.key }}:</b> {{ item[meta.key] | join: '; ' }}
+          {% else %}
+          <li><b>{{ meta.key }}:</b> {{ item[meta.key] }}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+      
+      {% if item["Keyword"] %}
+      <li><b>Keyword:</b>
         {% for keyword in item["Keyword"] %}
         <a class="link hover:text-accent">{{ keyword }}</a>{% unless forloop.last %}; {% endunless %}
         {% endfor %}
       </li>
-      <li><b>Subject(s):</b>
+      {% endif %}
+      {% if item["Subject"] %}
+      <li><b>Subject:</b>
         {% for subject in item["Subject"] %}
         <a class="link hover:text-accent">{{ subject }}</a>{% unless forloop.last %}; {% endunless %}
         {% endfor %}
       </li>
-      <li><b>Genre(s):</b>
+      {% endif %}
+      {% if item["Genre"] %}
+      <li><b>Genre:</b>
         {% for genre in item["Genre"] %}
         <a class="link hover:text-accent">{{ genre }}</a>{% unless forloop.last %}; {% endunless %}
         {% endfor %}
       </li>
-      <li><b>Format(s):</b>
+      {% endif %}
+      {% if item["Format"] %}
+      <li><b>Format:</b>
         {% for format in item["Format"] %}
         <a class="link hover:text-accent">{{ format }}</a>{% unless forloop.last %}; {% endunless %}
         {% endfor %}
       </li>
-      <li><b>Rights Statement:</b> {{ item["Rights Statement"] | default: 'N/A' }}</li>
-      <li><b>Library Call Number:</b> {{ item["Library Call Number"] | default: 'N/A' }}</li>
-      <li><b>Link(s):</b>
+      {% endif %}
+      {% if item["Link"] %}
+      <li><b>Link:</b>
         {% for link in item["Link"] %}
-        <a class="link hover:text-accent" href="{{ link }}">{{ link }}</a>{% unless forloop.last %}; {% endunless %}
+        <a class="link hover:text-accent" href="{{ link }}" target="_none">{{ link }}</a>{% unless forloop.last %}; {% endunless %}
         {% endfor %}
       </li>
-      <li><b>Identifier(s):</b> {{ item["Identifier"] | join: '; ' | default: 'N/A' }}</li>
+      {% endif %}
       <li><b>IIIF Resource:</b>
-        <a class="link hover:text-accent" href="{{ item.manifest_url }}" target="_none">JSON Manifest</a>
+        <a class="link hover:text-accent" href="{{ manifest_url }}" target="_none">JSON Manifest</a>
       </li>
     </ul>
   </div>
