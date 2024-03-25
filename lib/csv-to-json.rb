@@ -2,7 +2,7 @@ require 'csv'
 require 'json'
 
 inpath          = "./lib/data/items-metadata.csv"
-outpath         = "./lib/data/items.json"
+outpath         = "./site/_data/items.json"
 keys_dropable   = ["Checked", "Status", "pid"]
 keys_repeatable = [
   "Alternate title", 
@@ -25,6 +25,7 @@ data = CSV.read(inpath, headers: true).map(&:to_h).map do |item|
   item['id'] = item['pid']
   keys_dropable.each { |key| item.delete key }
   keys_repeatable.each { |key| item[key] = item[key].to_s.split("|") }
+  item.each { |key, value| item.delete(key) if value.nil? or value.empty? }
   item
 end
 

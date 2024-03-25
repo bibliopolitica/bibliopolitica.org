@@ -4,12 +4,12 @@ layout: base
 
 <article class="container mx-auto px-6 py-10 max-w-3xl prose lg:prose-lg text-base-content">
 
-  <div class="my-8">
+  <div class="my-8 float-right text-right">
   {% for exhibit in collections.exhibit %}
     {% if exhibit.data.number == number %}
-    <a class="btn btn-sm text-base-100 btn-accent mr-2 mb-1 no-underline font-sans" href="{{ exhibit.data.permalink | url }}">{{ exhibit.data.number }}: {{ exhibit.data.title | strip_html }}</a>
+    <a class="btn btn-sm text-base-100 btn-accent ml-1 mb-2 no-underline font-sans" href="{{ exhibit.data.permalink | url }}">{{ exhibit.data.number }}: {{ exhibit.data.title | strip_html }}</a>
     {% else %}
-    <a class="btn btn-sm btn-outline btn-accent mr-2 mb-1 no-underline font-sans" href="{{ exhibit.data.permalink | url }}">{{ exhibit.data.number }}: {{ exhibit.data.title | strip_html }}</a>
+    <a class="btn btn-sm btn-outline btn-accent ml-1 mb-2 no-underline font-sans" href="{{ exhibit.data.permalink | url }}">{{ exhibit.data.number }}: {{ exhibit.data.title | strip_html }}</a>
     {% endif %}
   {% endfor %}
   </div>
