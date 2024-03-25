@@ -8,7 +8,11 @@
     {% if page.url == '/' %}
       {{ site.title }}
     {% else %}
-      {{ title | default: item.label }} - {{ site.title }}
+      {% if item.label %}
+        {{ item.label | strip_html }} - {{ site.title }}
+      {% else %}
+        {{ exhibit.title | strip_html | default: title }} - {{ site.title }}
+      {% endif %}
     {% endif %}
   </title>
   <link href="{{ '/css/styles.css' | url }}" rel="stylesheet">

@@ -3,16 +3,22 @@ layout: base
 ---
 
 <article class="container mx-auto px-6 py-10 max-w-3xl prose lg:prose-lg text-base-content">
-  <div class="my-8 text-right flex justify-end">
-    <a href="{{ pagination.href.previous | default: pagination.href.last | url }}" class="-mr-1 hover:text-neutral-content text-accent tooltip tooltip-bottom" data-tip="Previous Exhibit">{% include "svg/arrow-left.svg" %}</a>
-    <a href="{{ pagination.href.next | default: pagination.href.first | url }}" class="hover:text-neutral-content text-accent tooltip tooltip-bottom" data-tip="Next Exhibit">{% include "svg/arrow-right.svg" %}</a>
+
+  <div class="my-8">
+  {% for exhibit in collections.exhibit %}
+    {% if exhibit.data.number == number %}
+    <a class="btn btn-sm text-base-100 btn-accent mr-2 mb-1 no-underline font-sans" href="{{ exhibit.data.permalink | url }}">{{ exhibit.data.number }}: {{ exhibit.data.title | strip_html }}</a>
+    {% else %}
+    <a class="btn btn-sm btn-outline btn-accent mr-2 mb-1 no-underline font-sans" href="{{ exhibit.data.permalink | url }}">{{ exhibit.data.number }}: {{ exhibit.data.title | strip_html }}</a>
+    {% endif %}
+  {% endfor %}
   </div>
 
-  <div class="text-5xl font-bold text-neutral-500">#{{ exhibit.number }}</div>
-  <h1 class="my-4 tracking-tight">{{ exhibit.title }}</h1>
-  {% if author %}div class="mt-4 italic">By {{ exhibit.author }}</div>{% endif %}
+  <div class="text-5xl font-bold text-neutral-500">#{{ number }}</div>
+  <h1 class="my-4 tracking-tight">{{ title }}</h1>
+  {% if author %}div class="mt-4 italic">By {{ author }}</div>{% endif %}
 
-  <div class="italic">By {{ exhibit.author | default: "Author/Curator Name(s) Here" }}</div>
+  <div class="italic">By {{ author | default: "Author/Curator Name(s) Here" }}</div>
 
-  <div class="font-serif my-8">{{ exhibit.content }}</div>
+  <div class="font-serif my-8">{{ content }}</div>
 </article>
