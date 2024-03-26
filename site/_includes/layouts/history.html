@@ -1,0 +1,84 @@
+---
+layout: base
+metadata:
+  - key: Personal Name
+    list: true
+  - key: Place of Recording
+  - key: Date of Recording
+  - key: Running Time
+  - key: Language
+    list: true
+  - key: Notes
+    list: true
+  - key: Narrative Summary
+  - key: Rights Statement
+  - key: Identifier
+    list: true
+---
+
+<div class="flex p-5 mb-5 border-b border-neutral items-center">
+  <div class="basis-5/6">
+    <h1 class="text-2xl md:text-4xl md:tracking-tight font-bold">{{ history.label }}</h1>
+  </div>
+  <div class="basis-1/6 h-10 md:h-12 text-right flex justify-end">
+    <a href="{{ pagination.href.previous | default: pagination.href.last | url }}" class="-mr-1 hover:text-neutral-content text-accent tooltip tooltip-bottom" data-tip="Previous item">{% include "svg/arrow-left.svg" %}</a>
+    <a href="{{ pagination.href.next | default: pagination.href.first | url }}" class="hover:text-neutral-content text-accent tooltip tooltip-bottom" data-tip="Next item">{% include "svg/arrow-right.svg" %}</a>
+  </div>
+</div>
+
+<article id="item-content-area" class="mx-5 mb-5 md:flex">
+  <div class="md:basis-1/2 md:shrink-0 h-[75vh]">
+    <iframe class="w-full z-0 h-full" id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1674401/sp/167440100/embedIframeJs/uiconf_id/23435151/partner_id/1674401?iframeembed=true&playerId=kaltura_player&entry_id={{ history['Stream Id'] }}&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[LeadWithHLSOnFlash]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_y7lxxlyu" width="100%" height="350" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="{{ history.label }}"></iframe>
+  </div>
+  <div class="h-full">
+    <ul class="py-6 md:px-8 md:py-2 space-y-2 md:basis-1/2 md:flex md:flex-col shrink min-w-80 bg-base-100 break-words">
+      {% for meta in metadata %}
+        {% if history[meta.key] %}
+          {% if meta.list %}
+          <li><b>{{ meta.key }}:</b> {{ history[meta.key] | join: '; ' }}
+          {% else %}
+          <li><b>{{ meta.key }}:</b> {{ history[meta.key] }}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+      
+      {% if history["Keyword"] %}
+      <li><b>Keyword:</b>
+        {% for keyword in history["Keyword"] %}
+        <a class="link hover:text-accent">{{ keyword }}</a>{% unless forloop.last %}; {% endunless %}
+        {% endfor %}
+      </li>
+      {% endif %}
+      {% if history["Subject"] %}
+      <li><b>Subject:</b>
+        {% for subject in history["Subject"] %}
+        <a class="link hover:text-accent">{{ subject }}</a>{% unless forloop.last %}; {% endunless %}
+        {% endfor %}
+      </li>
+      {% endif %}
+      {% if history["Genre"] %}
+      <li><b>Genre:</b>
+        {% for genre in history["Genre"] %}
+        <a class="link hover:text-accent">{{ genre }}</a>{% unless forloop.last %}; {% endunless %}
+        {% endfor %}
+      </li>
+      {% endif %}
+      {% if history["Format"] %}
+      <li><b>Format:</b>
+        {% for format in history["Format"] %}
+        <a class="link hover:text-accent">{{ format }}</a>{% unless forloop.last %}; {% endunless %}
+        {% endfor %}
+      </li>
+      {% endif %}
+      {% if history["Link"] %}
+      <li><b>Link:</b>
+        {% for link in history["Link"] %}
+        <a class="link hover:text-accent" href="{{ link }}" target="_none">{{ link }}</a>{% unless forloop.last %}; {% endunless %}
+        {% endfor %}
+      </li>
+      {% endif %}
+    </ul>
+  </div>
+</article>
+     
+
