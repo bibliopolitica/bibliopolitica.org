@@ -2,12 +2,5 @@
   <aside>
     <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
   </aside>
-  <script>
-    // Check the dark-mode checkbox if
-    // - The override is set to dark
-    // - No override is set but the system prefers dark mode
-    if ((colorModeOverride == 'dark') || (!hasColorModeOverride && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.querySelector('#toggle-darkmode').checked = true;
-    }
-  </script>
 </footer>
+<script src="{{ '/assets/theme-toggle-local.js' | url }}"></script>
