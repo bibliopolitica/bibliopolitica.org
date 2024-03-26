@@ -64,6 +64,7 @@ module.exports = function(eleventyConfig) {
   // layout aliases 
   eleventyConfig.addLayoutAlias('base', 'layouts/base.html')
   eleventyConfig.addLayoutAlias('exhibit', 'layouts/exhibit.html')
+  eleventyConfig.addLayoutAlias('history', 'layouts/history.html')
   eleventyConfig.addLayoutAlias('item', 'layouts/item.html')
   eleventyConfig.addLayoutAlias('page', 'layouts/page.html')
 
