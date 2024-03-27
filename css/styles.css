@@ -1517,6 +1517,18 @@ html{
   justify-content: flex-end;
 }
 
+.progress{
+  position: relative;
+  width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  overflow: hidden;
+  height: 0.5rem;
+  border-radius: var(--rounded-box, 1rem);
+  background-color: var(--fallback-bc,oklch(var(--bc)/0.2));
+}
+
 .timeline{
   position: relative;
   display: flex;
@@ -2169,6 +2181,51 @@ html{
   0%{
     opacity: 0;
   }
+}
+
+.progress::-moz-progress-bar{
+  border-radius: var(--rounded-box, 1rem);
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-bc,oklch(var(--bc)/var(--tw-bg-opacity)));
+}
+
+.progress:indeterminate{
+  --progress-color: var(--fallback-bc,oklch(var(--bc)/1));
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--progress-color) -1%,
+    var(--progress-color) 10%,
+    transparent 10%,
+    transparent 90%
+  );
+  background-size: 200%;
+  background-position-x: 15%;
+  animation: progress-loading 5s ease-in-out infinite;
+}
+
+.progress::-webkit-progress-bar{
+  border-radius: var(--rounded-box, 1rem);
+  background-color: transparent;
+}
+
+.progress::-webkit-progress-value{
+  border-radius: var(--rounded-box, 1rem);
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-bc,oklch(var(--bc)/var(--tw-bg-opacity)));
+}
+
+.progress:indeterminate::-moz-progress-bar{
+  background-color: transparent;
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--progress-color) -1%,
+    var(--progress-color) 10%,
+    transparent 10%,
+    transparent 90%
+  );
+  background-size: 200%;
+  background-position-x: 15%;
+  animation: progress-loading 5s ease-in-out infinite;
 }
 
 @keyframes progress-loading{
@@ -3395,8 +3452,8 @@ html{
   grid-row-start: 1 !important;
 }
 
-.float-right{
-  float: right !important;
+.m-0{
+  margin: 0px !important;
 }
 
 .mx-5{
@@ -3487,6 +3544,10 @@ html{
   margin-left: 0.25rem !important;
 }
 
+.mr-0{
+  margin-right: 0px !important;
+}
+
 .mr-2{
   margin-right: 0.5rem !important;
 }
@@ -3535,6 +3596,10 @@ html{
   height: 2.5rem !important;
 }
 
+.h-20{
+  height: 5rem !important;
+}
+
 .h-24{
   height: 6rem !important;
 }
@@ -3555,12 +3620,28 @@ html{
   height: 30rem !important;
 }
 
+.h-\[50\%\]{
+  height: 50% !important;
+}
+
+.h-\[65\%\]{
+  height: 65% !important;
+}
+
+.h-\[65vh\]{
+  height: 65vh !important;
+}
+
 .h-\[75vh\]{
   height: 75vh !important;
 }
 
 .h-auto{
   height: auto !important;
+}
+
+.h-dvh{
+  height: 100dvh !important;
 }
 
 .h-full{
@@ -3613,6 +3694,10 @@ html{
 
 .w-auto{
   width: auto !important;
+}
+
+.w-dvw{
+  width: 100dvw !important;
 }
 
 .w-full{
@@ -3681,6 +3766,10 @@ html{
 
 .basis-5\/6{
   flex-basis: 83.333333% !important;
+}
+
+.basis-full{
+  flex-basis: 100% !important;
 }
 
 .cursor-pointer{
@@ -3761,6 +3850,22 @@ html{
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse)) !important;
 }
 
+.overflow-hidden{
+  overflow: hidden !important;
+}
+
+.overflow-x-auto{
+  overflow-x: auto !important;
+}
+
+.overflow-y-hidden{
+  overflow-y: hidden !important;
+}
+
+.overflow-x-clip{
+  overflow-x: clip !important;
+}
+
 .overflow-y-scroll{
   overflow-y: scroll !important;
 }
@@ -3835,9 +3940,18 @@ html{
   stroke: var(--fallback-b1,oklch(var(--b1)/1)) !important;
 }
 
+.object-contain{
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+}
+
 .object-cover{
   -o-object-fit: cover !important;
      object-fit: cover !important;
+}
+
+.p-12{
+  padding: 3rem !important;
 }
 
 .p-2{
@@ -3881,9 +3995,9 @@ html{
   padding-bottom: 0.25rem !important;
 }
 
-.py-10{
-  padding-top: 2.5rem !important;
-  padding-bottom: 2.5rem !important;
+.py-12{
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
 }
 
 .py-20{
@@ -3927,6 +4041,14 @@ html{
 
 .pb-8{
   padding-bottom: 2rem !important;
+}
+
+.pl-12{
+  padding-left: 3rem !important;
+}
+
+.pr-0{
+  padding-right: 0px !important;
 }
 
 .pt-12{
@@ -4073,6 +4195,18 @@ html{
   &:hover {
     opacity: 80%;
   }
+}
+
+.hide-scroll {
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
 }
 
 @media not all and (min-width: 768px){
@@ -4535,6 +4669,10 @@ html{
     height: 3rem !important;
   }
 
+  .md\:h-dvh{
+    height: 100dvh !important;
+  }
+
   .md\:w-1\/5{
     width: 20% !important;
   }
@@ -4549,6 +4687,10 @@ html{
 
   .md\:basis-1\/2{
     flex-basis: 50% !important;
+  }
+
+  .md\:basis-2\/5{
+    flex-basis: 40% !important;
   }
 
   .md\:grid-cols-2{
