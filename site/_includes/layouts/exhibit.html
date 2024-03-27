@@ -1,24 +1,44 @@
----
-layout: base
----
+<!doctype html>
+<html lang="en" id="top" data-theme="light" class="bg-base-100 text-base-content scroll-pt-20 h-dvh w-dvw overflow-hidden">
+  {% include "partials/head.html" %}
+  <body class="flex flex-col">
+    {% include "partials/header.html" %}
+    <main class="flex-1">
+      <article id="item-content-area" class="mx-5 mb-5 md:flex h-dvh">
+        <div class="basis-full md:basis-2/5 h-[65vh] md:h-dvh p-12 m-0 flex-none">
+          <div class="my-8 text-3xl font-bold">Featured Items</div>
+          <div class="h-[65%] w-full border overflow-y-hidden overflow-x-auto flex">
+            {% for item in featured_items %}
+              <div class="h-[50%] flex-none">
+                {% capture img_url %}https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_{{ item.id }}_{{ item.id }}_001/full/800,/0/default.jpg{% endcapture %}
+                <img src="{{ img_url }}" class="object-contain" />
+                <a href="{{ '/item/'| append: item.id | url }}" >{{ item.label }}</a>
+              </div> 
+            {% endfor %}
+          </div>
+        </div>
 
-<article class="container mx-auto px-6 py-10 max-w-3xl prose lg:prose-lg text-base-content">
+        <div class="flex-none h-dvh py-12 pl-12 pr-0 mr-0 overflow-y-scroll overflow-x-clip max-w-3xl prose lg:prose-lg text-base-content hide-scroll">
+          <div class="my-8">
+          {% for exhibit in collections.exhibit %}
+            {% if exhibit.data.number == number %}
+            <a class="btn btn-sm text-base-100 btn-accent ml-1 mb-2 no-underline font-sans" href="{{ exhibit.data.permalink | url }}">{{ exhibit.data.number }}: {{ exhibit.data.title | strip_html }}</a>
+            {% else %}
+            <a class="btn btn-sm btn-outline btn-accent ml-1 mb-2 no-underline font-sans" href="{{ exhibit.data.permalink | url }}">{{ exhibit.data.number }}: {{ exhibit.data.title | strip_html }}</a>
+            {% endif %}
+          {% endfor %}
+          </div>
+          <div class="text-5xl font-bold text-neutral-500">#{{ number }}</div>
+          <h1 class="my-4 tracking-tight">{{ title }}</h1>
+          {% if author %}div class="mt-4 italic">By {{ author }}</div>{% endif %}
+          <div class="italic">By {{ author | default: "Author/Curator Name(s) Here" }}</div>
+          <div class="font-serif my-8">{{ content }}</div>
+          <div class="h-20"></div>
+        </div>
+      </article>
+    </main>
+    {% include "partials/footer.html" %}
+  </body>
+</html>
 
-  <div class="my-8 float-right text-right">
-  {% for exhibit in collections.exhibit %}
-    {% if exhibit.data.number == number %}
-    <a class="btn btn-sm text-base-100 btn-accent ml-1 mb-2 no-underline font-sans" href="{{ exhibit.data.permalink | url }}">{{ exhibit.data.number }}: {{ exhibit.data.title | strip_html }}</a>
-    {% else %}
-    <a class="btn btn-sm btn-outline btn-accent ml-1 mb-2 no-underline font-sans" href="{{ exhibit.data.permalink | url }}">{{ exhibit.data.number }}: {{ exhibit.data.title | strip_html }}</a>
-    {% endif %}
-  {% endfor %}
-  </div>
 
-  <div class="text-5xl font-bold text-neutral-500">#{{ number }}</div>
-  <h1 class="my-4 tracking-tight">{{ title }}</h1>
-  {% if author %}div class="mt-4 italic">By {{ author }}</div>{% endif %}
-
-  <div class="italic">By {{ author | default: "Author/Curator Name(s) Here" }}</div>
-
-  <div class="font-serif my-8">{{ content }}</div>
-</article>
