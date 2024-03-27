@@ -5,25 +5,20 @@
     {% include "partials/header.html" %}
     <main class="flex-1">
       <article id="item-content-area" class="mx-5 mb-5 md:flex h-dvh">
-        <div class="md:basis-2/5 md:shrink-0 h-[65vh] md:h-dvh p-12 m-0">
+        <div class="basis-full md:basis-2/5 h-[65vh] md:h-dvh p-12 m-0 flex-none">
           <div class="my-8 text-3xl font-bold">Featured Items</div>
-
-            <div class="carousel h-[50vh]">
-              {% for item in featured_items %}
-                <div class="carousel-item h-full w-full overflow-hidden">
-                  {% capture img_url %}https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_{{ item.id }}_{{ item.id }}_001/full/800,/0/default.jpg{% endcapture %}
-                  <img src="{{ img_url }}" class="object-cover" />
-                  <!-- <a href="{{ '/item/'| append: item.id | url }}" >{{ item.label }}</a> -->
-                </div> 
-              </a>
-              {% endfor %}
- 
-            </div>
-
+          <div class="h-[65%] w-full border overflow-y-hidden overflow-x-auto flex">
+            {% for item in featured_items %}
+              <div class="h-[50%] flex-none">
+                {% capture img_url %}https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_{{ item.id }}_{{ item.id }}_001/full/800,/0/default.jpg{% endcapture %}
+                <img src="{{ img_url }}" class="object-contain" />
+                <a href="{{ '/item/'| append: item.id | url }}" >{{ item.label }}</a>
+              </div> 
+            {% endfor %}
           </div>
         </div>
 
-        <div class="h-dvh py-12 pl-12 pr-0 mr-0 overflow-y-scroll overflow-x-clip max-w-3xl prose lg:prose-lg text-base-content hide-scroll">
+        <div class="flex-none h-dvh py-12 pl-12 pr-0 mr-0 overflow-y-scroll overflow-x-clip max-w-3xl prose lg:prose-lg text-base-content hide-scroll">
           <div class="my-8">
           {% for exhibit in collections.exhibit %}
             {% if exhibit.data.number == number %}
