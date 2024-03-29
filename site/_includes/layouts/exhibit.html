@@ -1,39 +1,44 @@
 <!doctype html>
-<html lang="en" id="top" data-theme="light" class="bg-base-100 text-base-content scroll-pt-20 h-dvh w-dvw overflow-hidden">
+<html lang="en" id="top" data-theme="light" class="bg-base-100 text-base-content">
   {% include "partials/head.html" %}
   <body class="flex flex-col">
     {% include "partials/header.html" %}
-    <main class="flex-1">
-      <article id="item-content-area" class="mx-5 mb-5 md:flex h-dvh">
-        <div class="basis-full md:basis-2/5 h-[65vh] md:h-dvh p-12 m-0 flex-none">
-          <div class="my-8 text-3xl font-bold">Featured Items</div>
-          <div class="h-[65%] w-full border overflow-y-hidden overflow-x-auto flex">
-            {% for item in featured_items %}
-              <div class="h-[50%] flex-none">
-                {% capture img_url %}https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_{{ item.id }}_{{ item.id }}_001/full/800,/0/default.jpg{% endcapture %}
-                <img src="{{ img_url }}" class="object-contain" />
-                <a href="{{ '/item/'| append: item.id | url }}" >{{ item.label }}</a>
-              </div> 
-            {% endfor %}
-          </div>
+    <main class="p-5 md:pt-3">
+      <article id="item-content-area" class="">
+        <ul class="hidden md:block mb-10 text-secondary">
+        {% for exhibit in collections.exhibit %}
+          {% if exhibit.data.number == number %}
+          <li class="inline mr-3 font-bold text-accent whitespace-nowrap leading-loose"><a href="{{ exhibit.data.permalink | url }}">{{ exhibit.data.number }}: {{ exhibit.data.title | strip_html }}</a></li>
+          {% else %}
+          <li class="inline mr-3 whitespace-nowrap leading-relaxed"><a class="" href="{{ exhibit.data.permalink | url }}">{{ exhibit.data.number }}: {{ exhibit.data.title | strip_html }}</a></li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+        <div class="text-base-content pb-4 md:mx-[calc(50%-50vw)] md:border-b md:border-neutral md:p-4">
+          <div class="text-4xl md:text-5xl inline">{{ number }}.</div>
+          <h1 class="font-bold text-4xl tracking-tight inline md:text-5xl mb-3">{{ title }}</h1>
+          {% if author %}<div class="mt-4 font-serif italic">By {{ author }}</div>{% endif %}
+          <div class="mt-2 font-serif italic">By {{ author | default: "Author/Curator Name(s) Here" }}</div>
         </div>
-
-        <div class="flex-none h-dvh py-12 pl-12 pr-0 mr-0 overflow-y-scroll overflow-x-clip max-w-3xl prose lg:prose-lg text-base-content hide-scroll">
-          <div class="my-8">
-          {% for exhibit in collections.exhibit %}
-            {% if exhibit.data.number == number %}
-            <a class="btn btn-sm text-base-100 btn-accent ml-1 mb-2 no-underline font-sans" href="{{ exhibit.data.permalink | url }}">{{ exhibit.data.number }}: {{ exhibit.data.title | strip_html }}</a>
-            {% else %}
-            <a class="btn btn-sm btn-outline btn-accent ml-1 mb-2 no-underline font-sans" href="{{ exhibit.data.permalink | url }}">{{ exhibit.data.number }}: {{ exhibit.data.title | strip_html }}</a>
-            {% endif %}
-          {% endfor %}
+        <div class="flex">
+          <div class="md:flex md:flex-row-reverse md:gap-x-8">
+            <div class="md:basis-1/2 mx-[calc(50%-50vw)] md:mx-auto border-y border-neutral md:border-none p-5 md:p-3">
+              <div class="hidden md:block text-2xl font-bold mb-2">Featured Items</div>
+              <div class="columns columns-4 md:columns-2 gap-x-2">
+              {% for item in featured_items %}
+                <div class="mb-2 break-inside-avoid-column">
+                  <a href="{{ '/item/'| append: item.id | url }}" class="block tooltip tooltip-bottom" data-tip="{{ item.label }}">
+                    {% capture img_url %}https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_{{ item.id }}_{{ item.id }}_001/full/800,/0/default.jpg{% endcapture %}
+                    <img src="{{ img_url }}" class="" />
+                  </a>
+                </div> 
+              {% endfor %}
+              </div>
+            </div>
+            <div class="md:basis-1/2">
+              <div class="prose md:prose-lg text-base-content font-serif mt-4 mb-8">{{ content }}</div>
+            </div>
           </div>
-          <div class="text-5xl font-bold text-neutral-500">#{{ number }}</div>
-          <h1 class="my-4 tracking-tight">{{ title }}</h1>
-          {% if author %}div class="mt-4 italic">By {{ author }}</div>{% endif %}
-          <div class="italic">By {{ author | default: "Author/Curator Name(s) Here" }}</div>
-          <div class="font-serif my-8">{{ content }}</div>
-          <div class="h-20"></div>
         </div>
       </article>
     </main>
