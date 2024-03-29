@@ -5,22 +5,8 @@ layout: page
 permalink: "/browse/oral-histories/index.html"
 ---
 
-Ut eleifend lacus at erat efficitur bibendum. Ut laoreet elit nec dolor molestie finibus. Vivamus justo risus, scelerisque nec dolor ut, pretium fringilla purus. Nam nisl erat, tristique ac libero vitae, bibendum pellentesque nulla. 
+The Bibliopolítica Oral History Collection includes stories from Chicanx Studies faculty and former staff from the Chicano Studies Library. Recorded in part at the Ethnic Studies Changemaker Studio at University of California Berkeley as well as remotely, these voices capture the history and heart of the library. The interviews were conducted by Amanda Belantara in collaboration with Richard Chabrán and Lillian Castillo-Speed. 
 
 ## Contents
 
 {% for history in oral-histories %}<a href="{{ '/history' | url }}/{{ history.id }}.html" class="btn btn-sm btn-outline btn-accent mr-2 mb-1 no-underline font-sans">{{ history.label }}</a>{% endfor %}
-<!-- 
-{% for history in histories %}
-### {{ history.name }}
-<br>
-
-<br>
-<details>
-  <summary class="link text-sm font-mono">Show full transcript</summary>
-  <div class="text-sm font-mono">TO DO !!!!!</div>
-</details>
-
-<br>
-<br>
-{% endfor %} -->
