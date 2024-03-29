@@ -20,3 +20,31 @@
 .hide-scroll::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
 }
+
+summary.meta-summary {
+  display: block;
+  cursor: pointer;
+}
+  
+summary.meta-summary::after {
+  display: inline-block;
+  content: '►';
+  transition: 0.2s;
+}
+
+summary.meta-summary::before {
+  content: 'Show';
+}
+  
+details[open] > summary.meta-summary::after {
+  transform: rotate(90deg);
+}
+
+details[open] > summary.meta-summary::before {
+  content: 'Hide';
+}
+
+
+.transcript p {
+  padding-top: 1ch;
+}
