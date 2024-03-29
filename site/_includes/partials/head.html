@@ -10,6 +10,8 @@
     {% else %}
       {% if item.label %}
         {{ item.label | strip_html }} - {{ site.title }}
+      {% elsif history.label %}
+        {{ history.label| strip_html }} - {{ site.title }}
       {% else %}
         {{ exhibit.title | strip_html | default: title }} - {{ site.title }}
       {% endif %}
