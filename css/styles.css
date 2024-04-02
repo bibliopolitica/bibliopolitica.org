@@ -3608,6 +3608,11 @@ html{
   margin-right: 1.25rem !important;
 }
 
+.mx-8{
+  margin-left: 2rem !important;
+  margin-right: 2rem !important;
+}
+
 .mx-\[calc\(50\%-50vw\)\]{
   margin-left: calc(50% - 50vw) !important;
   margin-right: calc(50% - 50vw) !important;
@@ -3721,6 +3726,10 @@ html{
 
 .mt-4{
   margin-top: 1rem !important;
+}
+
+.mt-\[-25vh\]{
+  margin-top: -25vh !important;
 }
 
 .block{
@@ -3863,8 +3872,8 @@ html{
   min-width: 20rem !important;
 }
 
-.max-w-28{
-  max-width: 7rem !important;
+.max-w-2xl{
+  max-width: 42rem !important;
 }
 
 .max-w-3xl{
@@ -3875,12 +3884,20 @@ html{
   max-width: 14rem !important;
 }
 
+.max-w-96{
+  max-width: 24rem !important;
+}
+
 .max-w-full{
   max-width: 100% !important;
 }
 
 .max-w-prose{
   max-width: 65ch !important;
+}
+
+.max-w-screen-xl{
+  max-width: 1280px !important;
 }
 
 .flex-1{
@@ -4085,6 +4102,11 @@ html{
   background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity))) !important;
 }
 
+.bg-base-300{
+  --tw-bg-opacity: 1 !important;
+  background-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-bg-opacity))) !important;
+}
+
 .bg-base-content{
   --tw-bg-opacity: 1 !important;
   background-color: var(--fallback-bc,oklch(var(--bc)/var(--tw-bg-opacity))) !important;
@@ -4154,6 +4176,11 @@ html{
   padding-bottom: 0.25rem !important;
 }
 
+.py-16{
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+}
+
 .py-2{
   padding-top: 0.5rem !important;
   padding-bottom: 0.5rem !important;
@@ -4204,10 +4231,6 @@ html{
 
 .pt-12{
   padding-top: 3rem !important;
-}
-
-.pt-2{
-  padding-top: 0.5rem !important;
 }
 
 .pt-6{
@@ -4339,8 +4362,17 @@ html{
   color: var(--fallback-s,oklch(var(--s)/var(--tw-text-opacity))) !important;
 }
 
+.text-stone-600{
+  --tw-text-opacity: 1 !important;
+  color: rgb(87 83 78 / var(--tw-text-opacity)) !important;
+}
+
 .no-underline{
   text-decoration-line: none !important;
+}
+
+.bg-blend-darken{
+  background-blend-mode: darken !important;
 }
 
 .shadow{
@@ -5080,6 +5112,43 @@ details[open] > summary.meta-summary::before {
   color: var(--fallback-nc,oklch(var(--nc)/var(--tw-text-opacity))) !important;
 }
 
+.hover\:text-secondary:hover{
+  --tw-text-opacity: 1 !important;
+  color: var(--fallback-s,oklch(var(--s)/var(--tw-text-opacity))) !important;
+}
+
+@media (min-width: 640px){
+  .sm\:my-0{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+
+  .sm\:w-1\/3{
+    width: 33.333333% !important;
+  }
+
+  .sm\:w-2\/3{
+    width: 66.666667% !important;
+  }
+
+  .sm\:flex-row-reverse{
+    flex-direction: row-reverse !important;
+  }
+
+  .sm\:bg-transparent{
+    background-color: transparent !important;
+  }
+
+  .sm\:text-xl{
+    font-size: 1.25rem !important;
+    line-height: 1.75rem !important;
+  }
+
+  .sm\:leading-8{
+    line-height: 2rem !important;
+  }
+}
+
 @media (min-width: 768px){
   .md\:mx-\[calc\(50\%-50vw\)\]{
     margin-left: calc(50% - 50vw) !important;
@@ -5196,11 +5265,6 @@ details[open] > summary.meta-summary::before {
     padding-right: 2rem !important;
   }
 
-  .md\:py-16{
-    padding-top: 4rem !important;
-    padding-bottom: 4rem !important;
-  }
-
   .md\:py-2{
     padding-top: 0.5rem !important;
     padding-bottom: 0.5rem !important;
@@ -5224,6 +5288,11 @@ details[open] > summary.meta-summary::before {
 
   .md\:text-end{
     text-align: end !important;
+  }
+
+  .md\:text-2xl{
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
   }
 
   .md\:text-4xl{
@@ -5262,6 +5331,11 @@ details[open] > summary.meta-summary::before {
 }
 
 @media (min-width: 1024px){
+  .lg\:mx-4{
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+
   .lg\:basis-1\/5{
     flex-basis: 20% !important;
   }
@@ -5272,6 +5346,11 @@ details[open] > summary.meta-summary::before {
 
   .lg\:flex-row-reverse{
     flex-direction: row-reverse !important;
+  }
+
+  .lg\:px-4{
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
   }
 }
 
