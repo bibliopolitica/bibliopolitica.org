@@ -23,9 +23,9 @@
         <div class="overflow-hidden md:flex md:flex-row-reverse md:gap-x-8">
           <div class="md:basis-1/2 mx-[calc(50%-50vw)] md:mx-0 border-y border-neutral md:border-none p-5 md:p-3">
             <div class="hidden md:block text-2xl font-bold mb-2">Featured Items</div>
-            <div class="columns columns-4 md:columns-3 lg:columns-4 gap-x-2">
+            <div class="columns-5 md:columns-3 lg:columns-4 gap-x-2">
             {% for item in featured_items %}
-              <div class="mb-2 break-inside-avoid-column">
+              <div class="mb-2 ">
                 <a href="{{ '/item/'| append: item.id | url }}" class="block tooltip tooltip-bottom" data-tip="{{ item.label }}">
                   {% capture img_url %}https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_{{ item.id }}_{{ item.id }}_001/full/800,/0/default.jpg{% endcapture %}
                   <img src="{{ img_url }}" class="" />
