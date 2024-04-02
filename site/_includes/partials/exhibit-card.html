@@ -2,11 +2,11 @@
   <div class="card w-96 bg-neutral">
       <img src="{{ exhibit.data.thumbnail }}" alt="" class="object-cover h-48 w-full mx-auto" />
     <div class="card-body">
-      <div class="card-title pt-2 text-2xl font-bold">
+      <span class="text-secondary text-lg md:text-xl">
+        #{{ exhibit.data.number }}
+      </span>
+      <div class="card-title pb-2 text-xl md:text-2xl font-bold">
         {{ exhibit.data.title }}
-      </div>
-      <div class="text-secondary">
-        {{ exhibit.data.tagline | default: "Lorem ipsum dolor si amet" }}
       </div>
     </div>
   </div>

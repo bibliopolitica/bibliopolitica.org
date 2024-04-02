@@ -1,19 +1,26 @@
-<div class="hero not-prose bg-neutral text-center mx-auto ">
-  <div class="hero-content text-center mx-auto px-3 py-6 md:py-16">
-    <div>
-
-      <div class="max-w-28 mx-auto pb-4 text-secondary">
-      {% include "svg/logo-full.svg" %}
+<div class="hero not-prose bg-neutral">
+  <div class="flex flex-col sm:flex-row-reverse justify-between container w-full max-w-screen-xl py-16 lg:px-4">
+    <div class="sm:w-1/3 mt-[-25vh] mb-4 sm:my-0 w-full text-stone-600 sm:bg-transparent bg-base-300 bg-blend-darken">
+      {% include "svg/montoya-faces.svg" %}
+    </div>
+    <div class="sm:w-2/3 w-full">
+      <div class="max-w-96 my-4 mx-8 lg:mx-4 text-secondary">
+        {% include "svg/logo-wordmark.svg" %}
       </div>
+      <p class="py-5 mx-8 lg:mx-4 font-serif text-lg sm:text-xl max-w-2xl sm:leading-8">
+        At the intersection of Chicanx Studies, Digital Humanities, and Library History, 
+        <a class="link hover:text-secondary" href="{{ '/about/project' | url }}">Bibliopolítica: A Digital History of the Chicano Studies Library</a> 
+        chronicles the history of one of the first Chicanx collections, the UC Berkeley 
+        <a class="link hover:text-secondary" href="{{ '/about/library-timeline' | url }}">Chicano Studies Library (CSL)</a>.
+      </p>
 
-      <h2 class="text-3xl md:text-6xl tracking-tight font-bold max-w-3xl mx-auto text-secondary">A Digital History of the Chicano Studies Library</h2>
-      
-      <p class="py-5 text-lg md:text-xl max-w-3xl mx-auto">At the intersection of Chicanx Studies, Digital Humanities and Library History, Bibliopolítica chronicles the history of one of the first Chicanx collections, the UC Berkeley Chicano Studies Library (CSL).</p>
-
-      <a href="{{ '/about/project' | url }}">
-        <button class="btn btn-sm btn-outline btn-accent">Read More About the Project</button>
-      </a>
-
+      <p class="pb-5 mx-8 lg:mx-4 text-lg font-serif sm:text-xl max-w-2xl sm:leading-8">
+        We invite you to read our 
+        exhibit essays starting with the CSL's 
+        <a class="link hover:text-secondary" href="{{ '/exhibits/1' | url }}">Origins</a>, listen to our recorded 
+        <a class="link hover:text-secondary" href="{{ '/browse/oral-histories/' | url }}">Oral Histories</a>, browse digitized 
+        <a class="link hover:text-secondary" href="{{ '/browse/items/' | url }}">Archival Items</a>, or explore on your own path.
+      </p>
     </div>
   </div>
 </div>
