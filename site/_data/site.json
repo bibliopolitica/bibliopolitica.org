@@ -4,17 +4,12 @@
   "url": "",
   "menu": [
     {
-      "label": "About",
-      "sub": [
-        {
-          "label": "The Bibliopolítica Project",
-          "link": "/about/project"
-        },
-        {
-          "label": "A Timeline of Chicano Studies Library",
-          "link": "/about/library-timeline"
-        }
-      ]
+      "label": "About the Project",
+      "link": "/about/project"
+    },
+    {
+      "label": "A Timeline of CSL",
+      "link": "/about/library-timeline"
     },
     {
       "label": "Exhibit Essays",
