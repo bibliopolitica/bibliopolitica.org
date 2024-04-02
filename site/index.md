@@ -3,6 +3,7 @@ title: "wax design ideas"
 description: "TBD"
 layout: "base"
 permalink: "/index.html"
+home: true
 ---
 
 {% include "components/heros/home.html" %}  
