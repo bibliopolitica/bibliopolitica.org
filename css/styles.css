@@ -3974,14 +3974,9 @@ html{
        columns: 3 !important;
 }
 
-.columns-4{
-  -moz-columns: 4 !important;
-       columns: 4 !important;
-}
-
-.break-inside-avoid-column{
-  -moz-column-break-inside: avoid !important;
-       break-inside: avoid-column !important;
+.columns-5{
+  -moz-columns: 5 !important;
+       columns: 5 !important;
 }
 
 .grid-cols-1{
@@ -5195,14 +5190,14 @@ details[open] > summary.meta-summary::before {
 }
 
 @media (min-width: 768px){
+  .md\:mx-0{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+
   .md\:mx-\[calc\(50\%-50vw\)\]{
     margin-left: calc(50% - 50vw) !important;
     margin-right: calc(50% - 50vw) !important;
-  }
-
-  .md\:mx-auto{
-    margin-left: auto !important;
-    margin-right: auto !important;
   }
 
   .md\:-mb-16{
@@ -5261,9 +5256,9 @@ details[open] > summary.meta-summary::before {
     flex-basis: 50% !important;
   }
 
-  .md\:columns-2{
-    -moz-columns: 2 !important;
-         columns: 2 !important;
+  .md\:columns-3{
+    -moz-columns: 3 !important;
+         columns: 3 !important;
   }
 
   .md\:columns-5{
@@ -5404,6 +5399,11 @@ details[open] > summary.meta-summary::before {
 
   .lg\:basis-1\/5{
     flex-basis: 20% !important;
+  }
+
+  .lg\:columns-4{
+    -moz-columns: 4 !important;
+         columns: 4 !important;
   }
 
   .lg\:grid-cols-5{
