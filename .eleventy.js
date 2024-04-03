@@ -36,6 +36,13 @@ module.exports = function(eleventyConfig) {
     return JSON.stringify(data, null, "\t")
   })  
 
+  // where hash array includes substring
+  eleventyConfig.addFilter("where_includes", function(arr, key, value) {
+    return arr.filter(function(x){
+      return (x[key].join(' ').includes(value))
+    })
+  });
+
   const markdownItOptions = {
     html: true,
   }
