@@ -1,41 +1,54 @@
 ---
 title: "A Timeline of Chicano Studies Library (1969 – 2024)"
 description: "TBD"
-layout: page
+layout: base
 permalink: "/about/library-timeline.html"
 ---
+<div class="bg-base-100 z-40 w-full sticky top-14 border-b border-neutral">
+  <div class="container px-6 py-12 prose lg:prose-lg text-base-content">
+    <h1 class="tracking-tight max-w-3xl">{{ title }}</h1>
+  </div>
+</div>
 
-<div class="not-prose">
-  <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
-    {%- for item in timeline -%}
-      {%- assign mod = forloop.index | modulo: 2 -%}
-      {%- if mod == 0 -%}
-        <li>
-          <hr/>
-          <div class="timeline-middle">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
+<div class="not-prose container mt-12">
+  <ul class="timeline timeline-snap-icon mx-4 max-md:timeline-compact timeline-vertical w-full">
+    {%- for year in timeline -%}
+    {% assign year_data = items | where_includes: "Date of Publication or Production", year.year %}
+    <li>
+      <div class="timeline-middle my-2">
+        <a href="#{{ year.year }}" id="{{ year.year }}">
+          <time class="font-sans text-2xl hover:text-base-content text-accent no-underline">{{ year.year }}</time>
+        </a>
+      </div>
+      <hr/>
+    </li>
+    <li>
+      <hr/>
+      <div class="timeline-start md:text-end md:mr-6 ml-6 md:ml-0 mb-6">
+        {% for note in year.notes %}
+          <div class="mb-10 max-w-96">
+            <div class="block text-xl font-black mb-1">
+              {{ note.heading }}
+            </div>
+            <div class="text-sm font-serif">{{ note.description }}</div>
           </div>
-          <div class="timeline-start md:text-end mb-10">
-            <time class="font-sans text-2xl">{{ item.year }}</time>
-            <a href="#line-{{ forloop.index }}" id="line-{{ forloop.index }}" class="block text-xl font-black hover:text-accent no-underline">{{ item.heading }}</a>
-            <div class="text-sm">{{ item.description }}</div>
+        {% endfor %}
+      </div>
+      <hr/>
+      <div class="timeline-end md:text-left ml-6 mb-6">
+        <div class="md:mr-12 columns columns-3 sm:columns-4 md:columns-5 gap-x-2">
+          {%- for item in year_data -%}
+          <div class="mb-2">
+            <a href="{{ '/item/'| append: item.id | url }}" class="block tooltip tooltip-bottom" data-tip="{{ item.label | escape | truncatewords: 4, '...' }}">
+              {% capture img_url %}https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_{{ item.id }}_{{ item.id }}_001/full/250,/0/default.jpg{% endcapture %}
+              <img src="{{ img_url }}" alt="">
+            </a>
           </div>
-          <hr/>
-        </li>
-      {%- else -%}
-        <li>
-          <hr />
-          <div class="timeline-middle">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
-          </div>
-          <div class="timeline-end mb-10">
-            <time class="font-sans text-2xl">{{ item.year }}</time>
-            <a href="#line-{{ forloop.index }}" id="line-{{ forloop.index }}" class="block text-xl font-black hover:text-accent no-underline">{{ item.heading }}</a>
-            <div class="text-sm">{{ item.description }}</div>
-          </div>
-          <hr />
-        </li>
-      {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </div>
+      <hr/>
+    </li>
     {%- endfor -%}
   </ul>
 </div>
