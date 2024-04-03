@@ -3571,12 +3571,20 @@ html{
   top: 0px !important;
 }
 
+.top-14{
+  top: 3.5rem !important;
+}
+
 .top-20{
   top: 5rem !important;
 }
 
 .z-0{
   z-index: 0 !important;
+}
+
+.z-40{
+  z-index: 40 !important;
 }
 
 .z-50{
@@ -3601,6 +3609,11 @@ html{
 
 .row-start-1{
   grid-row-start: 1 !important;
+}
+
+.mx-4{
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
 }
 
 .mx-5{
@@ -3696,8 +3709,16 @@ html{
   margin-bottom: 1.25rem !important;
 }
 
+.mb-6{
+  margin-bottom: 1.5rem !important;
+}
+
 .mb-8{
   margin-bottom: 2rem !important;
+}
+
+.ml-6{
+  margin-left: 1.5rem !important;
 }
 
 .mr-2{
@@ -3714,6 +3735,10 @@ html{
 
 .mt-1{
   margin-top: 0.25rem !important;
+}
+
+.mt-12{
+  margin-top: 3rem !important;
 }
 
 .mt-2{
@@ -3942,6 +3967,11 @@ html{
 
 .scroll-pt-20{
   scroll-padding-top: 5rem !important;
+}
+
+.columns-3{
+  -moz-columns: 3 !important;
+       columns: 3 !important;
 }
 
 .columns-4{
@@ -4174,6 +4204,11 @@ html{
 .py-1{
   padding-top: 0.25rem !important;
   padding-bottom: 0.25rem !important;
+}
+
+.py-12{
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
 }
 
 .py-16{
@@ -5107,6 +5142,11 @@ details[open] > summary.meta-summary::before {
   color: var(--fallback-a,oklch(var(--a)/var(--tw-text-opacity))) !important;
 }
 
+.hover\:text-base-content:hover{
+  --tw-text-opacity: 1 !important;
+  color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity))) !important;
+}
+
 .hover\:text-neutral-content:hover{
   --tw-text-opacity: 1 !important;
   color: var(--fallback-nc,oklch(var(--nc)/var(--tw-text-opacity))) !important;
@@ -5129,6 +5169,11 @@ details[open] > summary.meta-summary::before {
 
   .sm\:w-2\/3{
     width: 66.666667% !important;
+  }
+
+  .sm\:columns-4{
+    -moz-columns: 4 !important;
+         columns: 4 !important;
   }
 
   .sm\:flex-row-reverse{
@@ -5172,6 +5217,18 @@ details[open] > summary.meta-summary::before {
     margin-right: -0.5rem !important;
   }
 
+  .md\:ml-0{
+    margin-left: 0px !important;
+  }
+
+  .md\:mr-12{
+    margin-right: 3rem !important;
+  }
+
+  .md\:mr-6{
+    margin-right: 1.5rem !important;
+  }
+
   .md\:block{
     display: block !important;
   }
@@ -5207,6 +5264,11 @@ details[open] > summary.meta-summary::before {
   .md\:columns-2{
     -moz-columns: 2 !important;
          columns: 2 !important;
+  }
+
+  .md\:columns-5{
+    -moz-columns: 5 !important;
+         columns: 5 !important;
   }
 
   .md\:grid-cols-2{
@@ -5284,6 +5346,10 @@ details[open] > summary.meta-summary::before {
 
   .md\:pt-5{
     padding-top: 1.25rem !important;
+  }
+
+  .md\:text-left{
+    text-align: left !important;
   }
 
   .md\:text-end{
