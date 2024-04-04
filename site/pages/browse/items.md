@@ -1,13 +1,13 @@
 ---
 title: "Archival Items"
 description: "TBD"
-layout: "base"
+layout: "page"
 permalink: "/browse/items/index.html"
 ---
 
-<h1 class="p-5 pb-3 md:pt-5 md:pb-9 text-3xl md:text-5xl md:tracking-tight font-bold">Browse Archival Items</h1>
+<!-- <h1 class="p-5 pb-3 md:pt-5 md:pb-9 text-3xl md:text-5xl md:tracking-tight font-bold">Browse Archival Items</h1> -->
 
-<div class="md:flex px-5 pb-10">
+<div class="md:flex pb-10 not-prose">
   <aside class="flex-none top-0 min-w-56">
     <!-- mobile dropdown menu -->
     <ul class="md:hidden menu menu-horizontal rounded-box border border-neutral w-full mb-5">
