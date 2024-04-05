@@ -3936,6 +3936,10 @@ html{
   margin-bottom: 5rem !important;
 }
 
+.mb-28{
+  margin-bottom: 7rem !important;
+}
+
 .mb-4{
   margin-bottom: 1rem !important;
 }
@@ -4020,8 +4024,8 @@ html{
   height: 2.5rem !important;
 }
 
-.h-24{
-  height: 6rem !important;
+.h-20{
+  height: 5rem !important;
 }
 
 .h-48{
@@ -4080,8 +4084,8 @@ html{
   width: 16.666667% !important;
 }
 
-.w-24{
-  width: 6rem !important;
+.w-20{
+  width: 5rem !important;
 }
 
 .w-4\/5{
@@ -4264,6 +4268,10 @@ html{
 
 .gap-5{
   gap: 1.25rem !important;
+}
+
+.gap-8{
+  gap: 2rem !important;
 }
 
 .gap-x-2{
@@ -4643,6 +4651,11 @@ html{
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1) !important;
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color) !important;
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+}
+
+.grayscale{
+  --tw-grayscale: grayscale(100%) !important;
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
 }
 
 .ease-in{
@@ -5642,6 +5655,10 @@ details[open] > summary.meta-summary::before {
   .lg\:columns-5{
     -moz-columns: 5 !important;
          columns: 5 !important;
+  }
+
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
   }
 
   .lg\:grid-cols-5{
