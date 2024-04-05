@@ -1,5 +1,5 @@
 ---
-title: "The Bibliopolítica Project"
+title: "About the Project"
 description: "TBD"
 layout: page
 team:
@@ -12,14 +12,19 @@ team:
   - name: Ed Madrid
   - name: Marii Nyrop
 permalink: "/about/project.html"
+contents:
+  - label: Project Team
+    anchor: '#project-team'
+  - label: Gratitude
+    anchor: '#gratitude'
 ---
-*Fall 2022 – Summer 2023*
+*Fall 2023 – Summer 2024*
 
 At the intersection of Chicanx Studies, Digital Humanities and Library History, Bibliopolítica: a Digital History of the Chicano Studies Library chronicles the history of one of the first Chicanx collections, the UC Berkeley Chicano Studies Library (CSL).
 
 Bibliopolítica shares the stories of trailblazing library workers, students and community members who tirelessly worked to preserve and make Chicanx resources available. Featuring photographs, ephemera, archival documents, and oral histories, Bibliopolítica offers an original digital collection of primary sources and is the first audiovisual history of this pioneering library that helped redefine what libraries could be. 
 
-## Credits 
+## Project Team
 
 <div class="not-prose">
   <div class="grid md:grid-cols-2 grid-cols-1">

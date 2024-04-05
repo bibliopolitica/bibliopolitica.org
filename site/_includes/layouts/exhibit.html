@@ -1,47 +1,24 @@
-<!doctype html>
-<html lang="en" id="top" data-theme="light" class="bg-base-100 text-base-content">
-  {% include "partials/head.html" %}
-  <body class="flex flex-col">
-    {% include "partials/header.html" %}
-    <main class="p-5 md:pt-3">
-      <article id="item-content-area">
-        <ul class="hidden md:block mb-10 text-secondary">
-        {% for exhibit in collections.exhibit %}
-          {% if exhibit.data.number == number %}
-          <li class="inline mr-3 font-bold text-accent whitespace-nowrap leading-loose"><a href="{{ exhibit.data.permalink | url }}">{{ exhibit.data.number }}: {{ exhibit.data.title | strip_html }}</a></li>
-          {% else %}
-          <li class="inline mr-3 whitespace-nowrap leading-relaxed"><a class="" href="{{ exhibit.data.permalink | url }}">{{ exhibit.data.number }}: {{ exhibit.data.title | strip_html }}</a></li>
-          {% endif %}
-        {% endfor %}
-        </ul>
-        <div class="text-base-content pb-4 md:mx-[calc(50%-50vw)] md:border-b md:border-neutral md:p-4">
-          <div class="text-4xl md:text-5xl inline">{{ number }}.</div>
-          <h1 class="font-bold text-4xl tracking-tight inline md:text-5xl mb-3">{{ title }}</h1>
-          {% if author %}<div class="mt-4 font-serif italic">By {{ author }}</div>{% endif %}
-          <div class="mt-2 font-serif italic">By {{ author | default: "Author/Curator Name(s) Here" }}</div>
-        </div>
-        <div class="overflow-hidden md:flex md:flex-row-reverse md:gap-x-8">
-          <div class="md:basis-1/2 mx-[calc(50%-50vw)] md:mx-0 border-y border-neutral md:border-none p-5 md:p-3">
-            <div class="hidden md:block text-2xl font-bold mb-2">Featured Items</div>
-            <div class="columns-5 md:columns-3 lg:columns-4 gap-x-2">
-            {% for item in featured_items %}
-              <div class="mb-2 ">
-                <a href="{{ '/item/'| append: item.id | url }}" class="block tooltip tooltip-bottom" data-tip="{{ item.label }}">
-                  {% capture img_url %}https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_{{ item.id }}_{{ item.id }}_001/full/800,/0/default.jpg{% endcapture %}
-                  <img src="{{ img_url }}" class="" />
-                </a>
-              </div> 
-            {% endfor %}
-            </div>
-          </div>
-          <div class="md:basis-1/2">
-            <div class="prose md:prose-lg text-base-content font-serif mt-4 mb-8">{{ content }}</div>
-          </div>
-        </div>
-      </article>
-    </main>
-    {% include "partials/footer.html" %}
-  </body>
-</html>
+---
+layout: page 
+---
 
-
+<div class="md:flex md:flex-row-reverse justify-between md:gap-x-8">
+  <div class="md:basis-2/5 lg:basis-1/2 mx-[calc(50%-50vw)] md:mx-0 border-y border-neutral md:border-none p-5 md:p-3">
+    <div class="hidden md:block text-2xl font-bold mb-2">Featured Items</div>
+    <div class="columns-5 md:columns-2 lg:columns-4 gap-x-2">
+    {% for item in featured_items %}
+      <div class="mb-2 not-prose ">
+        <a href="{{ '/item/'| append: item.id | url }}" class="block tooltip tooltip-bottom" data-tip="{{ item.label | escape | truncatewords: 4, '...' }}">
+          {% capture img_url %}https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_{{ item.id }}_{{ item.id }}_001/full/800,/0/default.jpg{% endcapture %}
+          <img src="{{ img_url }}" class="" />
+        </a>
+      </div> 
+    {% endfor %}
+    </div>
+  </div>
+  <div class="md:basis-3/5 lg:basis-1/2">
+    <div class="prose-lg lg:prose-xl text-base-content [&_p]:indent-8 [&_p]:leading-relaxed [&_p]:text-wrap font-serif mt-4 mb-20">
+      {{ content }}
+    </div>
+  </div>
+</div>

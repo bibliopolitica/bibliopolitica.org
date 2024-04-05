@@ -2,13 +2,75 @@
 layout: base
 ---
 
-<article class="container mx-auto px-6 py-20 max-w-3xl prose lg:prose-lg text-base-content">
-  <h1 class="tracking-tight">{{ title }}</h1>
-  {% if subtitle %}
-  <div class="-mt-8 text-xl">{{ subtitle }}</div>
-  {% endif %}
-  {% if author %}
-  <div class="mt-4 italic">By {{ author }}</div>
-  {% endif %}
-  <div class="font-serif my-8">{{ content }}</div>
-</article>
+{% if item.label %}
+<div class="bg-neutral z-40 border-b border-neutral">
+  <div class="container mx-auto max-w-screen-xl py-12 md:py-20 px-6 text-base-content">
+    <div class="flex">
+      <div class="basis-5/6">
+        <h1 class="text-secondary text-2xl md:text-4xl md:tracking-tight font-bold leading-tight max-w-3xl">{{ item.label }}</h1>
+      </div>
+      <div class="basis-1/6 h-10 md:h-12 text-right flex justify-end">
+        <a href="{{ pagination.href.previous | default: pagination.href.last | url }}" class="-mr-1 hover:text-secondary text-accent tooltip tooltip-bottom" data-tip="Previous item">{% include "svg/arrow-left.svg" %}</a>
+        <a href="{{ pagination.href.next | default: pagination.href.first | url }}" class="hover:text-secondary text-accent tooltip tooltip-bottom" data-tip="Next item">{% include "svg/arrow-right.svg" %}</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% elsif history.label %}
+<div class="bg-neutral z-40 border-b border-neutral">
+  <div class="container mx-auto max-w-screen-xl py-12 md:py-20 px-6 text-base-content">
+    <div class="flex">
+      <div class="basis-5/6">
+        <h1 class="text-secondary text-2xl md:text-4xl md:tracking-tight font-bold leading-tight max-w-3xl">{{ history.label }}</h1>
+      </div>
+      <div class="basis-1/6 h-10 md:h-12 text-right flex justify-end">
+        <a href="{{ pagination.href.previous | default: pagination.href.last | url }}" class="-mr-1 hover:text-neutral-content text-accent tooltip tooltip-bottom" data-tip="Previous item">{% include "svg/arrow-left.svg" %}</a>
+        <a href="{{ pagination.href.next | default: pagination.href.first | url }}" class="hover:text-neutral-content text-accent tooltip tooltip-bottom" data-tip="Next item">{% include "svg/arrow-right.svg" %}</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% else %}
+<div class="bg-neutral z-40 border-b border-neutral">
+  <div class="container mx-auto max-w-screen-xl py-12 md:py-20 px-6 text-base-content">
+    {% if number %}
+      <div class="lg:flex lg:gap-4 lg:justify-between lg:items-end">
+        <div class="lg:basis-3/5">
+          <h1 class="text-pretty text-secondary text-3xl md:text-4xl lg:text-5xl  md:tracking-tight font-bold max-w-3xl"><span class="font-thin tracking-tighter mr-1">{{ number }}.</span>{{ title }}</h1>
+        </div>
+        <div class="lg:basis-2/5  not-prose lg:text-end text-sm lg:text-base leading-snug lg:mt-0 mt-6">
+          {% for exhibit in collections.exhibit %}
+            {% if exhibit.data.number == number %}
+            <span class="whitespace-nowrap text-stone-400">{{ exhibit.data.number }}: {{ exhibit.data.title | split: ':' | first }}</span>
+            {% else %}
+            <a class="link whitespace-nowrap hover:text-accent" href="{{ exhibit.data.permalink | url }}">{{ exhibit.data.number }}: {{ exhibit.data.title | split: ':' | first }}</a>
+            {% endif %}
+            {% unless forloop.last %}<span class="text-stone-500 mx-1">/</span>{% endunless %}
+          {% endfor %}
+        </div>
+      {% else %}
+        {% if contents %}
+          <div class="lg:flex lg:gap-4 lg:justify-between lg:items-end">
+            <div class="lg:basis-3/5">
+              <h1 class="text-pretty text-secondary text-3xl md:text-4xl lg:text-5xl  md:tracking-tight font-bold max-w-3xl">{{ title }}</h1>
+            </div>
+            <div class="lg:basis-2/5  not-prose lg:text-end text-sm lg:text-base leading-snug lg:mt-0 mt-6">
+              <div class="mb-1 font-semibold">Contents:</div>
+              {% for c in contents %}
+                <a class="link whitespace-nowrap hover:text-accent" href="{{ c.anchor }}">{{ c.label }}</a>
+                {% unless forloop.last %}<span class="text-stone-500 mx-1">/</span>{% endunless %}
+              {% endfor %}
+            </div>
+          {% else %}
+            <h1 class="text-secondary text-3xl md:text-4xl lg:text-5xl font-bold max-w-3xl">{{ title }}</h1>
+          {% endif %}
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+
+<div class="container mx-auto max-w-screen-xl [&_p]:max-w-prose p-6 prose lg:prose-lg text-base-content">
+  {{ content }}
+</div>

@@ -4,7 +4,7 @@ permalink: "{{ page.fileSlug | slugify }}/index.html"
 <!doctype html>
 <html lang="en" id="top" data-theme="light" class="bg-base-100 text-base-content scroll-pt-20 scroll-smooth">
   {% include "partials/head.html" %}
-  <body class="flex flex-col min-h-screen">
+  <body class="flex flex-col min-h-screen overflow-x-clip">
     {% include "partials/header.html" %}
     <main class="flex-1">
       {{ content }}

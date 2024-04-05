@@ -5,9 +5,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        serif: ["Lora", "serif"],
-        sans: ["DM Sans", "sans"]
-      }
+        serif: ["EB Garamond", "serif"],
+        sans: ["Arvo", "sans"]
+      },
     },
   },
   daisyui: {
