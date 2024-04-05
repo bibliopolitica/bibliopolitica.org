@@ -17,9 +17,9 @@
   <link rel="icon" href="/bibliopolitica/assets/favicon.png" type="image/png">
   <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js" defer></script>
 </head>
-  <body class="flex flex-col min-h-screen">
-    <div class="sticky top-0 z-50 navbar px-3 py-1 bg-base-100 border-b border-neutral">
-  <!-- <div class="container mx-auto"> -->
+  <body class="flex flex-col min-h-screen overflow-x-clip">
+    <div class="sticky top-0 z-50 navbar py-1 bg-base-100 border-b border-neutral">
+  <div class="container mx-auto max-w-screen-xl px-6">
     <div class="navbar-start w-4/6 md:w-1/5">
       <a class="max-h-full max-w-56 text-accent hover:text-neutral-content block" href="/bibliopolitica/">
         <svg width="706" height="141" viewBox="0 0 706 141" fill="currentColor" class="h-full w-full" xmlns="http://www.w3.org/2000/svg">
@@ -200,13 +200,39 @@
         </li>
       </ul>
     </div>
-  <!-- </div> -->
+  </div>
 </div>
     <main class="flex-1">
       
 
+<div class="bg-neutral z-40 border-b border-neutral">
+  <div class="container mx-auto max-w-screen-xl py-12 md:py-20 px-6 text-base-content">
+    <div class="flex">
+      <div class="basis-5/6">
+        <h1 class="text-secondary text-2xl md:text-4xl md:tracking-tight font-bold leading-tight max-w-3xl">Clementina Duron Oral History Interview</h1>
+      </div>
+      <div class="basis-1/6 h-10 md:h-12 text-right flex justify-end">
+        <a href="/bibliopolitica/history/OH004.html" class="-mr-1 hover:text-neutral-content text-accent tooltip tooltip-bottom" data-tip="Previous item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1" stroke="currentColor" class="h-10 w-10 md:h-12 md:w-12">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+</svg>
+</a>
+        <a href="/bibliopolitica/history/OH006.html" class="hover:text-neutral-content text-accent tooltip tooltip-bottom" data-tip="Next item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1" stroke="currentColor" class="h-10 w-10 md:h-12 md:w-12">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+</svg>
 
-<div class="flex p-5 mb-5 border-b border-neutral items-center">
+  </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container mx-auto max-w-screen-xl [&_p]:max-w-prose p-6 prose lg:prose-lg text-base-content">
+  
+
+
+<!-- <div class="flex p-5 mb-5 border-b border-neutral items-center">
   <div class="basis-5/6">
     <h1 class="text-2xl md:text-4xl md:tracking-tight font-bold">Clementina Duron Oral History Interview</h1>
   </div>
@@ -223,9 +249,9 @@
 
   </a>
   </div>
-</div>
+</div> -->
 
-<article id="item-content-area" class="mx-5 mb-5 md:flex">
+<article class="mb-5 md:flex">
   <div class="md:basis-1/2 md:shrink-0">
     <iframe class="w-full z-0 h-[50vh] mb-4" id="kaltura_player"
       src="https://cdnapisec.kaltura.com/p/1674401/sp/167440100/embedIframeJs/uiconf_id/23435151/partner_id/1674401?iframeembed=true&playerId=kaltura_player&entry_id=1_cqql9nnt&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[LeadWithHLSOnFlash]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_y7lxxlyu"
@@ -234,7 +260,7 @@
       sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation"
       frameborder="0" title="Clementina Duron Oral History Interview"></iframe>
     
-<div class="relative flex w-full flex-col rounded-xl border-b border-neutral md:border-none">
+<div class="relative not-prose flex w-full flex-col rounded-xl border-b border-neutral md:border-none">
   <div class="relative flex gap-4 my-4 overflow-hidden items-center">
     <img
       src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80"
@@ -245,7 +271,7 @@
           About the Interviewee <!--Clementina Duron-->
         </div>
       </div>
-      <p class="text-sm text-neutral-600">
+      <p class="text-sm text-neutral-500">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ligula neque. Sed tristique velit dolor,
         feugiat ullamcorper libero pulvinar ac. Aliquam purus nisl, ultrices id feugiat id, auctor at enim. Duis at
         ipsum at nibh malesuada eleifend.
@@ -257,7 +283,7 @@
   </div>
   <div>
     <ul
-      class="py-6 md:px-8 md:py-2 space-y-2 md:basis-1/2 md:flex md:flex-col shrink max-w-prose bg-base-100 break-words">
+      class="not-prose text-base py-6 md:px-8 md:py-2 space-y-2 md:basis-1/2 md:flex md:flex-col shrink max-w-prose bg-base-100 break-words">
       
       
       
@@ -504,6 +530,7 @@
     </ul>
   </div>
 </article>
+</div>
     </main>
     <footer class="footer footer-center  p-4 bg-neutral text-base-content">
   <aside>
