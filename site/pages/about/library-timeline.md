@@ -55,8 +55,8 @@ contents:
   {% assign year_data = items | where_includes: "Date of Publication or Production", year.year %}
   <li>
     <div class="timeline-middle my-2">
-      <a href="#{{ year.year }}" id="{{ year.year }}">
-        <time class="font-sans text-2xl hover:text-base-content text-accent no-underline">{{ year.year }}</time>
+      <a class="font-sans text-accent hover:text-base-content border-b border-accent hover:border-base-content" href="#{{ year.year }}" id="{{ year.year }}">
+        <time>{{ year.year }}</time>
       </a>
     </div>
     <hr/>

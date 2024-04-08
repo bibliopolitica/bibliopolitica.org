@@ -82,23 +82,12 @@ module.exports = function(eleventyConfig) {
                   './node_modules/siema/dist/siema.min.js': '/assets/vendor/siema.min.js'
                 })
                 .addPassthroughCopy({
-                  './node_modules/leaflet-iiif/leaflet-iiif.js': '/assets/vendor/leaflet-iiif.js'
+                  './node_modules/flickity/dist/flickity.pkgd.min.js': '/assets/vendor/flickity.min.js'
                 })
                 .addPassthroughCopy({
-                  './node_modules/leaflet-sleep/Leaflet.Sleep.js': '/assets/vendor/leaflet-sleep.js'
+                  './node_modules/flickity/dist/flickity.min.css': '/assets/vendor/flickity.min.css'
                 })
-                .addPassthroughCopy({
-                  './node_modules/leaflet/dist/leaflet.css': '/assets/vendor/leaflet.css'
-                })
-                .addPassthroughCopy({
-                  './node_modules/leaflet.fullscreen/Control.FullScreen.js': '/assets/vendor/leaflet-fullscreen.js'
-                })
-                .addPassthroughCopy({
-                  './node_modules/leaflet.fullscreen/Control.FullScreen.css': '/assets/vendor/leaflet-fullscreen.css'
-                })
-                .addPassthroughCopy({
-                  './node_modules/leaflet.fullscreen/icon-fullscreen.svg': '/assets/vendor/icon-fullscreen.svg'
-                })  
+  
 
   return {
     markdownTemplateEngine: 'liquid',

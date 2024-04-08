@@ -19,12 +19,12 @@ metadata:
 <div class="relative not-prose flex w-full flex-col rounded-xl border-b border-neutral md:border-none">
   <div class="relative flex gap-4 my-4 overflow-hidden items-center">
     <img
-      src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80"
-      alt="Tania Andrew" class="relative inline-block h-[80px] w-[80px] !rounded-full  object-cover object-center" />
+      src="{{ '/assets/filler.png' | url }}"
+      alt="Image of {{ history.label | remove: 'Oral History Interview' }}" class="relative inline-block h-[80px] w-[80px] !rounded-full  object-cover object-center" />
     <div class="flex w-full flex-col gap-0.5">
       <div class="flex items-center justify-between">
         <div class="font-bold text-secondary text-xl">
-          About the Interviewee <!--{{ history.label | remove: " Oral History Interview" }}-->
+          About the Interviewee
         </div>
       </div>
       <p class="text-sm text-neutral-500">

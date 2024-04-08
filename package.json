@@ -28,12 +28,12 @@
   },
   "dependencies": {
     "clean-css": "^5.2.4",
+    "flickity": "^3.0.0",
     "html-minifier": "^4.0.0",
     "leaflet": "^1.9.4",
     "leaflet-iiif": "^3.0.0",
     "leaflet-sleep": "^0.5.2",
     "leaflet.fullscreen": "^3.0.0",
-    "moment": "^2.29.1",
-    "siema": "^1.5.1"
+    "moment": "^2.29.1"
   }
 }

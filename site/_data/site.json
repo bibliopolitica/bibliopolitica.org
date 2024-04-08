@@ -13,32 +13,7 @@
     },
     {
       "label": "Exhibit Essays",
-      "sub": [
-        {
-          "label": "1: Origins",
-          "link": "/exhibits/1"
-        },
-        {
-          "label": "2: A Chicano Studies Library",
-          "link": "/exhibits/2"
-        },
-        {
-          "label": "3: Labels & Systems: We Built Our Own",
-          "link": "/exhibits/3"
-        },
-        {
-          "label": "4: Library as Place",
-          "link": "/exhibits/4"
-        },
-        {
-          "label": "5: Ethnic Studies Library Transition",
-          "link": "/exhibits/5"
-        },
-        {
-          "label": "6: Impact & Future….",
-          "link": "/exhibits/6"
-        }
-      ]
+      "link": "/browse/exhibits"
     },
     {
       "label": "Browse the Collection",
