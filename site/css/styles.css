@@ -5,6 +5,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .header-anchor {
   opacity: 20%;
   padding-left: 10px;
@@ -47,4 +48,28 @@ details[open] > summary.meta-summary::before {
 
 .transcript p {
   padding-top: 1ch;
+}
+
+/* 
+.flickity-page-dots {
+  top: -2px;
+  justify-content: right !important;
+}
+.flickity-page-dot  {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid $text-base-content !important;
+}
+.flickity-page-dot:focus {
+  box-shadow: none !important;
+}
+.flickity-page-dot.is-selected {
+  background: $text-base-content !important;
+} 
+*/
+
+.flickity-button:focus {
+  box-shadow: none !important;
 }
