@@ -220,82 +220,174 @@
 
 
 <div class="container mx-auto max-w-screen-xl [&_p]:max-w-prose p-6 prose lg:prose-lg text-base-content mb-28">
-  
+  <script src="/bibliopolitica/assets/vendor/flickity.min.js"></script>
+<link rel="stylesheet" href="/bibliopolitica/assets/vendor/flickity.min.css"/>
+
 <div class="md:flex md:flex-row-reverse justify-between md:gap-x-8">
-  <div class="md:basis-2/5 lg:basis-1/2 mx-[calc(50%-50vw)] md:mx-0 border-y border-neutral md:border-none p-5 md:p-3">
-    <div class="hidden md:block text-2xl font-bold mb-2">Featured Items</div>
-    <div class="columns-5 md:columns-2 lg:columns-4 gap-x-2">
-    
-      <div class="mb-2 not-prose ">
-        <a href="/bibliopolitica/item/CSL00004" class="block tooltip tooltip-bottom" data-tip="Chicanas in the 80&#39;s:...">
-          
-          <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00004_CSL00004_001/full/800,/0/default.jpg" class="" />
-        </a>
-      </div> 
-    
-      <div class="mb-2 not-prose ">
-        <a href="/bibliopolitica/item/CSL00022" class="block tooltip tooltip-bottom" data-tip="Aspectos de la Literatura...">
-          
-          <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00022_CSL00022_001/full/800,/0/default.jpg" class="" />
-        </a>
-      </div> 
-    
-      <div class="mb-2 not-prose ">
-        <a href="/bibliopolitica/item/CSL00020" class="block tooltip tooltip-bottom" data-tip="Ernesto Galarza @ UCB...">
-          
-          <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00020_CSL00020_001/full/800,/0/default.jpg" class="" />
-        </a>
-      </div> 
-    
-      <div class="mb-2 not-prose ">
-        <a href="/bibliopolitica/item/CSL00072" class="block tooltip tooltip-bottom" data-tip="Voz de La A.B.C....">
-          
-          <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00072_CSL00072_001/full/800,/0/default.jpg" class="" />
-        </a>
-      </div> 
-    
-      <div class="mb-2 not-prose ">
-        <a href="/bibliopolitica/item/CSL00108" class="block tooltip tooltip-bottom" data-tip="Educación en Luz Poster...">
-          
-          <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00108_CSL00108_001/full/800,/0/default.jpg" class="" />
-        </a>
-      </div> 
-    
-      <div class="mb-2 not-prose ">
-        <a href="/bibliopolitica/item/CSL00094" class="block tooltip tooltip-bottom" data-tip="Educación en Luz Symposium...">
-          
-          <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00094_CSL00094_001/full/800,/0/default.jpg" class="" />
-        </a>
-      </div> 
-    
-      <div class="mb-2 not-prose ">
-        <a href="/bibliopolitica/item/CSL00092" class="block tooltip tooltip-bottom" data-tip="Bibliography of Writing on...">
-          
-          <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00092_CSL00092_001/full/800,/0/default.jpg" class="" />
-        </a>
-      </div> 
-    
-      <div class="mb-2 not-prose ">
-        <a href="/bibliopolitica/item/CSL00098" class="block tooltip tooltip-bottom" data-tip="Memorial for Cesar Chavez...">
-          
-          <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00098_CSL00098_001/full/800,/0/default.jpg" class="" />
-        </a>
-      </div> 
-    
-      <div class="mb-2 not-prose ">
-        <a href="/bibliopolitica/item/CSL00100" class="block tooltip tooltip-bottom" data-tip="Dia de los Muertos...">
-          
-          <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00100_CSL00100_001/full/800,/0/default.jpg" class="" />
-        </a>
-      </div> 
-    
-      <div class="mb-2 not-prose ">
-        <a href="/bibliopolitica/item/CSL00101" class="block tooltip tooltip-bottom" data-tip="Dia de los Muertos...">
-          
-          <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00101_CSL00101_001/full/800,/0/default.jpg" class="" />
-        </a>
-      </div> 
-    
+  <div class="md:basis-2/5 lg:basis-1/2 mx-[calc(50%-50vw)] md:mx-0 border-b border-neutral md:border-none px-5 md:px-3">
+    <div class="md:text-right ml-2">
+      <button id="prev-feature" class="h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-left" data-tip="Previous"><svg viewBox="0 0 24 24" fill="none" stroke-width="1" stroke="currentColor" class="h-10 w-10 md:h-12 md:w-12">
+  <path class="h-full w-full" d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+</svg>
+</button>
+      <button id="play-feature" class="hidden h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-bottom" data-tip="Autoplay">
+        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke-width="1" transform="matrix(1, 0, 0, 1, 0, 0)" class="h-10 w-10 md:h-12 md:w-12">
+  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+  <g id="SVGRepo_iconCarrier">
+    <path d="M448,256c0-106-86-192-192-192S64,150,64,256s86,192,192,192S448,362,448,256Z" stroke="currentColor" style="fill:none;stroke-miterlimit:10;stroke-width:1.25em"></path>
+    <path d="M216.32,334.44,330.77,265.3a10.89,10.89,0,0,0,0-18.6L216.32,177.56A10.78,10.78,0,0,0,200,186.87V325.13A10.78,10.78,0,0,0,216.32,334.44Z"></path>
+  </g>
+</svg>
+      </button>
+      <button id="pause-feature" class="h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-bottom" data-tip="Pause">
+        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="none" class="h-10 w-10 md:h-12 md:w-12">
+  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+  <g id="SVGRepo_iconCarrier">
+    <path d="M448,256c0-106-86-192-192-192S64,150,64,256s86,192,192,192S448,362,448,256Z" stroke="currentColor" style="fill:none;stroke-miterlimit:10;stroke-width:1.25em"></path>
+    <line x1="208" y1="192" x2="208" y2="320" stroke="currentColor" style="fill:none;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2.5em"></line>
+    <line x1="304" y1="192" x2="304" y2="320" stroke="currentColor" style="fill:none;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2.5em"></line>
+  </g>
+</svg>
+      </button>
+      <button id="next-feature" class="h-8 w-8 md:h-12 md:w-12 text-accent hover:text-neutral-content tooltip tooltip-right" data-tip="Next"><svg viewBox="0 0 24 24" fill="none" stroke-width="1" stroke="currentColor" class="h-10 w-10 md:h-12 md:w-12">
+  <path d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+</svg>
+
+  </button>
+    </div>
+    <div id="feature-carousel" class="w-full md:text-right no-prose flex-none">
+      
+      <a class="link no-underline w-full" href="/bibliopolitica/item/CSL00004">
+        <div class="w-full h-full">
+          <div class="ml-4">
+            
+              <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00004_CSL00004_001/full/800,/0/default.jpg" alt="Chicanas in the 80's: Unsettled Issues" class="mt-0 w-full h-80 max-h-[40vh] object-center object-cover mx-auto transition-all duration-500 hover:scale-105" />            
+              <div class="link font-bold no-underline leading-snug">Chicanas in the 80's: Unsettled Issues</div>
+              <div class="md:text-base text-sm mt-2 font-serif leading-snug">
+                The Chicano Studies Library published the conference proceedings from a symposium organized by a group of Chicana scholars at UC Berkeley
+              </div>
+          </div>
+        </div>
+      </a>
+      
+      <a class="link no-underline w-full" href="/bibliopolitica/item/CSL00022">
+        <div class="w-full h-full">
+          <div class="ml-4">
+            
+              <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00022_CSL00022_001/full/800,/0/default.jpg" alt="Aspectos de la Literatura Chicana" class="mt-0 w-full h-80 max-h-[40vh] object-center object-cover mx-auto transition-all duration-500 hover:scale-105" />            
+              <div class="link font-bold no-underline leading-snug">Aspectos de la Literatura Chicana</div>
+              <div class="md:text-base text-sm mt-2 font-serif leading-snug">
+                Aspectos de la Literatura Chicana was the first exhibition of Chicanx literature in UC Berklely’s Doe Library, coordinated by Chicano Studies Library staff.
+              </div>
+          </div>
+        </div>
+      </a>
+      
+      <a class="link no-underline w-full" href="/bibliopolitica/item/CSL00020">
+        <div class="w-full h-full">
+          <div class="ml-4">
+            
+              <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00020_CSL00020_001/full/800,/0/default.jpg" alt="Ernesto Galarza @ UCB Flyer" class="mt-0 w-full h-80 max-h-[40vh] object-center object-cover mx-auto transition-all duration-500 hover:scale-105" />            
+              <div class="link font-bold no-underline leading-snug">Ernesto Galarza @ UCB Flyer</div>
+              <div class="md:text-base text-sm mt-2 font-serif leading-snug">
+                Dr. Carlos Muñoz from the Chicano Studies program invited activist Ernesto Galarza to speak with the community at UC Berkeley. The cover of Galarza’s book, Barrio Boy is featured on the poster.
+              </div>
+          </div>
+        </div>
+      </a>
+      
+      <a class="link no-underline w-full" href="/bibliopolitica/item/CSL00072">
+        <div class="w-full h-full">
+          <div class="ml-4">
+            
+              <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00072_CSL00072_001/full/800,/0/default.jpg" alt="Voz de La A.B.C. Volume 1, Number 4 May 1976" class="mt-0 w-full h-80 max-h-[40vh] object-center object-cover mx-auto transition-all duration-500 hover:scale-105" />            
+              <div class="link font-bold no-underline leading-snug">Voz de La A.B.C. Volume 1, Number 4 May 1976</div>
+              <div class="md:text-base text-sm mt-2 font-serif leading-snug">
+                Chabrán spearheaded the effort to organize Asociación De Bibliotecas Chicanas (ABC) to bring together library workers interested in growing Chicanx collections. The group met regularly until 1978. The ABC newsletter was published and distributed by the Chicano Studies Library.
+              </div>
+          </div>
+        </div>
+      </a>
+      
+      <a class="link no-underline w-full" href="/bibliopolitica/item/CSL00108">
+        <div class="w-full h-full">
+          <div class="ml-4">
+            
+              <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00108_CSL00108_001/full/800,/0/default.jpg" alt="Educación en Luz Poster" class="mt-0 w-full h-80 max-h-[40vh] object-center object-cover mx-auto transition-all duration-500 hover:scale-105" />            
+              <div class="link font-bold no-underline leading-snug">Educación en Luz Poster</div>
+              <div class="md:text-base text-sm mt-2 font-serif leading-snug">
+                A poster advertising the Educación en Luz Symposium. The telephone number listed belonged to the Chicano Studies Library.
+              </div>
+          </div>
+        </div>
+      </a>
+      
+      <a class="link no-underline w-full" href="/bibliopolitica/item/CSL00094">
+        <div class="w-full h-full">
+          <div class="ml-4">
+            
+              <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00094_CSL00094_001/full/800,/0/default.jpg" alt="Educación en Luz Symposium Program" class="mt-0 w-full h-80 max-h-[40vh] object-center object-cover mx-auto transition-all duration-500 hover:scale-105" />            
+              <div class="link font-bold no-underline leading-snug">Educación en Luz Symposium Program</div>
+              <div class="md:text-base text-sm mt-2 font-serif leading-snug">
+                Mujeres del Movimiento was one of many student groups that formed through their connection to the Chicano Studies Library. Mujeres del Movimiento was an all women group, who did important work in the community and sought to create spaces for Latinx women on campus. They organized the Educación en Luz Symposium to create a platform for Latina scholars to share their work and connect.
+              </div>
+          </div>
+        </div>
+      </a>
+      
+      <a class="link no-underline w-full" href="/bibliopolitica/item/CSL00092">
+        <div class="w-full h-full">
+          <div class="ml-4">
+            
+              <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00092_CSL00092_001/full/800,/0/default.jpg" alt="Bibliography of Writing on La Mujer" class="mt-0 w-full h-80 max-h-[40vh] object-center object-cover mx-auto transition-all duration-500 hover:scale-105" />            
+              <div class="link font-bold no-underline leading-snug">Bibliography of Writing on La Mujer</div>
+              <div class="md:text-base text-sm mt-2 font-serif leading-snug">
+                Bibliography of Writings on La Mujer was the first bibliography on the Chicana experience in the United States. It was compiled by student workers in the library using the Chicano Studies Library’s collections.
+              </div>
+          </div>
+        </div>
+      </a>
+      
+      <a class="link no-underline w-full" href="/bibliopolitica/item/CSL00098">
+        <div class="w-full h-full">
+          <div class="ml-4">
+            
+              <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00098_CSL00098_001/full/800,/0/default.jpg" alt="Memorial for Cesar Chavez" class="mt-0 w-full h-80 max-h-[40vh] object-center object-cover mx-auto transition-all duration-500 hover:scale-105" />            
+              <div class="link font-bold no-underline leading-snug">Memorial for Cesar Chavez</div>
+              <div class="md:text-base text-sm mt-2 font-serif leading-snug">
+                The Chicano Studies Library displays a memorial to honor Cesar Chavez at the time of his passing in 1993
+              </div>
+          </div>
+        </div>
+      </a>
+      
+      <a class="link no-underline w-full" href="/bibliopolitica/item/CSL00100">
+        <div class="w-full h-full">
+          <div class="ml-4">
+            
+              <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00100_CSL00100_001/full/800,/0/default.jpg" alt="Dia de los Muertos in the Chicano Studies Library" class="mt-0 w-full h-80 max-h-[40vh] object-center object-cover mx-auto transition-all duration-500 hover:scale-105" />            
+              <div class="link font-bold no-underline leading-snug">Dia de los Muertos in the Chicano Studies Library</div>
+              <div class="md:text-base text-sm mt-2 font-serif leading-snug">
+                The Chicano Studies Library provides a space to celebrate Dia de los Muertos on campus.
+              </div>
+          </div>
+        </div>
+      </a>
+      
+      <a class="link no-underline w-full" href="/bibliopolitica/item/CSL00101">
+        <div class="w-full h-full">
+          <div class="ml-4">
+            
+              <img src="https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_CSL00101_CSL00101_001/full/800,/0/default.jpg" alt="Dia de los Muertos Celebration at the Chicano Studies Library" class="mt-0 w-full h-80 max-h-[40vh] object-center object-cover mx-auto transition-all duration-500 hover:scale-105" />            
+              <div class="link font-bold no-underline leading-snug">Dia de los Muertos Celebration at the Chicano Studies Library</div>
+              <div class="md:text-base text-sm mt-2 font-serif leading-snug">
+                The Chicano Studies Library held events to celebrate Dia de los Muertos on campus. Professor Larry Trujillo is among the crowd.
+              </div>
+          </div>
+        </div>
+      </a>
+      
     </div>
   </div>
   <div class="md:basis-3/5 lg:basis-1/2">
@@ -307,12 +399,44 @@
 
 
       
-        <a href="/bibliopolitica/exhibit/5" class="col-start-2 text-right text-base max-w-2xl leading-tight link text-accent hover:text-base-content font-sans">Read Next</a>
+        <a href="/bibliopolitica/feature/5" class="col-start-2 text-right text-base max-w-2xl leading-tight link text-accent hover:text-base-content font-sans">Read Next</a>
       
       </div>
     </div>
   </div>
 </div>
+
+<script>
+  var prevFeatureButton  = document.querySelector('#prev-feature');
+  var nextFeatureButton  = document.querySelector('#next-feature');
+  var playFeatureButton  = document.querySelector('#play-feature');
+  var pauseFeatureButton = document.querySelector('#pause-feature');
+  var featureCarousel    = new Flickity('#feature-carousel', {
+    wrapAround: true,
+    imagesLoaded: true,
+    prevNextButtons: false,
+    // fade: true,
+    pageDots: false,
+    lazyLoad: true,
+    draggable: true,
+    pauseAutoPlayOnHover: false,
+    autoPlay: 6000 
+  });
+  
+  prevFeatureButton.addEventListener('click', () => featureCarousel.previous());
+  nextFeatureButton.addEventListener('click', () => featureCarousel.next());
+
+  playFeatureButton.addEventListener( 'click', function() {
+    featureCarousel.unpausePlayer();
+    pauseFeatureButton.classList.toggle('hidden');
+    playFeatureButton.classList.toggle('hidden');
+  });
+  pauseFeatureButton.addEventListener( 'click', function() {
+    featureCarousel.pausePlayer();
+    pauseFeatureButton.classList.toggle('hidden');
+    playFeatureButton.classList.toggle('hidden');
+  });
+</script>
 </div>
     </main>
     <footer class="footer bg-neutral text-base-content">

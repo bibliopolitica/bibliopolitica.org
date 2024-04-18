@@ -3707,6 +3707,14 @@ html{
   margin-bottom: 2rem !important;
 }
 
+.ml-2{
+  margin-left: 0.5rem !important;
+}
+
+.ml-4{
+  margin-left: 1rem !important;
+}
+
 .ml-6{
   margin-left: 1.5rem !important;
 }
@@ -3725,6 +3733,10 @@ html{
 
 .mt-1{
   margin-top: 0.25rem !important;
+}
+
+.mt-2{
+  margin-top: 0.5rem !important;
 }
 
 .mt-3{
@@ -3799,6 +3811,10 @@ html{
   height: 2rem !important;
 }
 
+.h-80{
+  height: 20rem !important;
+}
+
 .h-\[30rem\]{
   height: 30rem !important;
 }
@@ -3826,6 +3842,10 @@ html{
 
 .h-full{
   height: 100% !important;
+}
+
+.max-h-\[40vh\]{
+  max-height: 40vh !important;
 }
 
 .max-h-\[50vh\]{
@@ -3959,11 +3979,6 @@ html{
 .columns-4{
   -moz-columns: 4 !important;
        columns: 4 !important;
-}
-
-.columns-5{
-  -moz-columns: 5 !important;
-       columns: 5 !important;
 }
 
 .grid-cols-1{
@@ -4103,11 +4118,6 @@ html{
   border-width: 1px !important;
 }
 
-.border-y{
-  border-top-width: 1px !important;
-  border-bottom-width: 1px !important;
-}
-
 .border-b{
   border-bottom-width: 1px !important;
 }
@@ -4192,6 +4202,11 @@ html{
 .px-1{
   padding-left: 0.25rem !important;
   padding-right: 0.25rem !important;
+}
+
+.px-5{
+  padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important;
 }
 
 .px-6{
@@ -4414,6 +4429,10 @@ html{
   color: rgb(87 83 78 / var(--tw-text-opacity)) !important;
 }
 
+.no-underline{
+  text-decoration-line: none !important;
+}
+
 .opacity-70{
   opacity: 0.7 !important;
 }
@@ -4488,6 +4507,30 @@ details[open] > summary.meta-summary::before {
 
 .transcript p {
   padding-top: 1ch;
+}
+
+/* 
+.flickity-page-dots {
+  top: -2px;
+  justify-content: right !important;
+}
+.flickity-page-dot  {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid $text-base-content !important;
+}
+.flickity-page-dot:focus {
+  box-shadow: none !important;
+}
+.flickity-page-dot.is-selected {
+  background: $text-base-content !important;
+} 
+*/
+
+.flickity-button:focus {
+  box-shadow: none !important;
 }
 
 @media not all and (min-width: 768px){
@@ -5299,11 +5342,6 @@ details[open] > summary.meta-summary::before {
     flex-basis: 60% !important;
   }
 
-  .md\:columns-2{
-    -moz-columns: 2 !important;
-         columns: 2 !important;
-  }
-
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
@@ -5337,13 +5375,14 @@ details[open] > summary.meta-summary::before {
     border-style: none !important;
   }
 
-  .md\:p-3{
-    padding: 0.75rem !important;
-  }
-
   .md\:px-10{
     padding-left: 2.5rem !important;
     padding-right: 2.5rem !important;
+  }
+
+  .md\:px-3{
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
   }
 
   .md\:px-8{
@@ -5375,6 +5414,10 @@ details[open] > summary.meta-summary::before {
 
   .md\:text-left{
     text-align: left !important;
+  }
+
+  .md\:text-right{
+    text-align: right !important;
   }
 
   .md\:text-end{
@@ -5462,11 +5505,6 @@ details[open] > summary.meta-summary::before {
 
   .lg\:basis-3\/5{
     flex-basis: 60% !important;
-  }
-
-  .lg\:columns-4{
-    -moz-columns: 4 !important;
-         columns: 4 !important;
   }
 
   .lg\:columns-5{
