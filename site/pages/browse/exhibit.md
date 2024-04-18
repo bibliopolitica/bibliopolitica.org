@@ -1,8 +1,8 @@
 ---
-title: "Exhibit Essays"
+title: "Explore the Exhibit"
 description: "TBD"
 layout: page
-permalink: "/browse/exhibits/index.html"
+permalink: "/browse/exhibit/index.html"
 contents:
   - label: English
     anchor: '#english'

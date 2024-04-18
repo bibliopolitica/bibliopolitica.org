@@ -21,7 +21,7 @@ layout: page
       {{ content }}
 
       {% unless number == collections.exhibit.size %}
-        <a href="{{ '/exhibits' | url }}/{{ number | plus: 1 }}" class="col-start-2 text-right text-base max-w-2xl leading-tight link text-accent hover:text-base-content font-sans">Read Next</a>
+        <a href="{{ '/exhibit' | url }}/{{ number | plus: 1 }}" class="col-start-2 text-right text-base max-w-2xl leading-tight link text-accent hover:text-base-content font-sans">Read Next</a>
       {% endunless %}
       </div>
     </div>

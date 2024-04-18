@@ -1,6 +1,6 @@
 ---
-title: "wax design ideas"
-description: "TBD"
+title: "Bibliopolítica"
+description: ""
 layout: "base"
 permalink: "/index.html"
 home: true

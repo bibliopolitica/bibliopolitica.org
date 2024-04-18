@@ -36,7 +36,7 @@ layout: base
     {% if number %}
       <div class="lg:flex lg:gap-4 lg:justify-between lg:items-end">
         <div class="lg:basis-3/5">
-          <h1 class="text-pretty text-secondary text-3xl md:text-4xl lg:text-5xl  md:tracking-tight font-bold max-w-3xl"><span class="font-thin tracking-tighter mr-1">{{ number }}.</span>{{ title }}</h1>
+          <h1 class="text-pretty text-secondary text-3xl md:text-4xl lg:text-5xl  md:tracking-tight font-bold max-w-2xl">{% comment %}<span class="font-thin tracking-tighter mr-1">{{ number }}.</span>{% endcomment %}{{ title }}</h1>
         </div>
         <div class="lg:basis-2/5  not-prose lg:text-end text-sm lg:text-base leading-snug lg:mt-0 mt-6">
           {% for exhibit in collections.exhibit %}
