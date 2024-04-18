@@ -1,0 +1,9 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+  <g id="SVGRepo_iconCarrier">
+    <path d="M448,256c0-106-86-192-192-192S64,150,64,256s86,192,192,192S448,362,448,256Z" stroke="currentColor" style="fill:none;stroke-miterlimit:10;stroke-width:1.25em"></path>
+    <line x1="208" y1="192" x2="208" y2="320" stroke="currentColor" style="fill:none;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2.5em"></line>
+    <line x1="304" y1="192" x2="304" y2="320" stroke="currentColor" style="fill:none;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2.5em"></line>
+  </g>
+</svg>
