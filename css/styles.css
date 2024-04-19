@@ -3537,6 +3537,10 @@ html{
   margin-bottom: 0;
 }
 
+.fixed{
+  position: fixed !important;
+}
+
 .absolute{
   position: absolute !important;
 }
@@ -3553,12 +3557,20 @@ html{
   top: -1.5rem !important;
 }
 
+.bottom-6{
+  bottom: 1.5rem !important;
+}
+
 .right-0{
   right: 0px !important;
 }
 
 .right-1{
   right: 0.25rem !important;
+}
+
+.right-6{
+  right: 1.5rem !important;
 }
 
 .top-0{
@@ -3749,6 +3761,10 @@ html{
 
 .mt-6{
   margin-top: 1.5rem !important;
+}
+
+.mt-8{
+  margin-top: 2rem !important;
 }
 
 .mt-\[-25vh\]{
@@ -3966,6 +3982,10 @@ html{
 
 .basis-5\/6{
   flex-basis: 83.333333% !important;
+}
+
+.basis-full{
+  flex-basis: 100% !important;
 }
 
 .cursor-pointer{
@@ -4433,6 +4453,10 @@ html{
   text-decoration-line: none !important;
 }
 
+.opacity-40{
+  opacity: 0.4 !important;
+}
+
 .opacity-70{
   opacity: 0.7 !important;
 }
@@ -4445,11 +4469,6 @@ html{
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1) !important;
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color) !important;
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
-}
-
-.grayscale{
-  --tw-grayscale: grayscale(100%) !important;
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
 }
 
 .transition-all{
@@ -5232,6 +5251,10 @@ details[open] > summary.meta-summary::before {
   color: var(--fallback-s,oklch(var(--s)/var(--tw-text-opacity))) !important;
 }
 
+.hover\:opacity-80:hover{
+  opacity: 0.8 !important;
+}
+
 @media (min-width: 640px){
   .sm\:my-0{
     margin-top: 0px !important;
@@ -5277,6 +5300,14 @@ details[open] > summary.meta-summary::before {
 }
 
 @media (min-width: 768px){
+  .md\:bottom-12{
+    bottom: 3rem !important;
+  }
+
+  .md\:right-12{
+    right: 3rem !important;
+  }
+
   .md\:mx-0{
     margin-left: 0px !important;
     margin-right: 0px !important;
@@ -5296,6 +5327,10 @@ details[open] > summary.meta-summary::before {
 
   .md\:ml-0{
     margin-left: 0px !important;
+  }
+
+  .md\:ml-2{
+    margin-left: 0.5rem !important;
   }
 
   .md\:mr-12{
@@ -5404,8 +5439,20 @@ details[open] > summary.meta-summary::before {
     padding-bottom: 2.25rem !important;
   }
 
+  .md\:pl-4{
+    padding-left: 1rem !important;
+  }
+
   .md\:pl-8{
     padding-left: 2rem !important;
+  }
+
+  .md\:pr-4{
+    padding-right: 1rem !important;
+  }
+
+  .md\:pt-12{
+    padding-top: 3rem !important;
   }
 
   .md\:pt-5{
