@@ -11,18 +11,6 @@ The Bibliopolítica Oral History Collection includes stories from Chicanx Studie
 
 <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 not-prose">
   {% for history in oral-histories %}
-  <a class="inline-block" href="{{ '/history/' | url }}{{ history.id }}">
-    <div class="card bg-neutral duration-500 hover:scale-105">
-      <img src="{{ '/media/oh' | url }}/{{ history.id }}.jpg" alt="Photo of {{ history.label | remove: ' Oral History Interview' }}" class="rounded-t-lg object-cover object-center h-52 w-full mx-auto" />
-      <div class="card-body p-6">
-        <div class="card-title text-base md:text-lg font-bold">
-          {{ history.label | remove: " Oral History Interview" }}
-        </div>
-        <span class="text-secondary text-sm">
-          Very short tagline about role with the CSL
-        </span>
-      </div>
-    </div>
-  </a>
+  {% include "partials/oh-card.html" %}
   {% endfor %}
 </div>

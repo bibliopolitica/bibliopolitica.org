@@ -16,8 +16,8 @@ metadata:
 ---
 
 {% capture bio_card %}
-<div class="relative not-prose flex w-full flex-col rounded-xl border-b border-neutral md:border-none">
-  <div class="relative flex gap-4 my-4 overflow-hidden items-center">
+<div class="relative not-prose flex w-full flex-col border-b border-neutral md:border-none">
+  <div class="relative flex gap-4 my-4 overflow-hidden items-top">
     <img
       src="{{ '/media/oh' | url }}/{{ history.id }}.jpg"
       alt="Image of {{ history.label | remove: 'Oral History Interview' }}" class="relative inline-block h-[80px] w-[80px] !rounded-full  object-cover object-center" />
@@ -28,28 +28,12 @@ metadata:
         </div>
       </div>
       <p class="text-sm text-neutral-500">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ligula neque. Sed tristique velit dolor,
-        feugiat ullamcorper libero pulvinar ac. Aliquam purus nisl, ultrices id feugiat id, auctor at enim. Duis at
-        ipsum at nibh malesuada eleifend.
+        {{ history["Long Bio"]}}
       </p>
     </div>
   </div>
 </div>
 {% endcapture %}
-
-<!-- <div class="flex p-5 mb-5 border-b border-neutral items-center">
-  <div class="basis-5/6">
-    <h1 class="text-2xl md:text-4xl md:tracking-tight font-bold">{{ history.label }}</h1>
-  </div>
-  <div class="basis-1/6 h-10 md:h-12 text-right flex justify-end">
-    <a href="{{ pagination.href.previous | default: pagination.href.last | url }}"
-      class="-mr-1 hover:text-neutral-content text-accent tooltip tooltip-bottom" data-tip="Previous item">{% include
-      "svg/arrow-left.svg" %}</a>
-    <a href="{{ pagination.href.next | default: pagination.href.first | url }}"
-      class="hover:text-neutral-content text-accent tooltip tooltip-bottom" data-tip="Next item">{% include
-      "svg/arrow-right.svg" %}</a>
-  </div>
-</div> -->
 
 <article class="mb-5 md:flex">
   <div class="md:basis-1/2 md:shrink-0">
@@ -64,6 +48,14 @@ metadata:
   <div>
     <ul
       class="not-prose text-base py-6 md:px-8 md:py-2 space-y-2 md:basis-1/2 md:flex md:flex-col shrink max-w-prose bg-base-100 break-words">
+      {% if history["Summary"] %}
+      <li>
+        <details>
+          <summary class="meta-summary font-bold">&nbsp;Summary&nbsp;</summary>
+          <p class="py-2">{{ history["Summary"] }}</p>
+        </details>
+      </li>
+      {% endif %}
       {% for meta in metadata %}
       {% if history[meta.key] %}
       {% if meta.list %}
@@ -109,15 +101,7 @@ metadata:
         endunless %}
         {% endfor %}
       </li>
-      {% endif %}
-      {% if history["Narrative Summary"] %}
-      <li>
-        <details>
-          <summary class="meta-summary font-bold">&nbsp;Narrative Summary&nbsp;</summary>
-          <p class="py-2">{{ history["Narrative Summary"] }}</p>
-        </details>
-      </li>
-      {% endif %}
+      {% endif %}    
       <li>
         <details>
           <summary class="meta-summary font-bold">&nbsp;Transcript&nbsp;</summary>
