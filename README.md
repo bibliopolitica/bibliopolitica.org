@@ -35,8 +35,4 @@ A digital history of the Chicano Studies Library. Exhibit front-end feat. [11ty]
 
 ## Deployment
 
-- **Current**
-  - commits to `main` branch will trigger GitHub action to build, test, and deploy the site to GitHub pages
-- **Future**
-  - commits to `staging` branch will trigger GitHub action to build, test, and deploy the site to GitHub pages
-  - commits to `main` (via Pull Request from `staging`) will build, test, and deploy the site to prod host using SFTP
+Commits to `main` branch will trigger GitHub action to build, test, and deploy the site to GitHub pages
