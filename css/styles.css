@@ -4014,20 +4014,8 @@ html{
   margin-bottom: 2rem !important;
 }
 
-.-ml-20{
-  margin-left: -5rem !important;
-}
-
-.-ml-44{
-  margin-left: -11rem !important;
-}
-
 .-mr-1{
   margin-right: -0.25rem !important;
-}
-
-.-mt-28{
-  margin-top: -7rem !important;
 }
 
 .mb-1{
@@ -4315,10 +4303,6 @@ html{
   flex-grow: 1 !important;
 }
 
-.basis-1\/2{
-  flex-basis: 50% !important;
-}
-
 .basis-1\/4{
   flex-basis: 25% !important;
 }
@@ -4356,10 +4340,6 @@ html{
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
 }
 
-.flex-row{
-  flex-direction: row !important;
-}
-
 .flex-col{
   flex-direction: column !important;
 }
@@ -4370,10 +4350,6 @@ html{
 
 .place-items-center{
   place-items: center !important;
-}
-
-.items-start{
-  align-items: flex-start !important;
 }
 
 .items-center{
@@ -4554,10 +4530,6 @@ html{
   padding: 1rem !important;
 }
 
-.p-5{
-  padding: 1.25rem !important;
-}
-
 .p-6{
   padding: 1.5rem !important;
 }
@@ -4620,24 +4592,12 @@ html{
   padding-bottom: 0.5rem !important;
 }
 
-.pb-3{
-  padding-bottom: 0.75rem !important;
-}
-
 .pb-5{
   padding-bottom: 1.25rem !important;
 }
 
 .pb-6{
   padding-bottom: 1.5rem !important;
-}
-
-.pb-8{
-  padding-bottom: 2rem !important;
-}
-
-.pt-12{
-  padding-top: 3rem !important;
 }
 
 .pt-6{
@@ -4650,10 +4610,6 @@ html{
 
 .text-right{
   text-align: right !important;
-}
-
-.align-middle{
-  vertical-align: middle !important;
 }
 
 .font-mono{
@@ -4681,11 +4637,6 @@ html{
 .text-4xl{
   font-size: 2.25rem !important;
   line-height: 2.5rem !important;
-}
-
-.text-5xl{
-  font-size: 3rem !important;
-  line-height: 1 !important;
 }
 
 .text-base{
@@ -5661,14 +5612,6 @@ details[open] > summary.meta-summary::before {
     margin-right: 0px !important;
   }
 
-  .md\:-mb-16{
-    margin-bottom: -4rem !important;
-  }
-
-  .md\:-ml-52{
-    margin-left: -13rem !important;
-  }
-
   .md\:-mr-2{
     margin-right: -0.5rem !important;
   }
@@ -5749,10 +5692,6 @@ details[open] > summary.meta-summary::before {
     flex-direction: column !important;
   }
 
-  .md\:gap-10{
-    gap: 2.5rem !important;
-  }
-
   .md\:gap-x-8{
     -moz-column-gap: 2rem !important;
          column-gap: 2rem !important;
@@ -5787,16 +5726,8 @@ details[open] > summary.meta-summary::before {
     padding-bottom: 5rem !important;
   }
 
-  .md\:pb-9{
-    padding-bottom: 2.25rem !important;
-  }
-
   .md\:pl-4{
     padding-left: 1rem !important;
-  }
-
-  .md\:pl-8{
-    padding-left: 2rem !important;
   }
 
   .md\:pr-4{
@@ -5805,10 +5736,6 @@ details[open] > summary.meta-summary::before {
 
   .md\:pt-12{
     padding-top: 3rem !important;
-  }
-
-  .md\:pt-5{
-    padding-top: 1.25rem !important;
   }
 
   .md\:text-left{
@@ -5831,16 +5758,6 @@ details[open] > summary.meta-summary::before {
   .md\:text-4xl{
     font-size: 2.25rem !important;
     line-height: 2.5rem !important;
-  }
-
-  .md\:text-5xl{
-    font-size: 3rem !important;
-    line-height: 1 !important;
-  }
-
-  .md\:text-6xl{
-    font-size: 3.75rem !important;
-    line-height: 1 !important;
   }
 
   .md\:text-base{
@@ -5925,10 +5842,6 @@ details[open] > summary.meta-summary::before {
 
   .lg\:grid-cols-5{
     grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
-  }
-
-  .lg\:flex-row-reverse{
-    flex-direction: row-reverse !important;
   }
 
   .lg\:items-end{
