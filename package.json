@@ -9,7 +9,8 @@
     "dev:11ty": "eleventy --serve",
     "dev:css": "tailwindcss -i site/css/styles.css -o dist/css/styles.css --watch --postcss",
     "build:11ty": "env NODE_ENV=production eleventy --pathprefix 'bibliopolitica'",
-    "build:css": "tailwindcss -i site/css/styles.css -o dist/css/styles.css --postcss"
+    "build:css": "tailwindcss -i site/css/styles.css -o dist/css/styles.css --postcss",
+    "test": "npm run build:css && eleventy && hyperlink dist"
   },
   "keywords": [],
   "author": "",
@@ -27,6 +28,7 @@
     "tailwindcss": "^3.4.0"
   },
   "dependencies": {
+    "@untitaker/hyperlink": "^0.1.32",
     "clean-css": "^5.2.4",
     "flickity": "^3.0.0",
     "html-minifier": "^4.0.0",

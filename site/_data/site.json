@@ -5,26 +5,26 @@
   "menu": [
     {
       "label": "About the Project",
-      "link": "/about/project"
+      "link": "/about/project.html"
     },
     {
       "label": "A Timeline of CSL",
-      "link": "/about/library-timeline"
+      "link": "/about/library-timeline.html"
     },
     {
       "label": "Explore the Exhibit",
-      "link": "/browse/exhibit"
+      "link": "/browse/exhibit.html"
     },
     {
       "label": "Browse the Collection",
       "sub": [
         {
           "label": "Archival Materials",
-          "link": "/browse/items"
+          "link": "/browse/items.html"
         },
         {
           "label": "Oral Histories",
-          "link": "/browse/oral-histories"
+          "link": "/browse/oral-histories.html"
         }
       ]
     }

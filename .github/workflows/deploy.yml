@@ -21,6 +21,8 @@ jobs:
           node-version: 'v18.14.0'
       - name: install
         run: npm install
+      - name: test 
+        run: npm run test
       - name: build
         run: npm run build
       - name: deploy

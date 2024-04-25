@@ -2,7 +2,7 @@
 title: "Explore the Exhibit"
 description: "TBD"
 layout: page
-permalink: "/browse/exhibit/index.html"
+permalink: "/browse/exhibit.html"
 contents:
   - label: English
     anchor: '#english'

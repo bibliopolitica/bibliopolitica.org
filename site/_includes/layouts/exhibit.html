@@ -15,7 +15,7 @@ layout: page
     </div>
     <div id="feature-carousel" class="w-full md:text-right no-prose flex-none">
       {% for item in featured_items %}
-      <a class="link no-underline w-full" href="{{ '/item/'| append: item.id | url }}">
+      <a class="link no-underline w-full" href="{{ '/item/'| append: item.id | url }}.html">
         <div class="w-full h-full">
           <div class="ml-4">
             {% capture img_url %}https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_{{ item.id }}_{{ item.id }}_001/full/800,/0/default.jpg{% endcapture %}
@@ -34,8 +34,8 @@ layout: page
     <div class="prose-lg lg:prose-xl text-base-content [&_p]:leading-relaxed [&_p]:text-wrap font-serif mt-4 mb-20">
       {{ content }}
 
-      {% unless number == collections.feature.size %}
-        <a href="{{ '/exhibit' | url }}/{{ number | plus: 1 }}" class="col-start-2 text-right text-base max-w-2xl leading-tight link text-accent hover:text-base-content font-sans">Read Next</a>
+      {% unless number == collections.exhibit.size %}
+        <a href="{{ '/exhibit' | url }}/{{ number | plus: 1 }}.html" class="col-start-2 text-right text-base max-w-2xl leading-tight link text-accent hover:text-base-content font-sans">Read Next</a>
       {% endunless %}
       </div>
     </div>

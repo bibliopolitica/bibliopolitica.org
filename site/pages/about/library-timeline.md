@@ -78,7 +78,7 @@ contents:
       <div class="md:mr-12 columns-4 lg:columns-5 gap-x-2">
         {%- for item in year_data -%}
         <div class="mb-2">
-          <a href="{{ '/item/'| append: item.id | url }}" class="block tooltip tooltip-bottom" data-tip="{{ item.label | escape | truncatewords: 4, '...' }}">
+          <a href="{{ '/item/'| append: item.id | url }}.html" class="block tooltip tooltip-bottom" data-tip="{{ item.label | escape | truncatewords: 4, '...' }}">
             {% capture img_url %}https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_{{ item.id }}_{{ item.id }}_001/full/250,/0/default.jpg{% endcapture %}
             <img src="{{ img_url }}" alt="">
           </a>

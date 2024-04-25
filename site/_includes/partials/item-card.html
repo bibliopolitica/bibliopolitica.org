@@ -1,4 +1,4 @@
-<a href="{{ '/item/'| append: item.id | url }}">
+<a href="{{ '/item/'| append: item.id | url }}.html">
   <div class="h-full transition-all duration-500 hover:scale-105">
     {% capture img_url %}https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_{{ item.id }}_{{ item.id }}_001/full/800,/0/default.jpg{% endcapture %}
     <img src="{{ img_url }}" class="h-full" alt="">

@@ -2,10 +2,8 @@
 title: "Archival Materials"
 description: "TBD"
 layout: "page"
-permalink: "/browse/items/index.html"
+permalink: "/browse/items.html"
 ---
-
-<!-- <h1 class="p-5 pb-3 md:pt-5 md:pb-9 text-3xl md:text-5xl md:tracking-tight font-bold">Browse Archival Items</h1> -->
 
 <div class="md:flex pb-10 not-prose">
   <aside class="flex-none top-0 min-w-56">
@@ -13,19 +11,35 @@ permalink: "/browse/items/index.html"
     <ul class="md:hidden menu menu-horizontal rounded-box border border-neutral w-full mb-5">
       <li>
       <details closed>
-        <summary class="font-bold">Location</summary>
+        <summary class="font-bold">Personal Name</summary>
         <ul>
-          <li><a href="">Turkey</a></li>
-          <li><a href="">Iran</a></li>
-          <li><a href="">Middle East and North Africa</a></li>
-          <li><a href="">Egypt</a></li>
+          <li><a href="">Castillo-Speed, Lillian</a></li>
+          <li><a href="">Chabrán, Richard</a></li>
+          <li><a href="">García-Ayvens, Francisco</a></li>
+          <li><a href="">Arce, José Antonio, 1948-2018</a></li>
+          <li><a href="">Soto, Carolyn</a></li>
+          <li><a href="">Montoya, Malaquías</a></li>
+          <li><a href="">Yañez, Elva</a></li>
+          <li><a href="">Corpi, Lucha</a></li>
+          <li><a href="">Muñoz, Carlos Jr.</a></li>
+        </ul>
+      </details>
+      </li>	
+      <li>
+      <details closed>
+        <summary class="font-bold">Topic</summary>
+        <ul>
+          <li><a href="">Manuscripts</a></li>
+          <li><a href="">Portraits</a></li>
+          <li><a href="">Maps</a></li>
+          <li><a href="">Panels</a></li>
           <li><a href="">Show more</a></li>
         </ul>
       </details>
       </li>
       <li>
       <details closed>
-        <summary class="font-bold">Object Type</summary>
+        <summary class="font-bold">Type</summary>
         <ul>
           <li><a href="">Manuscripts</a></li>
           <li><a href="">Portraits</a></li>
@@ -39,17 +53,31 @@ permalink: "/browse/items/index.html"
     <!-- desktop menu -->
     <ul class="hidden md:block md:text-sm sticky top-20 max-h-screen overflow-y-scroll">
       <li class="pb-5">
-        <div class="font-bold text-2xl tracking-tight mb-1">Location</div>
+        <div class="font-bold text-2xl tracking-tight mb-1">Personal Name</div>
         <ul>
-          <li class="border-t border-neutral py-1"><a href="">Turkey</a></li>
-          <li class="border-t border-neutral py-1"><a href="">Iran</a></li>
-          <li class="border-t border-neutral py-1"><a href="">Middle East and North Africa</a></li>
-          <li class="border-t border-neutral py-1"><a href="">Egypt</a></li>
+          <li class="border-t border-neutral py-1"><a href="">Castillo-Speed, Lillian</a></li>
+          <li class="border-t border-neutral py-1"><a class="font-bold text-accent" href="">Chabrán, Richard</a></li>
+          <li class="border-t border-neutral py-1"><a href="">García-Ayvens, Francisco</a></li>
+          <li class="border-t border-neutral py-1"><a href="">Arce, José Antonio, 1948-2018</a></li>
+          <li class="border-t border-neutral py-1"><a href="">Soto, Carolyn</a></li>
+          <li class="border-t border-neutral py-1"><a href="">Montoya, Malaquías</a></li>
+          <li class="border-t border-neutral py-1"><a href="">Yañez, Elva</a></li>
+          <li class="border-t border-neutral py-1"><a href="">Corpi, Lucha</a></li>
+          <li class="border-t border-neutral py-1"><a href="">Muñoz, Carlos Jr.</a></li>
+        </ul>
+      </li>
+      <li class="pb-5"> 
+        <div class="font-bold border-neutral text-2xl tracking-tight mb-1">Topic</div>
+        <ul>
+          <li class="border-t border-neutral py-1"><a href="">Manuscripts</a></li>
+          <li class="border-t border-neutral py-1"><a class="font-bold text-accent" href="">Portraits</a></li>
+          <li class="border-t border-neutral py-1"><a href="">Maps</a></li>
+          <li class="border-t border-neutral py-1"><a href="">Panels</a></li>
           <li class="border-t border-neutral py-1"><a class="italic" href="">Show more</a></li>
         </ul>
       </li>
       <li class="pb-5"> 
-        <div class="font-bold border-neutral text-2xl tracking-tight mb-1">Object Type</div>
+        <div class="font-bold border-neutral text-2xl tracking-tight mb-1">Type</div>
         <ul>
           <li class="border-t border-neutral py-1"><a href="">Manuscripts</a></li>
           <li class="border-t border-neutral py-1"><a class="font-bold text-accent" href="">Portraits</a></li>
@@ -65,7 +93,7 @@ permalink: "/browse/items/index.html"
       {%- for item in items -%}
         {% capture img_url %}https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_{{ item.id }}_{{ item.id }}_001/full/800,/0/default.jpg{% endcapture %}
         <div class="mb-8">
-          <a href="{{ '/item/' | append: item.id | url }}">
+          <a href="{{ '/item/' | append: item.id | url }}.html">
             <img 
               src="{{ img_url }}"
               alt=""
