@@ -44,27 +44,35 @@ layout: base
 </div>
 {% else %}
 <div class="bg-neutral z-40 border-b border-neutral">
-  <div class="container mx-auto max-w-screen-xl py-12 md:py-20 px-6 text-base-content">
+  <div class="container mx-auto max-w-screen-xl pt-6 md:pt-12 pb-12 px-6 text-base-content">
     {% if number %}
-      <div class="text-sm breadcrumbs">
-        <ul>
-          <li><a href="{{ '/' | url }}">Home</a></li> 
-          <li><a href="{{ '/browse/exhibit.html' | url }}">Explore the Exhibit</a></li> 
-        </ul>
-      </div>
-      <div class="lg:flex lg:gap-4 lg:justify-between lg:items-end">
+      <div class="lg:flex lg:gap-4 lg:justify-between lg:items-center">
         <div class="lg:basis-3/5">
-          <h1 class="text-pretty text-secondary text-3xl md:text-4xl lg:text-5xl  md:tracking-tight font-bold max-w-2xl">{% comment %}<span class="font-thin tracking-tighter mr-1">{{ number }}.</span>{% endcomment %}{{ title }}</h1>
+          <div class="text-sm breadcrumbs pb-6 md:pb-12">
+            <ul>
+              <li><a href="{{ '/' | url }}">Home</a></li> 
+              <li><a href="{{ '/browse/exhibit.html' | url }}">Explore the Exhibit</a></li> 
+            </ul>
+          </div>
+          <h1 class="text-pretty text-secondary text-3xl md:text-4xl lg:text-5xl  md:tracking-tight font-bold max-w-2xl">
+            {{ title }}
+          </h1>
+          {% if lang == 'en' %}
+          <a class="btn btn-outline btn-xs mt-4 md:btn-sm lg:mt-12" href="{{ '/exhibit/' | url }}/es/{{ number }}.html">Leer en Español</a>
+          {% else %}
+          <a class="btn btn-outline btn-xs mt-4 md:btn-sm lg:mt-12" href="{{ '/exhibit/' | url }}/en/{{ number }}.html">Read in English</a>
+          {% endif %}
         </div>
-        <div class="lg:basis-2/5  not-prose lg:text-end text-sm lg:text-base leading-snug lg:mt-0 mt-6">
-          {% for exhibit in collections.exhibit %}
+        <div class="lg:text-end lg:basis-2/5 not-prose md:text-sm lg:text-base leading-snug lg:mt-0 mt-6">
+          {% for exhibit in collections[tags.first] %}
             {% if exhibit.data.number == number %}
             <span class="whitespace-nowrap text-stone-400">{{ exhibit.data.number }}: {{ exhibit.data.title | split: ':' | first }}</span>
             {% else %}
-            <a class="link whitespace-nowrap hover:text-accent" href="{{ exhibit.data.permalink | url }}">{{ exhibit.data.number }}: {{ exhibit.data.title | split: ':' | first }}</a>
+            <a class="link whitespace-nowrap hover:text-accent" href="{{ exhibit.url | url }}">{{ exhibit.data.number }}: {{ exhibit.data.title | split: ':' | first }}</a>
             {% endif %}
             {% unless forloop.last %}<span class="text-stone-500 mx-1">/</span>{% endunless %}
           {% endfor %}
+          <br>
         </div>
       {% else %}
         {% if contents %}
