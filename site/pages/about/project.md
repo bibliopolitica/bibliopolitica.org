@@ -42,9 +42,7 @@ images:
   - url: '/media/028.jpg'
     caption: "TODO: Add caption here"
 ---
-At the intersection of Chicanx Studies, Digital Humanities and Library History, *Bibliopolítica: a Digital History of the Chicano Studies Library* chronicles the history of one of the first Chicanx collections, the UC Berkeley Chicano Studies Library (CSL).
-
-Bibliopolítica shares the stories of trailblazing library workers, students and community members who tirelessly worked to preserve and make Chicanx resources available. Featuring photographs, ephemera, archival documents, and oral histories, Bibliopolítica offers an original digital collection of primary sources and is the first audiovisual history of this pioneering library that helped redefine what libraries could be. 
+At the intersection of Chicana/o/x  Studies, Digital Humanities and Library History, *Bibliopolítica: a Digital History of the Chicano Studies Library* chronicles the history of one of the first Chicana/o/x  collections, the UC Berkeley Chicano Studies Library. Bibliopolítica shares the stories of trailblazing library workers, students and community members who tirelessly worked to preserve and make Chicana/o/x resources available. Featuring photographs, ephemera, archival documents, and oral histories, Bibliopolítica offers an original digital collection of primary sources and is the first audiovisual history of a place that helped redefine what libraries could be.  
 
 ## Project Team
 
