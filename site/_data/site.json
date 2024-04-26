@@ -13,7 +13,16 @@
     },
     {
       "label": "Explore the Exhibit",
-      "link": "/browse/exhibit.html"
+      "sub": [
+        {
+          "label": "In English",
+          "link": "/browse/exhibit/en.html"
+        },
+        {
+          "label": "En Español",
+          "link": "/browse/exhibit/es.html"
+        }
+      ]
     },
     {
       "label": "Browse the Collection",
