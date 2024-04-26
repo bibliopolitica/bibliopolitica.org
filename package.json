@@ -31,7 +31,6 @@
     "@untitaker/hyperlink": "^0.1.32",
     "clean-css": "^5.2.4",
     "flickity": "^3.0.0",
-    "html-minifier": "^4.0.0",
     "leaflet": "^1.9.4",
     "leaflet-iiif": "^3.0.0",
     "leaflet-sleep": "^0.5.2",
