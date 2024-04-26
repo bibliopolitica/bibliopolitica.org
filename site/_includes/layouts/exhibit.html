@@ -14,7 +14,8 @@ layout: page
       <button id="next-feature" class="h-8 w-8 md:h-12 md:w-12 text-accent hover:text-neutral-content tooltip tooltip-right" data-tip="Next">{% include "svg/arrow-right.svg" %}</button>
     </div>
     <div id="feature-carousel" class="w-full md:text-right no-prose flex-none">
-      {% for item in featured_items %}
+      {% for feat in featured_items %}
+      {% assign item = items | where: 'id', feat.id | first %}
       <a class="link no-underline w-full" href="{{ '/item/'| append: item.id | url }}.html">
         <div class="w-full h-full">
           <div class="ml-4">
@@ -22,7 +23,7 @@ layout: page
               <img src="{{ img_url }}" alt="{{ item.label }}" class="mt-0 w-full h-80 max-h-[40vh] object-center object-cover mx-auto transition-all duration-500 hover:scale-105" />            
               <div class="link font-bold no-underline leading-snug">{{ item.label }}</div>
               <div class="md:text-base text-sm mt-2 font-serif leading-snug">
-                {{ item.caption }}
+                {{ feat.caption | default: item["Narrative Summary"]}}
               </div>
           </div>
         </div>
