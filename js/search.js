@@ -3,13 +3,7 @@ var resultsInfo       = document.querySelector ('#results-info');
 var searchInput       = document.querySelector("#search-input");
 var searchLimit       = document.getElementById("search-limit-select");
 var searchSubmit      = document.querySelector("#search-submit");
-var promisedData      = fetchData("/items.json"); 
 
-async function fetchData(dataFile) {
-  const response = await fetch(dataFile);
-  const data = await response.json();
-  return data;
-}
 
 function addSearchLimit(query) {
   console.log(searchLimit);

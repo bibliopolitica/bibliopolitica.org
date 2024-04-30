@@ -212,6 +212,14 @@
   <div class="container mx-auto max-w-screen-xl [&_p]:max-w-prose p-6 prose lg:prose-lg text-base-content mb-28">
     <script src="https://unpkg.com/itemsjs@2.1.24/dist/index.umd.js"></script>
 <script src="https://unpkg.com/lunr/lunr.js"></script>
+<script>
+  async function fetchData(dataFile) {
+    const response = await fetch(dataFile);
+    const data = await response.json();
+    return data;
+  }
+  window.promisedData = fetchData( "/bibliopolitica/items.json"); 
+</script>
 <div class="join w-full max-w-full mb-8">
   <input size="1" id="search-input" class="italic input grow input-bordered md:input-md input-sm join-item border-1 border-base-content" placeholder="Search"/>
   <select size="1" id="search-limit-select" class="select select-bordered md:select-md select-sm join-item border-1 border-base-content">
