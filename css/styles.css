@@ -2174,6 +2174,10 @@ html{
   line-height: 1em;
 }
 
+.input-bordered{
+  border-color: var(--fallback-bc,oklch(var(--bc)/0.2));
+}
+
 .input:focus,
   .input:focus-within{
   box-shadow: none;
@@ -2215,6 +2219,10 @@ html{
   margin-top: 0px;
   margin-bottom: 0px;
   margin-inline-start: -1px;
+}
+
+.join-item:focus{
+  isolation: isolate;
 }
 
 .link:focus{
@@ -2452,6 +2460,10 @@ html{
   100%{
     transform: translateY(0);
   }
+}
+
+.select-bordered{
+  border-color: var(--fallback-bc,oklch(var(--bc)/0.2));
 }
 
 .select:focus{
@@ -2839,9 +2851,23 @@ html{
   font-size: 0.75rem;
 }
 
+.btn-sm{
+  height: 2rem;
+  min-height: 2rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 0.875rem;
+}
+
 .btn-square:where(.btn-xs){
   height: 1.5rem;
   width: 1.5rem;
+  padding: 0px;
+}
+
+.btn-square:where(.btn-sm){
+  height: 2rem;
+  width: 2rem;
   padding: 0px;
 }
 
@@ -2850,6 +2876,21 @@ html{
   width: 1.5rem;
   border-radius: 9999px;
   padding: 0px;
+}
+
+.btn-circle:where(.btn-sm){
+  height: 2rem;
+  width: 2rem;
+  border-radius: 9999px;
+  padding: 0px;
+}
+
+.input-sm{
+  height: 2rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 2rem;
 }
 
 .join.join-vertical{
@@ -2899,6 +2940,20 @@ html{
 
 .menu-horizontal > li:not(.menu-title) > details > ul{
   position: absolute;
+}
+
+.select-sm{
+  height: 2rem;
+  min-height: 2rem;
+  padding-left: 0.75rem;
+  padding-right: 2rem;
+  font-size: 0.875rem;
+  line-height: 2rem;
+}
+
+[dir="rtl"] .select-sm{
+  padding-left: 2rem;
+  padding-right: 0.75rem;
 }
 
 .steps-horizontal .step{
@@ -4580,6 +4635,10 @@ html{
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
 }
 
+.grid-cols-4{
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+}
+
 .flex-col{
   flex-direction: column !important;
 }
@@ -4708,6 +4767,11 @@ html{
 .border-accent{
   --tw-border-opacity: 1 !important;
   border-color: var(--fallback-a,oklch(var(--a)/var(--tw-border-opacity))) !important;
+}
+
+.border-base-content{
+  --tw-border-opacity: 1 !important;
+  border-color: var(--fallback-bc,oklch(var(--bc)/var(--tw-border-opacity))) !important;
 }
 
 .border-neutral{
@@ -4901,6 +4965,11 @@ html{
 .text-xl{
   font-size: 1.25rem !important;
   line-height: 1.75rem !important;
+}
+
+.text-xs{
+  font-size: 0.75rem !important;
+  line-height: 1rem !important;
 }
 
 .font-black{
@@ -5263,9 +5332,23 @@ details[open] > summary.meta-summary::before {
     font-size: 0.875rem;
   }
 
+  .md\:btn-md{
+    height: 3rem;
+    min-height: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 0.875rem;
+  }
+
   .btn-square:where(.md\:btn-sm){
     height: 2rem;
     width: 2rem;
+    padding: 0px;
+  }
+
+  .btn-square:where(.md\:btn-md){
+    height: 3rem;
+    width: 3rem;
     padding: 0px;
   }
 
@@ -5274,6 +5357,37 @@ details[open] > summary.meta-summary::before {
     width: 2rem;
     border-radius: 9999px;
     padding: 0px;
+  }
+
+  .btn-circle:where(.md\:btn-md){
+    height: 3rem;
+    width: 3rem;
+    border-radius: 9999px;
+    padding: 0px;
+  }
+
+  .md\:input-md{
+    height: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    line-height: 2;
+  }
+
+  .md\:select-md{
+    height: 3rem;
+    min-height: 3rem;
+    padding-left: 1rem;
+    padding-right: 2.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    line-height: 2;
+  }
+
+  [dir="rtl"] .md\:select-md{
+    padding-left: 2.5rem;
+    padding-right: 1rem;
   }
 }
 
@@ -5943,6 +6057,10 @@ details[open] > summary.meta-summary::before {
     grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
   }
 
+  .md\:grid-cols-5{
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+  }
+
   .md\:flex-row-reverse{
     flex-direction: row-reverse !important;
   }
@@ -6104,6 +6222,10 @@ details[open] > summary.meta-summary::before {
 
   .lg\:grid-cols-5{
     grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+  }
+
+  .lg\:grid-cols-6{
+    grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
   }
 
   .lg\:items-end{
