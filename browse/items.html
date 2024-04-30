@@ -218,7 +218,8 @@
     const data = await response.json();
     return data;
   }
-  window.promisedData = fetchData( "/bibliopolitica/items.json"); 
+  window.prefixUrl    = "/bibliopolitica/";
+  window.promisedData = fetchData("/bibliopolitica/items.json"); 
 </script>
 <div class="join w-full max-w-full mb-8">
   <input size="1" id="search-input" class="italic input grow input-bordered md:input-md input-sm join-item border-1 border-base-content" placeholder="Search"/>
