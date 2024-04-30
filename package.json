@@ -31,10 +31,12 @@
     "@untitaker/hyperlink": "^0.1.32",
     "clean-css": "^5.2.4",
     "flickity": "^3.0.0",
+    "itemsjs": "^2.1.25",
     "leaflet": "^1.9.4",
     "leaflet-iiif": "^3.0.0",
     "leaflet-sleep": "^0.5.2",
     "leaflet.fullscreen": "^3.0.0",
+    "lunr": "^2.3.9",
     "moment": "^2.29.1"
   }
 }

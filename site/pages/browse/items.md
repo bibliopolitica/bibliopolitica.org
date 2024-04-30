@@ -5,6 +5,34 @@ layout: "page"
 permalink: "/browse/items.html"
 ---
 
+<script src="https://unpkg.com/itemsjs@2.1.24/dist/index.umd.js"></script>
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+
+<div class="join w-full max-w-full mb-8">
+  <input size="1" id="search-input" class="italic input grow input-bordered md:input-md input-sm join-item border-1 border-base-content" placeholder="Search"/>
+  <select size="1" id="search-limit-select" class="select select-bordered md:select-md select-sm join-item border-1 border-base-content">
+    <option>All Fields</option>
+    <option>label</option>
+    <option>Narrative Summary</option>
+    <option>Personal Name</option>
+    <option>Subject</option>
+    <option>Genre</option>
+    <option>Format</option>
+    <option>Keyword</option>
+  </select>
+  <button size="1" id="search-submit" class="btn btn-sm md:btn-md btn-outline join-item">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 opacity-70"><path fill-rule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clip-rule="evenodd" /></svg>
+  </button>
+</div>
+<main class="flex-auto md:px-10 not-prose">
+  <div id="results-info"></div>
+  <div id="results" class="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-10 gap-y-5 items-center">
+  </div>
+</main>
+
+<script src="{{ '/js/search.js' | url }}"></script>
+
+{% comment %}
 <div class="md:flex pb-10 not-prose">
   <aside class="flex-none top-0 min-w-56">
     <!-- mobile dropdown menu -->
@@ -87,6 +115,7 @@ permalink: "/browse/items.html"
         </ul>
       </li>
     </ul>
+    <!-- end desktop menu -->
   </aside>
   <main class="flex-auto md:px-10">
     <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10 gap-y-5 items-center">
@@ -108,3 +137,4 @@ permalink: "/browse/items.html"
     </div>
   </main>
 </div>
+{% endcomment %}

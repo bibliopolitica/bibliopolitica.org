@@ -19,7 +19,9 @@ data = CSV.read(inpath, headers: true).map(&:to_h).map do |item|
   item['id'] = item['pid']
   keys_dropable.each { |key| item.delete key }
   keys_repeatable.each { |key| item[key] = item[key].to_s.split("|") }
-  item.each { |key, value| item.delete(key) if value.nil? or value.empty? }
+  item.each do |key, value| 
+    item.delete(key) if value.nil? or value.empty?
+  end
   item
 end
 

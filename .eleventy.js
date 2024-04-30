@@ -78,6 +78,10 @@ module.exports = function(eleventyConfig) {
   // passthrough copy
   eleventyConfig.addPassthroughCopy('site/assets/')
                 .addPassthroughCopy('site/media/')
+                .addPassthroughCopy('site/js/')
+                .addPassthroughCopy({
+                  'site/_data/items.json': 'items.json'
+                })
                 .addPassthroughCopy({
                   './node_modules/siema/dist/siema.min.js': '/assets/vendor/siema.min.js'
                 })
@@ -88,7 +92,6 @@ module.exports = function(eleventyConfig) {
                   './node_modules/flickity/dist/flickity.min.css': '/assets/vendor/flickity.min.css'
                 })
   
-
   return {
     markdownTemplateEngine: 'liquid',
     dir: {
