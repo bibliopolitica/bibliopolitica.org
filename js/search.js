@@ -2,16 +2,17 @@ var resultsContainer  = document.getElementById('results');
 var resultsInfo       = document.getElementById('results-info');
 var searchInput       = document.getElementById("search-input");
 var searchLimit       = document.getElementById("search-limit-select");
+var limitOptions      = Array.from(searchLimit.options).map((opt) => opt.value)
 var searchSubmit      = document.getElementById("search-submit");
-
+var urlParams         = new URLSearchParams(window.location.search);
 
 function toQueryString(tokens) {
   if (searchLimit.value == 'All Fields') {
-    return tokens.map((token) => `${token}^100 +${token}*^10 ${token}~1`).join(' ')
+    return tokens.map((token) => `${token}^100 +${token}*^10 ${token}~2`).join(' ')
   }
   else {
     limitStr = searchLimit.value.replaceAll(" ", "_");
-    return tokens.map((token) => `${limitStr}:${token}^100 +${limitStr}:${token}*^10 ${limitStr}:${token}~1`).join(' ');
+    return tokens.map((token) => `${limitStr}:${token}^100 +${limitStr}:${token}*^10 ${limitStr}:${token}~2`).join(' ');
   }
 }
 
@@ -22,7 +23,6 @@ function submitSearchQuery(idx) {
     tokens = input.split(' ');
     query = toQueryString(tokens);
   }  
-  console.log(query);
   return idx.search(query) || [];
 }
 
@@ -42,8 +42,8 @@ function appendSearchResults(results, resultsLookupMap) {
   results.forEach(function (res) {
     let item = resultsLookupMap[res.ref];
     let resultDiv = document.createElement('div');
-    let thumbnail = `https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_${ item.id }_${ item.id }_001/full/250,/0/default.jpg`;
-    resultDiv.innerHTML = `<div class="mb-8"><a href="${prefixUrl}item/${item.id}.html"><img loading="lazy" src="${ thumbnail }" alt="thumbnail for ${truncateString(item.label)}" class="max-w-full h-auto"><div class="mt-2 leading-snug md:text-sm text-xs">${truncateString(item.label)}</div></a></div>`;
+    let thumbnail = `https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_${ item.ID }_${ item.ID }_001/full/250,/0/default.jpg`;
+    resultDiv.innerHTML = `<div class="mb-8"><a href="${prefixUrl}item/${item.ID}.html"><img loading="lazy" src="${ thumbnail }" alt="thumbnail for ${truncateString(item.Label)}" class="max-w-full h-auto"><div class="mt-2 leading-snug md:text-sm text-xs">${truncateString(item.Label)}</div></a></div>`;
     resultsContainer.appendChild(resultDiv);
   })
 }
@@ -55,47 +55,53 @@ function appendSearchInfo(results) {
   resultsInfo.appendChild(infoDiv);
 }
 
+function inferUrlParams(){
+  if (urlParams.has('limit') && limitOptions.includes(urlParams.get('limit')) ) {
+    searchLimit.value = urlParams.get('limit');
+  }
+  if (urlParams.has('query')) {
+    searchInput.value = urlParams.get('query');
+  }
+}
+
 function toDoc(doc) {
   return {
-      'id': doc.id,
-      'label': doc.label,
-      'Personal_Name': (doc['Personal Name'] || []).join(' '),
-      'Corporate_Name': (doc['Corporate Name'] || []).join(' '),
-      'Date_of_Publication_or_Production': (doc['Date of Publication or Production'] || []).join(' '),
-      'Narrative_Summary': doc['Narrative Summary'] || '',
-      'Subject': (doc['Subject'] || [] ).join(' '),
-      'Genre': (doc['Genre'] || [] ).join(' '),
-      'Format': (doc['Format'] || [] ).join(' '),
-      'Keyword': (doc['Keyword'] || [] ).join(' ')
-    };
+    'ID': doc.ID,
+    'Label': doc.Label,
+    'Personal_Name': (doc['Personal Name'] || []).join(' '),
+    'Summary': doc['Summary'] || '',
+    'Topic': (doc['Topic'] || [] ).join(' '),
+    'Type': (doc['Type'] || [] ).join(' '),
+    'Format': (doc['Format'] || [] ).join(' ')
+  };
 }
 
 promisedData.then(function(data) {
   const resultsLookupMap = data.reduce(function (memo, doc) {
-	  memo[doc.id] = doc
+	  memo[doc.ID] = doc
 	  return memo
 	}, {});
   let idx = lunr(function () {
-    this.ref('id');
-    this.field('label');
+    this.ref('ID');
+    this.field('Label');
     this.field('Personal_Name');
-    this.field('Corporate_Name');
-    this.field('Date_of_Publication_or_Production');
-    this.field('Narrative_Summary');
-    this.field('Subject');
-    this.field('Genre');
+    this.field('Summary');
+    this.field('Topic');
+    this.field('Type');
     this.field('Format');
-    this.field('Keyword');
 
     this.pipeline.remove(lunr.stemmer);
     this.searchPipeline.remove(lunr.stemmer);
+    this.pipeline.remove(lunr.stopWordFilter);
+    this.searchPipeline.remove(lunr.stopWordFilter);
 
     data.forEach(function (doc) {
       this.add(toDoc(doc))
     }, this)
   })
-  // default: start with all results shown
+  inferUrlParams();
   results = submitSearchQuery(idx);
+  appendSearchInfo(results);
   appendSearchResults(results, resultsLookupMap);
 
   document.body.addEventListener('keypress', function(e) {
