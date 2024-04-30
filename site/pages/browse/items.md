@@ -18,12 +18,14 @@ permalink: "/browse/items.html"
 </script>
 
 <div class="join w-full max-w-full mb-8">
-  <input size="1" id="search-input" class="italic input grow input-bordered md:input-md input-sm join-item border-1 border-base-content" placeholder="Search"/>
+  <input size="1" id="search-input" class="font-mono input grow input-bordered md:input-md input-sm join-item border-1 border-base-content" placeholder="Search"/>
   <select size="1" id="search-limit-select" class="select select-bordered md:select-md select-sm join-item border-1 border-base-content">
     <option>All Fields</option>
     <option>label</option>
     <option>Narrative Summary</option>
     <option>Personal Name</option>
+    <option>Corporate Name</option>
+    <!-- <option>Date of Publication or Production</option> -->
     <option>Subject</option>
     <option>Genre</option>
     <option>Format</option>
@@ -35,7 +37,7 @@ permalink: "/browse/items.html"
 </div>
 <main class="flex-auto md:px-10 not-prose">
   <div id="results-info"></div>
-  <div id="results" class="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-10 gap-y-5 items-center">
+  <div id="results" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-10 gap-y-5 items-center">
   </div>
 </main>
 
