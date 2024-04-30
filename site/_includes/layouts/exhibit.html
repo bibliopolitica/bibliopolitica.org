@@ -15,13 +15,13 @@ layout: page
     </div>
     <div id="feature-carousel" class="w-full md:text-right no-prose flex-none">
       {% for feat in featured_items %}
-      {% assign item = items | where: 'id', feat.id | first %}
-      <a class="link no-underline w-full" href="{{ '/item/'| append: item.id | url }}.html">
+      {% assign item = items | where: 'ID', feat.id | first %}
+      <a class="link no-underline w-full" href="{{ '/item/'| append: item.ID | url }}.html">
         <div class="w-full h-full">
           <div class="ml-4">
-            {% capture img_url %}https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_{{ item.id }}_{{ item.id }}_001/full/800,/0/default.jpg{% endcapture %}
-              <img src="{{ img_url }}" alt="{{ item.label }}" class="mt-0 w-full h-80 max-h-[40vh] object-center object-cover mx-auto transition-all duration-500 hover:scale-105" />            
-              <div class="link font-bold no-underline leading-snug">{{ item.label }}</div>
+            {% capture img_url %}https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_{{ item.ID }}_{{ item.ID }}_001/full/800,/0/default.jpg{% endcapture %}
+              <img src="{{ img_url }}" alt="{{ item.Label }}" class="mt-0 w-full h-80 max-h-[40vh] object-center object-cover mx-auto transition-all duration-500 hover:scale-105" />            
+              <div class="link font-bold no-underline leading-snug">{{ item.Label }}</div>
               <div class="md:text-base text-sm mt-2 font-serif leading-snug">
                 {{ feat.caption | default: item["Narrative Summary"]}}
               </div>

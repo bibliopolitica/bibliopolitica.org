@@ -3,20 +3,17 @@ require 'json'
 
 inpath          = "./lib/data/oral-histories-metadata.csv"
 outpath         = "./site/_data/oral-histories.json"
-keys_dropable   = ["Cataloger Status", "pid"]
+keys_dropable   = ["Status"]
 keys_repeatable = [
   "Personal Name", 
-  "Language",
   "Notes",
-  "Keyword",
-  "Subject",
-  "Genre",
-  "Link",
-  "Identifier"
+  "Topic",
+  "Type",
+  "Format",
+  "Language"
 ]
 
 data = CSV.read(inpath, headers: true).map(&:to_h).map do |item|
-  item['id'] = item['pid']
   keys_dropable.each { |key| item.delete key }
   keys_repeatable.each { |key| item[key] = item[key].to_s.split("|") }
   item.each do |key, value| 

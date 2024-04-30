@@ -4,35 +4,35 @@
   "url": "",
   "menu": [
     {
-      "label": "About the Project",
+      "Label": "About the Project",
       "link": "/about/project.html"
     },
     {
-      "label": "A Timeline of CSL",
+      "Label": "A Timeline of CSL",
       "link": "/about/library-timeline.html"
     },
     {
-      "label": "Explore the Exhibit",
+      "Label": "Explore the Exhibit",
       "sub": [
         {
-          "label": "In English",
+          "Label": "In English",
           "link": "/browse/exhibit/en.html"
         },
         {
-          "label": "En Español",
+          "Label": "En Español",
           "link": "/browse/exhibit/es.html"
         }
       ]
     },
     {
-      "label": "Browse the Collection",
+      "Label": "Browse the Collection",
       "sub": [
         {
-          "label": "Archival Materials",
+          "Label": "Archival Materials",
           "link": "/browse/items.html"
         },
         {
-          "label": "Oral Histories",
+          "Label": "Oral Histories",
           "link": "/browse/oral-histories.html"
         }
       ]

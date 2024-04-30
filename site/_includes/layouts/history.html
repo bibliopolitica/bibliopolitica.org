@@ -19,8 +19,8 @@ metadata:
 <div class="relative not-prose flex w-full flex-col border-b border-neutral md:border-none">
   <div class="relative flex gap-4 my-4 overflow-hidden items-top">
     <img
-      src="{{ '/media/oh' | url }}/{{ history.id }}.jpg"
-      alt="Image of {{ history.label | remove: 'Oral History Interview' }}" class="relative inline-block h-[80px] w-[80px] !rounded-full  object-cover object-center" />
+      src="{{ '/media/oh' | url }}/{{ history.ID }}.jpg"
+      alt="Image of {{ history.Label | remove: 'Oral History Interview' }}" class="relative inline-block h-[80px] w-[80px] !rounded-full  object-cover object-center" />
     <div class="flex w-full flex-col gap-0.5">
       <div class="flex items-center justify-between">
         <div class="font-bold text-secondary text-xl">
@@ -42,7 +42,7 @@ metadata:
       width="100%" height="350" allowfullscreen webkitallowfullscreen mozAllowFullScreen
       allow="autoplay *; fullscreen *; encrypted-media *"
       sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation"
-      frameborder="0" title="{{ history.label }}"></iframe>
+      frameborder="0" title="{{ history.Label }}"></iframe>
     {{ bio_card }}
   </div>
   <div>
@@ -106,7 +106,7 @@ metadata:
         <details>
           <summary class="meta-summary font-bold">&nbsp;Transcript&nbsp;</summary>
           <div class="transcript text-sm font-mono italic">
-            {% include "transcripts/{{ history.id }}.html" %}
+            {% include "transcripts/{{ history.ID }}.html" %}
           </div>
         </details>
       </li>

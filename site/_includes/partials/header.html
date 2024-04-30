@@ -19,16 +19,16 @@
             {% if item.sub %}
               <details>
                 <summary>
-                  <div class="whitespace-nowrap">{{ item.label }}</div>
+                  <div class="whitespace-nowrap">{{ item.Label }}</div>
                 </summary>
                 <ul class="p-2 bg-base-100 rounded-t-none">
                   {% for child in item.sub %}
-                  <li><a class="whitespace-nowrap" href="{{ child.link | url }}">{{ child.label }}</a></li>
+                  <li><a class="whitespace-nowrap" href="{{ child.link | url }}">{{ child.Label }}</a></li>
                   {% endfor %}
                 </ul>
               </details>
             {% else %}
-              <a class="whitespace-nowrap" href="{{ item.link | url }}">{{ item.label }}</a>
+              <a class="whitespace-nowrap" href="{{ item.link | url }}">{{ item.Label }}</a>
             {% endif %}
             </li>
           {% endfor %}
@@ -44,23 +44,23 @@
               {% if item.sub %}
                 <details>
                   <summary>
-                    {{ item.label }}
+                    {{ item.Label }}
                   </summary>
                   <ul class="p-2 mt-0 rounded-t-none">
                     {% for child in item.sub %}
-                    <li><a class="whitespace-nowrap"	href="{{ child.link | url }}">{{ child.label }}</a></li>
+                    <li><a class="whitespace-nowrap"	href="{{ child.link | url }}">{{ child.Label }}</a></li>
                     {% endfor %}
                   </ul>
                 </details>
               {% else %}
-                <a href="{{ item.link | url }}">{{ item.label }}</a>
+                <a href="{{ item.link | url }}">{{ item.Label }}</a>
               {% endif %}
             </li>
           {% endfor %}
         </ul>
       </div>
       <!-- end big menu -->
-      <label class="cursor-pointer grid place-items-center">
+      <Label class="cursor-pointer grid place-items-center">
         <input id="toggle-darkmode" type="checkbox" value="dark" class="toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2"/>
         <svg class="col-start-1 row-start-1 stroke-base-100 fill-base-100" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="12" cy="12" r="5"/>
@@ -69,7 +69,7 @@
         <svg class="col-start-2 row-start-1 stroke-base-100 fill-base-100" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
         </svg>
-      </label>
+      </Label>
       <script src="{{ '/assets/theme-toggle-local.js' | url }}"></script>
     </div>
   </div>

@@ -34,7 +34,7 @@
       var tileSources = [];
       for (var i = 0; i < data.sequences[0].canvases.length; i++) {
         var val = data.sequences[0].canvases[i];
-        iiifLayers[val.label] = L.tileLayer.iiif(val.images[0].resource.service['@id'] + '/info.json');
+        iiifLayers[val.Label] = L.tileLayer.iiif(val.images[0].resource.service['@id'] + '/info.json');
       }
       L.control.layers(iiifLayers).addTo(map);
       iiifLayers[Object.keys(iiifLayers)[0]].addTo(map);

@@ -21,12 +21,11 @@ permalink: "/browse/items.html"
   <input size="1" id="search-input" class="font-mono input grow input-bordered md:input-md input-sm join-item border-1 border-base-content" placeholder="Search"/>
   <select size="1" id="search-limit-select" class="select select-bordered md:select-md select-sm join-item border-1 border-base-content">
     <option>All Fields</option>
-    <option>label</option>
+    <option>Label</option>
     <option>Narrative Summary</option>
     <option>Personal Name</option>
     <option>Corporate Name</option>
-    <!-- <option>Date of Publication or Production</option> -->
-    <option>Subject</option>
+    <option>Topic</option>
     <option>Genre</option>
     <option>Format</option>
     <option>Keyword</option>
@@ -131,16 +130,16 @@ permalink: "/browse/items.html"
   <main class="flex-auto md:px-10">
     <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10 gap-y-5 items-center">
       {%- for item in items -%}
-        {% capture img_url %}https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_{{ item.id }}_{{ item.id }}_001/full/800,/0/default.jpg{% endcapture %}
+        {% capture img_url %}https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_{{ item.ID }}_{{ item.ID }}_001/full/800,/0/default.jpg{% endcapture %}
         <div class="mb-8">
-          <a href="{{ '/item/' | append: item.id | url }}.html">
+          <a href="{{ '/item/' | append: item.ID | url }}.html">
             <img 
               src="{{ img_url }}"
               alt=""
               class="max-w-full h-auto"
             >
             <div class="mt-1 leading-[1.4]">
-              {{ item.label }}
+              {{ item.Label }}
             </div>
           </a>
         </div>

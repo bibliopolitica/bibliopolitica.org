@@ -1,6 +1,7 @@
 [
   {
-    "label": "Lillian Castillo-Speed Oral History Interview",
+    "ID": "OH001",
+    "Label": "Lillian Castillo-Speed Oral History Interview",
     "Personal Name": [
       "Castillo-Speed, Lillian",
       "Belantara, Amanda",
@@ -15,19 +16,30 @@
       "Interviewed remotely by Amanda Belantara and Emily Drabinski on June 10, 2022",
       "Originally recorded as part of the Ways of Knowing Oral History Project"
     ],
-    "Topic": "Castillo-Speed, Lillian|University of California, Berkeley. Chicano Studies Library|Chicano movement|Chicano thesaurus|Library administration|Knowledge organization",
-    "Type": "Oral histories",
-    "Format": "audio file",
+    "Topic": [
+      "Castillo-Speed, Lillian",
+      "University of California, Berkeley. Chicano Studies Library",
+      "Chicano movement",
+      "Chicano thesaurus",
+      "Library administration",
+      "Knowledge organization"
+    ],
+    "Type": [
+      "Oral histories"
+    ],
+    "Format": [
+      "audio file"
+    ],
     "Running Time": "1 hr., 06 min., 42 sec.",
     "Language": [
       "English"
     ],
     "Rights Statement": "Open access",
-    "Stream Id": "1_569qjjr2",
-    "id": "OH001"
+    "Stream Id": "1_569qjjr2"
   },
   {
-    "label": "Richard Chabrán Oral History Interview",
+    "ID": "OH002",
+    "Label": "Richard Chabrán Oral History Interview",
     "Personal Name": [
       "Chabrán, Richard",
       "Belantara, Amanda",
@@ -42,19 +54,28 @@
       "Interviewed remotely by Amanda Belantara and Emily Drabinski on June 1, 2022",
       "Originally recorded as part of the Ways of Knowing Oral History Project"
     ],
-    "Topic": "Chabrán, Richard|University of California, Berkeley. Chicano Studies LibraryKnowledge organization|Library administration|Chicano movement",
-    "Type": "Oral histories",
-    "Format": "audio file",
+    "Topic": [
+      "Chabrán, Richard",
+      "University of California, Berkeley. Chicano Studies LibraryKnowledge organization",
+      "Library administration",
+      "Chicano movement"
+    ],
+    "Type": [
+      "Oral histories"
+    ],
+    "Format": [
+      "audio file"
+    ],
     "Running Time": "1 hr., 12 min., 08 sec",
     "Language": [
       "English"
     ],
     "Rights Statement": "Open access",
-    "Stream Id": "1_wr9xz7h6",
-    "id": "OH002"
+    "Stream Id": "1_wr9xz7h6"
   },
   {
-    "label": "Carlos Muñoz Jr. Oral History Interview",
+    "ID": "OH003",
+    "Label": "Carlos Muñoz Jr. Oral History Interview",
     "Personal Name": [
       "Muñoz, Carlos, Jr.",
       "Belantara, Amanda"
@@ -63,23 +84,35 @@
     "Date of Recording": "2023",
     "Short Role": "Scholar, author, activist, and former chair of the Chicano Studies Program at U.C. Berkeley",
     "Summary": "Dr. Carlos Muñoz Jr. is a scholar, author, activist, and former chair of the Chicano Studies Program at U.C. Berkeley. He discusses his youth and how he became an activist as a college student in Los Angeles after serving in the military. He describes his time as a professor and department chair at U.C. Berkeley, and his work supporting the growth and professionalization of the Chicano Studies library in support of the library workers, collection, and curriculum. He discusses the library as a location for student community and activism, and discusses the meaning of having his archival collection housed in the library as a resource for other scholars. He also describes meeting his future wife, Chela Rios-Muñoz, at the library.",
-    "Long Bio": "Dr. Carlos Munoz, Jr. is a Professor Emeritus in the department of Ethnic Studies at the University of California, Berkeley. He is one of the founders of Chicano and Chicana Studies . His numerous publications have contributed to a critical understanding of the history and politics of people of color in the United States. ",
+    "Long Bio": "Dr. Carlos Muñoz, Jr. is a Professor Emeritus in the department of Ethnic Studies at the University of California, Berkeley. He is one of the founders of Chicano and Chicana Studies . His numerous publications have contributed to a critical understanding of the history and politics of people of color in the United States. ",
     "Notes": [
       "Interviewed by Amanda Belantara with Lillian Castillo-Speed and Richard Chabrán, at U.C. Berkeley, California, on September 15, 2023"
     ],
-    "Topic": "Muñoz, Carlos, Jr.|University of California, Berkeley. Chicano Studies Library|Chicano studies|Chicano movement|University of California, Berkeley. Chicano Studies Program|Rios-Muñoz, Chela|Library administration",
-    "Type": "Oral histories",
-    "Format": "audio file",
+    "Topic": [
+      "Muñoz, Carlos, Jr.",
+      "University of California, Berkeley. Chicano Studies Library",
+      "Chicano studies",
+      "Chicano movement",
+      "University of California, Berkeley. Chicano Studies Program",
+      "Rios-Muñoz, Chela",
+      "Library administration"
+    ],
+    "Type": [
+      "Oral histories"
+    ],
+    "Format": [
+      "audio file"
+    ],
     "Running Time": "13 min., 02 sec.",
     "Language": [
       "English"
     ],
     "Rights Statement": "Open access",
-    "Stream Id": "1_obm8k8ky",
-    "id": "OH003"
+    "Stream Id": "1_obm8k8ky"
   },
   {
-    "label": "Chela Rios-Muñoz Oral History Interview",
+    "ID": "OH004",
+    "Label": "Chela Rios-Muñoz Oral History Interview",
     "Personal Name": [
       "Rios-Muñoz, Chela",
       "Belantara, Amanda"
@@ -88,23 +121,35 @@
     "Date of Recording": "2023",
     "Short Role": "Clinical social worker and former staff member at the Chicano Studies Library",
     "Summary": "Chela Rios-Muñoz is a clinical social worker and former staff member at the Chicano Studies Library. She describes her time as a student at U.C. Berkeley, and her work-study placement in the Chicano Studies Library. She discusses what the library meant to her as a student at the University, as a place of representation, community, activism, safety and ideas. She discusses her work at the library and her relationships with other staff including José Arce, Richard Chabrán, Purita Mesa, and Elva Yañez. She describes her role in compiling the Bibliography of Writings on La Mujer, including punch card cataloging technology. She also describes her work with the activist group Mujeres del Movimiento, and planning the Educación en Luz Symposium. She also describes meeting her future husband, Carlos Muñoz Jr., at the library.",
-    "Long Bio": "Graciela ‘Chela’ Ríos Muñoz, LCSW the proud daughter of Mexican immigrants. She is an Emeritus Director of the Center of Excellence for Immigrant Child Health and Well Being at UCSF Benioff Children’s Hospital, and retired Clinical Coordinator of the Neonatal Follow Up Program. ",
+    "Long Bio": "Graciela ‘Chela’ Ríos-Muñoz, LCSW the proud daughter of Mexican immigrants. She is an Emeritus Director of the Center of Excellence for Immigrant Child Health and Well Being at UCSF Benioff Children’s Hospital, and retired Clinical Coordinator of the Neonatal Follow Up Program. ",
     "Notes": [
       "Interviewed by Amanda Belantara, at U.C. Berkeley, California, on September 15, 2023"
     ],
-    "Topic": "Rios-Muñoz, Chela|University of California, Berkeley. Chicano Studies Library|Chicano movement|Mujeres del Movimiento (Berkeley, Calif.)|Arce, José Antonio, 1948-2018|Chicanas|Muñoz, Carlos, Jr.",
-    "Type": "Oral histories",
-    "Format": "audio file",
+    "Topic": [
+      "Rios-Muñoz, Chela",
+      "University of California, Berkeley. Chicano Studies Library",
+      "Chicano movement",
+      "Mujeres del Movimiento (Berkeley, Calif.)",
+      "Arce, José Antonio, 1948-2018",
+      "Chicanas",
+      "Muñoz, Carlos, Jr."
+    ],
+    "Type": [
+      "Oral histories"
+    ],
+    "Format": [
+      "audio file"
+    ],
     "Running Time": "22 min., 55 sec.",
     "Language": [
       "English"
     ],
     "Rights Statement": "Open access",
-    "Stream Id": "1_0yzzv0lt",
-    "id": "OH004"
+    "Stream Id": "1_0yzzv0lt"
   },
   {
-    "label": "Clementina Duron Oral History Interview",
+    "ID": "OH005",
+    "Label": "Clementina Duron Oral History Interview",
     "Personal Name": [
       "Duron, Clementina",
       "Castillo-Speed, Lillian",
@@ -119,19 +164,32 @@
     "Notes": [
       "Interviewed by Amanda Belantara with Lillian Castillo-Speed and Richard Chabrán, at U.C. Berkeley, California, on September 14, 2023"
     ],
-    "Topic": "Duron, Clementina|University of California, Berkeley. Chicano Studies Library|Chicano movement|Third World Liberation Front|University of California, Berkeley. Chicano Studies Program|Library administration|Knowledge organization",
-    "Type": "Oral histories",
-    "Format": "audio file",
+    "Topic": [
+      "Duron, Clementina",
+      "University of California, Berkeley. Chicano Studies Library",
+      "Chicano movement",
+      "Third World Liberation Front",
+      "University of California, Berkeley. Chicano Studies Program",
+      "Library administration",
+      "Knowledge organization",
+      "Corpi, Lucha"
+    ],
+    "Type": [
+      "Oral histories"
+    ],
+    "Format": [
+      "audio file"
+    ],
     "Running Time": "40 min., 08 sec.",
     "Language": [
       "English"
     ],
     "Rights Statement": "Open access",
-    "Stream Id": "1_cqql9nnt",
-    "id": "OH005"
+    "Stream Id": "1_cqql9nnt"
   },
   {
-    "label": "Larry Trujillo Oral History Interview",
+    "ID": "OH006",
+    "Label": "Larry Trujillo Oral History Interview",
     "Personal Name": [
       "Trujillo, Larry",
       "Belantara, Amanda"
@@ -140,23 +198,36 @@
     "Date of Recording": "2023",
     "Short Role": "Scholar, activist, and former professor of Chicano Studies at U.C. Berkeley",
     "Summary": "Larry Trujillo is a scholar, activist, and former professor of Chicano Studies at U.C. Berkeley. He discusses his work as a student and later as faculty from 1975 until 1995, working with Richard Chabrán, José Arce, Lillian Castillo-Speed, Oscar Treviño and others, to develop the library's space and collections, including Chicano newspapers, journals, posters, and other materials. He reflects on how Chicano studies faculty and librarians worked together to develop the library and the department. He describes library efforts including the Chicano Periodical Index, Serials collection microfilm, and the Chicano Thesaurus and their importance for reflecting a Chicano worldview and supporting Chicano scholarship.",
-    "Long Bio": "Dr Larry Trujillo taught Chicano Studies at UC Berkeley and Community Studies at UC Santa Cruz. He  was the founder of the Chicano Latino Student Development Office at UC Berkeley, The Chicano Latino Resource Center at UC Santa Cruz and co-founder of the Center for Research on Criminal Justice. He played an active role in the development of Chicane Studies. His research and activism centers on Chicanos, criminal justice and social justice.",
+    "Long Bio": "Dr. Larry Trujillo taught Chicano Studies at UC Berkeley and Community Studies at UC Santa Cruz. He  was the founder of the Chicano Latino Student Development Office at UC Berkeley, The Chicano Latino Resource Center at UC Santa Cruz and co-founder of the Center for Research on Criminal Justice. He played an active role in the development of Chicane Studies. His research and activism centers on Chicanos, criminal justice and social justice.",
     "Notes": [
       "Interviewed by Amanda Belantara at Cathedral City, California, on December 18, 2023"
     ],
-    "Topic": "Trujillo, Larry|University of California, Berkeley. Chicano Studies Library|Chicano studies|Chicano movement|University of California, Berkeley. Chicano Studies Program|Library administration|Knowledge organization|Library outreach",
-    "Type": "Oral histories",
-    "Format": "audio file",
+    "Topic": [
+      "Trujillo, Larry",
+      "University of California, Berkeley. Chicano Studies Library",
+      "Chicano studies",
+      "Chicano movement",
+      "University of California, Berkeley. Chicano Studies Program",
+      "Library administration",
+      "Knowledge organization",
+      "Library outreach"
+    ],
+    "Type": [
+      "Oral histories"
+    ],
+    "Format": [
+      "audio file"
+    ],
     "Running Time": "21 min., 23 sec.",
     "Language": [
       "English"
     ],
     "Rights Statement": "Open access",
-    "Stream Id": "1_757f2n2m",
-    "id": "OH006"
+    "Stream Id": "1_757f2n2m"
   },
   {
-    "label": "Lucha Corpi Oral History Interview",
+    "ID": "OH007",
+    "Label": "Lucha Corpi Oral History Interview",
     "Personal Name": [
       "Corpi, Lucha",
       "Belantara, Amanda"
@@ -169,19 +240,34 @@
     "Notes": [
       "Interviewed by Amanda Belantara at U.C. Berkeley, California, on September 14, 2023"
     ],
-    "Topic": "Corpi, Lucha|University of California, Berkeley. Chicano Studies Library|University of California, Berkeley. Chicano Studies Program|Library administration|Library outreach|Arts and literature|Chicano literature|Asturias, Oswaldo|Arce, José Antonio, 1948-2018|Rios C., Herminio",
-    "Type": "Oral histories",
-    "Format": "audio file",
+    "Topic": [
+      "Corpi, Lucha",
+      "University of California, Berkeley. Chicano Studies Library",
+      "University of California, Berkeley. Chicano Studies Program",
+      "Library administration",
+      "Library outreach",
+      "Arts and literature\r\n",
+      "Chicano literature",
+      "Asturias, Oswaldo",
+      "Arce, José Antonio, 1948-2018",
+      "Rios C., Herminio"
+    ],
+    "Type": [
+      "Oral histories"
+    ],
+    "Format": [
+      "audio file"
+    ],
     "Running Time": "27 min., 45 sec.",
     "Language": [
       "English"
     ],
     "Rights Statement": "Open access",
-    "Stream Id": "1_n2k4nkqh",
-    "id": "OH007"
+    "Stream Id": "1_n2k4nkqh"
   },
   {
-    "label": "Malaquías Montoya Oral History Interview",
+    "ID": "OH008",
+    "Label": "Malaquías Montoya Oral History Interview",
     "Personal Name": [
       "Montoya, Malaquías",
       "Belantara, Amanda"
@@ -190,23 +276,35 @@
     "Date of Recording": "2023",
     "Short Role": "Poster artist, activist, and educator",
     "Summary": "Malaquías Montoya is a poster artist, activist, and educator. He describes his childhood education and early interest in art, alongside seasonal farm work and military service. He discusses a job in silkscreening while attending junior college, and then his time at U.C. Berkeley, including his studies, his involvement in the Third World Liberation Front protests, designing posters for protests and events, teaching, and developing the Chicano Arts Center. He discusses the importance of the Chicano Studies Library among other community institutions and resources, and their relation to the Chicano movement and to his art.",
-    "Long Bio": "A UC Davis Professor Emeritus, Malaquias Montoya is credited by historians as one of the founders of the social serigraphy movement in the San Francisco Bay Area in the mid-1960s. Montoya's unique visual expression is an art of protest, depicting the resistance and strength of humanity in the face of injustice and the necessity to unite behind that struggle. ",
+    "Long Bio": "A UC Davis Professor Emeritus, Malaquías Montoya is credited by historians as one of the founders of the social serigraphy movement in the San Francisco Bay Area in the mid-1960s. Montoya's unique visual expression is an art of protest, depicting the resistance and strength of humanity in the face of injustice and the necessity to unite behind that struggle. ",
     "Notes": [
       "Interviewed remotely by Amanda Belantara, on November 6, 2023"
     ],
-    "Topic": "Montoya, Malaquías|University of California, Berkeley. Chicano Studies Library|Chicano movement|Chicano art|Third World Liberation Front|Chicano art|Arts and literature",
-    "Type": "Oral histories",
-    "Format": "audio file",
+    "Topic": [
+      "Montoya, Malaquías",
+      "University of California, Berkeley. Chicano Studies Library",
+      "Chicano movement",
+      "Chicano art",
+      "Third World Liberation Front",
+      "Chicano art",
+      "Arts and literature"
+    ],
+    "Type": [
+      "Oral histories"
+    ],
+    "Format": [
+      "audio file"
+    ],
     "Running Time": "43 min., 15 sec.",
     "Language": [
       "English"
     ],
     "Rights Statement": "Open access",
-    "Stream Id": "1_gj4t2lzk",
-    "id": "OH008"
+    "Stream Id": "1_gj4t2lzk"
   },
   {
-    "label": "Purita Mesa Oral History Interview",
+    "ID": "OH009",
+    "Label": "Purita Mesa Oral History Interview",
     "Personal Name": [
       "Mesa, Purita",
       "Belantara, Amanda"
@@ -219,19 +317,33 @@
     "Notes": [
       "Interviewed by Amanda Belantara with Lillian Castillo-Speed and Richard Chabrán, at U.C. Berkeley, California, on September 15, 2023"
     ],
-    "Topic": "Mesa, Purita|University of California, Berkeley. Chicano Studies Library|Chicano movement|Mujeres del Movimiento (Berkeley, Calif.)|Library administration|Chicano Classification System|Knowledge organization|Arce, José Antonio, 1948-2018|Yañez, Elva",
-    "Type": "Oral histories",
-    "Format": "audio file",
+    "Topic": [
+      "Mesa, Purita",
+      "University of California, Berkeley. Chicano Studies Library",
+      "Chicano movement",
+      "Mujeres del Movimiento (Berkeley, Calif.)",
+      "Library administration",
+      "Chicano Classification System",
+      "Knowledge organization",
+      "Arce, José Antonio, 1948-2018",
+      "Yañez, Elva"
+    ],
+    "Type": [
+      "Oral histories"
+    ],
+    "Format": [
+      "audio file"
+    ],
     "Running Time": "12 min., 31 sec.",
     "Language": [
       "English"
     ],
     "Rights Statement": "Open access",
-    "Stream Id": "1_unjt61um",
-    "id": "OH009"
+    "Stream Id": "1_unjt61um"
   },
   {
-    "label": "Sandra Ríos Balderrama Oral History Interview",
+    "ID": "OH010",
+    "Label": "Sandra Ríos Balderrama Oral History Interview",
     "Personal Name": [
       "Balderrama, Sandra Ríos",
       "Belantara, Amanda"
@@ -244,19 +356,28 @@
     "Notes": [
       "Interviewed remotely by Amanda Belantara with Richard Chabrán, on December 22, 2023"
     ],
-    "Topic": "Balderrama, Sandra Ríos|University of California, Berkeley. Chicano Studies Library|Chicano movement|Library administration",
-    "Type": "Oral histories",
-    "Format": "audio file",
+    "Topic": [
+      "Balderrama, Sandra Ríos",
+      "University of California, Berkeley. Chicano Studies Library",
+      "Chicano movement",
+      "Library administration"
+    ],
+    "Type": [
+      "Oral histories"
+    ],
+    "Format": [
+      "audio file"
+    ],
     "Running Time": "32 min., 15 sec.",
     "Language": [
       "English"
     ],
     "Rights Statement": "Open access",
-    "Stream Id": "1_17gy5hii",
-    "id": "OH010"
+    "Stream Id": "1_17gy5hii"
   },
   {
-    "label": "Elva Yañez Oral History Interview",
+    "ID": "OH011",
+    "Label": "Elva Yañez Oral History Interview",
     "Personal Name": [
       "Yañez, Elva",
       "Belantara, Amanda",
@@ -266,19 +387,29 @@
     "Date of Recording": "2024",
     "Short Role": "Environmental health and justice advocate and former staff member at the Chicano Studies Library",
     "Summary": "Elva Yañez is an environmental health and justice advocate and former staff member at the Chicano Studies Library. She speaks about her work in librarianship including her time as a student worker at the emerging Chicano Studies Library in the 1970s. She discusses working with José Arce and contrasts the Chicano Thesaurus and classification system with their Library of Congress counterparts.",
-    "Long Bio": "Elva Yanez was a student worker at the Chicano Studies Library at UC Berkeley from 1972-1974. She graduated with a Masters in Library and Information Management from the University of Southern California in 1979 and worked in research libraries until 1990. Since then, Elva has worked extensively on public policy initiatives emphasizing environmental approaches to prevention and health equity outcomes.  ",
+    "Long Bio": "Elva Yañez was a student worker at the Chicano Studies Library at UC Berkeley from 1972-1974. She graduated with a Masters in Library and Information Management from the University of Southern California in 1979 and worked in research libraries until 1990. Since then, Elva has worked extensively on public policy initiatives emphasizing environmental approaches to prevention and health equity outcomes.  ",
     "Notes": [
       "Interviewed by Amanda Belantara with Richard Chabrán, January 10, 2024"
     ],
-    "Topic": "Yañez, Elva|University of California, Berkeley. Chicano Studies Library|Chicano Thesaurus|Arce, José Antonio, 1948-2018|Library administration|Chicano Classification System",
-    "Type": "Oral histories",
-    "Format": "audio file",
+    "Topic": [
+      "Yañez, Elva",
+      "University of California, Berkeley. Chicano Studies Library",
+      "Chicano Thesaurus",
+      "Arce, José Antonio, 1948-2018",
+      "Library administration",
+      "Chicano Classification System"
+    ],
+    "Type": [
+      "Oral histories"
+    ],
+    "Format": [
+      "audio file"
+    ],
     "Running Time": "29 min., 18 sec.",
     "Language": [
       "English"
     ],
     "Rights Statement": "Open access",
-    "Stream Id": "1_iion769n",
-    "id": "OH011"
+    "Stream Id": "1_iion769n"
   }
 ]

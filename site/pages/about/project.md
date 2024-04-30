@@ -26,11 +26,11 @@ team:
     blurb: "Web UI & API developer and collection data wrangler. Senior Research Data Engineer at New York University"
 permalink: "/about/project.html"
 contents:
-  - label: Project Team
+  - Label: Project Team
     anchor: '#project-team'
-  - label: Credits & Gratitude
+  - Label: Credits & Gratitude
     anchor: '#credits-and-gratitude'
-  - label: Contact
+  - Label: Contact
     anchor: '#contact'
 images:
   - url: '/media/013.jpg'
