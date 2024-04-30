@@ -13,7 +13,8 @@ permalink: "/browse/items.html"
     const data = await response.json();
     return data;
   }
-  window.promisedData = fetchData( "{{ '/items.json' | url }}"); 
+  window.prefixUrl    = "{{ '/' | url }}";
+  window.promisedData = fetchData("{{ '/items.json' | url }}"); 
 </script>
 
 <div class="join w-full max-w-full mb-8">
