@@ -7,6 +7,14 @@ permalink: "/browse/items.html"
 
 <script src="https://unpkg.com/itemsjs@2.1.24/dist/index.umd.js"></script>
 <script src="https://unpkg.com/lunr/lunr.js"></script>
+<script>
+  async function fetchData(dataFile) {
+    const response = await fetch(dataFile);
+    const data = await response.json();
+    return data;
+  }
+  window.promisedData = fetchData( "{{ '/items.json' | url }}"); 
+</script>
 
 <div class="join w-full max-w-full mb-8">
   <input size="1" id="search-input" class="italic input grow input-bordered md:input-md input-sm join-item border-1 border-base-content" placeholder="Search"/>
