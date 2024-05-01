@@ -4277,6 +4277,11 @@ html{
   margin-right: auto !important;
 }
 
+.my-1{
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
 .my-12{
   margin-top: 3rem !important;
   margin-bottom: 3rem !important;
@@ -4352,10 +4357,6 @@ html{
 
 .ml-6{
   margin-left: 1.5rem !important;
-}
-
-.mr-1{
-  margin-right: 0.25rem !important;
 }
 
 .mr-2{
@@ -4699,6 +4700,10 @@ html{
   overflow: hidden !important;
 }
 
+.overflow-clip{
+  overflow: clip !important;
+}
+
 .overflow-x-clip{
   overflow-x: clip !important;
 }
@@ -4753,6 +4758,10 @@ html{
   border-bottom-width: 1px !important;
 }
 
+.border-b-2{
+  border-bottom-width: 2px !important;
+}
+
 .border-t{
   border-top-width: 1px !important;
 }
@@ -4770,6 +4779,10 @@ html{
 .border-neutral{
   --tw-border-opacity: 1 !important;
   border-color: var(--fallback-n,oklch(var(--n)/var(--tw-border-opacity))) !important;
+}
+
+.border-transparent{
+  border-color: transparent !important;
 }
 
 .bg-base-100{
@@ -5891,6 +5904,11 @@ details[open] > summary.meta-summary::before {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
 }
 
+.hover\:border-accent:hover{
+  --tw-border-opacity: 1 !important;
+  border-color: var(--fallback-a,oklch(var(--a)/var(--tw-border-opacity))) !important;
+}
+
 .hover\:border-base-content:hover{
   --tw-border-opacity: 1 !important;
   border-color: var(--fallback-bc,oklch(var(--bc)/var(--tw-border-opacity))) !important;
@@ -5918,6 +5936,11 @@ details[open] > summary.meta-summary::before {
 
 .hover\:opacity-80:hover{
   opacity: 0.8 !important;
+}
+
+.focus\:outline-none:focus{
+  outline: 2px solid transparent !important;
+  outline-offset: 2px !important;
 }
 
 @media (min-width: 640px){
@@ -5952,6 +5975,10 @@ details[open] > summary.meta-summary::before {
 
   .sm\:gap-8{
     gap: 2rem !important;
+  }
+
+  .sm\:text-nowrap{
+    text-wrap: nowrap !important;
   }
 
   .sm\:bg-transparent{

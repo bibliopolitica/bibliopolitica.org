@@ -242,9 +242,9 @@
 
 
 <article class="mb-5 md:flex not-prose text-base">
-  <div class="md:basis-1/2 md:shrink-0 h-[65vh]">
+  <div class="md:basis-1/2 md:shrink-0 h-[65vh] overflow-clip relative">
     
-<div id="map" class="w-full z-0 h-full" style="background-color: #aeacb1;"></div>
+<div id="map" class="w-full z-0 h-full sticky top-0" style="background-color: #aeacb1;"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/openseadragon@3.1/build/openseadragon/openseadragon.min.js"></script>
 <script type="text/javascript">
@@ -286,50 +286,64 @@
       
         
           
-          <li><span class="font-bold mr-1">Summary:</span> Students look at the memorial in honor of Cesar Chavez outside the Chicano Studies Library. Pictured: Adele Martinez, unknown.
+          <li>
+            <span class="font-bold my-1 block">Summary</span>
+            <span>Students look at the memorial in honor of Cesar Chavez outside the Chicano Studies Library. Pictured: Adele Martinez, unknown.</span>
           
         
       
         
           
-          <li><span class="font-bold mr-1">Topic:</span>
-            
-            <a href="/bibliopolitica/browse/items.html?limit=Topic&query=Chavez%20Cesar%2C%201927-1993" class="link hover:text-accent">Chavez, Cesar, 1927-1993</a>; 
-            
-            <a href="/bibliopolitica/browse/items.html?limit=Topic&query=University%20of%20California%20Berkeley%20Chicano%20Studies%20Library" class="link hover:text-accent">University of California, Berkeley. Chicano Studies Library</a>; 
-            
-            <a href="/bibliopolitica/browse/items.html?limit=Topic&query=Library%20outreach" class="link hover:text-accent">Library outreach</a>
-            
+          <li>
+            <span class="font-bold my-1 block">Personal Name</span>
+            <span>
+              
+              <a href="/bibliopolitica/browse/items.html?limit=Personal%20Name&query=Martinez%20Adele" class="sm:text-nowrap text-accent border-b-2 border-transparent hover:border-accent"># Martinez, Adele</a>
+              
+            </span>
           </li>
           
         
       
         
           
-          <li><span class="font-bold mr-1">Type:</span>
-            
-            <a href="/bibliopolitica/browse/items.html?limit=Type&query=Photographs" class="link hover:text-accent">Photographs</a>
-            
+          <li>
+            <span class="font-bold my-1 block">Topic</span>
+            <span>
+              
+              <a href="/bibliopolitica/browse/items.html?limit=Topic&query=Chavez%20Cesar%2C%201927-1993" class="sm:text-nowrap text-accent border-b-2 border-transparent hover:border-accent"># Chavez, Cesar, 1927-1993</a>&nbsp;&nbsp;
+              
+              <a href="/bibliopolitica/browse/items.html?limit=Topic&query=University%20of%20California%20Berkeley%20Chicano%20Studies%20Library" class="sm:text-nowrap text-accent border-b-2 border-transparent hover:border-accent"># University of California, Berkeley. Chicano Studies Library</a>&nbsp;&nbsp;
+              
+              <a href="/bibliopolitica/browse/items.html?limit=Topic&query=Library%20outreach" class="sm:text-nowrap text-accent border-b-2 border-transparent hover:border-accent"># Library outreach</a>
+              
+            </span>
           </li>
           
         
       
         
           
-          <li><span class="font-bold mr-1">Format:</span>
-            
-            <a href="/bibliopolitica/browse/items.html?limit=Format&query=image" class="link hover:text-accent">image</a>
-            
+          <li>
+            <span class="font-bold my-1 block">Type</span>
+            <span>
+              
+              <a href="/bibliopolitica/browse/items.html?limit=Type&query=Photographs" class="sm:text-nowrap text-accent border-b-2 border-transparent hover:border-accent"># Photographs</a>
+              
+            </span>
           </li>
           
         
       
         
           
-          <li><span class="font-bold mr-1">Personal Name:</span>
-            
-            <a href="/bibliopolitica/browse/items.html?limit=Personal%20Name&query=Martinez%20Adele" class="link hover:text-accent">Martinez, Adele</a>
-            
+          <li>
+            <span class="font-bold my-1 block">Format</span>
+            <span>
+              
+              <a href="/bibliopolitica/browse/items.html?limit=Format&query=image" class="sm:text-nowrap text-accent border-b-2 border-transparent hover:border-accent"># image</a>
+              
+            </span>
           </li>
           
         
@@ -338,7 +352,9 @@
       
         
           
-          <li><span class="font-bold mr-1">Place of Publication or Production:</span> Berkeley, California
+          <li>
+            <span class="font-bold my-1 block">Place of Publication or Production</span>
+            <span>Berkeley, California</span>
           
         
       
@@ -346,7 +362,9 @@
       
         
           
-          <li><span class="font-bold mr-1">Date of Publication or Production:</span> 1993
+          <li>
+            <span class="font-bold my-1 block">Date of Publication or Production</span>
+            <span>1993</span>
           
         
       
@@ -356,7 +374,9 @@
       
         
           
-          <li><span class="font-bold mr-1">Extent:</span> 1 photograph
+          <li>
+            <span class="font-bold my-1 block">Extent</span>
+            <span>1 photograph</span>
           
         
       
@@ -364,7 +384,9 @@
       
         
           
-          <li><span class="font-bold mr-1">Rights Statement:</span> Ethnic Studies Library, UC Berkeley
+          <li>
+            <span class="font-bold my-1 block">Rights Statement</span>
+            <span>Ethnic Studies Library, UC Berkeley</span>
           
         
       
@@ -373,8 +395,11 @@
       
       
 
-      <li><span class="font-bold mr-1">IIIF Resource:</span>
-        <a class="link hover:text-accent" href="https://aperitiiif-presentation-api-store.s3.us-east-1.amazonaws.com/bibliopolitica/CSL00098/manifest.json" target="_none">JSON Manifest</a>
+      <li>
+        <span class="font-bold my-1 block">IIIF Resource</span>
+        <span>
+          <a class="link hover:text-accent" href="https://aperitiiif-presentation-api-store.s3.us-east-1.amazonaws.com/bibliopolitica/CSL00098/manifest.json" target="_none">JSON Manifest</a>
+        </span>
       </li>
     </ul>
   </div>
