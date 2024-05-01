@@ -4,13 +4,13 @@ metadata:
   - key: Alternate Title
     list: true
   - key: Summary
+  - key: Personal Name
+    special: true
   - key: Topic
     special: true
   - key: Type
     special: true
   - key: Format
-    special: true
-  - key: Personal Name
     special: true
   - key: Corporate Name
     list: true
@@ -37,7 +37,7 @@ metadata:
 {% capture manifest_url %}https://aperitiiif-presentation-api-store.s3.us-east-1.amazonaws.com/bibliopolitica/{{ item.ID }}/manifest.json{% endcapture %}
 
 <article class="mb-5 md:flex not-prose text-base">
-  <div class="md:basis-1/2 md:shrink-0 h-[65vh]">
+  <div class="md:basis-1/2 md:shrink-0 h-[65vh] overflow-clip relative">
     {% include "components/viewers/osd-iiif.html" %}
   </div>
   <div class="h-full">
@@ -45,29 +45,42 @@ metadata:
       {% for meta in metadata %}
         {% if item[meta.key] %}
           {% if meta.list %}
-          <li><span class="font-bold mr-1">{{ meta.key }}:</span> {{ item[meta.key] | join: '; ' }}
+          <li>
+            <span class="font-bold my-1 block">{{ meta.key }}</span>
+            <span>{{ item[meta.key] | join: '; ' }}</span>
           {% elsif meta.special %}
-          <li><span class="font-bold mr-1">{{ meta.key }}:</span>
-            {% for i in item[meta.key]  %}
-            <a href="{{ '/browse/items.html' | url }}?limit={{ meta.key | uri_encode }}&query={{ i | uri_encode }}" class="link hover:text-accent">{{ i }}</a>{% unless forloop.last %}; {% endunless %}
-            {% endfor %}
+          <li>
+            <span class="font-bold my-1 block">{{ meta.key }}</span>
+            <span>
+              {% for i in item[meta.key]  %}
+              <a href="{{ '/browse/items.html' | url }}?limit={{ meta.key | uri_encode }}&query={{ i | uri_encode }}" class="sm:text-nowrap text-accent border-b-2 border-transparent hover:border-accent"># {{ i }}</a>{% unless forloop.last %}&nbsp;&nbsp;{% endunless%}
+              {% endfor %}
+            </span>
           </li>
           {% else %}
-          <li><span class="font-bold mr-1">{{ meta.key }}:</span> {{ item[meta.key] }}
+          <li>
+            <span class="font-bold my-1 block">{{ meta.key }}</span>
+            <span>{{ item[meta.key] }}</span>
           {% endif %}
         {% endif %}
       {% endfor %}
       
       {% if item["Link"] %}
-      <li><span class="font-bold mr-1">Link:</span>
-        {% for link in item["Link"] %}
-        <a class="link hover:text-accent" href="{{ link }}" target="_none">{{ link }}</a>{% unless forloop.last %}; {% endunless %}
-        {% endfor %}
+      <li>
+        <span class="font-bold my-1 block">Link</span>
+        <span>
+          {% for link in item["Link"] %}
+          <a class="link hover:text-accent" href="{{ link }}" target="_none">{{ link }}</a>{% unless forloop.last %}; {% endunless %}
+          {% endfor %}
+        </span>
       </li>
       {% endif %}
 
-      <li><span class="font-bold mr-1">IIIF Resource:</span>
-        <a class="link hover:text-accent" href="{{ manifest_url }}" target="_none">JSON Manifest</a>
+      <li>
+        <span class="font-bold my-1 block">IIIF Resource</span>
+        <span>
+          <a class="link hover:text-accent" href="{{ manifest_url }}" target="_none">JSON Manifest</a>
+        </span>
       </li>
     </ul>
   </div>

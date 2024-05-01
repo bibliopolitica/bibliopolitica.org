@@ -43,7 +43,7 @@ function appendSearchResults(results, resultsLookupMap) {
     let item = resultsLookupMap[res.ref];
     let resultDiv = document.createElement('div');
     let thumbnail = `https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_${ item.ID }_${ item.ID }_001/full/250,/0/default.jpg`;
-    resultDiv.innerHTML = `<div class="mb-8"><a href="${prefixUrl}item/${item.ID}.html"><img loading="lazy" src="${ thumbnail }" alt="thumbnail for ${truncateString(item.Label)}" class="max-w-full h-auto"><div class="mt-2 leading-snug md:text-sm text-xs">${truncateString(item.Label)}</div></a></div>`;
+    resultDiv.innerHTML = `<div class="my-4 h-full transition-all duration-500 hover:scale-105"><a href="${prefixUrl}item/${item.ID}.html"><img loading="lazy" src="${ thumbnail }" alt="thumbnail for ${truncateString(item.Label)}" class="max-w-full h-auto"><div class="mt-2 leading-snug md:text-sm text-xs">${truncateString(item.Label)}</div></a></div>`;
     resultsContainer.appendChild(resultDiv);
   })
 }

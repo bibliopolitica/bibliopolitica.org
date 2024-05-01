@@ -3,6 +3,15 @@ title: "Archival Materials"
 description: "TBD"
 layout: "page"
 permalink: "/browse/items.html"
+search_limits:
+  - All Fields
+  - Label
+  - Narrative Summary
+  - Personal Name
+  - Corporate Name
+  - Topic
+  - Type
+  - Format
 ---
 
 <script src="https://unpkg.com/itemsjs@2.1.24/dist/index.umd.js"></script>
@@ -18,19 +27,14 @@ permalink: "/browse/items.html"
 </script>
 
 <div class="join w-full max-w-full mb-8">
-  <input size="1" id="search-input" class="font-mono input grow input-bordered md:input-md input-sm join-item border-1 border-base-content" placeholder="Search"/>
-  <select size="1" id="search-limit-select" class="select select-bordered md:select-md select-sm join-item border-1 border-base-content">
-    <option>All Fields</option>
-    <option>Label</option>
-    <option>Narrative Summary</option>
-    <option>Personal Name</option>
-    <option>Corporate Name</option>
-    <option>Topic</option>
-    <option>Genre</option>
-    <option>Format</option>
-    <option>Keyword</option>
+  <select size="1" id="search-limit-select" class="focus:outline-none select select-bordered md:select-md select-sm join-item border-1 border-base-content">
+    <option disabled>Search Within</option>
+    {%- for limit in search_limits -%}
+    <option>{{ limit }}</option>
+    {%- endfor -%}
   </select>
-  <button size="1" id="search-submit" class="btn btn-sm md:btn-md btn-outline join-item">
+  <input size="1" id="search-input" class="focus:outline-none font-mono input grow input-bordered md:input-md input-sm join-item border-1 border-base-content" placeholder="Search"/>
+  <button size="1" id="search-submit" class="focus:outline-none btn btn-sm md:btn-md btn-outline join-item">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 opacity-70"><path fill-rule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clip-rule="evenodd" /></svg>
   </button>
 </div>
