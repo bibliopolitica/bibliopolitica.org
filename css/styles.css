@@ -900,6 +900,11 @@ html{
     text-decoration-line: underline;
   }
 
+  .label a:hover{
+    --tw-text-opacity: 1;
+    color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
+  }
+
   .menu li > *:not(ul):not(.menu-title):not(details):active,
 .menu li > *:not(ul):not(.menu-title):not(details).active,
 .menu li > details > summary:active{
@@ -1358,6 +1363,19 @@ html{
   }
 }
 
+.label{
+  display: flex;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .hero{
   display: grid;
   width: 100%;
@@ -1778,6 +1796,11 @@ html{
   --tw-bg-opacity: 0.1;
   color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
   --tw-text-opacity: 0.2;
+}
+
+.btm-nav > * .label{
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .breadcrumbs > ul > li > a:focus, .breadcrumbs > ol > li > a:focus{
@@ -4192,8 +4215,12 @@ html{
   top: -1.5rem !important;
 }
 
-.bottom-6{
-  bottom: 1.5rem !important;
+.bottom-0{
+  bottom: 0px !important;
+}
+
+.left-0{
+  left: 0px !important;
 }
 
 .right-0{
@@ -4202,10 +4229,6 @@ html{
 
 .right-1{
   right: 0.25rem !important;
-}
-
-.right-6{
-  right: 1.5rem !important;
 }
 
 .top-0{
@@ -4252,6 +4275,14 @@ html{
   grid-row-start: 1 !important;
 }
 
+.float-left{
+  float: left !important;
+}
+
+.m-0{
+  margin: 0px !important;
+}
+
 .mx-1{
   margin-left: 0.25rem !important;
   margin-right: 0.25rem !important;
@@ -4260,6 +4291,11 @@ html{
 .mx-4{
   margin-left: 1rem !important;
   margin-right: 1rem !important;
+}
+
+.mx-6{
+  margin-left: 1.5rem !important;
+  margin-right: 1.5rem !important;
 }
 
 .mx-8{
@@ -4282,6 +4318,11 @@ html{
   margin-bottom: 0.25rem !important;
 }
 
+.my-10{
+  margin-top: 2.5rem !important;
+  margin-bottom: 2.5rem !important;
+}
+
 .my-12{
   margin-top: 3rem !important;
   margin-bottom: 3rem !important;
@@ -4295,11 +4336,6 @@ html{
 .my-4{
   margin-top: 1rem !important;
   margin-bottom: 1rem !important;
-}
-
-.my-6{
-  margin-top: 1.5rem !important;
-  margin-bottom: 1.5rem !important;
 }
 
 .my-8{
@@ -4447,6 +4483,10 @@ html{
   height: 13rem !important;
 }
 
+.h-6{
+  height: 1.5rem !important;
+}
+
 .h-8{
   height: 2rem !important;
 }
@@ -4526,6 +4566,10 @@ html{
 
 .w-auto{
   width: auto !important;
+}
+
+.w-dvw{
+  width: 100dvw !important;
 }
 
 .w-full{
@@ -4669,6 +4713,10 @@ html{
   gap: 2.5rem !important;
 }
 
+.gap-12{
+  gap: 3rem !important;
+}
+
 .gap-4{
   gap: 1rem !important;
 }
@@ -4760,6 +4808,10 @@ html{
 
 .border-b-2{
   border-bottom-width: 2px !important;
+}
+
+.border-l-2{
+  border-left-width: 2px !important;
 }
 
 .border-t{
@@ -4864,11 +4916,6 @@ html{
   padding-bottom: 0.25rem !important;
 }
 
-.py-10{
-  padding-top: 2.5rem !important;
-  padding-bottom: 2.5rem !important;
-}
-
 .py-12{
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
@@ -4912,6 +4959,10 @@ html{
 
 .pb-6{
   padding-bottom: 1.5rem !important;
+}
+
+.pl-4{
+  padding-left: 1rem !important;
 }
 
 .pt-6{
@@ -5069,6 +5120,10 @@ html{
 
 .opacity-70{
   opacity: 0.7 !important;
+}
+
+.opacity-80{
+  opacity: 0.8 !important;
 }
 
 .bg-blend-darken{
@@ -5996,14 +6051,6 @@ details[open] > summary.meta-summary::before {
 }
 
 @media (min-width: 768px){
-  .md\:bottom-12{
-    bottom: 3rem !important;
-  }
-
-  .md\:right-12{
-    right: 3rem !important;
-  }
-
   .md\:mx-0{
     margin-left: 0px !important;
     margin-right: 0px !important;
@@ -6182,6 +6229,11 @@ details[open] > summary.meta-summary::before {
 }
 
 @media (min-width: 1024px){
+  .lg\:mx-0{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+
   .lg\:mx-4{
     margin-left: 1rem !important;
     margin-right: 1rem !important;
@@ -6281,6 +6333,11 @@ details[open] > summary.meta-summary::before {
 }
 
 @media (min-width: 1280px){
+  .xl\:mx-0{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+
   .xl\:basis-1\/6{
     flex-basis: 16.666667% !important;
   }
