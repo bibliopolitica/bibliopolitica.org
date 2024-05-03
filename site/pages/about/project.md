@@ -16,6 +16,7 @@ team:
     image: '/media/team/matthew.jpg'
     blurb: "Project metadata coordinator. Rare Book Cataloger at Columbia University Libraries"
   - name: Inaiah Lujan
+    image: '/media/team/inaiah.jpg'
     url: https://www.inaiahlujan.com/
     blurb: "Graphic design, brand development, creative advisor. CEO at TruLu Productions"
   - name: Ed Madrid
@@ -26,23 +27,34 @@ team:
     blurb: "Web UI & API developer and collection data wrangler. Senior Research Data Engineer at New York University"
 permalink: "/about/project.html"
 contents:
-  - Label: Project Team
+  - label: Project Team
     anchor: '#project-team'
-  - Label: Credits & Gratitude
-    anchor: '#credits-and-gratitude'
-  - Label: Contact
+  - label: Additional Credits
+    anchor: '#additional-credits'
+  - label: Gratitude
+    anchor: '#gratitude'
+  - label: Contributor Notes
+    anchor: '#contributor-notes'
+  - label: Contact
     anchor: '#contact'
 images:
   - url: '/media/013.jpg'
-    caption: "TODO: Add caption here"
+    caption: "Purita Mesa, Richard Chabran, Lillian Castillo-Speed. Outside Ethnic Studies Library, October 1, 2023"
   - url: '/media/017.jpg'
-    caption: "TODO: Add caption here" 
+    caption: "Richard Chabran, Chela Rios Munoz, Carlos Munoz, Lillian Castillo-Speed. UC Berkeley, October 1, 2023" 
   - url: '/media/023.jpg'
-    caption: "TODO: Add caption here"
+    caption: "Richard Chabran, Lillian Castillo-Speed, Clementina Duron. Changemaker Studio, UC Berkeley, October 1, 2023."
   - url: '/media/028.jpg'
-    caption: "TODO: Add caption here"
+    caption: "Lucha Corpi. Changemaker Studio, UC Berkeley, October 1, 2023."
 ---
-At the intersection of Chicana/o/x  Studies, Digital Humanities and Library History, *Bibliopolítica: a Digital History of the Chicano Studies Library* chronicles the history of one of the first Chicana/o/x  collections, the UC Berkeley Chicano Studies Library. Bibliopolítica shares the stories of trailblazing library workers, students and community members who tirelessly worked to preserve and make Chicana/o/x resources available. Featuring photographs, ephemera, archival documents, and oral histories, Bibliopolítica offers an original digital collection of primary sources and is the first audiovisual history of a place that helped redefine what libraries could be.  
+
+
+At the intersection of Chicana/o/x  Studies, Digital Humanities and Library History, *Bibliopolítica: A Digital History of the Chicano Studies Library* chronicles the history of one of the first Chicana/o/x collections, the Chicano Studies Library at the University of California, Berkeley.
+
+Bibliopolítica shares the stories of trailblazing library workers, students and community members who worked to preserve and make Chicana/o/x  resources available. Featuring photographs, ephemera, archival documents, and oral histories, Bibliopolítica offers an original digital collection of primary sources and is the first audiovisual history of this special place that helped redefine what libraries could be. 
+
+Bibliopolítica takes its name from a book of the same title that Chabrán and librarian colleague Francisco García-Ayvens published in 1984, *BiblioPolítica: Chicano Perspectives on Library Service in the United States*. In 2024, it remains one of the few titles dedicated to the discussion of Chicana/o/x librarianship. *Bibliopolítica: a Digital History of the Chicano Studies Library* adds to this important conversation, but it is only the beginning of a much needed longer and more detailed history of the Chicano Studies Library and the contributions of Chicana/o/x library workers. 
+
 
 ## Project Team
 
@@ -50,7 +62,7 @@ At the intersection of Chicana/o/x  Studies, Digital Humanities and Library Hist
   <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
   {% for person in team %}
   {% if person.url %}<a a href="{{ person.url }}" target="_none">{% endif %}
-  <div class="flex items-top my-6 gap-4">
+  <div class="flex items-top gap-4">
     <div class="flex-none">
       <div class="avatar">
         <div class="w-20 h-20 rounded-full ">
@@ -68,18 +80,35 @@ At the intersection of Chicana/o/x  Studies, Digital Humanities and Library Hist
   </div>
 </div>
 
+## Additional Credits
+
+**English-Spanish Translation:**&nbsp;&nbsp;<span class="opacity-80">Kathy Blackmer Reyes, Angie Chabrám, Rafael Chabrán, Julia Curry, Richard Chabrán, and Lillian Castillo-Speed</span>  
+**Archives assistance:**&nbsp;&nbsp;<span class="opacity-80">Gema Paola Morales-Mendoza and August Eli Eppler</span>  
+**Digitization of archival items:**&nbsp;&nbsp;<span class="opacity-80">Chrissy Huhn and UC Berkeley Library IT</span>    
+**Oral history recordings at Berkeley:**&nbsp;&nbsp;<span class="opacity-80">Pablo Gonzalez and Angelica Garcia</span>     
+**Tape sync recordings:**&nbsp;&nbsp;<span class="opacity-80">Sonia Chaidez, Caleb Hodgson, Scott Leader, and Emilce Quiroz</span>  
+**Sound Mixing:**&nbsp;&nbsp;<span class="opacity-80">Michael Cacioppo Belantara</span> 
+
 <div class="flex flex-wrap justify-between mt-8">
   <div class="md:basis-3/5 md:pr-4 basis-full" markdown="1">
 
-## Credits & Gratitude
+## Gratitude
 
-Stuff about what the team did (vs the section above about who they are?)
+Many thanks to everyone who agreed to be interviewed and share your time and stories. 
 
-Thanking NYU DH seed grant, UCB, Oral History participants, etc.
+Thanks to Angie Chabrám, Roberto Haro, Francisco Hernandez, Ysidro Macías, Juan Rodriguez, Nina Genera, and Carolyn Soto who shared important information but were not able to be interviewed.
+ 
+We would like to acknowledge the following people who made many contributions to the Chicano Studies Library. These are Jose Arce, Herminio Rios Myrtha Chabrán, John Gonzales, Raymond Padilla, Martha Rodriguez, and Oscar Treviño. Others who have also passed were not officially part of the library but who contributed to its story are: Rafaela Castro, Guillermo Hernandez, Susana Hinojosa, Octavio Romano, and Margaret Ulrich. 
 
-Proin maximus orci quis dapibus tristique. Cras id diam in urna congue vestibulum ut sit amet felis. Phasellus auctor, justo vel gravida ultrices, felis lectus auctor massa, nec commodo lectus massa vitae libero. Phasellus luctus ultrices risus, id cursus eros consequat eu. Donec sed purus dapibus, aliquet mi quis, imperdiet mauris. Suspendisse vehicula orci arcu, et gravida ante maximus nec. Sed eget dolor et lorem convallis finibus eget eleifend tellus. Etiam mauris est, vulputate vitae quam sed, auctor ultricies nunc.
+Bibliopolítica was made possible by a New York University Digital Humanities Seed Grant. The project team would like to thank The Center for the Humanities, NYU Libraries, and NYU Research Technology for the opportunity and Molly Rogers and Jojo Karlin for their support. 
 
-Donec sit amet elit fringilla, euismod ipsum ut, egestas sem. Maecenas vestibulum enim et orci viverra semper. Aenean consectetur arcu a mi posuere, vitae pretium nisl auctor. Proin malesuada ligula vel odio rutrum elementum. Duis at erat sollicitudin, mattis arcu id, tincidunt mauris. Proin eu sagittis nisi. Aenean nec enim risus.
+Heartfelt thanks to Emily Drabinski for generously providing additional support for travel and tape sync recordings. Thank you, Emily, for helping make this project possible. 
+
+Thanks to the Ethnic Studies Library at UC Berkeley for providing additional funding in support of the project.
+
+Many thanks to Pablo Gonzalez, Continuing Lecturer, Chicana/o Studies Program and Ethnic Studies for recording with us and giving permission to record the oral histories with staff in the Ethnic Studies ChangeMaker Podcast Studio.
+
+Thanks to NYU Libraries Office of Budget and Finance team for your generous guidance and administrative support
 
   </div>
   <div class="md:basis-2/5 md:pl-4 md:pt-12 basis-full">
@@ -103,6 +132,31 @@ Donec sit amet elit fringilla, euismod ipsum ut, egestas sem. Maecenas vestibulu
     </div>
   </div>
 </div>
+
+## Contributor Notes
+
+<blockquote class="text-lg italic not-prose border-l-2 border-base-content pl-4">
+  <svg class="w-8 h-6 float-left m-0 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+    <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
+  </svg>
+  <p>"Creating the Bibliopolítica digital exhibit allowed me to make present special moments of labor and why I thought they were important. It allowed me to continue conversations with past colleagues who we were able to interview as well as an opportunity to celebrate those who have passed who I learned from and struggled with, especially Jose Antonio Arce and my Aunt Myrtha Chabrán. It has also provided moments of learning and a rare opportunity to work with a gifted team. For all of this I am extremely grateful. My hope is that this exhibit not only brings a history of a library alive but also points to the importance of documenting subaltern histories."</p>
+  <p class="mt-4">–Richard Chabran</p>
+</blockquote>
+
+<blockquote class="mt-8 text-lg italic not-prose border-l-2 border-base-content pl-4">
+  <svg class="w-8 h-6 float-left m-0 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+    <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
+  </svg>
+  <p>"I am grateful to all the staffs of the Chicano Studies Library and to all the staffs of the Ethnic Studies Library. Their work and their courage gave life to both libraries. I want to especially thank Gema Paola Morales-Mendoza and August Eli Eppler for their teamwork in searching through files and boxes for most of the historical documents in Bibliopolítica. "</p>
+  <p class="mt-4">–Lillian Castillo-Speed</p>
+</blockquote>
+
+Richard Chabrán and Lillian Castillo-Speed missed Francisco Garcia-Ayvens’ participation in this version of the ongoing Bibliopolítica project. He passed away in 2018. We shared so many projects and had countless conversations about the Chicano Periodical Index and the Chicano Thesaurus and Chicana/o/x librarianship. We missed having conversations with him about Bibliopolítica, the digital exhibit.
+
+
+## Contact 
+
+bibliopolitica@gmail.com
 
 <script>
   var prevFeatureButton  = document.querySelector('#prev-feature');
@@ -136,9 +190,3 @@ Donec sit amet elit fringilla, euismod ipsum ut, egestas sem. Maecenas vestibulu
     playFeatureButton.classList.toggle('hidden');
   });
 </script>
-
-
-
-## Contact 
-
-Link to gmail address, Google form, etc. with a sentence or two of context.
