@@ -90,7 +90,7 @@ Bibliopolítica takes its name from a book of the same title that Chabrán and l
 **Sound Mixing:**&nbsp;&nbsp;<span class="opacity-80">Michael Cacioppo Belantara</span> 
 
 <div class="flex flex-wrap justify-between mt-8">
-  <div class="md:basis-3/5 md:pr-4 basis-full" markdown="1">
+  <div class="lg:basis-3/5 lg:pr-4 basis-full" markdown="1">
 
 ## Gratitude
 
@@ -111,8 +111,8 @@ Many thanks to Pablo Gonzalez, Continuing Lecturer, Chicana/o Studies Program an
 Thanks to NYU Libraries Office of Budget and Finance team for your generous guidance and administrative support
 
   </div>
-  <div class="md:basis-2/5 md:pl-4 md:pt-12 basis-full">
-    <div class="md:text-right ml-2">
+  <div class="lg:basis-2/5 lg:pl-4 lg:pt-12 basis-full">
+    <div class="lg:text-right ml-2">
       <button id="prev-feature" class="h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-left" data-tip="Previous">{% include "svg/arrow-left.svg" %}</button>
       <button id="play-feature" class="hidden h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-bottom" data-tip="Autoplay">
         {% include "svg/play.svg" %}
