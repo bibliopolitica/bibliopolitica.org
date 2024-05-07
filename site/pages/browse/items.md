@@ -5,10 +5,10 @@ layout: "page"
 permalink: "/browse/items.html"
 search_limits:
   - All Fields
+  - ID
   - Label
-  - Narrative Summary
+  - Summary
   - Personal Name
-  - Corporate Name
   - Topic
   - Type
   - Format

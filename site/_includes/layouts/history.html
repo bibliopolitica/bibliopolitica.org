@@ -1,19 +1,23 @@
 ---
 layout: page
 metadata:
-  - key: Personal Name
+  - key: Personal Name 
     list: true
   - key: Place of Recording
   - key: Date of Recording
+  - key: Topic
+    special: true
+  # - key: Type
+  #   list: true
+  - key: Format
+    list: true
   - key: Running Time
   - key: Language
     list: true
-  - key: Notes
-    list: true
   - key: Rights Statement
-  - key: Identifier
-    list: true
 ---
+
+
 
 {% capture bio_card %}
 <div class="relative not-prose flex w-full flex-col border-b border-neutral md:border-none">
@@ -59,49 +63,27 @@ metadata:
       {% for meta in metadata %}
       {% if history[meta.key] %}
       {% if meta.list %}
-      <li><b>{{ meta.key }}:</b> {{ history[meta.key] | join: '; ' }}</li>
+      <li>
+        <span class="font-bold my-1 block">{{ meta.key }}</span> 
+        <span>{{ history[meta.key] | join: '; ' }}</span>
+      </li>
+      {% elsif meta.special %}
+      <li>
+        <span class="font-bold my-1 block">{{ meta.key }}</span>
+        <span>
+          {% for i in history[meta.key]  %}
+          <a href="{{ '/browse/items.html' | url }}?query={{ i | uri_encode }}" class="sm:text-nowrap text-accent border-b-2 border-transparent hover:border-accent"># {{ i }}</a>{% unless forloop.last %}&nbsp;&nbsp;{% endunless%}
+          {% endfor %}
+        </span>
+      </li>
       {% else %}
-      <li><b>{{ meta.key }}:</b> {{ history[meta.key] }}</li>
+      <li>
+        <span class="font-bold my-1 block">{{ meta.key }}</span>
+        <span>{{ history[meta.key] }}</span>
+      </li>
       {% endif %}
       {% endif %}
       {% endfor %}
-
-      {% if history["Keyword"] %}
-      <li><b>Keyword:</b>
-        {% for keyword in history["Keyword"] %}
-        <a class="link hover:text-accent">{{ keyword }}</a>{% unless forloop.last %}; {% endunless %}
-        {% endfor %}
-      </li>
-      {% endif %}
-      {% if history["Subject"] %}
-      <li><b>Subject:</b>
-        {% for subject in history["Subject"] %}
-        <a class="link hover:text-accent">{{ subject }}</a>{% unless forloop.last %}; {% endunless %}
-        {% endfor %}
-      </li>
-      {% endif %}
-      {% if history["Genre"] %}
-      <li><b>Genre:</b>
-        {% for genre in history["Genre"] %}
-        <a class="link hover:text-accent">{{ genre }}</a>{% unless forloop.last %}; {% endunless %}
-        {% endfor %}
-      </li>
-      {% endif %}
-      {% if history["Format"] %}
-      <li><b>Format:</b>
-        {% for format in history["Format"] %}
-        <a class="link hover:text-accent">{{ format }}</a>{% unless forloop.last %}; {% endunless %}
-        {% endfor %}
-      </li>
-      {% endif %}
-      {% if history["Link"] %}
-      <li><b>Link:</b>
-        {% for link in history["Link"] %}
-        <a class="link hover:text-accent" href="{{ link }}" target="_none">{{ link }}</a>{% unless forloop.last %}; {%
-        endunless %}
-        {% endfor %}
-      </li>
-      {% endif %}    
       <li>
         <details>
           <summary class="meta-summary font-bold">&nbsp;Transcript&nbsp;</summary>

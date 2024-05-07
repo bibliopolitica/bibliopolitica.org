@@ -46,6 +46,8 @@ contents:
     label: 2005
   - anchor: '#2007'
     label: 2007
+  - anchor: '#2012'
+    label: 2012
   - anchor: '#2024'
     label: 2024
 ---
@@ -78,7 +80,7 @@ contents:
       <div class="md:mr-12 columns-4 lg:columns-5 gap-x-2">
         {%- for item in year_data -%}
         <div class="mb-2">
-          <a href="{{ '/item/'| append: item.ID | url }}.html" class="block tooltip tooltip-bottom" data-tip="{{ item.label | escape | truncatewords: 4, '...' }}">
+          <a href="{{ '/item/'| append: item.ID | url }}.html" class="block tooltip tooltip-bottom" data-tip="{{ item.Label | escape | truncatewords: 4, '...' }}">
             {% capture img_url %}https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_{{ item.ID }}_{{ item.ID }}_001/full/250,/0/default.jpg{% endcapture %}
             <img src="{{ img_url }}" alt="">
           </a>
