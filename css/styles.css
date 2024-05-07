@@ -4275,10 +4275,6 @@ html{
   top: 0px !important;
 }
 
-.top-20{
-  top: 5rem !important;
-}
-
 .z-0{
   z-index: 0 !important;
 }
@@ -4443,10 +4439,6 @@ html{
   margin-top: 0px !important;
 }
 
-.mt-1{
-  margin-top: 0.25rem !important;
-}
-
 .mt-2{
   margin-top: 0.5rem !important;
 }
@@ -4576,10 +4568,6 @@ html{
   max-height: 100% !important;
 }
 
-.max-h-screen{
-  max-height: 100vh !important;
-}
-
 .min-h-screen{
   min-height: 100vh !important;
 }
@@ -4614,10 +4602,6 @@ html{
 
 .w-full{
   width: 100% !important;
-}
-
-.min-w-56{
-  min-width: 14rem !important;
 }
 
 .min-w-80{
@@ -4713,10 +4697,6 @@ html{
   grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
 }
 
-.grid-cols-3{
-  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-}
-
 .flex-col{
   flex-direction: column !important;
 }
@@ -4796,10 +4776,6 @@ html{
   overflow-x: clip !important;
 }
 
-.overflow-y-scroll{
-  overflow-y: scroll !important;
-}
-
 .scroll-smooth{
   scroll-behavior: smooth !important;
 }
@@ -4818,10 +4794,6 @@ html{
 
 .\!rounded-full{
   border-radius: 9999px !important;
-}
-
-.rounded-box{
-  border-radius: var(--rounded-box, 1rem) !important;
 }
 
 .rounded-full{
@@ -6132,10 +6104,6 @@ details[open] > summary.meta-summary::before {
     display: flex !important;
   }
 
-  .md\:hidden{
-    display: none !important;
-  }
-
   .md\:h-12{
     height: 3rem !important;
   }
@@ -6170,10 +6138,6 @@ details[open] > summary.meta-summary::before {
 
   .md\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-  }
-
-  .md\:grid-cols-4{
-    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
   }
 
   .md\:flex-row-reverse{
@@ -6215,14 +6179,6 @@ details[open] > summary.meta-summary::before {
 
   .md\:pb-12{
     padding-bottom: 3rem !important;
-  }
-
-  .md\:pl-4{
-    padding-left: 1rem !important;
-  }
-
-  .md\:pr-4{
-    padding-right: 1rem !important;
   }
 
   .md\:pt-12{
@@ -6365,6 +6321,22 @@ details[open] > summary.meta-summary::before {
     padding-right: 1rem !important;
   }
 
+  .lg\:pl-4{
+    padding-left: 1rem !important;
+  }
+
+  .lg\:pr-4{
+    padding-right: 1rem !important;
+  }
+
+  .lg\:pt-12{
+    padding-top: 3rem !important;
+  }
+
+  .lg\:text-right{
+    text-align: right !important;
+  }
+
   .lg\:text-end{
     text-align: end !important;
   }
@@ -6392,10 +6364,6 @@ details[open] > summary.meta-summary::before {
 
   .xl\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
-  }
-
-  .xl\:grid-cols-6{
-    grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
   }
 
   .xl\:text-base{

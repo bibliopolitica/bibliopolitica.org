@@ -221,21 +221,102 @@
   window.prefixUrl    = "/bibliopolitica/";
   window.promisedData = fetchData("/bibliopolitica/items.json"); 
 </script>
-<div class="join w-full max-w-full mb-8">
-  <select size="1" id="search-limit-select" class="focus:outline-none select select-bordered md:select-md select-sm join-item border-1 border-base-content">
-    <option disabled>Search Within</option><option>All Fields</option><option>ID</option><option>Label</option><option>Summary</option><option>Personal Name</option><option>Topic</option><option>Type</option><option>Format</option></select>
-  <input size="1" id="search-input" class="focus:outline-none font-mono input grow input-bordered md:input-md input-sm join-item border-1 border-base-content" placeholder="Search"/>
-  <button size="1" id="search-submit" class="focus:outline-none btn btn-sm md:btn-md btn-outline join-item">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 opacity-70"><path fill-rule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clip-rule="evenodd" /></svg>
-  </button>
+<div class="md:flex pb-10 not-prose">
+  <aside class="flex-none md:block max-w-56 hidden md:text-sm">
+    <div class="font-bold text-2xl tracking-tight mb-4">Browse Facets</div>
+    <ul>
+<p><li class="pb-5">
+<div class="text-xl tracking-tight mb-1">Type</div>
+<ul></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Type&query=Newsletters">Newsletters</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Type&query=Brochures">Brochures</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Type&query=Letters">Letters</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Type&query=Photographs">Photographs</a></li></p>
+<p><li class="border-t border-neutral py-1">
+<details>
+<summary class="text-accent cursor-pointer">View More</summary></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Type&query=Bibliographies">Bibliographies</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Type&query=Fliers">Fliers</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Type&query=Internal%20Documents">Internal Documents</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Type&query=Book%20Chapters">Book Chapters</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Type&query=Clippings">Clippings</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Type&query=Proposals">Proposals</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Type&query=Meeting%20Minutes">Meeting Minutes</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Type&query=Press%20Releases">Press Releases</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Type&query=Job%20Postings">Job Postings</a></li></p>
+<p></details>
+</li>
+</ul>
+</li></p>
+<p><li class="pb-5">
+<div class="text-xl tracking-tight mb-1">Topic</div>
+<ul></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Topic&query=Chicano%20Periodical%20Index">Chicano Periodical Index</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Topic&query=Knowledge%20Organization">Knowledge Organization</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Topic&query=Recognition">Recognition</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Topic&query=Chicano%20Thesaurus">Chicano Thesaurus</a></li></p>
+<p><li class="border-t border-neutral py-1">
+<details>
+<summary class="text-accent cursor-pointer">View More</summary></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Topic&query=Chicano%20Database">Chicano Database</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Topic&query=Third%20World%20Liberation%20Front">Third World Liberation Front</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Topic&query=Library%20Administration">Library Administration</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Topic&query=Chicano%20Studies%20Library%20Publications%20Unit">Chicano Studies Library Publications Unit</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Topic&query=Arts%20and%20Literature">Arts and Literature</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Topic&query=Serials%20Collection">Serials Collection</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Topic&query=Ethnic%20Studies%20Library">Ethnic Studies Library</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Topic&query=Exhibits%20and%20Events">Exhibits and Events</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Topic&query=Library%20Outreach">Library Outreach</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Topic&query=Chicano%20Studies%20Program">Chicano Studies Program</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Topic&query=Ethnic%20Studies">Ethnic Studies</a></li></p>
+<p></details>
+</li>
+</ul>
+</li></p>
+<p><li class="pb-5">
+<div class="text-xl tracking-tight mb-1">Personal Name</div>
+<ul></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Personal%20Name&query=Castillo-Speed%20Lillian">Castillo-Speed, Lillian</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Personal%20Name&query=Chabr%C3%A1n%20Richard">Chabrán, Richard</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Personal%20Name&query=Garc%C3%ADa-Ayvens%20Francisco%2C%201948-2018">García-Ayvens, Francisco, 1948-2018</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Personal%20Name&query=Trujillo%20Larry">Trujillo, Larry</a></li></p>
+<p><li class="border-t border-neutral py-1">
+<details>
+<summary class="text-accent cursor-pointer">View More</summary></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Personal%20Name&query=Arce%20Jos%C3%A9%20Antonio%2C%201948-2018">Arce, José Antonio, 1948-2018</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Personal%20Name&query=Trevi%C3%B1o%20Oscar">Treviño, Oscar</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Personal%20Name&query=Soto%20Carolyn">Soto, Carolyn</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Personal%20Name&query=Montoya%20Malaquias">Montoya, Malaquias</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Personal%20Name&query=Garza%20Luis%20Alberto%20de%20la">Garza, Luis Alberto de la</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Personal%20Name&query=Delgado%20Manuel">Delgado, Manuel</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Personal%20Name&query=Mu%C3%B1oz%20Carlos%2C%20Jr">Muñoz, Carlos, Jr.</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Personal%20Name&query=Rios-Mu%C3%B1oz%20Chela">Rios-Muñoz, Chela</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Personal%20Name&query=Poon%20Wei%20Chi">Poon, Wei Chi</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Personal%20Name&query=Ya%C3%B1ez%20Elva">Yañez, Elva</a></li></p>
+<p><li class="border-t border-neutral py-1"><a href="/bibliopolitica/browse/items.html?limit=Personal%20Name&query=Corpi%20Lucha">Corpi, Lucha</a></li></p>
+<p></details>
+</li>
+</ul>
+</li></p>
+<p></ul></p>
+  </aside>
+  <main class="flex-auto md:px-10 not-prose">
+    <div class="font-bold text-2xl tracking-tight mb-4">Search</div>
+    <div class="join w-full max-w-full mb-8">
+      <select size="1" id="search-limit-select" class="focus:outline-none select select-bordered md:select-md select-sm join-item border-1 border-base-content">
+        <option disabled>Search Within</option><option>All Fields</option><option>ID</option><option>Label</option><option>Summary</option><option>Personal Name</option><option>Topic</option><option>Type</option><option>Format</option></select>
+      <input size="1" id="search-input" class="focus:outline-none font-mono input grow input-bordered md:input-md input-sm join-item border-1 border-base-content" placeholder="Search"/>
+      <a href="/bibliopolitica/browse/items.html" size="1" class="focus:outline-none btn btn-sm md:btn-md btn-outline join-item">✕</a>
+      <button size="1" id="search-submit" class="focus:outline-none btn btn-sm md:btn-md btn-outline join-item">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 opacity-70"><path fill-rule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clip-rule="evenodd" /></svg>
+      </button>
+    </div>
+    <div id="results-info"></div>
+    <div id="results" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-10 gap-y-5 items-center">
+    </div>
+  </main>
 </div>
-<main class="flex-auto md:px-10 not-prose">
-  <div id="results-info"></div>
-  <div id="results" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-10 gap-y-5 items-center">
-  </div>
-</main>
 <script src="/bibliopolitica/js/search.js"></script>
-
   </div>
     </main>
     <footer class="footer bg-neutral text-base-content">
