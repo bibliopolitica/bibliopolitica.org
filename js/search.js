@@ -83,9 +83,10 @@ promisedData.then(function(data) {
 	}, {});
   let idx = lunr(function () {
     this.ref('ID');
+    this.field('ID');
     this.field('Label');
-    this.field('Personal_Name');
     this.field('Summary');
+    this.field('Personal_Name');
     this.field('Topic');
     this.field('Type');
     this.field('Format');
