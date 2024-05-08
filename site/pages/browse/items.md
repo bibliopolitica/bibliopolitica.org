@@ -54,14 +54,10 @@ facets:
       - Arce, José Antonio, 1948-2018
       - Treviño, Oscar
       - Soto, Carolyn
-      - Montoya, Malaquias
       - Garza, Luis Alberto de la
       - Delgado, Manuel
-      - Muñoz, Carlos, Jr.
-      - Rios-Muñoz, Chela
       - Poon, Wei Chi
       - Yañez, Elva
-      - Corpi, Lucha
 
 ---
 
@@ -88,16 +84,16 @@ facets:
           {% assign first_values = facet.values | limit: 4 %}
           {% assign last_values = facet.values | slice: 4, facet.values.size  %}
           {% for value in first_values %}
-            <li class="border-t border-neutral py-1"><a href="{{ '/browse/items.html' | url }}?limit={{ facet.key | uri_encode }}&query={{ value | uri_encode }}">{{ value }}</a></li>
+          <li class="border-t border-neutral py-1"><a href="{{ '/browse/items.html' | url }}?limit={{ facet.key | uri_encode }}&query={{ value | uri_encode }}">{{ value }}</a></li>
           {% endfor %}
-          <li class="border-t border-neutral py-1">
-            <details>
-              <summary class="text-accent cursor-pointer">View More</summary>
-              {% for value in last_values %}
-              <li class="border-t border-neutral py-1"><a href="{{ '/browse/items.html' | url }}?limit={{ facet.key | uri_encode }}&query={{ value | uri_encode }}">{{ value }}</a></li>
-              {% endfor %}
-            </details> 
-          </li>
+          <details>
+            {% for value in last_values %}
+            <li class="border-t border-neutral py-1"><a href="{{ '/browse/items.html' | url }}?limit={{ facet.key | uri_encode }}&query={{ value | uri_encode }}">{{ value }}</a></li>
+            {% endfor %}
+            <summary class="text-accent cursor-pointer">
+            View More
+            </summary>
+          </details>
         </ul>
       </li>
       {% endfor %}
