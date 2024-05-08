@@ -1,5 +1,5 @@
 ---
-title: "Valores y Sistemas"
+title: "Explora la Exposición"
 lang: "es"
 description: "TBD"
 layout: page
