@@ -46,6 +46,23 @@ images:
     caption: "Richard Chabran, Lillian Castillo-Speed, Clementina Duron. Changemaker Studio, UC Berkeley, October 1, 2023."
   - url: '/media/028.jpg'
     caption: "Lucha Corpi. Changemaker Studio, UC Berkeley, October 1, 2023."
+additional_credits:
+  - header: English-Spanish translation
+    value: Kathy Blackmer Reyes, Angie Chabrám, Rafael Chabrán, Julia Curry, Richard Chabrán, and Lillian Castillo-Speed
+  - header: Archives assistance
+    value: Gema Paola Morales-Mendoza and August Eli Eppler
+  - header: Digitization of archival items
+    value: Chrissy Huhn and UC Berkeley Library IT
+  - header: Oral history recordings at Berkeley
+    value: Pablo Gonzalez and Angelica Garcia
+  - header: Audio editing and captioning
+    value: Amanda Belantara
+  - header: Tape sync recordings
+    value: Sonia Chaidez, Caleb Hodgson, Scott Leader, Emilce Quiroz, and Amanda Belantara
+  - header: Sound mixing
+    value: Michael Cacioppo Belantara
+  - header: Hompeage illustration
+    value: Courtesy of Malaquías Montoya, modified by Inaiah Lujan with permisson
 ---
 
 
@@ -82,13 +99,12 @@ Bibliopolítica takes its name from a book of the same title that Chabrán and l
 
 ## Additional Credits
 
-**English-Spanish Translation:**&nbsp;&nbsp;<span class="opacity-80">Kathy Blackmer Reyes, Angie Chabrám, Rafael Chabrán, Julia Curry, Richard Chabrán, and Lillian Castillo-Speed</span>  
-**Archives assistance:**&nbsp;&nbsp;<span class="opacity-80">Gema Paola Morales-Mendoza and August Eli Eppler</span>  
-**Digitization of archival items:**&nbsp;&nbsp;<span class="opacity-80">Chrissy Huhn and UC Berkeley Library IT</span>  
-**Oral history recordings at Berkeley:**&nbsp;&nbsp;<span class="opacity-80">Pablo Gonzalez and Angelica Garcia</span>  
-**Audio editing and captioning:**&nbsp;&nbsp;<span class="opacity-80">Amanda Belantara</span>  
-**Tape sync recordings:**&nbsp;&nbsp;<span class="opacity-80">Sonia Chaidez, Caleb Hodgson, Scott Leader, Emilce Quiroz, and Amanda Belantara</span>  
-**Sound Mixing:**&nbsp;&nbsp;<span class="opacity-80">Michael Cacioppo Belantara</span> 
+{% for credit in additional_credits %}
+<div class="max-w-prose mb-2">
+{{ credit.header }}:<span class="ml-2 opacity-80">{{ credit.value }}</span>
+</div>
+{% endfor %}
+
 
 <div class="flex flex-wrap justify-between mt-8">
   <div class="lg:basis-3/5 lg:pr-4 basis-full" markdown="1">
@@ -109,7 +125,7 @@ Thanks to the Ethnic Studies Library at UC Berkeley for providing additional fun
 
 Many thanks to Pablo Gonzalez, Continuing Lecturer, Chicana/o Studies Program and Ethnic Studies for recording with us and giving permission to record the oral histories with staff in the Ethnic Studies ChangeMaker Podcast Studio.
 
-Thanks to NYU Libraries Office of Budget and Finance team for your generous guidance and administrative support
+Thanks to NYU Libraries Office of Budget and Finance team for your generous guidance and administrative support.
 
   </div>
   <div class="lg:basis-2/5 lg:pl-4 lg:pt-12 basis-full">
