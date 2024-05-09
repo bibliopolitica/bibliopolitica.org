@@ -4713,6 +4713,10 @@ html{
   align-items: center !important;
 }
 
+.justify-start{
+  justify-content: flex-start !important;
+}
+
 .justify-end{
   justify-content: flex-end !important;
 }
@@ -4731,10 +4735,6 @@ html{
 
 .gap-10{
   gap: 2.5rem !important;
-}
-
-.gap-12{
-  gap: 3rem !important;
 }
 
 .gap-4{
@@ -6310,6 +6310,10 @@ details[open] > summary.meta-summary::before {
 
   .lg\:justify-between{
     justify-content: space-between !important;
+  }
+
+  .lg\:gap-12{
+    gap: 3rem !important;
   }
 
   .lg\:gap-4{
