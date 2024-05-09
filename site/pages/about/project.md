@@ -84,9 +84,10 @@ Bibliopolítica takes its name from a book of the same title that Chabrán and l
 
 **English-Spanish Translation:**&nbsp;&nbsp;<span class="opacity-80">Kathy Blackmer Reyes, Angie Chabrám, Rafael Chabrán, Julia Curry, Richard Chabrán, and Lillian Castillo-Speed</span>  
 **Archives assistance:**&nbsp;&nbsp;<span class="opacity-80">Gema Paola Morales-Mendoza and August Eli Eppler</span>  
-**Digitization of archival items:**&nbsp;&nbsp;<span class="opacity-80">Chrissy Huhn and UC Berkeley Library IT</span>    
-**Oral history recordings at Berkeley:**&nbsp;&nbsp;<span class="opacity-80">Pablo Gonzalez and Angelica Garcia</span>     
-**Tape sync recordings:**&nbsp;&nbsp;<span class="opacity-80">Sonia Chaidez, Caleb Hodgson, Scott Leader, and Emilce Quiroz</span>  
+**Digitization of archival items:**&nbsp;&nbsp;<span class="opacity-80">Chrissy Huhn and UC Berkeley Library IT</span>  
+**Oral history recordings at Berkeley:**&nbsp;&nbsp;<span class="opacity-80">Pablo Gonzalez and Angelica Garcia</span>  
+**Audio editing and captioning:**&nbsp;&nbsp;<span class="opacity-80">Amanda Belantara</span>  
+**Tape sync recordings:**&nbsp;&nbsp;<span class="opacity-80">Sonia Chaidez, Caleb Hodgson, Scott Leader, Emilce Quiroz, and Amanda Belantara</span>  
 **Sound Mixing:**&nbsp;&nbsp;<span class="opacity-80">Michael Cacioppo Belantara</span> 
 
 <div class="flex flex-wrap justify-between mt-8">
