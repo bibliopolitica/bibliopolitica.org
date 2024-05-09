@@ -82,7 +82,7 @@ contents:
         <div class="mb-2">
           <a href="{{ '/item/'| append: item.ID | url }}.html" class="block tooltip tooltip-bottom" data-tip="{{ item.Label | escape | truncatewords: 4, '...' }}">
             {% capture img_url %}https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_{{ item.ID }}_{{ item.ID }}_001/full/250,/0/default.jpg{% endcapture %}
-            <img src="{{ img_url }}" alt="">
+            <img loading="lazy" src="{{ img_url }}" alt="">
           </a>
         </div>
         {%- endfor -%}
