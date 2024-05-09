@@ -61,7 +61,7 @@ additional_credits:
     value: Sonia Chaidez, Caleb Hodgson, Scott Leader, Emilce Quiroz, and Amanda Belantara
   - header: Sound mixing
     value: Michael Cacioppo Belantara
-  - header: Hompeage illustration
+  - header: Homepage illustration
     value: Courtesy of Malaquías Montoya, modified by Inaiah Lujan with permisson
 ---
 
