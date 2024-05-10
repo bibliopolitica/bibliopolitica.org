@@ -1,5 +1,5 @@
 ---
-title: "Explore la Exhibición"
+title: "Explora la exhibición"
 lang: "es"
 description: "TBD"
 layout: page
