@@ -70,7 +70,7 @@ layout: base
             {% if lang == 'en' %}
             <li><a href="{{ '/browse/exhibit/en.html' | url }}">Explore the Exhibit</a></li>
             {% else %}
-            <li><a href="{{ '/browse/exhibit/es.html' | url }}">Explora la exhibición</a></li>
+            <li><a href="{{ '/browse/exhibit/es.html' | url }}">Explora la Exhibición</a></li>
             {% endif %}
           </ul>
         </div>
@@ -88,8 +88,7 @@ layout: base
       <div class="lg:text-end lg:basis-2/5 not-prose md:text-sm lg:text-base leading-snug lg:mt-0 mt-6">
         {% for exhibit in collections[tags.first] %}
         {% if exhibit.data.number == number %}
-        <span class="whitespace-nowrap text-stone-400">{{ exhibit.data.number }}: {{ exhibit.data.title | split: ':' |
-          first }}</span>
+        <span class="whitespace-nowrap text-stone-400">{{ exhibit.data.number }}: {{ exhibit.data.title }}</span>
         {% else %}
         <a class="link whitespace-nowrap hover:text-accent" href="{{ exhibit.url | url }}">{{ exhibit.data.number }}: {{
           exhibit.data.title | split: ':' | first }}</a>
