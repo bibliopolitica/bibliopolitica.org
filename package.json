@@ -10,7 +10,8 @@
     "dev:css": "tailwindcss -i site/css/styles.css -o dist/css/styles.css --watch --postcss",
     "build:11ty": "env NODE_ENV=production eleventy",
     "build:css": "tailwindcss -i site/css/styles.css -o dist/css/styles.css --postcss",
-    "test": "npm run build:css && eleventy && hyperlink dist"
+    "test": "npm run build:css && eleventy && hyperlink dist",
+    "axe": "axe $(node axe/index.js)"
   },
   "keywords": [],
   "author": "",
@@ -28,6 +29,7 @@
     "tailwindcss": "^3.4.0"
   },
   "dependencies": {
+    "@axe-core/cli": "^4.9.0",
     "@untitaker/hyperlink": "^0.1.32",
     "clean-css": "^5.2.4",
     "flickity": "^3.0.0",

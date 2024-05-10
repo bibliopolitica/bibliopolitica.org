@@ -18,11 +18,14 @@ jobs:
       - name: setup node
         uses: actions/setup-node@v4
         with:
-          node-version: 'v18.14.0'
+          node-version: 'v18.16.0'
       - name: install
         run: npm install
-      - name: test 
+      - name: test links
         run: npm run test
+      - name: test a11y
+        continue-on-error: true
+        run: sh axe.sh
       - name: build
         run: npm run build
       - name: deploy
