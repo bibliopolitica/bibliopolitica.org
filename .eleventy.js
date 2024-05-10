@@ -45,7 +45,7 @@ module.exports = function(eleventyConfig) {
 
   // URI encoding
   eleventyConfig.addFilter('uri_encode', function(str) {
-    return encodeURIComponent(str.replace('.', '').replace(',', ''));
+    return encodeURIComponent(str);
   });
 
   const markdownItOptions = {

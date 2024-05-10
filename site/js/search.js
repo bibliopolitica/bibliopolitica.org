@@ -17,7 +17,7 @@ function toQueryString(tokens) {
 }
 
 function pruneDiacritics(str) {
-  return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replaceAll('.', '').replaceAll(',', '').replaceAll('(', '').replaceAll(')', '');
 }
 
 function submitSearchQuery(idx) {
