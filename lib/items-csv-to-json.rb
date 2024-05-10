@@ -3,7 +3,7 @@ require 'json'
 
 inpath          = "./lib/data/items-metadata.csv"
 outpath         = "./site/_data/items.json"
-keys_dropable   = ["Checked", "Status", "Identifier"]
+keys_dropable   = ["Checked", "Status", "Identifier", "Personal Name Verbose"]
 keys_repeatable = [
   "Alternate Title", 
   "Corporate Name", 

@@ -15,7 +15,7 @@
   </div>
   <div id="items-carousel" class="w-full">
   {%- for item in items -%}
-    <div class="p-4 w-52 h-fit">
+    <div class="p-4 w-52">
       {% include "partials/item-card.html" %}
     </div>
   {%- endfor -%}
@@ -33,9 +33,9 @@
     imagesLoaded: true,
     prevNextButtons: false,
     pageDots: false,
-    lazyLoad: true,
+    // lazyLoad: true,
     pauseAutoPlayOnHover: false,
-    autoPlay: 2500 
+    autoPlay: 2800 
   });
   
   prevItemButton.addEventListener('click', () => itemCarousel.previous());

@@ -15,50 +15,48 @@ search_limits:
 facets:
   - key: Type
     values:
-      - Newsletters
-      - Brochures
-      - Letters
-      - Photographs
-      - Bibliographies
-      - Fliers
-      - Internal Documents
-      - Book Chapters
-      - Clippings
-      - Proposals
-      - Meeting Minutes
-      - Press Releases
-      - Job Postings
-  - key: Topic 
-    values:
-      - Chicano Periodical Index
-      - Knowledge Organization
-      - Recognition
-      - Chicano Thesaurus
-      - Chicano Database
-      - Third World Liberation Front
-      - Library Administration
-      - Chicano Studies Library Publications Unit
-      - Arts and Literature
-      - Serials Collection
-      - Ethnic Studies Library
-      - Exhibits and Events
-      - Library Outreach
-      - Chicano Studies Program
-      - Ethnic Studies
+      - Internal Documents # 25
+      - Letters # 17
+      - Photographs # 13
+      - Newsletters # 9
+      - Fliers # 6
+      - Proposals # 5
+      - Book Chapters # 4
+      - Bibliographies # 3
+      # - Brochures # 2
+      # - Meeting Minutes # 2
+      # - Press Releases # 2
+      # - Clippings # 1
+      # - Job Postings # 1
   - key: Personal Name 
     values:
-      - Castillo-Speed, Lillian
-      - Chabrán, Richard
-      - García-Ayvens, Francisco, 1948-2018
-      - Trujillo, Larry
-      - Arce, José Antonio, 1948-2018
-      - Treviño, Oscar
-      - Soto, Carolyn
-      - Garza, Luis Alberto de la
-      - Delgado, Manuel
-      - Poon, Wei Chi
-      - Yañez, Elva
-
+      - Castillo-Speed, Lillian # 24
+      - Chabrán, Richard # 19
+      - García-Ayvens, Francisco # 9
+      - Trujillo, Larry # 4
+      - Treviño, Oscar # 4
+      - Soto, Carolyn # 4
+      - Garza, Luis Alberto de la # 3
+      - Delgado, Manuel # 3
+      - Poon, Wei Chi # 3
+      - Arce, José Antonio # 2
+  - key: Topic 
+    values:
+      # - Library Outreach # 23
+      # - Library Administration # 20
+      - Chicano Periodical Index # 17
+      - Knowledge Organization # 17
+      - Recognition # 17
+      - Chicano Database # 14
+      - Exhibits and Events # 13
+      - Ethnic Studies # 9
+      - Arts and Literature # 7
+      - Chicano Thesaurus # 6
+      - Serials Collection # 6
+      - Ethnic Studies Library # 6
+      - Chicano Studies Library Publications Unit # 6
+      - Third World Liberation Front # 5
+      - Chicano Studies Program # 5
 ---
 
 <script src="https://unpkg.com/itemsjs@2.1.24/dist/index.umd.js"></script>
@@ -74,18 +72,21 @@ facets:
 </script>
 
 <div class="md:flex pb-10 not-prose">
-  <aside class="flex-none md:block max-w-56 hidden md:text-sm">
+  <aside class="flex-none md:block md:basis-1/4 xl:basis-1/5 hidden md:text-sm">
     <div class="font-bold text-2xl tracking-tight mb-4">Browse Facets</div>
     <ul>
       {% for facet in facets %}
       <li class="pb-5">
         <div class="text-xl tracking-tight mb-1">{{ facet.key }}</div>
         <ul>
-          {% assign first_values = facet.values | limit: 4 %}
-          {% assign last_values = facet.values | slice: 4, facet.values.size  %}
-          {% for value in first_values %}
-          <li class="border-t border-neutral py-1"><a href="{{ '/browse/items.html' | url }}?limit={{ facet.key | uri_encode }}&query={{ value | uri_encode }}">{{ value }}</a></li>
+          {%- comment -%}
+          {%- assign first_values = facet.values | limit: 6 -%}
+          {%- assign last_values = facet.values | slice: 6, facet.values.size  -%}
+          {%- endcomment -%}
+          {% for value in facet.values %}
+          <li class="border-t border-neutral py-1"><a data="{{ value | remove: ',' | remove: '.' }}" class="link hover:text-accent" href="{{ '/browse/items.html' | url }}?limit={{ facet.key | uri_encode }}&query={{ value | uri_encode }}">{{ value }}</a></li>
           {% endfor %}
+          {%- comment -%}
           <details>
             {% for value in last_values %}
             <li class="border-t border-neutral py-1"><a href="{{ '/browse/items.html' | url }}?limit={{ facet.key | uri_encode }}&query={{ value | uri_encode }}">{{ value }}</a></li>
@@ -94,13 +95,14 @@ facets:
             View More
             </summary>
           </details>
+          {%- endcomment -%}
         </ul>
       </li>
       {% endfor %}
     </ul>
   </aside>
 
-  <main class="flex-auto md:px-10 not-prose">
+  <main class="flex-auto md:basis-3/4 xl:basis-4/5 md:px-10 not-prose">
     <div class="font-bold text-2xl tracking-tight mb-4">Search</div>
     <div class="join w-full max-w-full mb-8">
       <select size="1" id="search-limit-select" class="focus:outline-none select select-bordered md:select-md select-sm join-item border-1 border-base-content">
