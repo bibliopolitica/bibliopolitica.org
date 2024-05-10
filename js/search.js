@@ -16,10 +16,16 @@ function toQueryString(tokens) {
   }
 }
 
+function pruneDiacritics(str) {
+  return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+
 function submitSearchQuery(idx) {
   let query = '* *'
   if (searchInput.value) {
-    input = searchInput.value;
+    input = pruneDiacritics(searchInput.value);
+    elem = document.querySelector(`[data='${searchInput.value}']`);
+    if (elem) { elem.classList.add('text-secondary'); }
     tokens = input.split(' ');
     query = toQueryString(tokens);
   }  
@@ -64,12 +70,18 @@ function inferUrlParams(){
   }
 }
 
+function handleSearchBehavior(idx, resultsLookupMap){
+  results = submitSearchQuery(idx);
+  appendSearchInfo(results);
+  appendSearchResults(results, resultsLookupMap);
+}
+
 function toDoc(doc) {
   return {
     'ID': doc.ID,
-    'Label': doc.Label,
-    'Personal_Name': (doc['Personal Name'] || []).join(' '),
-    'Summary': doc['Summary'] || '',
+    'Label': pruneDiacritics(doc.Label),
+    'Personal_Name': pruneDiacritics((doc['Personal Name'] || []).join(' ')),
+    'Summary': pruneDiacritics(doc['Summary']) || '',
     'Topic': (doc['Topic'] || [] ).join(' '),
     'Type': (doc['Type'] || [] ).join(' '),
     'Format': (doc['Format'] || [] ).join(' ')
@@ -100,32 +112,23 @@ promisedData.then(function(data) {
       this.add(toDoc(doc))
     }, this)
   })
+
   inferUrlParams();
-  results = submitSearchQuery(idx);
-  appendSearchInfo(results);
-  appendSearchResults(results, resultsLookupMap);
+  handleSearchBehavior(idx, resultsLookupMap);
 
   document.body.addEventListener('keypress', function(e) {
     if (e.key === "Enter") {
-      results = submitSearchQuery(idx);
-      appendSearchInfo(results);
-      appendSearchResults(results, resultsLookupMap);
+      handleSearchBehavior(idx, resultsLookupMap);
     }
   });
   searchSubmit.addEventListener('click', function() { 
-    results = submitSearchQuery(idx);
-    appendSearchInfo(results);
-    appendSearchResults(results, resultsLookupMap);
+    handleSearchBehavior(idx, resultsLookupMap);
   }, false);
   searchInput.addEventListener('keyup', function() { 
-    results = submitSearchQuery(idx);
-    appendSearchInfo(results);
-    appendSearchResults(results, resultsLookupMap);
+    handleSearchBehavior(idx, resultsLookupMap);
   }, false);
   searchLimit.addEventListener('change', function() {
-    results = submitSearchQuery(idx);
-    appendSearchInfo(results);
-    appendSearchResults(results, resultsLookupMap);
+    handleSearchBehavior(idx, resultsLookupMap);
   }, false);
 });
   

@@ -222,81 +222,58 @@
   window.promisedData = fetchData("/items.json"); 
 </script>
 <div class="md:flex pb-10 not-prose">
-  <aside class="flex-none md:block max-w-56 hidden md:text-sm">
+  <aside class="flex-none md:block md:basis-1/4 xl:basis-1/5 hidden md:text-sm">
     <div class="font-bold text-2xl tracking-tight mb-4">Browse Facets</div>
     <ul>
 <p><li class="pb-5">
 <div class="text-xl tracking-tight mb-1">Type</div>
-<ul></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Type&query=Newsletters">Newsletters</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Type&query=Brochures">Brochures</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Type&query=Letters">Letters</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Type&query=Photographs">Photographs</a></li></p>
-<p><details></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Type&query=Bibliographies">Bibliographies</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Type&query=Fliers">Fliers</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Type&query=Internal%20Documents">Internal Documents</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Type&query=Book%20Chapters">Book Chapters</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Type&query=Clippings">Clippings</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Type&query=Proposals">Proposals</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Type&query=Meeting%20Minutes">Meeting Minutes</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Type&query=Press%20Releases">Press Releases</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Type&query=Job%20Postings">Job Postings</a></li></p>
-<p><summary class="text-accent cursor-pointer">
-View More
-</summary>
-</details>
-</ul>
-</li></p>
-<p><li class="pb-5">
-<div class="text-xl tracking-tight mb-1">Topic</div>
-<ul></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Topic&query=Chicano%20Periodical%20Index">Chicano Periodical Index</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Topic&query=Knowledge%20Organization">Knowledge Organization</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Topic&query=Recognition">Recognition</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Topic&query=Chicano%20Thesaurus">Chicano Thesaurus</a></li></p>
-<p><details></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Topic&query=Chicano%20Database">Chicano Database</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Topic&query=Third%20World%20Liberation%20Front">Third World Liberation Front</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Topic&query=Library%20Administration">Library Administration</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Topic&query=Chicano%20Studies%20Library%20Publications%20Unit">Chicano Studies Library Publications Unit</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Topic&query=Arts%20and%20Literature">Arts and Literature</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Topic&query=Serials%20Collection">Serials Collection</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Topic&query=Ethnic%20Studies%20Library">Ethnic Studies Library</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Topic&query=Exhibits%20and%20Events">Exhibits and Events</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Topic&query=Library%20Outreach">Library Outreach</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Topic&query=Chicano%20Studies%20Program">Chicano Studies Program</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Topic&query=Ethnic%20Studies">Ethnic Studies</a></li></p>
-<p><summary class="text-accent cursor-pointer">
-View More
-</summary>
-</details>
+<ul>
+<li class="border-t border-neutral py-1"><a data="Internal Documents" class="link hover:text-accent" href="/browse/items.html?limit=Type&query=Internal%20Documents">Internal Documents</a></li></p>
+<p><li class="border-t border-neutral py-1"><a data="Letters" class="link hover:text-accent" href="/browse/items.html?limit=Type&query=Letters">Letters</a></li></p>
+<p><li class="border-t border-neutral py-1"><a data="Photographs" class="link hover:text-accent" href="/browse/items.html?limit=Type&query=Photographs">Photographs</a></li></p>
+<p><li class="border-t border-neutral py-1"><a data="Newsletters" class="link hover:text-accent" href="/browse/items.html?limit=Type&query=Newsletters">Newsletters</a></li></p>
+<p><li class="border-t border-neutral py-1"><a data="Fliers" class="link hover:text-accent" href="/browse/items.html?limit=Type&query=Fliers">Fliers</a></li></p>
+<p><li class="border-t border-neutral py-1"><a data="Proposals" class="link hover:text-accent" href="/browse/items.html?limit=Type&query=Proposals">Proposals</a></li></p>
+<p><li class="border-t border-neutral py-1"><a data="Book Chapters" class="link hover:text-accent" href="/browse/items.html?limit=Type&query=Book%20Chapters">Book Chapters</a></li></p>
+<p><li class="border-t border-neutral py-1"><a data="Bibliographies" class="link hover:text-accent" href="/browse/items.html?limit=Type&query=Bibliographies">Bibliographies</a></li>
 </ul>
 </li></p>
 <p><li class="pb-5">
 <div class="text-xl tracking-tight mb-1">Personal Name</div>
-<ul></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Personal%20Name&query=Castillo-Speed%20Lillian">Castillo-Speed, Lillian</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Personal%20Name&query=Chabr%C3%A1n%20Richard">Chabrán, Richard</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Personal%20Name&query=Garc%C3%ADa-Ayvens%20Francisco%2C%201948-2018">García-Ayvens, Francisco, 1948-2018</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Personal%20Name&query=Trujillo%20Larry">Trujillo, Larry</a></li></p>
-<p><details></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Personal%20Name&query=Arce%20Jos%C3%A9%20Antonio%2C%201948-2018">Arce, José Antonio, 1948-2018</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Personal%20Name&query=Trevi%C3%B1o%20Oscar">Treviño, Oscar</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Personal%20Name&query=Soto%20Carolyn">Soto, Carolyn</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Personal%20Name&query=Garza%20Luis%20Alberto%20de%20la">Garza, Luis Alberto de la</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Personal%20Name&query=Delgado%20Manuel">Delgado, Manuel</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Personal%20Name&query=Poon%20Wei%20Chi">Poon, Wei Chi</a></li></p>
-<p><li class="border-t border-neutral py-1"><a href="/browse/items.html?limit=Personal%20Name&query=Ya%C3%B1ez%20Elva">Yañez, Elva</a></li></p>
-<p><summary class="text-accent cursor-pointer">
-View More
-</summary>
-</details>
+<ul>
+<li class="border-t border-neutral py-1"><a data="Castillo-Speed Lillian" class="link hover:text-accent" href="/browse/items.html?limit=Personal%20Name&query=Castillo-Speed%20Lillian">Castillo-Speed, Lillian</a></li></p>
+<p><li class="border-t border-neutral py-1"><a data="Chabrán Richard" class="link hover:text-accent" href="/browse/items.html?limit=Personal%20Name&query=Chabr%C3%A1n%20Richard">Chabrán, Richard</a></li></p>
+<p><li class="border-t border-neutral py-1"><a data="García-Ayvens Francisco" class="link hover:text-accent" href="/browse/items.html?limit=Personal%20Name&query=Garc%C3%ADa-Ayvens%20Francisco">García-Ayvens, Francisco</a></li></p>
+<p><li class="border-t border-neutral py-1"><a data="Trujillo Larry" class="link hover:text-accent" href="/browse/items.html?limit=Personal%20Name&query=Trujillo%20Larry">Trujillo, Larry</a></li></p>
+<p><li class="border-t border-neutral py-1"><a data="Treviño Oscar" class="link hover:text-accent" href="/browse/items.html?limit=Personal%20Name&query=Trevi%C3%B1o%20Oscar">Treviño, Oscar</a></li></p>
+<p><li class="border-t border-neutral py-1"><a data="Soto Carolyn" class="link hover:text-accent" href="/browse/items.html?limit=Personal%20Name&query=Soto%20Carolyn">Soto, Carolyn</a></li></p>
+<p><li class="border-t border-neutral py-1"><a data="Garza Luis Alberto de la" class="link hover:text-accent" href="/browse/items.html?limit=Personal%20Name&query=Garza%20Luis%20Alberto%20de%20la">Garza, Luis Alberto de la</a></li></p>
+<p><li class="border-t border-neutral py-1"><a data="Delgado Manuel" class="link hover:text-accent" href="/browse/items.html?limit=Personal%20Name&query=Delgado%20Manuel">Delgado, Manuel</a></li></p>
+<p><li class="border-t border-neutral py-1"><a data="Poon Wei Chi" class="link hover:text-accent" href="/browse/items.html?limit=Personal%20Name&query=Poon%20Wei%20Chi">Poon, Wei Chi</a></li></p>
+<p><li class="border-t border-neutral py-1"><a data="Arce José Antonio" class="link hover:text-accent" href="/browse/items.html?limit=Personal%20Name&query=Arce%20Jos%C3%A9%20Antonio">Arce, José Antonio</a></li>
+</ul>
+</li></p>
+<p><li class="pb-5">
+<div class="text-xl tracking-tight mb-1">Topic</div>
+<ul>
+<li class="border-t border-neutral py-1"><a data="Chicano Periodical Index" class="link hover:text-accent" href="/browse/items.html?limit=Topic&query=Chicano%20Periodical%20Index">Chicano Periodical Index</a></li></p>
+<p><li class="border-t border-neutral py-1"><a data="Knowledge Organization" class="link hover:text-accent" href="/browse/items.html?limit=Topic&query=Knowledge%20Organization">Knowledge Organization</a></li></p>
+<p><li class="border-t border-neutral py-1"><a data="Recognition" class="link hover:text-accent" href="/browse/items.html?limit=Topic&query=Recognition">Recognition</a></li></p>
+<p><li class="border-t border-neutral py-1"><a data="Chicano Database" class="link hover:text-accent" href="/browse/items.html?limit=Topic&query=Chicano%20Database">Chicano Database</a></li></p>
+<p><li class="border-t border-neutral py-1"><a data="Exhibits and Events" class="link hover:text-accent" href="/browse/items.html?limit=Topic&query=Exhibits%20and%20Events">Exhibits and Events</a></li></p>
+<p><li class="border-t border-neutral py-1"><a data="Ethnic Studies" class="link hover:text-accent" href="/browse/items.html?limit=Topic&query=Ethnic%20Studies">Ethnic Studies</a></li></p>
+<p><li class="border-t border-neutral py-1"><a data="Arts and Literature" class="link hover:text-accent" href="/browse/items.html?limit=Topic&query=Arts%20and%20Literature">Arts and Literature</a></li></p>
+<p><li class="border-t border-neutral py-1"><a data="Chicano Thesaurus" class="link hover:text-accent" href="/browse/items.html?limit=Topic&query=Chicano%20Thesaurus">Chicano Thesaurus</a></li></p>
+<p><li class="border-t border-neutral py-1"><a data="Serials Collection" class="link hover:text-accent" href="/browse/items.html?limit=Topic&query=Serials%20Collection">Serials Collection</a></li></p>
+<p><li class="border-t border-neutral py-1"><a data="Ethnic Studies Library" class="link hover:text-accent" href="/browse/items.html?limit=Topic&query=Ethnic%20Studies%20Library">Ethnic Studies Library</a></li></p>
+<p><li class="border-t border-neutral py-1"><a data="Chicano Studies Library Publications Unit" class="link hover:text-accent" href="/browse/items.html?limit=Topic&query=Chicano%20Studies%20Library%20Publications%20Unit">Chicano Studies Library Publications Unit</a></li></p>
+<p><li class="border-t border-neutral py-1"><a data="Third World Liberation Front" class="link hover:text-accent" href="/browse/items.html?limit=Topic&query=Third%20World%20Liberation%20Front">Third World Liberation Front</a></li></p>
+<p><li class="border-t border-neutral py-1"><a data="Chicano Studies Program" class="link hover:text-accent" href="/browse/items.html?limit=Topic&query=Chicano%20Studies%20Program">Chicano Studies Program</a></li>
 </ul>
 </li></p>
 <p></ul></p>
   </aside>
-  <main class="flex-auto md:px-10 not-prose">
+  <main class="flex-auto md:basis-3/4 xl:basis-4/5 md:px-10 not-prose">
     <div class="font-bold text-2xl tracking-tight mb-4">Search</div>
     <div class="join w-full max-w-full mb-8">
       <select size="1" id="search-limit-select" class="focus:outline-none select select-bordered md:select-md select-sm join-item border-1 border-base-content">

@@ -4547,11 +4547,6 @@ html{
   height: auto !important;
 }
 
-.h-fit{
-  height: -moz-fit-content !important;
-  height: fit-content !important;
-}
-
 .h-full{
   height: 100% !important;
 }
@@ -6124,8 +6119,16 @@ details[open] > summary.meta-summary::before {
     flex-basis: 50% !important;
   }
 
+  .md\:basis-1\/4{
+    flex-basis: 25% !important;
+  }
+
   .md\:basis-2\/5{
     flex-basis: 40% !important;
+  }
+
+  .md\:basis-3\/4{
+    flex-basis: 75% !important;
   }
 
   .md\:basis-3\/5{
@@ -6362,8 +6365,16 @@ details[open] > summary.meta-summary::before {
     margin-right: 0px !important;
   }
 
+  .xl\:basis-1\/5{
+    flex-basis: 20% !important;
+  }
+
   .xl\:basis-1\/6{
     flex-basis: 16.666667% !important;
+  }
+
+  .xl\:basis-4\/5{
+    flex-basis: 80% !important;
   }
 
   .xl\:grid-cols-4{
