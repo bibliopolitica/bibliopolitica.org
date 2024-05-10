@@ -24,6 +24,7 @@
       "Library administration",
       "Knowledge organization"
     ],
+    "Topic Verbose": "Castillo-Speed, Lillian|University of California, Berkeley. Chicano Studies Library|Chicano movement|Chicano thesaurus|Library administration|Knowledge organization",
     "Type": [
       "Oral histories"
     ],
@@ -61,6 +62,7 @@
       "Library administration",
       "Chicano movement"
     ],
+    "Topic Verbose": "Chabrán, Richard|University of California, Berkeley. Chicano Studies Library|Knowledge organization|Library administration|Chicano movement",
     "Type": [
       "Oral histories"
     ],
@@ -98,6 +100,7 @@
       "Rios-Muñoz, Chela",
       "Library administration"
     ],
+    "Topic Verbose": "Muñoz, Carlos, Jr.|University of California, Berkeley. Chicano Studies Library|Chicano studies|Chicano movement|University of California, Berkeley. Chicano Studies Program|Rios-Muñoz, Chela|Library administration",
     "Type": [
       "Oral histories"
     ],
@@ -131,10 +134,11 @@
       "University of California, Berkeley. Chicano Studies Library",
       "Chicano movement",
       "Mujeres del Movimiento (Berkeley, Calif.)",
-      "Arce, José Antonio, 1948-2018",
+      "Arce, José Antonio",
       "Chicanas",
       "Muñoz, Carlos, Jr."
     ],
+    "Topic Verbose": "Rios-Muñoz, Chela|University of California, Berkeley. Chicano Studies Library|Chicano movement|Mujeres del Movimiento (Berkeley, Calif.)|Arce, José Antonio, 1948-2018|Chicanas|Muñoz, Carlos, Jr.",
     "Type": [
       "Oral histories"
     ],
@@ -175,6 +179,7 @@
       "Knowledge organization",
       "Corpi, Lucha"
     ],
+    "Topic Verbose": "Duron, Clementina|University of California, Berkeley. Chicano Studies Library|Chicano movement|Third World Liberation Front|University of California, Berkeley. Chicano Studies Program|Library administration|Knowledge organization|Corpi, Lucha",
     "Type": [
       "Oral histories"
     ],
@@ -213,6 +218,7 @@
       "Knowledge organization",
       "Library outreach"
     ],
+    "Topic Verbose": "Trujillo, Larry|University of California, Berkeley. Chicano Studies Library|Chicano studies|Chicano movement|University of California, Berkeley. Chicano Studies Program|Library administration|Knowledge organization|Library outreach",
     "Type": [
       "Oral histories"
     ],
@@ -250,9 +256,10 @@
       "Arts and literature\r\n",
       "Chicano literature",
       "Asturias, Oswaldo",
-      "Arce, José Antonio, 1948-2018",
+      "Arce, José Antonio",
       "Rios C., Herminio"
     ],
+    "Topic Verbose": "Corpi, Lucha|University of California, Berkeley. Chicano Studies Library|University of California, Berkeley. Chicano Studies Program|Library administration|Library outreach|Arts and literature\r\n|Chicano literature|Asturias, Oswaldo|Arce, José Antonio, 1948-2018|Rios C., Herminio",
     "Type": [
       "Oral histories"
     ],
@@ -290,6 +297,7 @@
       "Chicano art",
       "Arts and literature"
     ],
+    "Topic Verbose": "Montoya, Malaquías|University of California, Berkeley. Chicano Studies Library|Chicano movement|Chicano art|Third World Liberation Front|Chicano art|Arts and literature",
     "Type": [
       "Oral histories"
     ],
@@ -326,9 +334,10 @@
       "Library administration",
       "Chicano Classification System",
       "Knowledge organization",
-      "Arce, José Antonio, 1948-2018",
+      "Arce, José Antonio",
       "Yañez, Elva"
     ],
+    "Topic Verbose": "Mesa, Purita|University of California, Berkeley. Chicano Studies Library|Chicano movement|Mujeres del Movimiento (Berkeley, Calif.)|Library administration|Chicano Classification System|Knowledge organization|Arce, José Antonio, 1948-2018|Yañez, Elva",
     "Type": [
       "Oral histories"
     ],
@@ -363,6 +372,7 @@
       "Chicano movement",
       "Library administration"
     ],
+    "Topic Verbose": "Balderrama, Sandra Ríos|University of California, Berkeley. Chicano Studies Library|Chicano movement|Library administration",
     "Type": [
       "Oral histories"
     ],
@@ -396,10 +406,11 @@
       "Yañez, Elva",
       "University of California, Berkeley. Chicano Studies Library",
       "Chicano Thesaurus",
-      "Arce, José Antonio, 1948-2018",
+      "Arce, José Antonio",
       "Library administration",
       "Chicano Classification System"
     ],
+    "Topic Verbose": "Yañez, Elva|University of California, Berkeley. Chicano Studies Library|Chicano Thesaurus|Arce, José Antonio, 1948-2018|Library administration|Chicano Classification System",
     "Type": [
       "Oral histories"
     ],
