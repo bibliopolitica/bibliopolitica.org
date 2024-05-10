@@ -115,7 +115,7 @@ Many thanks to everyone who agreed to be interviewed and share your time and sto
 
 Thanks to Angie Chabrám, Roberto Haro, Francisco Hernandez, Ysidro Macías, Juan Rodriguez, Nina Genera, and Carolyn Soto who shared important information but were not able to be interviewed.
  
-We would like to acknowledge the following people who made many contributions to the Chicano Studies Library. These are Jose Arce, Herminio Rios Myrtha Chabrán, John Gonzales, Raymond Padilla, Martha Rodriguez, and Oscar Treviño. Others who have also passed were not officially part of the library but who contributed to its story are: Rafaela Castro, Guillermo Hernandez, Susana Hinojosa, Octavio Romano, and Margaret Ulrich. 
+We would like to acknowledge the following people who made many contributions to the Chicano Studies Library. These are Jose Arce, Herminio Rios, Myrtha Chabrán, John Gonzales, Raymond Padilla, Martha Rodriguez, and Oscar Treviño. Others who have also passed were not officially part of the library but who contributed to its story are: Rafaela Castro, Guillermo Hernandez, Susana Hinojosa, Octavio Romano, and Margaret Ulrich. 
 
 Bibliopolítica was made possible by a New York University Digital Humanities Seed Grant. The project team would like to thank The Center for the Humanities, NYU Libraries, and NYU Research Technology for the opportunity and Molly Rogers and Jojo Karlin for their support. 
 
