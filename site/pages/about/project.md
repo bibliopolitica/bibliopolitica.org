@@ -168,7 +168,7 @@ Thanks to NYU Libraries Office of Budget and Finance team for your generous guid
   <p class="mt-4">–Lillian Castillo-Speed</p>
 </blockquote>
 
-Richard Chabrán and Lillian Castillo-Speed missed Francisco Garcia-Ayvens’ participation in this version of the ongoing Bibliopolítica project. He passed away in 2018. We shared so many projects and had countless conversations about the Chicano Periodical Index and the Chicano Thesaurus and Chicana/o/x librarianship. We missed having conversations with him about Bibliopolítica, the digital exhibit.
+Francisco García-Ayvens, friend and former Coordinator of the Chicano Studies library, passed away in 2018. Richard Chabrán and Lillian Castillo-Speed shared many collaborations and conversations with Francisco about the Chicano Periodical Index, the Chicano Thesaurus and Chicana/o/x librarianship. His participation was missed while working on this version of the Bibliopolítica project.
 
 
 ## Contact 
