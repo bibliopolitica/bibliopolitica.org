@@ -91,7 +91,7 @@ layout: base
         <span class="whitespace-nowrap text-stone-400">{{ exhibit.data.number }}: {{ exhibit.data.title }}</span>
         {% else %}
         <a class="link whitespace-nowrap hover:text-accent" href="{{ exhibit.url | url }}">{{ exhibit.data.number }}: {{
-          exhibit.data.title | split: ':' | first }}</a>
+          exhibit.data.title }}</a>
         {% endif %}
         {% unless forloop.last %}<span class="text-stone-500 mx-1">/</span>{% endunless %}
         {% endfor %}
