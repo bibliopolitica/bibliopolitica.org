@@ -39,13 +39,13 @@ contents:
     anchor: '#contact'
 images:
   - url: '/media/013.jpg'
-    caption: "Purita Mesa, Richard Chabran, Lillian Castillo-Speed. Outside Ethnic Studies Library, October 1, 2023"
+    caption: "Purita Mesa, Richard Chabran, Lillian Castillo-Speed. Outside Ethnic Studies Library, September 2023"
   - url: '/media/017.jpg'
-    caption: "Richard Chabran, Chela Rios Munoz, Carlos Munoz, Lillian Castillo-Speed. UC Berkeley, October 1, 2023" 
+    caption: "Richard Chabran, Chela Rios Munoz, Carlos Munoz, Lillian Castillo-Speed. UC Berkeley, September 2023" 
   - url: '/media/023.jpg'
-    caption: "Richard Chabran, Lillian Castillo-Speed, Clementina Duron. Changemaker Studio, UC Berkeley, October 1, 2023."
+    caption: "Richard Chabran, Lillian Castillo-Speed, Clementina Duron. Ethnic Studies Changemaker Podcast Studio at UC Berkeley, September 2023."
   - url: '/media/028.jpg'
-    caption: "Lucha Corpi. Changemaker Studio, UC Berkeley, October 1, 2023."
+    caption: "Lucha Corpi. Ethnic Studies Changemaker Podcast Studio at UC Berkeley, September 2023."
 additional_credits:
   - header: English-Spanish translation
     value: Kathy Blackmer Reyes, Angie Chabrám, Rafael Chabrán, Julia Curry, Richard Chabrán, and Lillian Castillo-Speed
@@ -126,6 +126,8 @@ Thanks to the Ethnic Studies Library at UC Berkeley for providing additional fun
 Many thanks to Pablo Gonzalez, Continuing Lecturer, Chicana/o Studies Program and Ethnic Studies for recording with us and giving permission to record the oral histories with staff in the Ethnic Studies ChangeMaker Podcast Studio.
 
 Thanks to NYU Libraries Office of Budget and Finance team for your generous guidance and administrative support.
+
+Muchas gracias to Rodrigo Cortina for additional translation support.
 
   </div>
   <div class="lg:basis-2/5 lg:pl-4 lg:pt-12 basis-full">
