@@ -1,5 +1,5 @@
 {%- capture img_url -%}https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_{{ item.ID }}_{{ item.ID }}_001/full/800,/0/default.jpg{%- endcapture -%}
-<a href="{{ '/item/'| append: item.ID | url }}.html">
+<a href="{{ '/item/'| append: item.ID | url }}.html" tabindex="-1">
   <div class="transition-all duration-500 hover:scale-105">
     <img {% if lazy %}loading="lazy"{% endif %} src="{{ img_url }}" class="w-full h-auto block" alt="">
     <div class="my-2 text-base leading-[1.4]">
