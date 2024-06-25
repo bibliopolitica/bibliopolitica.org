@@ -1,0 +1,27 @@
+name: test
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'v18.16.0'
+      - name: install
+        run: npm install
+      - name: test links
+        run: npm run test
+      - name: test a11y
+        run: sh axe.sh
