@@ -83,7 +83,7 @@ Bibliopolítica takes its name from a book of the same title that Chabrán and l
     <div class="flex-none">
       <div class="avatar">
         <div class="w-20 h-20 rounded-full ">
-          <img src="{{ person.image | default: '/assets/filler.png' | url }}" />
+          <img alt="Portrait image for {{ person.name }}" src="{{ person.image | default: '/assets/filler.png' | url }}" />
         </div>
       </div>
     </div>
