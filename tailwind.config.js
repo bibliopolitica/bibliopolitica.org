@@ -29,7 +29,7 @@ module.exports = {
           "base-100": "#11030B", // licorice
           "base-content": "#E7DBC5", // pearl
           "accent": "#61A88F", // zomp
-          "secondary": "#a6673e", // brown sugar
+          "secondary": "#C2845B", // brown sugar
           "neutral": "#33272e", // raisin black
           "neutral-content": "#F3EDE2", // alabaster
         },
