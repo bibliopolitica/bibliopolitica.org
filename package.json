@@ -1,5 +1,5 @@
 {
-  "name": "waxdesign",
+  "name": "bibliopolitica",
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
@@ -10,8 +10,9 @@
     "dev:css": "tailwindcss -i site/css/styles.css -o dist/css/styles.css --watch --postcss",
     "build:11ty": "env NODE_ENV=production eleventy",
     "build:css": "tailwindcss -i site/css/styles.css -o dist/css/styles.css --postcss",
-    "test": "npm run build:css && eleventy && hyperlink dist",
-    "axe": "axe $(node axe/index.js)"
+    "test:build": "npm run build:css && eleventy",
+    "test:links": "hyperlink dist",
+    "test:a11y": "lhci autorun"
   },
   "keywords": [],
   "author": "",
@@ -30,6 +31,7 @@
   },
   "dependencies": {
     "@axe-core/cli": "^4.9.0",
+    "@lhci/cli": "^0.14.0",
     "@untitaker/hyperlink": "^0.1.32",
     "clean-css": "^5.2.4",
     "flickity": "^3.0.0",

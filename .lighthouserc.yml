@@ -1,0 +1,18 @@
+ci:
+  collect:
+    numberOfRuns: 1
+    startServerCommand: 'npm start'
+    url: 
+      - http://localhost:8080/
+      - http://localhost:8080/about/project.html 
+      - http://localhost:8080/about/library-timeline.html 
+      - http://localhost:8080/browse/items.html 
+      - http://localhost:8080/exhibit/en/1.html 
+      - http://localhost:8080/item/CSL00094.html 
+      - http://localhost:8080/history/OH001.html
+  assert:
+    assertions:
+      categories:performance: off
+      categories:pwa: off
+  upload:
+    target: temporary-public-storage
