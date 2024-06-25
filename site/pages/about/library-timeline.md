@@ -66,26 +66,24 @@ contents:
   <li>
     <hr/>
     <div class="timeline-start md:text-end md:mr-6 ml-6 md:ml-0 mb-6">
-      {% for note in year.notes %}
+      {%- for note in year.notes -%}
         <div class="mb-10 max-w-96">
           <div class="block text-xl font-black mb-1 break-words">
             {{ note.heading }}
           </div>
           <div class="font-serif break-words">{{ note.description }}</div>
         </div>
-      {% endfor %}
+      {%- endfor -%}
     </div>
     <hr/>
     <div class="timeline-end md:text-left ml-6 mb-6">
       <div class="md:mr-12 columns-4 lg:columns-5 gap-x-2">
-        {%- for item in year_data -%}
-        <div class="mb-2">
-          <a href="{{ '/item/'| append: item.ID | url }}.html" class="block tooltip tooltip-bottom" data-tip="{{ item.Label | escape | truncatewords: 4, '...' }}">
-            {% capture img_url %}https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_{{ item.ID }}_{{ item.ID }}_001/full/250,/0/default.jpg{% endcapture %}
-            <img loading="lazy" src="{{ img_url }}" alt="">
-          </a>
-        </div>
-        {%- endfor -%}
+       {%- for item in year_data -%}
+        <a title="{{ item.Label | escape | truncatewords: 8, '...' }}" href="{{ '/item/'| append: item.ID | url }}.html" class="block mb-2">
+          {% capture img_url %}https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_{{ item.ID }}_{{ item.ID }}_001/full/250,/0/default.jpg{% endcapture %}
+          <img loading="lazy" src="{{ img_url }}" alt="Thumbnail for item {{ item.ID }}">
+        </a>
+      {%- endfor -%}
       </div>
     </div>
     <hr/>
