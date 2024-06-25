@@ -4,14 +4,14 @@
     <a href="{{ '/browse/exhibit/en.html' | url }}" class="text-base-content link hover:text-secondary text-sm">View All ({{ collections.exhibit-en.size }})</a>
   </div>
   <div class="mx-auto text-center">
-    <button id="prev-exhibit" class="h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-left" data-tip="Previous">{% include "svg/arrow-left.svg" %}</button>
-    <button id="play-exhibit" class="hidden h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-bottom" data-tip="Autoplay">
+    <button aria-label="navigate previous exhibits" id="prev-exhibit" class="h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-left" data-tip="Previous">{% include "svg/arrow-left.svg" %}</button>
+    <button aria-label="start autoplay exhibits" id="play-exhibit" class="hidden h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-bottom" data-tip="Autoplay">
       {% include "svg/play.svg" %}
     </button>
-    <button id="pause-exhibit" class="h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-bottom" data-tip="Pause">
+    <button aria-label="stop autoplay exhibits" id="pause-exhibit" class="h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-bottom" data-tip="Pause">
       {% include "svg/pause.svg" %}
     </button>
-    <button id="next-exhibit" class="h-8 w-8 md:h-12 md:w-12 text-accent hover:text-neutral-content tooltip tooltip-right" data-tip="Next">{% include "svg/arrow-right.svg" %}</button>
+    <button aria-label="navigate next exhibits" id="next-exhibit" class="h-8 w-8 md:h-12 md:w-12 text-accent hover:text-neutral-content tooltip tooltip-right" data-tip="Next">{% include "svg/arrow-right.svg" %}</button>
   </div>
   <div class="hero block">
     <div class="hero-content mx-auto">
@@ -39,7 +39,7 @@
     pageDots: false,
     lazyLoad: true,
     pauseAutoPlayOnHover: false,
-    autoPlay: 3200 
+    // autoPlay: 3200 
   });
   
   prevExhibitButton.addEventListener('click', () => exhibitCarousel.previous());
