@@ -132,14 +132,14 @@ Muchas gracias to Rodrigo Cortina for additional translation support.
   </div>
   <div class="lg:basis-2/5 lg:pl-4 lg:pt-12 basis-full">
     <div class="lg:text-right ml-2">
-      <button id="prev-feature" class="h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-left" data-tip="Previous">{% include "svg/arrow-left.svg" %}</button>
-      <button id="play-feature" class="hidden h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-bottom" data-tip="Autoplay">
+      <button aria-label="navigate previous featured images" id="prev-feature" class="h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-left" data-tip="Previous">{% include "svg/arrow-left.svg" %}</button>
+      <button aria-label="start autoplay featured images" id="play-feature" class="hidden h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-bottom" data-tip="Autoplay">
         {% include "svg/play.svg" %}
       </button>
-      <button id="pause-feature" class="h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-bottom" data-tip="Pause">
+      <button aria-label="stop autoplay featured images" id="pause-feature" class="h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-bottom" data-tip="Pause">
         {% include "svg/pause.svg" %}
       </button>
-      <button id="next-feature" class="h-8 w-8 md:h-12 md:w-12 text-accent hover:text-neutral-content tooltip tooltip-right" data-tip="Next">{% include "svg/arrow-right.svg" %}</button>
+      <button aria-label="navigate next featured images" id="next-feature" class="h-8 w-8 md:h-12 md:w-12 text-accent hover:text-neutral-content tooltip tooltip-right" data-tip="Next">{% include "svg/arrow-right.svg" %}</button>
     </div>
     <div id="feature-carousel" class="w-full md:ml-2 md:text-right no-prose flex-none">
       {%- for img in images -%}
