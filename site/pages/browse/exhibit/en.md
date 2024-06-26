@@ -1,7 +1,6 @@
 ---
 title: "Explore the Exhibit"
 lang: "en"
-description: "TBD"
 layout: page
 permalink: "/browse/exhibit/en.html"
 ---

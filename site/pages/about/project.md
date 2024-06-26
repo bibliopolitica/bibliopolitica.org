@@ -1,6 +1,5 @@
 ---
 title: "About the Project"
-description: "TBD"
 layout: page
 team:
   - name: Amanda Belantara

@@ -1,6 +1,5 @@
 ---
 title: "A Timeline of Chicano Studies Library (1969 – 2024)"
-description: "TBD"
 layout: page
 permalink: "/about/library-timeline.html"
 contents:

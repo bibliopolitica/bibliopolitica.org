@@ -1,6 +1,5 @@
 ---
 title: "Oral Histories"
-description: "TBD"
 layout: page
 permalink: "/browse/oral-histories.html"
 ---

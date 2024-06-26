@@ -1,6 +1,5 @@
 ---
 title: "Archival Materials"
-description: "TBD"
 layout: "page"
 permalink: "/browse/items.html"
 search_limits:
