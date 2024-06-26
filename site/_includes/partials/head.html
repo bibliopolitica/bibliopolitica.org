@@ -7,6 +7,7 @@
     {%- assign description = item.Summary %}
   {%- elsif history.Label -%}
     {%- capture title -%}{{ history.Label | strip_html }} - {{ site.title }}{%- endcapture -%}
+    {%- capture img -%}{{ '/media/oh' | url }}/{{ history.ID }}.jpg{%- endcapture -%}
   {%- else -%}
     {%- capture title -%}{{ exhibit.title | strip_html | default: title }} - {{ site.title }}{%- endcapture -%}
     {%- assign img = thumbnail -%}
