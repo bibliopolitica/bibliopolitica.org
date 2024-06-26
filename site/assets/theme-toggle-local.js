@@ -3,6 +3,7 @@ const setColorMode = (mode) => {
   if (mode) {
     // Update data-* attr on html
     document.documentElement.setAttribute('data-force-color-mode', mode);
+    document.documentElement.setAttribute('data-theme', mode);
     // Persist in local storage
     window.localStorage.setItem('color-mode', mode);
     // Make sure the checkbox is up-to-date
@@ -35,15 +36,21 @@ mediaQuery.addListener(() => {
   // Make sure the checkbox is up-to-date
   document.querySelector('#toggle-darkmode').checked = mediaQuery.matches;
 });
+
+
 // Check if there's any override. If so, let the markup know by setting an attribute on the <html> element
 const colorModeOverride = window.localStorage.getItem('color-mode');
 const hasColorModeOverride = typeof colorModeOverride === 'string';
 if (hasColorModeOverride) {
-  document.documentElement.setAttribute('data-force-color-mode', colorModeOverride);
+  setColorMode(colorModeOverride);
 }
+
 // Check the dark-mode checkbox if
 // - The override is set to dark
 // - No override is set but the system prefers dark mode
-if ((colorModeOverride == 'dark') || (!hasColorModeOverride && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-  document.querySelector('#toggle-darkmode').checked = true;
-}
+if ((colorModeOverride == 'dark') || (window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+  document.querySelector('#toggle-darkmode-checkbox').checked = true;
+} 
+if ((colorModeOverride == 'light') || (window.matchMedia('(prefers-color-scheme: light)').matches)) {
+  document.querySelector('#toggle-darkmode-checkbox').checked = false;
+} 
