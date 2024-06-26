@@ -1,34 +1,39 @@
 {%- if page.url == '/' -%}
-{%- assign title = site.title -%}
+  {%- assign title = site.title -%}
 {%- else -%}
-{%- if item.Label -%}
-{% assign title = item.Label | strip_html | append: ' - ' | append: site.title %}
-{%- elsif history.Label -%}
-{% assign title = history.Label | strip_html | append:  ' - ' | append: site.title %}
-{%- else -%}
-{% assign title = exhibit.title | strip_html | default: title | append:  ' - ' | append: site.title %}
+  {%- if item.Label -%}
+    {%- capture title -%}{{ item.Label | strip_html }} - {{ site.title }}{%- endcapture -%}
+    {%- capture img -%}https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/bibliopolitica_{{ item.ID }}_{{ item.ID }}_001/full/800,/0/default.jpg{%- endcapture -%}
+    {%- assign description = item.Summary %}
+  {%- elsif history.Label -%}
+    {%- capture title -%}{{ history.Label | strip_html }} - {{ site.title }}{%- endcapture -%}
+  {%- else -%}
+    {%- capture title -%}{{ exhibit.title | strip_html | default: title }} - {{ site.title }}{%- endcapture -%}
+    {%- assign img = thumbnail -%}
+  {%- endif -%}
 {%- endif -%}
-{%- endif -%}
+
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1.0, width=device-width, viewport-fit=cover">
   <title>{{ title }}</title>
-  <meta name="description" content="{{ site.description }}">
+  <meta name="description" content="{{ description | default: site.description }}">
 
   <!-- Facebook Meta Tags -->
   <meta property="og:url" content="{{ site.url }}">
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ title }}">
-  <meta property="og:description" content="{{ site.description }}">
-  <meta property="og:image" content="{{ '/assets/og-img.png' | url }}">
+  <meta property="og:description" content="{{  description | default: site.description }}">
+  <meta property="og:image" content="{{ img | default: '/assets/og-img.png' | url }}">
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta property="twitter:domain" content="{{ site.url }}">
   <meta property="twitter:url" content="{{ site.url }}">
   <meta name="twitter:title" content="{{ title }}">
-  <meta name="twitter:description" content="{{ site.description }}">
-  <meta name="twitter:image" content="{{ '/assets/og-img.png' | url }}">
+  <meta name="twitter:description" content="{{  description | default: site.description }}">
+  <meta name="twitter:image" content="{{ img | default: '/assets/og-img.png' | url }}">
 
   <link href="{{ '/css/styles.css' | url }}" rel="stylesheet">
   <link rel="icon" href="{{ '/assets/favicon.png' | url }}" type="image/png">
