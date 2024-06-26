@@ -15,9 +15,9 @@ module.exports = {
       {
         light: {
           ...require("daisyui/src/theming/themes")["light"],
-          "base-100": "#f5f0e6", /* alabaster */
+          "base-100": "#f5f0e6", // alabaster
           "base-content": "#230616", // dark purple
-          "accent": "#007049", // dartmouth green "#007A50", // dark spring green
+          "accent": "#007049", // dartmouth green
           "secondary": "#975020", // brown sugar
           "neutral": "#EAE0CD", // pearl
           "neutral-content": "#230616" // dark purple
@@ -31,7 +31,7 @@ module.exports = {
           "accent": "#61A88F", // zomp
           "secondary": "#C2845B", // brown sugar
           "neutral": "#33272e", // raisin black
-          "neutral-content": "#F3EDE2", // alabaster
+          "neutral-content": "#e8e3da" // alabaster
         },
       },
     ],

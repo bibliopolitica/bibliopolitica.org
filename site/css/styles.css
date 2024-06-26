@@ -73,3 +73,29 @@ details[open] > summary.meta-summary::before {
 .flickity-button:focus {
   box-shadow: none !important;
 }
+
+@supports not (color: oklch(0% 0 0)) { */
+  #toggle-darkmode {
+    display: none !important;
+  }
+  :root {
+    color-scheme: light;
+    --fallback-s: #975020;
+    --fallback-a: #007049;
+    --fallback-n: #EAE0CD;
+    --fallback-nc: #230616;
+    --fallback-bc: #230616;
+    --fallback-b1: #f5f0e6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --fallback-s: #C2845B;
+      --fallback-a: #61A88F;
+      --fallback-n: #33272e;
+      --fallback-nc: #e8e3da;
+      --fallback-bc: #E7DBC5;
+      --fallback-b1: #11030B;
+    }
+  }
+}
