@@ -165,9 +165,19 @@ Muchas gracias to Rodrigo Cortina for additional translation support.
   <svg class="w-8 h-6 float-left m-0 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
     <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
   </svg>
-  <p>"I am grateful to all the staffs of the Chicano Studies Library and to all the staffs of the Ethnic Studies Library. Their work and their courage gave life to both libraries. I want to especially thank Gema Paola Morales-Mendoza and August Eli Eppler for their teamwork in searching through files and boxes for most of the historical documents in Bibliopolítica. "</p>
+  <p>"I am grateful to all the staffs of the Chicano Studies Library and to all the staffs of the Ethnic Studies Library. Their work and their courage gave life to both libraries. I want to especially thank Gema Paola Morales-Mendoza and August Eli Eppler for their teamwork in searching through files and boxes for most of the historical documents in Bibliopolítica."</p>
   <p class="mt-4">–Lillian Castillo-Speed</p>
 </blockquote>
+
+<blockquote class="mt-8 text-lg italic not-prose border-l-2 border-base-content pl-4">
+  <svg class="w-8 h-6 float-left m-0 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+    <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
+  </svg>
+  <p>"For my family, especially my mother and aunties and uncles. I wish you had a Chicano Studies Library when you were growing up."</p>
+  <p class="mt-4">–Amanda Belantara</p>
+</blockquote>
+
+
 
 Francisco García-Ayvens, friend and former Coordinator of the Chicano Studies library, passed away in 2018. Richard Chabrán and Lillian Castillo-Speed shared many collaborations and conversations with Francisco about the Chicano Periodical Index, the Chicano Thesaurus and Chicana/o/x librarianship. His participation was missed while working on this version of the Bibliopolítica project.
 
