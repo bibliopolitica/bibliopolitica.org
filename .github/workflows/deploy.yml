@@ -18,15 +18,13 @@ jobs:
       - name: setup node
         uses: actions/setup-node@v4
         with:
-          node-version: 'v18.16.0'
+          node-version: 'v21.6.2'
       - name: install
         run: npm install
       - name: test build
-        run: npm run test:build
-      - name: test a11y
+        run: npm run test
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
-        run: npm run test:a11y
       - name: build for deployment
         run: npm run build
       - name: deploy
