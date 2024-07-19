@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
 
 /*
-! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.6 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -4776,10 +4776,6 @@ html{
 
 .justify-between{
   justify-content: space-between !important;
-}
-
-.gap-0{
-  gap: 0px !important;
 }
 
 .gap-0\.5{
