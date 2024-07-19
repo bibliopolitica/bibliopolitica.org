@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm-run-all -p dev:*",
     "build": "run-s build:*",
-    "test": "npm-run-all -p test:*",
+    "test": "run-s test:*",
     "dev:11ty": "eleventy --serve",
     "dev:css": "tailwindcss -i site/css/styles.css -o dist/css/styles.css --watch --postcss",
     "build:11ty": "env NODE_ENV=production eleventy",
