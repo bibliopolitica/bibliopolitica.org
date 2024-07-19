@@ -4,9 +4,6 @@
 A digital history of the Chicano Studies Library. Exhibit front-end feat. [11ty](https://www.11ty.dev/) + [daisyui](https://daisyui.com/). IIIF assets via [aperitiiif](https://middlicomp.github.io/aperitiiif/).
 
 
-
-<img alt="image labeled the chicano studies libray serials collection with a graphic line logo" src="https://marii.info/images/bibliopolitica.jpg" height=350/>
-
 ## Local Development
 
 ### Prerequisites 
@@ -30,9 +27,14 @@ A digital history of the Chicano Studies Library. Exhibit front-end feat. [11ty]
     ``` sh
     npm start
     ```
-5. View in browser at http://localhost:8080/
+5. View in browser at http://localhost:8080/ (`ctrl-c` to quit)
+
+6. Run tests (links & a11y)
+    ```sh
+    npm run test
+    ```
 
 
 ## Deployment
 
-Commits to `main` branch will trigger GitHub action to build, test, and deploy the site to GitHub pages
+Commits to `main` branch will trigger GitHub action to build, test, and deploy the site to GitHub pages with the custom bibliopolitica.org domain via CNAME record
