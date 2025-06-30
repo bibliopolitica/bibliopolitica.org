@@ -25,7 +25,9 @@
   <link rel="icon" href="/assets/favicon.png" type="image/png">
   <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js" defer></script>
   <script src="/assets/vendor/flickity.min.js"></script>
+  <!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
   <link rel="stylesheet" href="/assets/vendor/flickity.min.css"/>
+  <!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> -->
 </head>
 
 
@@ -237,7 +239,7 @@ browse digitized
   <path class="h-full w-full" d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
 </svg>
 </button>
-    <button aria-label="start autoplay exhibits" id="play-exhibit" class="hidden h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-bottom" data-tip="Autoplay">
+    <button aria-label="start autoplay exhibits" id="play-exhibit" class="h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-bottom" data-tip="Autoplay">
       <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke-width="1" transform="matrix(1, 0, 0, 1, 0, 0)" class="h-10 w-10 md:h-12 md:w-12">
   <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
   <g id="SVGRepo_iconCarrier">
@@ -246,7 +248,7 @@ browse digitized
   </g>
 </svg>
     </button>
-    <button aria-label="stop autoplay exhibits" id="pause-exhibit" class="h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-bottom" data-tip="Pause">
+    <button aria-label="stop autoplay exhibits" id="pause-exhibit" class="hidden h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-bottom" data-tip="Pause">
       <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="none" class="h-10 w-10 md:h-12 md:w-12">
   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
   <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -263,7 +265,7 @@ browse digitized
   </button>
   </div>
   <div class="hero block">
-    <div class="hero-content mx-auto">
+    <div class="hero-content w-full mx-auto">
       <div id="exhibits-carousel" class="w-full"><div class="p-4 lg:w-1/3 sm:w-1/2 w-full"><a href="/exhibit/en/1.html" tabindex="-1">
   <div class="card w-full bg-neutral relative transition-all duration-500 hover:scale-105">
     <!-- <img class="absolute z-10 -top-6 right-1 h-28 text-secondary brightness-80" src="/assets/bookmark-bg.png"/> -->
@@ -359,8 +361,9 @@ browse digitized
     pageDots: false,
     lazyLoad: true,
     pauseAutoPlayOnHover: false,
-    autoPlay: 3200 
+    autoPlay: 2600,
   });
+  exhibitCarousel.pausePlayer();
   
   prevExhibitButton.addEventListener('click', () => exhibitCarousel.previous());
   nextExhibitButton.addEventListener('click', () => exhibitCarousel.next());
@@ -377,7 +380,7 @@ browse digitized
   });
 </script>
   <div class="hero block not-prose bg-neutral text-neutral-content mx-[calc(50%-50vw)] my-12 w-auto">
-  <div class="hero-content mx-auto">
+  <div class="hero-content w-full mx-auto">
     <div class="container mx-auto pt-6">
   <h2 class="text-center text-4xl tracking-tight font-bold pb-2">Archival Materials</h2>
   <div class="link text-center mb-6">
@@ -388,7 +391,7 @@ browse digitized
   <path class="h-full w-full" d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
 </svg>
 </button>
-    <button aria-label="start autoplay items" id="play-item" class="hidden h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-bottom" data-tip="Autoplay">
+    <button aria-label="start autoplay items" id="play-item" class="h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-bottom" data-tip="Autoplay">
       <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke-width="1" transform="matrix(1, 0, 0, 1, 0, 0)" class="h-10 w-10 md:h-12 md:w-12">
   <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
   <g id="SVGRepo_iconCarrier">
@@ -397,7 +400,7 @@ browse digitized
   </g>
 </svg>
     </button>
-    <button aria-label="stop autoplay items" id="pause-item" class="h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-bottom" data-tip="Pause">
+    <button aria-label="stop autoplay items" id="pause-item" class="hidden h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-bottom" data-tip="Pause">
       <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="none" class="h-10 w-10 md:h-12 md:w-12">
   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
   <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -1380,10 +1383,11 @@ browse digitized
     imagesLoaded: true,
     prevNextButtons: false,
     pageDots: false,
-    // lazyLoad: true,
+    lazyLoad: true,
     pauseAutoPlayOnHover: false,
-    autoPlay: 2800 
+    autoPlay: 2600 
   });
+  itemCarousel.pausePlayer();
   
   prevItemButton.addEventListener('click', () => itemCarousel.previous());
   nextItemButton.addEventListener('click', () => itemCarousel.next());
@@ -1411,7 +1415,7 @@ browse digitized
   <path class="h-full w-full" d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
 </svg>
 </button>
-    <button aria-label="start autoplay oral histories" id="play-oh" class="hidden h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-bottom" data-tip="Autoplay">
+    <button aria-label="start autoplay oral histories" id="play-oh" class="h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-bottom" data-tip="Autoplay">
       <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke-width="1" transform="matrix(1, 0, 0, 1, 0, 0)" class="h-10 w-10 md:h-12 md:w-12">
   <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
   <g id="SVGRepo_iconCarrier">
@@ -1420,7 +1424,7 @@ browse digitized
   </g>
 </svg>
     </button>
-    <button aria-label="stop autoplay oral histories" id="pause-oh" class="h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-bottom" data-tip="Pause">
+    <button aria-label="stop autoplay oral histories" id="pause-oh" class="hidden h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-bottom" data-tip="Pause">
       <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="none" class="h-10 w-10 md:h-12 md:w-12">
   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
   <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -1437,7 +1441,7 @@ browse digitized
   </button>
   </div>
   <div class="hero block">
-    <div class="hero-content mx-auto">
+    <div class="hero-content w-full mx-auto">
       <div id="oh-carousel" class="w-full"><div class="p-4 lg:w-1/4 md:w-1/3 sm:w-1/2 w-full"><a class="inline-block" href="/history/OH001.html" tabindex="-1">
   <div class="card bg-neutral duration-500 hover:scale-105">
     <img loading="lazy" src="/media/oh/OH001.jpg" alt="Photo of Lillian Castillo-Speed" class="rounded-t-lg object-cover object-center h-52 w-full mx-auto" />
@@ -1587,8 +1591,9 @@ browse digitized
     pageDots: false,
     lazyLoad: true,
     pauseAutoPlayOnHover: false,
-    autoPlay: 3000 
+    autoPlay: 2600 
   });
+  ohCarousel.pausePlayer();
   
   prevOHButton.addEventListener('click', () => ohCarousel.previous());
   nextOHButton.addEventListener('click', () => ohCarousel.next());
