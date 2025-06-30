@@ -35,7 +35,7 @@
     "@lhci/cli": "^0.14.0",
     "@untitaker/hyperlink": "^0.1.32",
     "clean-css": "^5.2.4",
-    "flickity": "^3.0.0",
+    "flickity": "^2.3.0",
     "itemsjs": "^2.1.25",
     "leaflet": "^1.9.4",
     "leaflet-iiif": "^3.0.0",

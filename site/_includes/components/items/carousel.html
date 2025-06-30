@@ -5,10 +5,10 @@
   </div>
   <div class="mx-auto text-center pb-6">
     <button aria-label="navigate previous items" id="prev-item" class="h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-left" data-tip="Previous">{% include "svg/arrow-left.svg" %}</button>
-    <button aria-label="start autoplay items" id="play-item" class="hidden h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-bottom" data-tip="Autoplay">
+    <button aria-label="start autoplay items" id="play-item" class="h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-bottom" data-tip="Autoplay">
       {% include "svg/play.svg" %}
     </button>
-    <button aria-label="stop autoplay items" id="pause-item" class="h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-bottom" data-tip="Pause">
+    <button aria-label="stop autoplay items" id="pause-item" class="hidden h-8 w-8 md:h-12 md:w-12 md:-mr-2 text-accent hover:text-neutral-content tooltip tooltip-bottom" data-tip="Pause">
       {% include "svg/pause.svg" %}
     </button>
     <button aria-label="navigate next items" id="next-item" class="h-8 w-8 md:h-12 md:w-12 text-accent hover:text-neutral-content tooltip tooltip-right" data-tip="Next">{% include "svg/arrow-right.svg" %}</button>
@@ -33,10 +33,11 @@
     imagesLoaded: true,
     prevNextButtons: false,
     pageDots: false,
-    // lazyLoad: true,
+    lazyLoad: true,
     pauseAutoPlayOnHover: false,
-    autoPlay: 2800 
+    autoPlay: 2600 
   });
+  itemCarousel.pausePlayer();
   
   prevItemButton.addEventListener('click', () => itemCarousel.previous());
   nextItemButton.addEventListener('click', () => itemCarousel.next());
